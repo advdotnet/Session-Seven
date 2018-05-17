@@ -5,13 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17C1FC09-18F9-4052-9728-BFAFCCF92DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2D51C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2D51C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Logic", "src\GameLogic\Game Logic.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Logic", "GameLogic\Game Logic.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playthrough", "src\Playthrough\Playthrough.csproj", "{8E225CAA-9674-46A3-B0F4-972FC4E154C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playthrough", "Playthrough\Playthrough.csproj", "{8E225CAA-9674-46A3-B0F4-972FC4E154C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionSeven.Functional.Test", "src\Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj", "{70539779-EF22-4CA3-8F1A-125DFF443092}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionSeven.Functional.Test", "Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj", "{70539779-EF22-4CA3-8F1A-125DFF443092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
