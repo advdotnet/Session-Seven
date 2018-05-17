@@ -5,7 +5,7 @@ build:
 test:
   assemblies:
     only:
-      - SessionSeven.Functional.Test.dll
+      
   categories:
     except:
     - GPU
