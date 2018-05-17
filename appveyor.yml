@@ -3,6 +3,9 @@ build:
   project: src/SessionSeven.sln
   verbosity: minimal
 test:
+  assemblies:
+    only:
+      - SessionSeven.Functional.Test.dll
   categories:
     except:
     - GPU
