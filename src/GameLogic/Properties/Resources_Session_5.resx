@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="I_havent_been_able_to_sleep_quite_the_same_since" xml:space="preserve">
+    <value>I haven't been able to sleep quite the same since.</value>
+  </data>
+  <data name="Now_Ryan_I_know_weve_been_avoiding_this_subject_for_a_while_but" xml:space="preserve">
+    <value>Now, Ryan, I know we've been avoiding this subject for a while, but...</value>
+  </data>
+  <data name="I_know_I_know_We_should_talk_about_him_We_should" xml:space="preserve">
+    <value>I know, I know. We should talk about him. We should.</value>
+  </data>
+  <data name="Im_glad_you_think_so_too_We_can_start_simple_How_have_things_been_since_the_diagnosis" xml:space="preserve">
+    <value>I'm glad you think so too. We can start simple. How have things been since the diagnosis?</value>
+  </data>
+  <data name="Oh_I_dont_know_Odd_I_guess_I_just_dont_know_if_I_believe_it" xml:space="preserve">
+    <value>Oh, I don't know... Odd, I guess. I just don't know if I believe it.</value>
+  </data>
+  <data name="Aspergers_can_present_itself_in_many_different_ways_Ryan" xml:space="preserve">
+    <value>Asperger's can present itself in many different ways, Ryan.</value>
+  </data>
+  <data name="Sure_I_know_it_can_its_just_youve_heard_the_way_I_describe_him_Does_it_sound_like_Aspergers_to_you" xml:space="preserve">
+    <value>Sure, I know it can, it's just... you've heard the way I describe him. Does it sound like Asperger's to you?</value>
+  </data>
+  <data name="Well_his_antisocial_behavior_certainly_could_be_a_sign_Youve_told_me_he_has_lots_of_trouble_making_friends" xml:space="preserve">
+    <value>Well, his anti-social behavior certainly could be a sign. You've told me he has lots of trouble making friends.</value>
+  </data>
+  <data name="Yeah_he_does_At_least_I_think_he_does_He_never_brings_anybody_home_anyways_Do_you_think_hell_ever_get_any_better_about_that" xml:space="preserve">
+    <value>Yeah, he does. At least, I think he does. He never brings anybody home, anyways. Do you think he'll ever get any better about that?</value>
+  </data>
+  <data name="Its_possible_Perhaps_the_antidepressants_will_help_with_that_as_well" xml:space="preserve">
+    <value>It's possible. Perhaps the antidepressants will help with that as well.</value>
+  </data>
+  <data name="Many_depressed_people_feel_that_socializing_just_isnt_worth_it_whether_theyre_on_the_spectrum_or_not" xml:space="preserve">
+    <value>Many depressed people feel that socializing just isn't worth it, whether they're on the spectrum or not.</value>
+  </data>
+  <data name="You_ought_to_know_that" xml:space="preserve">
+    <value>You ought to know that.</value>
+  </data>
+  <data name="Thats_true_I_dont_know_I_just_cant_shake_the_feeling_that_Im_Im_missing_something_Something_big_about_his_behavior" xml:space="preserve">
+    <value>That's true. I don't know, I just can't shake the feeling that I'm... I'm missing something? Something big about his behavior.</value>
+  </data>
+  <data name="And_its_not_that_I_dont_trust_well_your_people_but_if_his_own_father_doesnt_know_him_how_can_a_psychiatrist" xml:space="preserve">
+    <value>And it's not that I don't trust... well, your people, but if his own father doesn't know him, how can a psychiatrist?</value>
+  </data>
+  <data name="You_may_be_right_Ryan_But_for_the_time_being_the_diagnosis_should_be_a_good_thing" xml:space="preserve">
+    <value>You may be right, Ryan. But for the time being, the diagnosis should be a good thing.</value>
+  </data>
+  <data name="Its_your_first_step_to_getting_Landon_help_Dont_you_think_so" xml:space="preserve">
+    <value>It's your first step to getting Landon help. Don't you think so?</value>
+  </data>
+  <data name="Of_course_I_just_want_whats_best_for_my_son" xml:space="preserve">
+    <value>Of course. I just want what's best for my son.</value>
+  </data>
+  <data name="I_really_dont_think_hes_sick_Not_like_that" xml:space="preserve">
+    <value>I really don't think he's sick. Not like that.</value>
+  </data>
+  <data name="I_think_Im_afraid_of_him" xml:space="preserve">
+    <value>I think I'm afraid of him.</value>
+  </data>
+  <data name="Ive_always_wanted_whats_best_for_Landon" xml:space="preserve">
+    <value>I've always wanted what's best for Landon.</value>
+  </data>
+  <data name="Im_not_100_convinced_thats_changing_schools_pumping_him_with_pills_and_starting_all_over_but_if_thats_what_his_mother_and_his_psychiatrist_are_saying_I_guess_thats_for_the_best" xml:space="preserve">
+    <value>I'm not 100% convinced that's changing schools, pumping him with pills, and starting all over, but if that's what his mother and his psychiatrist are saying, I guess that's for the best.</value>
+  </data>
+  <data name="Its_good_that_you_have_his_best_interests_at_heart" xml:space="preserve">
+    <value>It's good that you have his best interests at heart.</value>
+  </data>
+  <data name="I_know_that_as_a_parent_with_mental_illness_it_can_be_difficult_to_handle_when_your_child_is_also_diagnosed" xml:space="preserve">
+    <value>I know that, as a parent with mental illness, it can be difficult to handle when your child is also diagnosed.</value>
+  </data>
+  <data name="Its_hard_not_to_feel_guilty_you_know_Like_maybe_if_Id_done_something_differently" xml:space="preserve">
+    <value>It's hard not to feel guilty, you know? Like, maybe if I'd done something differently...</value>
+  </data>
+  <data name="Mental_illness_is_like_any_other_chronic_disease_You_cant_have_done_anything_to_prevent_it" xml:space="preserve">
+    <value>Mental illness is like any other chronic disease. You can't have done anything to prevent it.</value>
+  </data>
+  <data name="Okay_but_maybe_if_Id_been_around_more_often_or_spent_more_time_with_him" xml:space="preserve">
+    <value>Okay, but maybe if I'd been around more often, or spent more time with him.</value>
+  </data>
+  <data name="Im_always_off_at_work_and_his_mother_isnt_the_most_accessible_of_people" xml:space="preserve">
+    <value>I'm always off at work, and his mother isn't the most accessible of people.</value>
+  </data>
+  <data name="Maybe_if_Id_been_there_he_wouldnt_be_having_such_a_rough_time" xml:space="preserve">
+    <value>Maybe if I'd been there, he wouldn't be having such a rough time.</value>
+  </data>
+  <data name="Maybe_but_that_doesnt_mean_youve_lost_everything_Ryan_You_can_still_make_time_for_him_now" xml:space="preserve">
+    <value>Maybe, but that doesn't mean you've lost everything, Ryan. You can still make time for him now.</value>
+  </data>
+  <data name="What_if_its_too_late_Hes_so_attached_to_his_mother_now_He_barely_speaks_to_me" xml:space="preserve">
+    <value>What if it's too late? He's so attached to his mother now. He barely speaks to me.</value>
+  </data>
+  <data name="Ive_tried_reaching_out_to_him_a_few_times_but_he_always_goes_off_and_hides_in_his_room_to_play_on_his_computer_or_whatever_it_is_he_does_up_there" xml:space="preserve">
+    <value>I've tried reaching out to him a few times, but he always goes off and hides in his room to play on his computer or whatever it is he does up there.</value>
+  </data>
+  <data name="He_isnt_interested_in_bonding" xml:space="preserve">
+    <value>He isn't interested in bonding.</value>
+  </data>
+  <data name="Teenagers_are_difficult_mentally_ill_or_not_Youve_got_to_try_Ryan_For_your_family_You_know_how_important_it_is" xml:space="preserve">
+    <value>Teenagers are difficult, mentally ill or not. You've got to try, Ryan. For your family. You know how important it is.</value>
+  </data>
+  <data name="He_wouldnt_even_tell_me_what_those_bullies_were_doing_to_him_at_school_Or_who_they_were_He_just_said_he_needed_to_get_away_from_them" xml:space="preserve">
+    <value>He wouldn't even tell me what those bullies were doing to him at school. Or who they were. He just said he needed to get away from them.</value>
+  </data>
+  <data name="I_still_dont_know_why_why_he_did_what_he_did" xml:space="preserve">
+    <value>I still don't know why... why he did what he did.</value>
+  </data>
+  <data name="To_the_bullies" xml:space="preserve">
+    <value>To the bullies?</value>
+  </data>
+  <data name="Yes_Like_to_purposefully_hurt_somebody_the_way_he_did_that_one_kid_the_kid_had_to_have_done_something_pretty_awful_to_him" xml:space="preserve">
+    <value>Yes. Like, to purposefully hurt somebody the way he did that one kid... the kid had to have done something pretty awful to him.</value>
+  </data>
+  <data name="How_bad_were_his_injuries_exactly" xml:space="preserve">
+    <value>How bad were his injuries, exactly?</value>
+  </data>
+  <data name="Hes_just_getting_out_of_the_hospital_today_They_thought_he_might_have_needed_plastic_surgery_for_his_face" xml:space="preserve">
+    <value>He's just getting out of the hospital today. They thought he might have needed plastic surgery for his face.</value>
+  </data>
+  <data name="And_Landon_still_hasnt_said_a_thing_Just_that_he_had_it_coming_He_didnt_even_seem_sorry_about_it" xml:space="preserve">
+    <value>And Landon still hasn't said a thing. Just that he had it coming. He didn't even seem sorry about it.</value>
+  </data>
+  <data name="Well_its_difficult_to_talk_about_the_people_that_have_hurt_us_especially_for_a_teenager" xml:space="preserve">
+    <value>Well... it's difficult to talk about the people that have hurt us, especially for a teenager.</value>
+  </data>
+  <data name="If_you_really_want_to_connect_youll_just_need_to_try_harder_to_reach_out_Maybe_hed_like_a_trip_to_the_movies_Or_the_park" xml:space="preserve">
+    <value>If you really want to connect, you'll just need to try harder to reach out. Maybe he'd like a trip to the movies? Or the park?</value>
+  </data>
+  <data name="Maybe_Who_knows_what_he_likes_anymore" xml:space="preserve">
+    <value>Maybe... Who knows what he likes anymore.</value>
+  </data>
+  <data name="Landon_has_always_been_troubled_as_long_as_I_can_remember" xml:space="preserve">
+    <value>Landon has always been troubled, as long as I can remember.</value>
+  </data>
+  <data name="What_do_you_mean_by_troubled" xml:space="preserve">
+    <value>What do you mean by "troubled"?</value>
+  </data>
+  <data name="I_mean_hes_always_been_difficult_to_reach_Even_when_he_was_a_baby" xml:space="preserve">
+    <value>I mean... he's always been difficult to reach. Even when he was a baby.</value>
+  </data>
+  <data name="All_he_did_was_stare_Stare_or_cry_when_he_was_hungry_It_was_unnerving" xml:space="preserve">
+    <value>All he did was stare. Stare or cry when he was hungry. It was unnerving.</value>
+  </data>
+  <data name="You_mean_to_say_he_was_slow_to_show_emotion" xml:space="preserve">
+    <value>You mean to say he was slow to show emotion?</value>
+  </data>
+  <data name="Well_yes_but_it_was_more_than_that_I_mean_theres_something_from_when_he_was_younger_and_at_the_time_I_thought_maybe_I_was_imagining_it_but_now" xml:space="preserve">
+    <value>Well, yes, but it was more than that I mean, there's something, from when he was younger, and at the time I thought maybe I was imagining it, but now...</value>
+  </data>
+  <data name="What_are_you_talking_about" xml:space="preserve">
+    <value>What are you talking about?</value>
+  </data>
+  <data name="I_was_the_first_one_to_ever_see_him_smile" xml:space="preserve">
+    <value>I was the first one to ever see him smile.</value>
+  </data>
+  <data name="Well_thats_wonderful" xml:space="preserve">
+    <value>Well, that's wonderful.</value>
+  </data>
+  <data name="No_no_it_wasnt_wonderful_It_was_unsettling" xml:space="preserve">
+    <value>No, no, it wasn't wonderful. It was... unsettling.</value>
+  </data>
+  <data name="Most_babies_their_first_smile_happens_because_they_hear_their_mothers_voice_or_somebody_makes_a_silly_face_at_them" xml:space="preserve">
+    <value>Most babies, their first smile happens because they hear their mother's voice, or somebody makes a silly face at them.</value>
+  </data>
+  <data name="Not_Landon" xml:space="preserve">
+    <value>Not Landon.</value>
+  </data>
+  <data name="What_was_it_for_Landon" xml:space="preserve">
+    <value>What was it for Landon?</value>
+  </data>
+  <data name="Cynthia_was_just_out_getting_the_mail_when_it_happened_I_was_in_the_kitchen_getting_breakfast_ready_I_was_going_to_make_pancakes" xml:space="preserve">
+    <value>Cynthia was just out getting the mail when it happened. I was in the kitchen, getting breakfast ready. I was going to make pancakes.</value>
+  </data>
+  <data name="Anyways_I_opened_up_one_of_the_cabinets_higher_up_trying_to_find_a_good_frying_pan" xml:space="preserve">
+    <value>Anyways, I opened up one of the cabinets higher up, trying to find a good frying pan.</value>
+  </data>
+  <data name="I_couldnt_quite_reach_the_pan_I_wanted_so_I_set_Landon_down_on_the_counter_for_just_a_minute_and_reached_up" xml:space="preserve">
+    <value>I couldn't quite reach the pan I wanted, so I set Landon down on the counter for just a minute and reached up.</value>
+  </data>
+  <data name="The_pan_came_crashing_down_right_next_to_Landon_I_panicked_and_threw_my_hand_out" xml:space="preserve">
+    <value>The pan came crashing down, right next to Landon. I panicked and threw my hand out.</value>
+  </data>
+  <data name="I_hit_the_pan_out_of_the_way_in_time_but_not_before_it_broke_two_of_my_fingers" xml:space="preserve">
+    <value>I hit the pan out of the way in time, but not before it broke two of my fingers.</value>
+  </data>
+  <data name="It_made_the_most_awful_sound" xml:space="preserve">
+    <value>It made the most awful sound.</value>
+  </data>
+  <data name="And_Landon_cried" xml:space="preserve">
+    <value>And Landon cried?</value>
+  </data>
+  <data name="No_no_thats_just_it_Most_babies_would_have_started_screaming_the_second_the_loud_sounds_started_But_not_Landon" xml:space="preserve">
+    <value>No, no, that's just it. Most babies would have started screaming the second the loud sounds started. But not Landon.</value>
+  </data>
+  <data name="He_was_making_a_funny_sound_and_fidgeting_a_little_bit_and_for_a_second_I_thought_maybe_hed_somehow_been_hurt_or_was_getting_ready_to_cry_but_no" xml:space="preserve">
+    <value>He was making a funny sound and fidgeting a little bit, and for a second I thought maybe he'd somehow been hurt or was getting ready to cry, but no.</value>
+  </data>
+  <data name="He_was_giggling_It_was_the_first_time_Id_ever_seen_him_smile_or_laugh_And_he_just_kept_going" xml:space="preserve">
+    <value>He was giggling. It was the first time I'd ever seen him smile, or laugh. And he just kept going.</value>
+  </data>
+  <data name="Im_standing_there_screaming_in_pain_and_hes_laughing_He_thought_it_was_hilarious" xml:space="preserve">
+    <value>I'm standing there, screaming in pain, and he's laughing. He thought it was hilarious.</value>
+  </data>
+  <data name="Maybe_you_were_making_a_funny_face" xml:space="preserve">
+    <value>Maybe you were making a funny face?</value>
+  </data>
+  <data name="Thats_what_Cynthia_thought_when_I_told_her_but_I_dont_think_thats_it_I_think_he_genuinely_liked_it" xml:space="preserve">
+    <value>That's what Cynthia thought when I told her, but I don't think that's it. I think he genuinely liked it.</value>
+  </data>
+  <data name="The_loud_noises" xml:space="preserve">
+    <value>The loud noises?</value>
+  </data>
+  <data name="The_screaming_The_pain_Sometimes_I_wonder_if_he_still_does" xml:space="preserve">
+    <value>The screaming. The pain. Sometimes I wonder if he still does.</value>
+  </data>
+  <data name="That_psychiatrist_hes_seeing_doesnt_know_Landon_like_I_do_He_hasnt_seen_what_Ive_seen_him_doing" xml:space="preserve">
+    <value>That psychiatrist he's seeing doesn't know Landon like I do. He hasn't seen what I've seen him doing.</value>
+  </data>
+  <data name="What_did_you_see" xml:space="preserve">
+    <value>What did you see?</value>
+  </data>
+  <data name="Its_hard_to_explain_And_Im_not_really_proud_of_how_I_found_it" xml:space="preserve">
+    <value>It's... hard to explain. And I'm not really proud of how I found it.</value>
+  </data>
+  <data name="Found_what_Ryan" xml:space="preserve">
+    <value>Found what, Ryan?</value>
+  </data>
+  <data name="I_You_have_to_understand_that_he_never_talks_to_me_And_after_everything_thats_happened_with_the_bullying_and_the_switching_schools_and_the_secrets" xml:space="preserve">
+    <value>I... You have to understand that he never talks to me. And after everything that's happened, with the bullying and the switching schools and the secrets...</value>
+  </data>
+  <data name="I_just_wanted_to_understand" xml:space="preserve">
+    <value>I just wanted to understand.</value>
+  </data>
+  <data name="See_pretty_much_every_weekend_when_he_thinks_nobody_is_looking_Landon_goes_off_into_the_belt_of_forest_behind_our_home_and_doesnt_come_back_for_a_couple_of_hours" xml:space="preserve">
+    <value>See, pretty much every weekend, when he thinks nobody is looking, Landon goes off into the belt of forest behind our home, and doesn't come back for a couple of hours.</value>
+  </data>
+  <data name="I_had_no_idea_what_he_was_doing_back_there_I_thought_maybe_he_was_meeting_a_girl_or_maybe_doing_drugs_with_some_friends_I_didnt_know_about" xml:space="preserve">
+    <value>I had no idea what he was doing back there. I thought maybe he was meeting a girl, or maybe doing drugs with some friends I didn't know about.</value>
+  </data>
+  <data name="I_dont_know_that_I_really_would_have_minded_if_that_was_what_he_was_doing_back_there_because_at_least_that_would_mean_hes_spending_time_with_someone" xml:space="preserve">
+    <value>I don't know that I really would have minded if that was what he was doing back there, because at least that would mean he's spending time with someone.</value>
+  </data>
+  <data name="But_its_the_kind_of_thing_I_think_a_father_should_know_about" xml:space="preserve">
+    <value>But it's the kind of thing I think a father should know about.</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>Sure.</value>
+  </data>
+  <data name="So_one_Saturday_afternoon_I_decided_to_follow_after_him_I_waited_until_he_left_the_house_and_scaled_over_the_back_fence_and_then_I_went" xml:space="preserve">
+    <value>So, one Saturday afternoon, I decided to follow after him. I waited until he left the house and scaled over the back fence, and then I went.</value>
+  </data>
+  <data name="He_walked_for_about_twenty_minutes_back_into_the_forest_and_then_he_stopped_at_this_little_clearing_in_the_trees" xml:space="preserve">
+    <value>He walked for about twenty minutes back into the forest, and then he stopped at this little clearing in the trees.</value>
+  </data>
+  <data name="I_hid_behind_one_of_the_big_oaks_while_he_bent_down_over_something" xml:space="preserve">
+    <value>I hid behind one of the big oaks while he bent down over something.</value>
+  </data>
+  <data name="He_wasnt_meeting_anybody_after_all_He_just_seemed_to_be_working_away_at_something_like_he_was_really_focused" xml:space="preserve">
+    <value>He wasn't meeting anybody after all. He just seemed to be working away at something, like he was really focused.</value>
+  </data>
+  <data name="I_felt_bad_watching_him_but_I_also_didnt_want_to_interrupt_So_I_just_watched" xml:space="preserve">
+    <value>I felt bad watching him, but I also didn't want to interrupt. So I just watched.</value>
+  </data>
+  <data name="And_then" xml:space="preserve">
+    <value>And then?</value>
+  </data>
+  <data name="After_a_while_he_seemed_to_get_bored_He_got_up_and_left_After_I_was_sure_he_wasnt_going_to_come_back_I_got_up_so_I_could_get_a_closer_look_at_his_project" xml:space="preserve">
+    <value>After a while, he seemed to get bored. He got up and left. After I was sure he wasn't going to come back, I got up so I could get a closer look at his project.</value>
+  </data>
+  <data name="From_far_away_it_looked_like_like_maybe_dolls_or_something__Like_he_was_playing_with_dolls_or_stuffed_animals" xml:space="preserve">
+    <value>From far away, it looked like... like maybe dolls, or something ? Like he was playing with dolls, or stuffed animals?</value>
+  </data>
+  <data name="But_then" xml:space="preserve">
+    <value>But then...</value>
+  </data>
+  <data name="then_I_got_closer_and" xml:space="preserve">
+    <value>...then I got closer, and...</value>
+  </data>
+  <data name="and_I_realized" xml:space="preserve">
+    <value>...and I realized...</value>
+  </data>
+  <data name="They_werent_dolls" xml:space="preserve">
+    <value>They weren't dolls?</value>
+  </data>
+  <data name="No_Not_dolls_Animals_Corpses_Bloody_open_bodies_of_squirrels_and_rabbits_baking_in_the_sun_I_almost_threw_up" xml:space="preserve">
+    <value>No. Not dolls. Animals. Corpses. Bloody, open bodies of squirrels and rabbits, baking in the sun... I almost threw up.</value>
+  </data>
+  <data name="But_what_was_he_doing_with_them" xml:space="preserve">
+    <value>But what was he doing with them?</value>
+  </data>
+  <data name="I_couldnt_tell_you_He_had_a_bunch_of_sticks_and_sharpened_rocks_around_and_hed_pulled_the_guts_out_of_some_of_the_poor_little_creatures" xml:space="preserve">
+    <value>I couldn't tell you. He had a bunch of sticks and sharpened rocks around, and he'd pulled the guts out of some of the poor little creatures.</value>
+  </data>
+  <data name="It_was_like_he_was_examining_them_Playing_surgeon" xml:space="preserve">
+    <value>It was like he was examining them. Playing surgeon.</value>
+  </data>
+  <data name="Ryan_I_cant_lie_to_you_Thats_thats_concerning_behavior_Is_he_still_doing_that" xml:space="preserve">
+    <value>Ryan, I can't lie to you. That's... that's concerning behavior. Is he still doing that?</value>
+  </data>
+  <data name="I_think_thats_the_most_disturbing_part_about_all_of_this_for_me_strangely_enough" xml:space="preserve">
+    <value>I think that's the most disturbing part about all of this for me, strangely enough.</value>
+  </data>
+  <data name="He_stopped_That_same_day_that_I_went_after_him_he_quit_going_out_on_the_weekends" xml:space="preserve">
+    <value>He stopped. That same day that I went after him, he quit going out on the weekends.</value>
+  </data>
+  <data name="Started_staying_at_home_in_his_room_like_he_does_mosts_school_nights" xml:space="preserve">
+    <value>Started staying at home in his room, like he does mosts school nights.</value>
+  </data>
+  <data name="Its_like_he_knew_hed_been_followed" xml:space="preserve">
+    <value>It's like he knew he'd been followed.</value>
+  </data>
+  <data name="Perhaps_Cynthia_told_him" xml:space="preserve">
+    <value>Perhaps Cynthia told him?</value>
+  </data>
+  <data name="Maybe_but_I_dont_think_so_I_dont_think_she_knew_Id_gone_out" xml:space="preserve">
+    <value>Maybe, but I don't think so. I don't think she knew I'd gone out.</value>
+  </data>
+  <data name="But_he_never_said_anything_to_you_about_it" xml:space="preserve">
+    <value>But he never said anything to you about it?</value>
+  </data>
+  <data name="No_never" xml:space="preserve">
+    <value>No, never.</value>
+  </data>
+  <data name="And_to_be_honest_with_you" xml:space="preserve">
+    <value>And, to be honest with you...</value>
+  </data>
+</root>

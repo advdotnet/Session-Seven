@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SessionSeven</RootNamespace>
+    <AssemblyName>GameLogic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>WindowsGL</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="actors\Mouse.cs" />
+    <Compile Include="actors\RyanVoice.cs" />
+    <Compile Include="actors\Scene.cs" />
+    <Compile Include="actors\Ryan.cs" />
+    <Compile Include="base\Components\BatteryCompartment.cs" />
+    <Compile Include="base\Components\RandomCountdown.cs" />
+    <Compile Include="base\Components\Score.cs" />
+    <Compile Include="base\Components\DroneDisplacement.cs" />
+    <Compile Include="base\Components\TracerLine.cs" />
+    <Compile Include="base\Components\Givable.cs" />
+    <Compile Include="base\Components\Combinable.cs" />
+    <Compile Include="base\CutsceneDisposeControl.cs" />
+    <Compile Include="base\Scene.cs" />
+    <Compile Include="base\Components\ShadowRectangle.cs" />
+    <Compile Include="content\tree.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tree.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gui\ScreenText.cs" />
+    <Compile Include="items\RFIDBook.cs" />
+    <Compile Include="items\BatteryB.cs" />
+    <Compile Include="items\BatteryA.cs" />
+    <Compile Include="items\SawKit.cs" />
+    <Compile Include="Properties\Basement.Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Basement.Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Items.Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Items.Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources_Session_1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_7.Designer.cs">
+      <DependentUpon>Resources_Session_7.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_6.Designer.cs">
+      <DependentUpon>Resources_Session_6.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_5.Designer.cs">
+      <DependentUpon>Resources_Session_5.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_4.Designer.cs">
+      <DependentUpon>Resources_Session_4.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_3.Designer.cs">
+      <DependentUpon>Resources_Session_3.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources_Session_2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources_Session_2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rooms\basement\HazelnutsOnFloor.cs" />
+    <Compile Include="rooms\basement\DrillingMachineUsed.cs" />
+    <Compile Include="rooms\basement\DrillingMachineCable.cs" />
+    <Compile Include="rooms\basement\DrillingMachine.cs" />
+    <Compile Include="rooms\basement\CabinetSawKit.cs" />
+    <Compile Include="rooms\basement\DrawerLeft.cs" />
+    <Compile Include="gui\interaction\AnyObject.cs" />
+    <Compile Include="items\BatonWithString.cs" />
+    <Compile Include="items\CrowbarBroken.cs" />
+    <Compile Include="items\Paperclips.cs" />
+    <Compile Include="items\Pills.cs" />
+    <Compile Include="items\Baton.cs" />
+    <Compile Include="items\Flashlight.cs" />
+    <Compile Include="items\Blanket.cs" />
+    <Compile Include="items\AnimalSkeleton.cs" />
+    <Compile Include="items\WoodenBox.cs" />
+    <Compile Include="items\Paperclip.cs" />
+    <Compile Include="items\RFIDAntennaBoxCabinet.cs" />
+    <Compile Include="items\RFIDAntennaBoxShelf.cs" />
+    <Compile Include="items\RFIDAntenna.cs" />
+    <Compile Include="items\Hammer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rooms\basement\BoxScrews.cs" />
+    <Compile Include="rooms\basement\BoxWritingMaterials.cs" />
+    <Compile Include="rooms\basement\Receipt.cs" />
+    <Compile Include="rooms\basement\CabinetLock.cs" />
+    <Compile Include="rooms\basement\CabinetLeftDoor.cs" />
+    <Compile Include="rooms\basement\Carpet.cs" />
+    <Compile Include="rooms\basement\Cactus.cs" />
+    <Compile Include="rooms\basement\ShelfSingleBook.cs" />
+    <Compile Include="rooms\basement\ShelfComicBox.cs" />
+    <Compile Include="rooms\basement\SocketsLeft.cs" />
+    <Compile Include="rooms\basement\WoodenBox.cs" />
+    <Compile Include="rooms\basement\Screwdriver.cs" />
+    <Compile Include="rooms\basement\Hammer.cs" />
+    <Compile Include="rooms\basement\WoodenPanel.cs" />
+    <Compile Include="rooms\basement\Crumbs.cs" />
+    <Compile Include="rooms\basement\GuitarStrings.cs" />
+    <Compile Include="rooms\basement\RFIDAntennaShelf.cs" />
+    <Compile Include="rooms\basement\RFIDAntennaCabinet.cs" />
+    <Compile Include="rooms\jailcell\Foreground.cs" />
+    <Compile Include="rooms\jailcell\Scene.cs" />
+    <Compile Include="rooms\office\RyanEyes.cs" />
+    <Compile Include="rooms\paddedcell\Scene.cs" />
+    <Compile Include="rooms\sunset\Scene.cs" />
+    <Compile Include="sessions\SessionSeven.cs" />
+    <Compile Include="sessions\SessionSix.cs" />
+    <Compile Include="sessions\SessionFive.cs" />
+    <Compile Include="sessions\SessionFour.cs" />
+    <Compile Include="sessions\SessionThree.cs" />
+    <Compile Include="sessions\SessionTwo.cs" />
+    <Compile Include="sessions\SessionOne.cs" />
+    <Compile Include="gui\dialog\Options.cs" />
+    <Compile Include="gui\Fader.cs" />
+    <Compile Include="gui\dialog\Menu.cs" />
+    <Compile Include="gui\dialog\Scene.cs" />
+    <Compile Include="gui\interaction\RandomTexts.cs" />
+    <Compile Include="gui\interaction\Verbs.cs" />
+    <Compile Include="gui\Mouse.cs" />
+    <Compile Include="gui\positionselection\IPositionable.cs" />
+    <Compile Include="gui\positionselection\Scene.cs" />
+    <Compile Include="gui\Scene.cs" />
+    <Compile Include="gui\interaction\Scene.cs" />
+    <Compile Include="gui\interaction\ActionTextLabel.cs" />
+    <Compile Include="gui\inventory\Inventory.cs" />
+    <Compile Include="items\BandagesCut.cs" />
+    <Compile Include="items\BandageStrip.cs" />
+    <Compile Include="items\DrugPrescriptionRyan.cs" />
+    <Compile Include="items\TherapyLog.cs" />
+    <Compile Include="items\Hazelnuts.cs" />
+    <Compile Include="items\Drone.cs" />
+    <Compile Include="items\DronePackage.cs" />
+    <Compile Include="items\Crowbar.cs" />
+    <Compile Include="items\RemoteControl.cs" />
+    <Compile Include="items\GuitarStrings.cs" />
+    <Compile Include="items\Envelope.cs" />
+    <Compile Include="items\DrawerKey.cs" />
+    <Compile Include="items\base\ItemBase.cs" />
+    <Compile Include="items\Portrait.cs" />
+    <Compile Include="items\Screwdriver.cs" />
+    <Compile Include="items\Bandages.cs" />
+    <Compile Include="rooms\basement\Workbench.cs" />
+    <Compile Include="rooms\basement\SceneTransparentFloor.cs" />
+    <Compile Include="rooms\basement\ToDoBoard.cs" />
+    <Compile Include="rooms\basement\RFIDAntennaFloor.cs" />
+    <Compile Include="rooms\basement\Guitar.cs" />
+    <Compile Include="rooms\basement\ShelfBlanketFlashlight.cs" />
+    <Compile Include="rooms\basement\ShelfBox.cs" />
+    <Compile Include="rooms\basement\ShelfRFIDBook.cs" />
+    <Compile Include="rooms\basement\ShelfEngineeringBooks.cs" />
+    <Compile Include="rooms\basement\SocketsCenter.cs" />
+    <Compile Include="rooms\basement\Nut.cs" />
+    <Compile Include="rooms\basement\MissingTool.cs" />
+    <Compile Include="rooms\basement\Crowbar.cs" />
+    <Compile Include="rooms\basement\MouseHole.cs" />
+    <Compile Include="rooms\basement\Hazelnuts.cs" />
+    <Compile Include="rooms\basement\Shelf.cs" />
+    <Compile Include="rooms\basement\ToolBar.cs" />
+    <Compile Include="rooms\basement\DronePackage.cs" />
+    <Compile Include="gui\positionselection\Label.cs" />
+    <Compile Include="rooms\basement\FamilyPortrait.cs" />
+    <Compile Include="rooms\basement\BloodOnFloor.cs" />
+    <Compile Include="rooms\basement\LightSwitch.cs" />
+    <Compile Include="rooms\basement\Lights.cs" />
+    <Compile Include="rooms\basement\DrawerRight.cs" />
+    <Compile Include="rooms\basement\MedicalCabinet.cs" />
+    <Compile Include="rooms\basement\Door.cs" />
+    <Compile Include="actors\BlooddropEmitter.cs" />
+    <Compile Include="rooms\basement\Desk.cs" />
+    <Compile Include="rooms\basement\ModemLight.cs" />
+    <Compile Include="rooms\basement\Modem.cs" />
+    <Compile Include="rooms\basement\Drone.cs" />
+    <Compile Include="rooms\basement\CabinetRightDoor.cs" />
+    <Compile Include="rooms\basement\RyanLying.cs" />
+    <Compile Include="rooms\basement\Portrait.cs" />
+    <Compile Include="rooms\basement\Foreground.cs" />
+    <Compile Include="rooms\basement\Window.cs" />
+    <Compile Include="rooms\basement\Crates.cs" />
+    <Compile Include="rooms\basement\GuitarCase.cs" />
+    <Compile Include="rooms\basement\Scene.cs" />
+    <Compile Include="sessions\Scene.cs" />
+    <Compile Include="items\Scissors.cs" />
+    <Compile Include="menu\MainMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rooms\office\Water.cs" />
+    <Compile Include="rooms\office\Table.cs" />
+    <Compile Include="rooms\office\Ryan.cs" />
+    <Compile Include="rooms\office\Therapist.cs" />
+    <Compile Include="rooms\office\Scene.cs" />
+    <Compile Include="rooms\letter\Scene.cs" />
+    <Compile Include="rooms\title\Scene.cs" />
+    <Compile Include="Tree.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tree.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SessionSeven.cs" />
+    <Content Include="content\bin\**\*.*">
+      <Link>content\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ContentAnalyzer">
+      <HintPath>..\..\lib\ContentAnalyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="FNA">
+      <HintPath>..\..\lib\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="STACK">
+      <HintPath>..\..\lib\STACK.dll</HintPath>
+    </Reference>
+    <Reference Include="StarFinder">
+      <HintPath>..\..\lib\StarFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TomShane.Neoforce.Controls">
+      <HintPath>..\..\lib\TomShane.Neoforce.Controls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\tree.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>tree.cs</LastGenOutput>
+    </Content>
+    <Content Include="content\build.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>build.bat</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\build.bat">
+      <DependentUpon>build.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Tree.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Tree.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Basement.Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Basement.Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Items.Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Items.Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_1.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_6.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_7.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_7.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_6.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_6.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_5.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources_Session_2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources_Session_2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
