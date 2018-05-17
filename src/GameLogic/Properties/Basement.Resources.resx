@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="My_hand_is_wounded" xml:space="preserve">
+    <value>My hand is wounded.</value>
+  </data>
+  <data name="My_hand_is_losing_blood" xml:space="preserve">
+    <value>My hand is losing blood.</value>
+  </data>
+  <data name="My_hand_is_still_losing_blood" xml:space="preserve">
+    <value>My hand is still losing blood.</value>
+  </data>
+  <data name="I_need_to_dress_my_hand" xml:space="preserve">
+    <value>I need to dress my hand.</value>
+  </data>
+  <data name="I_should_have_a_look_at_the_medical_cabinet_over_there_to_dress_my_wound" xml:space="preserve">
+    <value>I should have a look at the medical cabinet over there to dress my wound.</value>
+  </data>
+  <data name="I_should_use_those_bandages_to_dress_my_wound" xml:space="preserve">
+    <value>I should use those bandages to dress my wound.</value>
+  </data>
+  <data name="drop_of_blood" xml:space="preserve">
+    <value>drop of blood</value>
+  </data>
+  <data name="Im_losing_blood" xml:space="preserve">
+    <value>I'm losing blood.</value>
+  </data>
+  <data name="bloodstains" xml:space="preserve">
+    <value>bloodstains</value>
+  </data>
+  <data name="How_the_hell_did_that_happen" xml:space="preserve">
+    <value>How the hell did that happen?</value>
+  </data>
+  <data name="box" xml:space="preserve">
+    <value>box</value>
+  </data>
+  <data name="There_are_just_some_screws_and_nail_in_there" xml:space="preserve">
+    <value>There are just some screws and nail in there.</value>
+  </data>
+  <data name="I_dont_need_them" xml:space="preserve">
+    <value>I don't need them.</value>
+  </data>
+  <data name="box_with_screws_and_nails" xml:space="preserve">
+    <value>box with screws and nails</value>
+  </data>
+  <data name="Im_keeping_some_screws_and_nails_in_this_box" xml:space="preserve">
+    <value>I'm keeping some screws and nails in this box.</value>
+  </data>
+  <data name="Lots_of_gnawed_off_paper_and_plastic" xml:space="preserve">
+    <value>Lots of gnawed off paper and plastic...</value>
+  </data>
+  <data name="Also_there_is_a_single_paper_clip_in_there" xml:space="preserve">
+    <value>Also there is a single paper clip in there.</value>
+  </data>
+  <data name="box_with_writing_materials" xml:space="preserve">
+    <value>box with writing materials</value>
+  </data>
+  <data name="Cynthia_stores_some_writing_materials_in_this_box" xml:space="preserve">
+    <value>Cynthia stores some writing materials in this box.</value>
+  </data>
+  <data name="There_are_some_bite_marks_by_a_rat_or_something" xml:space="preserve">
+    <value>There are some bite marks by a rat or something.</value>
+  </data>
+  <data name="left_cabinet_door" xml:space="preserve">
+    <value>left cabinet door</value>
+  </data>
+  <data name="That_didnt_do_anything" xml:space="preserve">
+    <value>That didn't do anything.</value>
+  </data>
+  <data name="I_picked_the_lock_already" xml:space="preserve">
+    <value>I picked the lock already.</value>
+  </data>
+  <data name="There_is_no_way_I_could_move_that_cabinet_all_by_myself" xml:space="preserve">
+    <value>There is no way I could move that cabinet all by myself.</value>
+  </data>
+  <data name="This_cabinet_door_has_a_lock_on_it" xml:space="preserve">
+    <value>This cabinet door has a lock on it.</value>
+  </data>
+  <data name="The_left_cabinet_door" xml:space="preserve">
+    <value>The left cabinet door.</value>
+  </data>
+  <data name="It_is_open_already" xml:space="preserve">
+    <value>It is open already.</value>
+  </data>
+  <data name="Cant_open_the_door_as_long_as_it_is_locked" xml:space="preserve">
+    <value>Can't open the door as long as it is locked.</value>
+  </data>
+  <data name="Whats_that" xml:space="preserve">
+    <value>What's that?</value>
+  </data>
+  <data name="This_is_an_old_receipt_for_new_tools_we_bought_when_moving_in" xml:space="preserve">
+    <value>This is an old receipt for new tools we bought when moving in.</value>
+  </data>
+  <data name="Lets_see" xml:space="preserve">
+    <value>Let's see...</value>
+  </data>
+  <data name="One_hammer_Check_Got_it_with_me" xml:space="preserve">
+    <value>One hammer. Check. Got it with me.</value>
+  </data>
+  <data name="Two_bench_vises_Check" xml:space="preserve">
+    <value>Two bench vises. Check.</value>
+  </data>
+  <data name="Drilling_machine_Check" xml:space="preserve">
+    <value>Drilling machine. Check.</value>
+  </data>
+  <data name="Three_screwdrivers_Check_Got_one_of_them_with_me" xml:space="preserve">
+    <value>Three screwdrivers. Check. Got one of them with me.</value>
+  </data>
+  <data name="Four_wrenches" xml:space="preserve">
+    <value>Four wrenches.</value>
+  </data>
+  <data name="Wait_a_minute" xml:space="preserve">
+    <value>Wait a minute...</value>
+  </data>
+  <data name="missing_wrench" xml:space="preserve">
+    <value>missing wrench</value>
+  </data>
+  <data name="It_is_closed_already" xml:space="preserve">
+    <value>It is closed already.</value>
+  </data>
+  <data name="_lock" xml:space="preserve">
+    <value>lock</value>
+  </data>
+  <data name="The_cable_is_not_long_enough" xml:space="preserve">
+    <value>The cable is not long enough.</value>
+  </data>
+  <data name="No_power" xml:space="preserve">
+    <value>No power.</value>
+  </data>
+  <data name="This_could_work_actually" xml:space="preserve">
+    <value>This could work actually.</value>
+  </data>
+  <data name="We_learned_how_these_locks_function_and_how_to_pick_them_in_university" xml:space="preserve">
+    <value>We learned how these locks function and how to pick them in university.</value>
+  </data>
+  <data name="Got_it" xml:space="preserve">
+    <value>Got it.</value>
+  </data>
+  <data name="We_learned_how_these_locks_work_and_how_to_pick_them_in_university" xml:space="preserve">
+    <value>We learned how these locks work and how to pick them in university.</value>
+  </data>
+  <data name="I_need_a_second_paper_clip_however" xml:space="preserve">
+    <value>I need a second paper clip however.</value>
+  </data>
+  <data name="I_need_a_second_paper_clip" xml:space="preserve">
+    <value>I need a second paper clip.</value>
+  </data>
+  <data name="This_key_does_not_fit" xml:space="preserve">
+    <value>This key does not fit.</value>
+  </data>
+  <data name="Its_locked" xml:space="preserve">
+    <value>It's locked.</value>
+  </data>
+  <data name="Cant_move_it_as_long_as_it_is_locked" xml:space="preserve">
+    <value>Can't move it as long as it is locked.</value>
+  </data>
+  <data name="I_need_a_key_or_appropriate_tooling" xml:space="preserve">
+    <value>I need a key or appropriate tooling.</value>
+  </data>
+  <data name="right_cabinet_door" xml:space="preserve">
+    <value>right cabinet door</value>
+  </data>
+  <data name="Our_old_cabinet" xml:space="preserve">
+    <value>Our old cabinet.</value>
+  </data>
+  <data name="bimetal_hole_saw_kit" xml:space="preserve">
+    <value>bi-metal hole saw kit</value>
+  </data>
+  <data name="I_better_take_that_with_me_first" xml:space="preserve">
+    <value>I better take that with me, first.</value>
+  </data>
+  <data name="A_bimetal_hole_saw_kit" xml:space="preserve">
+    <value>A bi-metal hole saw kit.</value>
+  </data>
+  <data name="cactus" xml:space="preserve">
+    <value>cactus</value>
+  </data>
+  <data name="Talking_to_plants_is_Cynthias_job" xml:space="preserve">
+    <value>Talking to plants is Cynthia's job.</value>
+  </data>
+  <data name="Has_Cynthia_been_watering_this_regularly" xml:space="preserve">
+    <value>Has Cynthia been watering this regularly?</value>
+  </data>
+  <data name="Cacti_are_so_durable" xml:space="preserve">
+    <value>Cacti are so durable.</value>
+  </data>
+  <data name="Ouch" xml:space="preserve">
+    <value>Ouch!</value>
+  </data>
+  <data name="carpet" xml:space="preserve">
+    <value>carpet</value>
+  </data>
+  <data name="Cynthia_would_kill_me" xml:space="preserve">
+    <value>Cynthia would kill me.</value>
+  </data>
+  <data name="No_time_to_play" xml:space="preserve">
+    <value>No time to play.</value>
+  </data>
+  <data name="Cynthia_would_kill_me_if_she_could_see_the_mess_Ive_made_on_her_carpet" xml:space="preserve">
+    <value>Cynthia would kill me if she could see the mess I've made on her carpet.</value>
+  </data>
+  <data name="I_hope_shes_okay" xml:space="preserve">
+    <value>...I hope she's okay.</value>
+  </data>
+  <data name="crates" xml:space="preserve">
+    <value>crates</value>
+  </data>
+  <data name="They_are_empty_We_just_kept_them_if_we_need_to_move_again" xml:space="preserve">
+    <value>They are empty. We just kept them if we need to move again.</value>
+  </data>
+  <data name="Man_moving_makes_a_mess" xml:space="preserve">
+    <value>Man, moving makes a mess.</value>
+  </data>
+  <data name="I_dont_see_the_point_in_that_There_is_nothing_underneath" xml:space="preserve">
+    <value>I don't see the point in that. There is nothing underneath.</value>
+  </data>
+  <data name="crowbar" xml:space="preserve">
+    <value>crowbar</value>
+  </data>
+  <data name="My_good_old_crowbar" xml:space="preserve">
+    <value>My good old crowbar.</value>
+  </data>
+  <data name="You_will_never_know_when_this_will_come_in_handy" xml:space="preserve">
+    <value>You will never know when this will come in handy.</value>
+  </data>
+  <data name="crumbs" xml:space="preserve">
+    <value>crumbs</value>
+  </data>
+  <data name="Since_when_has_Cynthia_allowed_crumbs_into_her_house" xml:space="preserve">
+    <value>Since when has Cynthia allowed crumbs into her house?</value>
+  </data>
+  <data name="Looks_like_plastic_and_paper" xml:space="preserve">
+    <value>Looks like plastic and paper.</value>
+  </data>
+  <data name="desk" xml:space="preserve">
+    <value>desk</value>
+  </data>
+  <data name="Its_Cynthias_work_desk" xml:space="preserve">
+    <value>It's Cynthia's work desk.</value>
+  </data>
+  <data name="door" xml:space="preserve">
+    <value>door</value>
+  </data>
+  <data name="The_door_is_open_already" xml:space="preserve">
+    <value>The door is open already.</value>
+  </data>
+  <data name="I_cant_cut_the_door_open_with_a_pair_of_scissors" xml:space="preserve">
+    <value>I can't cut the door open with a pair of scissors.</value>
+  </data>
+  <data name="Cant_exert_enough_force_on_this_type_of_lock" xml:space="preserve">
+    <value>Can't exert enough force on this type of lock.</value>
+  </data>
+  <data name="This_didnt_do_anything_besides_heating_the_drill_up_It_almost_glowed" xml:space="preserve">
+    <value>This didn't do anything besides heating the drill up. It almost glowed.</value>
+  </data>
+  <data name="No_need_to_drill_any_more" xml:space="preserve">
+    <value>No need to drill any more.</value>
+  </data>
+  <data name="There_are_no_screws_visible" xml:space="preserve">
+    <value>There are no screws visible.</value>
+  </data>
+  <data name="No_I_spent_so_much_time_trying_to_escape_from_here" xml:space="preserve">
+    <value>No. I spent so much time trying to escape from here.</value>
+  </data>
+  <data name="This_door_is_closed_already" xml:space="preserve">
+    <value>This door is closed already.</value>
+  </data>
+  <data name="Argh_this_shouldnt_be_locked" xml:space="preserve">
+    <value>Argh, this shouldn't be locked.</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello?!</value>
+  </data>
+  <data name="This_is_a_massive_steel_door" xml:space="preserve">
+    <value>This is a massive steel door.</value>
+  </data>
+  <data name="HELLO_IS_ANYBODY_THERE" xml:space="preserve">
+    <value>HELLO? IS ANYBODY THERE?</value>
+  </data>
+  <data name="drawer" xml:space="preserve">
+    <value>drawer</value>
+  </data>
+  <data name="This_drawer_is_unlocked_already" xml:space="preserve">
+    <value>This drawer is unlocked already.</value>
+  </data>
+  <data name="The_drawer_belongs_to_my_wifes_old_desk" xml:space="preserve">
+    <value>The drawer belongs to my wife's old desk.</value>
+  </data>
+  <data name="Its_empty" xml:space="preserve">
+    <value>It's empty.</value>
+  </data>
+  <data name="The_drawer_is_unlocked_already" xml:space="preserve">
+    <value>The drawer is unlocked already.</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>Locked.</value>
+  </data>
+  <data name="There_is_an_envelope_and_a_battery_in_the_drawer" xml:space="preserve">
+    <value>There is an envelope and a battery in the drawer.</value>
+  </data>
+  <data name="The_key_works_The_drawer_is_unlocked_now" xml:space="preserve">
+    <value>The key works. The drawer is unlocked now.</value>
+  </data>
+  <data name="drilling_machine" xml:space="preserve">
+    <value>drilling machine</value>
+  </data>
+  <data name="I_attached_already_one_of_them" xml:space="preserve">
+    <value>I attached already one of them.</value>
+  </data>
+  <data name="I_cant_drill_on_that_while_holding_it_in_my_hands" xml:space="preserve">
+    <value>I can't drill on that while holding it in my hands.</value>
+  </data>
+  <data name="I_dont_need_to_drill_that" xml:space="preserve">
+    <value>I don't need to drill that.</value>
+  </data>
+  <data name="My_drilling_machine" xml:space="preserve">
+    <value>My drilling machine.</value>
+  </data>
+  <data name="cable" xml:space="preserve">
+    <value>cable</value>
+  </data>
+  <data name="My_drilling_machines_cable" xml:space="preserve">
+    <value>My drilling machine's cable.</value>
+  </data>
+  <data name="drone" xml:space="preserve">
+    <value>drone</value>
+  </data>
+  <data name="The_drone_is_operated_by_using_its_remote_control" xml:space="preserve">
+    <value>The drone is operated by using its remote control.</value>
+  </data>
+  <data name="Its_sitting_on_the_floor_ready_to_ascend" xml:space="preserve">
+    <value>It's sitting on the floor, ready to ascend.</value>
+  </data>
+  <data name="drone_package" xml:space="preserve">
+    <value>drone package</value>
+  </data>
+  <data name="I_should_take_it_out_of_the_cabinet_first" xml:space="preserve">
+    <value>I should take it out of the cabinet, first.</value>
+  </data>
+  <data name="family_portrait" xml:space="preserve">
+    <value>family portrait</value>
+  </data>
+  <data name="The_picture_frames_glass_is_shattered_already" xml:space="preserve">
+    <value>The picture frames' glass is shattered already.</value>
+  </data>
+  <data name="Its_an_old_photograph_of_Cynthia_Landon_and_me" xml:space="preserve">
+    <value>It's an old photograph of Cynthia, Landon and me.</value>
+  </data>
+  <data name="Those_were_good_times" xml:space="preserve">
+    <value>Those were good times.</value>
+  </data>
+  <data name="We_look_happy_there" xml:space="preserve">
+    <value>We look happy there.</value>
+  </data>
+  <data name="I_hate_how_my_smile_doesnt_look_real_in_this_picture" xml:space="preserve">
+    <value>I hate how my smile doesn't look real in this picture.</value>
+  </data>
+  <data name="Sometimes_I_wonder_why_Landon_prefers_to_stand_next_to_Cynthia_when_taking_pictures" xml:space="preserve">
+    <value>Sometimes I wonder why Landon prefers to stand next to Cynthia when taking pictures.</value>
+  </data>
+  <data name="The_picture_frames_glass_is_shattered" xml:space="preserve">
+    <value>The picture frames' glass is shattered.</value>
+  </data>
+  <data name="There_is_nothing_behind" xml:space="preserve">
+    <value>There is nothing behind.</value>
+  </data>
+  <data name="guitar" xml:space="preserve">
+    <value>guitar</value>
+  </data>
+  <data name="I_dont_want_to_carry_that_around_now" xml:space="preserve">
+    <value>I don't want to carry that around now.</value>
+  </data>
+  <data name="Its_my_old_guitar_I_used_to_play_every_night_as_Landon_was_going_to_bed" xml:space="preserve">
+    <value>It's my old guitar. I used to play every night as Landon was going to bed.</value>
+  </data>
+  <data name="I_didnt_know_it_was_down_here_now" xml:space="preserve">
+    <value>I didn't know it was down here now.</value>
+  </data>
+  <data name="guitar_case" xml:space="preserve">
+    <value>guitar case</value>
+  </data>
+  <data name="The_guitar_case_is_closed_already" xml:space="preserve">
+    <value>The guitar case is closed already.</value>
+  </data>
+  <data name="The_guitar_case_is_open_already" xml:space="preserve">
+    <value>The guitar case is open already.</value>
+  </data>
+  <data name="A_guitar_string_package_dropped_out" xml:space="preserve">
+    <value>A guitar string package dropped out.</value>
+  </data>
+  <data name="guitar_strings" xml:space="preserve">
+    <value>guitar strings</value>
+  </data>
+  <data name="A_guitar_string_package_that_dropped_out_when_I_opened_the_guitar_case" xml:space="preserve">
+    <value>A guitar string package that dropped out when I opened the guitar case.</value>
+  </data>
+  <data name="hammer" xml:space="preserve">
+    <value>hammer</value>
+  </data>
+  <data name="A_hammer_is_hanging_on_the_tool_bar" xml:space="preserve">
+    <value>A hammer is hanging on the tool bar.</value>
+  </data>
+  <data name="hazelnuts" xml:space="preserve">
+    <value>hazelnuts</value>
+  </data>
+  <data name="Better_take_them_first" xml:space="preserve">
+    <value>Better take them first.</value>
+  </data>
+  <data name="Who_knows_how_long_Im_locked_in_here" xml:space="preserve">
+    <value>Who knows how long I'm locked in here?</value>
+  </data>
+  <data name="empty_bag_of_hazelnuts" xml:space="preserve">
+    <value>empty bag of hazelnuts</value>
+  </data>
+  <data name="I_dont_want_to_carry_that_empty_bag_around" xml:space="preserve">
+    <value>I don't want to carry that empty bag around.</value>
+  </data>
+  <data name="An_empty_bag_of_hazelnuts_is_lying_on_the_floor" xml:space="preserve">
+    <value>An empty bag of hazelnuts is lying on the floor.</value>
+  </data>
+  <data name="Looks_like_an_animal_was_chewing_on_it" xml:space="preserve">
+    <value>Looks like an animal was chewing on it.</value>
+  </data>
+  <data name="light_switch" xml:space="preserve">
+    <value>light switch</value>
+  </data>
+  <data name="It_is_a_light_switch" xml:space="preserve">
+    <value>It is a light switch.</value>
+  </data>
+  <data name="medical_cabinet" xml:space="preserve">
+    <value>medical cabinet</value>
+  </data>
+  <data name="Its_shut_already" xml:space="preserve">
+    <value>It's shut already.</value>
+  </data>
+  <data name="Its_fixed_to_the_wall" xml:space="preserve">
+    <value>It's fixed to the wall.</value>
+  </data>
+  <data name="A_medical_cabinet_is_hanging_on_the_wall" xml:space="preserve">
+    <value>A medical cabinet is hanging on the wall.</value>
+  </data>
+  <data name="Nothing_of_interest" xml:space="preserve">
+    <value>Nothing of interest.</value>
+  </data>
+  <data name="There_are_some_bandages_and_scissors_in_it" xml:space="preserve">
+    <value>There are some bandages and scissors in it.</value>
+  </data>
+  <data name="missing_tool" xml:space="preserve">
+    <value>missing tool</value>
+  </data>
+  <data name="A_wrench_is_missing" xml:space="preserve">
+    <value>A wrench is missing.</value>
+  </data>
+  <data name="A_tool_in_my_collection_is_missing_I_wonder_which_it_might_be" xml:space="preserve">
+    <value>A tool in my collection is missing. I wonder which it might be.</value>
+  </data>
+  <data name="The_tool_is_missing" xml:space="preserve">
+    <value>The tool is missing.</value>
+  </data>
+  <data name="Here_I_find_myself_in_the_basement_trying_to_talk_to_nonexistent_objects" xml:space="preserve">
+    <value>Here I find myself in the basement trying to talk to nonexistent objects.</value>
+  </data>
+  <data name="How_could_this_happen" xml:space="preserve">
+    <value>How could this happen?</value>
+  </data>
+  <data name="modem" xml:space="preserve">
+    <value>modem</value>
+  </data>
+  <data name="mouse_hole" xml:space="preserve">
+    <value>mouse hole</value>
+  </data>
+  <data name="It_does_not_seem_to_be_interested" xml:space="preserve">
+    <value>It does not seem to be interested.</value>
+  </data>
+  <data name="What" xml:space="preserve">
+    <value>What?</value>
+  </data>
+  <data name="After_all_the_effort_I_wont_put_them_back" xml:space="preserve">
+    <value>After all the effort I won't put them back.</value>
+  </data>
+  <data name="There_is_nothing_but_crumbs_in_it" xml:space="preserve">
+    <value>There is nothing but crumbs in it.</value>
+  </data>
+  <data name="Not_as_long_as_the_rat_is_in_there" xml:space="preserve">
+    <value>Not as long as the rat is in there.</value>
+  </data>
+  <data name="Why_would_I_do_that" xml:space="preserve">
+    <value>Why would I do that?</value>
+  </data>
+  <data name="Here_we_go" xml:space="preserve">
+    <value>Here we go.</value>
+  </data>
+  <data name="A_package_of_paper_clips" xml:space="preserve">
+    <value>A package of paper clips.</value>
+  </data>
+  <data name="The_rat_must_love_nibbling_off_the_plastic_wrapping" xml:space="preserve">
+    <value>The rat must love nibbling off the plastic wrapping.</value>
+  </data>
+  <data name="JESUS" xml:space="preserve">
+    <value>JESUS!</value>
+  </data>
+  <data name="The_baton_is_too_short_to_reach_the_item_in_the_back" xml:space="preserve">
+    <value>The baton is too short to reach the item in the back.</value>
+  </data>
+  <data name="I_could_reach_the_item_in_the_back_but_I_couldnt_pull_it_out" xml:space="preserve">
+    <value>I could reach the item in the back, but I couldn't pull it out.</value>
+  </data>
+  <data name="I_need_a_sling_or_something" xml:space="preserve">
+    <value>I need a sling or something.</value>
+  </data>
+  <data name="There_is_a_huge_rat_in_there" xml:space="preserve">
+    <value>There is a huge rat in there.</value>
+  </data>
+  <data name="Theres_nothing_but_crumbs_in_it" xml:space="preserve">
+    <value>There's nothing but crumbs in it.</value>
+  </data>
+  <data name="There_are_more_crumbs_in_there_as_well_as_a_small_item_some_way_in" xml:space="preserve">
+    <value>There are more crumbs in there as well as a small item some way in.</value>
+  </data>
+  <data name="Anybody_home" xml:space="preserve">
+    <value>Anybody home?</value>
+  </data>
+  <data name="Are_you_still_hungry" xml:space="preserve">
+    <value>Are you still hungry?</value>
+  </data>
+  <data name="Hello_there_little_critter" xml:space="preserve">
+    <value>Hello there, little critter.</value>
+  </data>
+  <data name="I_am_not_a_pet_killer" xml:space="preserve">
+    <value>I am not a pet killer.</value>
+  </data>
+  <data name="Why" xml:space="preserve">
+    <value>Why?</value>
+  </data>
+  <data name="Nobody_home" xml:space="preserve">
+    <value>Nobody home.</value>
+  </data>
+  <data name="You_like_these" xml:space="preserve">
+    <value>You like these?</value>
+  </data>
+  <data name="Want_some_more" xml:space="preserve">
+    <value>Want some more?</value>
+  </data>
+  <data name="Still_hungry" xml:space="preserve">
+    <value>Still hungry?</value>
+  </data>
+  <data name="Have_you_had_enough" xml:space="preserve">
+    <value>Have you had enough?</value>
+  </data>
+  <data name="He_took_it" xml:space="preserve">
+    <value>He took it.</value>
+  </data>
+  <data name="We_have_has_problems_with_rats_since_we_moved_in_here_four_years_ago" xml:space="preserve">
+    <value>We have has problems with rats since we moved in here four years ago.</value>
+  </data>
+  <data name="I_hate_these_little_critters" xml:space="preserve">
+    <value>I hate these little critters.</value>
+  </data>
+  <data name="Its_too_dark_for_me_too_see_anything_inside" xml:space="preserve">
+    <value>It's too dark for me too see anything inside.</value>
+  </data>
+  <data name="This_is_a_huuge_rat_in_there" xml:space="preserve">
+    <value>This is a huuge rat in there.</value>
+  </data>
+  <data name="Are_there_eyes_staring_at_me" xml:space="preserve">
+    <value>Are there eyes staring at me?</value>
+  </data>
+  <data name="Is_somebody_home" xml:space="preserve">
+    <value>Is somebody home?</value>
+  </data>
+  <data name="I_feel_like_something_is_watching_me" xml:space="preserve">
+    <value>I feel like something is watching me.</value>
+  </data>
+  <data name="Better_not" xml:space="preserve">
+    <value>Better not.</value>
+  </data>
+  <data name="Who_knows_whats_lurking_in_there" xml:space="preserve">
+    <value>Who knows what's lurking in there...</value>
+  </data>
+  <data name="nut" xml:space="preserve">
+    <value>nut</value>
+  </data>
+  <data name="A_nut_is_lying_on_the_floor" xml:space="preserve">
+    <value>A nut is lying on the floor.</value>
+  </data>
+  <data name="I_have_plenty_more_of_them" xml:space="preserve">
+    <value>I have plenty more of them.</value>
+  </data>
+  <data name="portrait" xml:space="preserve">
+    <value>portrait</value>
+  </data>
+  <data name="Weird_is_this_one_of_Landons_school_pictures_Whats_it_doing_down_here" xml:space="preserve">
+    <value>Weird... is this one of Landon's school pictures? What's it doing down here?</value>
+  </data>
+  <data name="Might_as_well_keep_it_with_me_Maybe_its_good_luck" xml:space="preserve">
+    <value>Might as well keep it with me. Maybe it's good luck.</value>
+  </data>
+  <data name="Move_the_mouse_to_rotate_Left_click_to_confirm_Right_click_to_abort" xml:space="preserve">
+    <value>Move the mouse to rotate. Left click to confirm. Right click to abort.</value>
+  </data>
+  <data name="Left_click_to_place_the_antenna_Right_click_to_abort" xml:space="preserve">
+    <value>Left click to place the antenna. Right click to abort.</value>
+  </data>
+  <data name="cardboard" xml:space="preserve">
+    <value>cardboard</value>
+  </data>
+  <data name="A_cardboard_without_any_inscription" xml:space="preserve">
+    <value>A cardboard without any inscription.</value>
+  </data>
+  <data name="I_wonder_who_put_it_here_and_what_is_inside" xml:space="preserve">
+    <value>I wonder who put it here and what is inside.</value>
+  </data>
+  <data name="I_should_take_it_first" xml:space="preserve">
+    <value>I should take it, first.</value>
+  </data>
+  <data name="shelf" xml:space="preserve">
+    <value>shelf</value>
+  </data>
+  <data name="This_bookcase_is_mostly_made_up_of_my_and_Cynthias_old_college_textbooks" xml:space="preserve">
+    <value>This bookcase is mostly made up of my and Cynthia's old college textbooks.</value>
+  </data>
+  <data name="This_is_to_big_to_carry_around" xml:space="preserve">
+    <value>This is to big to carry around.</value>
+  </data>
+  <data name="blanket" xml:space="preserve">
+    <value>blanket</value>
+  </data>
+  <data name="Looks_like_our_old_picnic_blanket" xml:space="preserve">
+    <value>Looks like our old picnic blanket.</value>
+  </data>
+  <data name="Below_the_blanket_was_a_flashlight" xml:space="preserve">
+    <value>Below the blanket was a flashlight.</value>
+  </data>
+  <data name="flashlight" xml:space="preserve">
+    <value>flashlight</value>
+  </data>
+  <data name="There_are_numerous_guarantee_cards_in_there" xml:space="preserve">
+    <value>There are numerous guarantee cards in there.</value>
+  </data>
+  <data name="Also_in_the_box_are_some_old_drug_prescriptions_for_me" xml:space="preserve">
+    <value>Also, in the box are some old drug prescriptions for me.</value>
+  </data>
+  <data name="What_were_they_about" xml:space="preserve">
+    <value>What were they about?</value>
+  </data>
+  <data name="Even_more_guarantee_cards" xml:space="preserve">
+    <value>Even more guarantee cards.</value>
+  </data>
+  <data name="And_a_battery" xml:space="preserve">
+    <value>And a battery.</value>
+  </data>
+  <data name="Whats_that_at_the_bottom" xml:space="preserve">
+    <value>What's that at the bottom?</value>
+  </data>
+  <data name="A_therapy_session_log" xml:space="preserve">
+    <value>A therapy session log?</value>
+  </data>
+  <data name="Cynthia_must_have_been_keeping_them" xml:space="preserve">
+    <value>Cynthia must have been keeping them...</value>
+  </data>
+  <data name="This_box_is_for_stuff_I_am_not_sure_about_whether_I_still_need_it_or_not" xml:space="preserve">
+    <value>This box is for stuff I am not sure about whether I still need it or not.</value>
+  </data>
+  <data name="I_dont_need_to_carry_that_whole_box_around" xml:space="preserve">
+    <value>I don't need to carry that whole box around.</value>
+  </data>
+  <data name="Nothing_in_there_but_comic_books" xml:space="preserve">
+    <value>Nothing in there but comic books.</value>
+  </data>
+  <data name="Theyre_looking_pretty_torn_up" xml:space="preserve">
+    <value>They're looking pretty torn up.</value>
+  </data>
+  <data name="In_this_box_we_store_some_of_Landons_old_comic_books" xml:space="preserve">
+    <value>In this box we store some of Landon's old comic books.</value>
+  </data>
+  <data name="box_with_comic_books" xml:space="preserve">
+    <value>box with comic books</value>
+  </data>
+  <data name="I_have_more_important_things_to_tend_to" xml:space="preserve">
+    <value>I have more important things to tend to.</value>
+  </data>
+  <data name="books" xml:space="preserve">
+    <value>books</value>
+  </data>
+  <data name="My_old_engineering_textbooks" xml:space="preserve">
+    <value>My old engineering textbooks.</value>
+  </data>
+  <data name="I_keep_them_for_sentimental_reasons" xml:space="preserve">
+    <value>I keep them for sentimental reasons.</value>
+  </data>
+  <data name="engineering_books" xml:space="preserve">
+    <value>engineering books</value>
+  </data>
+  <data name="I_dont_need_them_any_more" xml:space="preserve">
+    <value>I don't need them any more.</value>
+  </data>
+  <data name="book" xml:space="preserve">
+    <value>book</value>
+  </data>
+  <data name="This_books_title_is_RFID_Applied" xml:space="preserve">
+    <value>This book's title is 'RFID Applied'.</value>
+  </data>
+  <data name="I_wonder_what_its_doing_on_the_top_shelf_compartment" xml:space="preserve">
+    <value>I wonder what it's doing on the top shelf compartment.</value>
+  </data>
+  <data name="Landon_was_interested_in_RFID_technology_for_some_reason_some_time_ago" xml:space="preserve">
+    <value>Landon was interested in RFID technology for some reason some time ago.</value>
+  </data>
+  <data name="Maybe_he_put_it_up_there" xml:space="preserve">
+    <value>Maybe he put it up there.</value>
+  </data>
+  <data name="RFID_Applied" xml:space="preserve">
+    <value>RFID Applied</value>
+  </data>
+  <data name="notebook" xml:space="preserve">
+    <value>notebook</value>
+  </data>
+  <data name="An_old_notebook_from_university" xml:space="preserve">
+    <value>An old notebook from university.</value>
+  </data>
+  <data name="The_first_page_reads" xml:space="preserve">
+    <value>The first page reads:</value>
+  </data>
+  <data name="_There_was_a_time_that_the_pieces_fit_but_I_watched_them_fall_away_" xml:space="preserve">
+    <value>» There was a time that the pieces fit, but I watched them fall away «</value>
+  </data>
+  <data name="_Mildewed_and_smoldering_strangled_by_our_coveting_" xml:space="preserve">
+    <value>» Mildewed and smoldering, strangled by our coveting «</value>
+  </data>
+  <data name="I_dont_need_that" xml:space="preserve">
+    <value>I don't need that.</value>
+  </data>
+  <data name="sockets" xml:space="preserve">
+    <value>sockets</value>
+  </data>
+  <data name="These_sockets_have_been_defective_since_we_moved_in" xml:space="preserve">
+    <value>These sockets have been defective since we moved in.</value>
+  </data>
+  <data name="I_never_found_the_time_to_deal_with_them" xml:space="preserve">
+    <value>I never found the time to deal with them.</value>
+  </data>
+  <data name="These_sockets_are_working_actually" xml:space="preserve">
+    <value>These sockets are working actually.</value>
+  </data>
+  <data name="bulletin_board" xml:space="preserve">
+    <value>bulletin board</value>
+  </data>
+  <data name="This_bulletin_board_is_covered_in_reminders_for_meetings_with_the_realtor_the_bank_and_Landons_teachers_as_well_as_an_alphabetized_shopping_list_of_Cynthias" xml:space="preserve">
+    <value>This bulletin board is covered in reminders for meetings with the realtor, the bank, and Landon's teachers, as well as an alphabetized shopping list of Cynthia's.</value>
+  </data>
+  <data name="Landon_drew_something_in_the_corner_but_its_too_faded_now_to_make_out_what_its_supposed_to_be" xml:space="preserve">
+    <value>Landon drew something in the corner, but it's too faded now to make out what it's supposed to be.</value>
+  </data>
+  <data name="tools" xml:space="preserve">
+    <value>tools</value>
+  </data>
+  <data name="My_old_tools" xml:space="preserve">
+    <value>My old tools.</value>
+  </data>
+  <data name="Hang_on_is_one_of_them_missing" xml:space="preserve">
+    <value>Hang on... is one of them missing?</value>
+  </data>
+  <data name="Damn_Ive_told_Landon_a_thousand_times_to_bring_back_anything_he_borrows" xml:space="preserve">
+    <value>Damn, I've told Landon a thousand times to bring back anything he borrows.</value>
+  </data>
+  <data name="window" xml:space="preserve">
+    <value>window</value>
+  </data>
+  <data name="Those_burglar_bars_are_way_to_strong" xml:space="preserve">
+    <value>Those burglar bars are way to strong.</value>
+  </data>
+  <data name="Nobody_will_see_this_in_broad_daylight" xml:space="preserve">
+    <value>Nobody will see this in broad daylight.</value>
+  </data>
+  <data name="The_drone_wont_fit_through_the_burglar_bars" xml:space="preserve">
+    <value>The drone won't fit through the burglar bars.</value>
+  </data>
+  <data name="_HELLO" xml:space="preserve">
+    <value>HELLO?!</value>
+  </data>
+  <data name="ANYBODY" xml:space="preserve">
+    <value>ANYBODY?!</value>
+  </data>
+  <data name="HELP_ME" xml:space="preserve">
+    <value>HELP ME!!</value>
+  </data>
+  <data name="Cant_get_through_the_burglar_bars" xml:space="preserve">
+    <value>Can't get through the burglar bars.</value>
+  </data>
+  <data name="Thought_we_got_these_things_to_keep_people_out_not_in" xml:space="preserve">
+    <value>Thought we got these things to keep people out, not in.</value>
+  </data>
+  <data name="wooden_box" xml:space="preserve">
+    <value>wooden box</value>
+  </data>
+  <data name="A_small_wooden_box_was_hidden_underneath_a_panel" xml:space="preserve">
+    <value>A small wooden box was hidden underneath a panel.</value>
+  </data>
+  <data name="wooden_panel" xml:space="preserve">
+    <value>wooden panel</value>
+  </data>
+  <data name="Cant_break_it_with_the_hammer" xml:space="preserve">
+    <value>Can't break it with the hammer.</value>
+  </data>
+  <data name="Where_does_this_horrible_smell_come_from" xml:space="preserve">
+    <value>Where does this horrible smell come from?</value>
+  </data>
+  <data name="I_levered_the_wooden_panel_out_already" xml:space="preserve">
+    <value>I levered the wooden panel out already.</value>
+  </data>
+  <data name="I_put_the_screwdriver_in_the_small_gap_between_the_planks" xml:space="preserve">
+    <value>I put the screwdriver in the small gap between the planks.</value>
+  </data>
+  <data name="screwdriver" xml:space="preserve">
+    <value>screwdriver</value>
+  </data>
+  <data name="Both_RFID_antennas_received_a_signal_from_this_wooden_panel" xml:space="preserve">
+    <value>Both RFID antennas received a signal from this wooden panel.</value>
+  </data>
+  <data name="A_screwdriver_is_put_in_the_gap_seperating_the_panels" xml:space="preserve">
+    <value>A screwdriver is put in the gap seperating the panels.</value>
+  </data>
+  <data name="I_levered_out_the_wooden_panel_A_small_wooden_box_is_underneath" xml:space="preserve">
+    <value>I levered out the wooden panel. A small wooden box is underneath.</value>
+  </data>
+  <data name="I_levered_out_the_wooden_panel" xml:space="preserve">
+    <value>I levered out the wooden panel.</value>
+  </data>
+  <data name="Cant_move_it_with_bare_hands" xml:space="preserve">
+    <value>Can't move it with bare hands.</value>
+  </data>
+  <data name="workbench" xml:space="preserve">
+    <value>workbench</value>
+  </data>
+  <data name="I_have_no_idea_on_what_to_work_at_the_moment" xml:space="preserve">
+    <value>I have no idea on what to work at the moment.</value>
+  </data>
+  <data name="Its_my_workbench" xml:space="preserve">
+    <value>It's my workbench.</value>
+  </data>
+  <data name="I_told_Landon_a_while_ago_that_I_would_help_him_make_a_box_car_for_class_with_these_tools" xml:space="preserve">
+    <value>I told Landon a while ago that I would help him make a box car for class with these tools.</value>
+  </data>
+  <data name="I_still_havent_looked_up_how_to_make_one_Come_to_think_of_it_the_assignment_is_probably_over_by_now" xml:space="preserve">
+    <value>I still haven't looked up how to make one. Come to think of it, the assignment is probably over by now.</value>
+  </data>
+</root>

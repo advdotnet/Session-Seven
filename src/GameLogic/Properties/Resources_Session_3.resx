@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Lets_talk_about_something_less_painful_for_a_while" xml:space="preserve">
+    <value>Let's talk about something less painful for a while.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Sounds_good_to_me" xml:space="preserve">
+    <value>Sounds good to me.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Good_to_hear_How_have_things_been_with_your_wife_since_all_of_this" xml:space="preserve">
+    <value>Good to hear. How have things been with your wife, since all of this?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_thought_you_said_we_should_talk_about_something_LESS_painful" xml:space="preserve">
+    <value>I thought you said we should talk about something LESS painful.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_like_to_think_were_getting_better" xml:space="preserve">
+    <value>I like to think we're getting better.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Honestly_I_still_havent_forgiven_her_for_all_this" xml:space="preserve">
+    <value>Honestly, I still haven't forgiven her for all this.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Of_course" xml:space="preserve">
+    <value>Of course.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Maybe_not" xml:space="preserve">
+    <value>Maybe not...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Cynthia_and_I_havent_been_on_particularly_good_ground_since_this_all_began" xml:space="preserve">
+    <value>Cynthia and I haven't been on particularly good ground since this all began.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Its_hard_to_reestablish_trust_in_somebody_that_constantly_seems_like_theyre_holding_something_back_" xml:space="preserve">
+    <value>It's hard to reestablish trust in somebody that constantly seems like they're holding something back. </value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_you_do_think_that_shes_still_holding_something_back_from_you_Even_now" xml:space="preserve">
+    <value>And you do think that she's still holding something back from you? Even now?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="She_has_to_be_You_dont_just_uproot_somebodys_life_like_that_with_such_little_reason" xml:space="preserve">
+    <value>She has to be. You don't just uproot somebody's life like that with such little reason.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Shes_still_hiding_something_from_me_even_now_I_know_she_is_She_didnt_even_want_me_coming_in_to_see_you" xml:space="preserve">
+    <value>She's still hiding something from me, even now. I know she is. She didn't even want me coming in to see you.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_I_dont_know_Honestly_I_just_think_this_is_going_to_take_time" xml:space="preserve">
+    <value>I... I don't know. Honestly, I just think this is going to take time.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_really_do_want_to_trust_her_again_Its_just_not_easy_" xml:space="preserve">
+    <value>I really do want to trust her again. It's just... not easy. </value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Its_been_awhile_now_since_everything_went_down_Im_trying_my_best" xml:space="preserve">
+    <value>It's been awhile now since everything went down. I'm trying my best.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_mean_its_hard_to_know_with_her_whether_or_not_shes_telling_the_truth_even_now_but_we_are_trying" xml:space="preserve">
+    <value>I mean, it's hard to know with her, whether or not she's telling the truth, even now, but we are trying.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Yesterday_I_even_cooked_pasta_for_her" xml:space="preserve">
+    <value>Yesterday I even cooked pasta for her.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="You_think_she_could_still_be_lying_to_you" xml:space="preserve">
+    <value>You think she could still be lying to you?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_dont_know" xml:space="preserve">
+    <value>I don't know.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Im_telling_myself_shes_not_that_weve_gotten_it_all_out_there_by_now_but_its_hard_to_say_for_sure" xml:space="preserve">
+    <value>I'm telling myself she's not, that we've gotten it all out there by now, but... it's hard to say for sure.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_know_you_keep_telling_me_I_should_just_move_on_but_its_just" xml:space="preserve">
+    <value>I know you keep telling me I should just move on, but it's just...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_dont_know_if_I_ever_will_be_able_to_trust_her_again_Not_completely" xml:space="preserve">
+    <value>I don't know if I ever will be able to trust her again. Not completely.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="You_dont_just_move_on_from_something_like_that_you_know" xml:space="preserve">
+    <value>You don't just move on from something like that, you know?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="But_do_you_really_think_shes_still_lying_to_you_Even_now" xml:space="preserve">
+    <value>But do you really think she's still lying to you? Even now?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Well_alright_thats_fair_But_tell_me_this_Ryan_Do_you_still_love_her" xml:space="preserve">
+    <value>Well alright, that's fair. But tell me this, Ryan. Do you still love her?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Can_I_really_love_somebody_I_dont_even_fully_trust" xml:space="preserve">
+    <value>Can I really love somebody I don't even fully trust?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Shes_my_wife_of_course_I_do" xml:space="preserve">
+    <value>She's my wife, of course I do.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Not_anymore_I_cant" xml:space="preserve">
+    <value>Not anymore. I can't.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_want_to_love_her_of_course_I_do_but_how_can_I_when_Im_too_busy_analyzing_everything_she_does" xml:space="preserve">
+    <value>I want to love her, of course I do, but... how can I when I'm too busy analyzing everything she does?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Everything_she_says_to_me_every_time_she_leaves_the_house_for_groceries_or_whatever_I_have_to_try_and_figure_out_if_shes_being_honest_with_me_or_not" xml:space="preserve">
+    <value>Everything she says to me, every time she leaves the house for groceries or whatever, I have to try and figure out if she's being honest with me or not.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Its_maddening" xml:space="preserve">
+    <value>It's maddening.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Have_you_tried_talking_to_her_about_this" xml:space="preserve">
+    <value>Have you tried talking to her about this?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="No_of_course_not_Not_yet_But_I_swear_to_god_its_driving_me_insane" xml:space="preserve">
+    <value>No, of course not. Not yet. But I swear to god it's driving me insane.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Just_last_week_she_said_she_was_going_out_to_the_gym_Its_been_years_since_she_last_went_to_the_gym" xml:space="preserve">
+    <value>Just last week she said she was going out to the gym. It's been years since she last went to the gym.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_thought_I_could_let_it_go_but_I_couldnt" xml:space="preserve">
+    <value>I thought I could let it go, but I couldn't.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="So_you_didnt_let_her_go" xml:space="preserve">
+    <value>So you didn't let her go?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Oh_no_I_let_her_go_She_walked_out_of_the_house_got_into_the_car_and_drove_off_down_the_street_before" xml:space="preserve">
+    <value>Oh no, I let her go. She walked out of the house, got into the car, and drove off down the street before...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Before_what" xml:space="preserve">
+    <value>Before what?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Well_Im_not_proud_of_it_but_I_followed_her" xml:space="preserve">
+    <value>Well, I'm not proud of it, but... I followed her.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_stayed_clear_back_so_she_wouldnt_recognize_me_and_I_followed_her_all_the_way_to_where_she_was_going" xml:space="preserve">
+    <value>I stayed clear back so she wouldn't recognize me, and I followed her all the way to where she was going.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>And?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="She_went_straight_to_the_gym" xml:space="preserve">
+    <value>She went straight to the gym.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="But_you_still_dont_trust_her" xml:space="preserve">
+    <value>But you still don't trust her.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="No_I_think_this_was_just_a_rare_instance_of_honesty_for_her" xml:space="preserve">
+    <value>No. I think this was just a rare instance of honesty for her.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_who_knows_Maybe_she_even_knew_I_was_following_her_after_all" xml:space="preserve">
+    <value>And who knows? Maybe she even knew I was following her after all.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_you_dont_think_things_will_ever_be_the_same_now" xml:space="preserve">
+    <value>And you don't think things will ever be the same now.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="No_Never_again" xml:space="preserve">
+    <value>No. Never again.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Maybe_some_day" xml:space="preserve">
+    <value>Maybe some day...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Any_love_I_had_for_her_is_just_getting_slowly_destroyed_by_what_she_did" xml:space="preserve">
+    <value>Any love I had for her is just getting slowly destroyed by what she did.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_just_dont_think_I_can_get_over_this" xml:space="preserve">
+    <value>I just don't think I can get over this.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_know_there_was_a_point_where_Cynthia_and_I_were_well_we_were_really_happy" xml:space="preserve">
+    <value>I know there was a point where Cynthia and I were... well, we were really happy.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="She_was_my_best_friend_and_I_would_have_trusted_her_with_my_life_We_did_everything_together_Sometimes_I_think_back_on_that" xml:space="preserve">
+    <value>She was my best friend, and I would have trusted her with my life. We did everything together. Sometimes I think back on that.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="We_had_one_day_not_long_before_Landon_was_born_when_we_were_supposed_to_be_out_getting_some_decorations_for_our_baby_shower" xml:space="preserve">
+    <value>We had one day, not long before Landon was born, when we were supposed to be out getting some decorations for our baby shower...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="but_we_just_got_so_tired_of_all_the_family_and_the_friends_and_it_was_such_a_nice_sunny_day_outside" xml:space="preserve">
+    <value>...but we just got so tired of all the family and the friends and it was such a nice, sunny day outside.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="We_ended_up_just_pulling_off_the_highway_at_this_lake_just_me_and_her_and_lying_in_the_grass_for_hours_on_our_picnic_blanket_just_soaking_up_the_sun_together_until_it_went_down" xml:space="preserve">
+    <value>We ended up just pulling off the highway at this lake, just me and her, and lying in the grass for hours on our picnic blanket, just soaking up the sun together until it went down.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="It_was_beautiful_I_miss_that" xml:space="preserve">
+    <value>It was beautiful. I miss that.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_you_think_you_could_get_that_back_one_day" xml:space="preserve">
+    <value>And you think you could get that back one day?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_dont_know_I_really_hope_so" xml:space="preserve">
+    <value>I don't know. I really hope so.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_cant_just_stop_loving_her_Shes_been_my_best_friend_since_college" xml:space="preserve">
+    <value>I can't just stop loving her. She's been my best friend since college.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="We_have_a_son_together_He_he_needs_us_both" xml:space="preserve">
+    <value>We have a son together. He... he needs us both.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_you_plan_to_be_there_for_him" xml:space="preserve">
+    <value>And you plan to be there for him?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="The_two_arent_exactly_mutually_exclusive_I_dont_know_I_dont_really_want_to_talk_about_him_right_now" xml:space="preserve">
+    <value>The two aren't exactly mutually exclusive. I don't know. I don't really want to talk about him right now.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Of_course_Im_sorry_Well_save_that_for_another_session" xml:space="preserve">
+    <value>Of course, I'm sorry. We'll save that for another session.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="But_you_do_think_you_will_be_staying_with_Cynthia_as_of_now" xml:space="preserve">
+    <value>But you do think you will be staying with Cynthia, as of now?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_dont_think_I_have_much_of_a_choice_Besides_I_think_one_day_well_get_back_to_who_we_were" xml:space="preserve">
+    <value>I don't think I have much of a choice. Besides, I think one day we'll get back to who we were.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_who_were_you_then" xml:space="preserve">
+    <value>And who were you then?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="The_kind_of_people_that_would_sneak_out_of_our_own_wedding_reception_just_to_make_out_and_get_something_greasy_to_eat" xml:space="preserve">
+    <value>The kind of people that would sneak out of our own wedding reception just to make out and get something greasy to eat.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="People_who_went_camping_and_rode_bikes_together_and_watched_shitty_movies_together_just_to_make_fun_of_them" xml:space="preserve">
+    <value>People who went camping, and rode bikes together, and watched shitty movies together just to make fun of them.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_liked_those_people" xml:space="preserve">
+    <value>I liked those people.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="What_happened_to_them" xml:space="preserve">
+    <value>What happened to them?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Do_I_really_even_have_to_tell_you" xml:space="preserve">
+    <value>Do I really even have to tell you?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_cant_imagine_loving_somebody_I_dont_even_trust_Especially_not_after_what_shes_done_Its_not_possible_for_me" xml:space="preserve">
+    <value>I can't imagine loving somebody I don't even trust. Especially not after what she's done. It's not possible for me.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="You_dont_have_any_good_memories_with_her_Something_to_convince_you_otherwise_" xml:space="preserve">
+    <value>You don't have any good memories with her? Something to convince you otherwise? </value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Of_course_I_have_good_memories_I_married_the_woman_for_gods_sakes" xml:space="preserve">
+    <value>Of course I have good memories. I married the woman, for god's sakes...</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_just_dont_think_theres_even_a_chance_well_go_back_to_the_way_things_were_Not_now" xml:space="preserve">
+    <value>I just don't think there's even a chance we'll go back to the way things were. Not now.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="Have_you_told_her_you_feel_this_way" xml:space="preserve">
+    <value>Have you told her you feel this way?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="No_Not_yet_Theres_still_too_much_at_stake_I_have_to_think_about_Landon_too_here" xml:space="preserve">
+    <value>No. Not yet. There's still too much at stake. I have to think about Landon too, here.</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="And_what_are_your_thoughts_on_Landon_as_of_now" xml:space="preserve">
+    <value>And what are your thoughts on Landon, as of now?</value>
+    <comment>Session 3</comment>
+  </data>
+  <data name="I_think_Id_prefer_we_save_that_for_another_session_Doctor_" xml:space="preserve">
+    <value>I think I'd prefer we save that for another session, Doctor. </value>
+    <comment>Session 3</comment>
+  </data>
+</root>

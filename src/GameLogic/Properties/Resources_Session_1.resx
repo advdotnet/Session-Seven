@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="And_what_was_life_like_for_you_there_Ryan" xml:space="preserve">
+    <value>And what was life like for you there, Ryan?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="How_did_things_go" xml:space="preserve">
+    <value>How did things go?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Do_you_have_to_ask_It_was_horrible" xml:space="preserve">
+    <value>Do you have to ask? It was horrible.</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="It_wasnt_a_life_It_wasnt_living" xml:space="preserve">
+    <value>It wasn't a life. It wasn't living.</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="And_what_was_the_worst_part_about_it_would_you_say" xml:space="preserve">
+    <value>And what was the worst part about it, would you say?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Cynthia" xml:space="preserve">
+    <value>Cynthia?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="The_not_knowing_Definitely" xml:space="preserve">
+    <value>The not knowing. Definitely.</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Not_knowing_what_was_going_to_happen_next_or_who_was_going_to_be_waiting_for_me_not_knowing_what_would_happen_to_me_or_my_family" xml:space="preserve">
+    <value>Not knowing what was going to happen next, or who was going to be waiting for me... not knowing what would happen to me, or my family...</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="HelloExclamation" xml:space="preserve">
+    <value>Hello?!?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Help_Help_me" xml:space="preserve">
+    <value>Help! Help me!</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Not_knowing_how_the_hell_I_was_going_to_get_out_of_there_or_if_I_ever_would_living_in_a_constant_state_of_fear" xml:space="preserve">
+    <value>Not knowing how the hell I was going to get out of there, or if I ever would... living in a constant state of fear.</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="That_by_far_was_the_worst_part_of_it" xml:space="preserve">
+    <value>That, by far, was the worst part of it.</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="Ouch_How_the_hell_did_this_happen" xml:space="preserve">
+    <value>Ouch. How the hell did this happen?</value>
+    <comment>Session 1</comment>
+  </data>
+  <data name="I_need_to_bandage_my_hand_I_think_we_have_a_medicine_cabinet_down_here_somewhere" xml:space="preserve">
+    <value>I need to bandage my hand. I think we have a medicine cabinet down here somewhere.</value>
+    <comment>Session 1</comment>
+  </data>
+</root>

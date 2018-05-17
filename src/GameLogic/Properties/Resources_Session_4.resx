@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="I_think_we_could_both_benefit_from_learning_a_little_bit_more_about_yourself" xml:space="preserve">
+    <value>I think we could both benefit from learning a little bit more about yourself.</value>
+  </data>
+  <data name="Like_what" xml:space="preserve">
+    <value>Like what?</value>
+  </data>
+  <data name="Well_what_do_you_do_for_work" xml:space="preserve">
+    <value>Well, what do you do for work?</value>
+  </data>
+  <data name="Im_a_mechanical_engineer" xml:space="preserve">
+    <value>I'm a mechanical engineer.</value>
+  </data>
+  <data name="And_you_like_your_work" xml:space="preserve">
+    <value>And you like your work?</value>
+  </data>
+  <data name="Cant_complain" xml:space="preserve">
+    <value>Can't complain.</value>
+  </data>
+  <data name="Its_awful" xml:space="preserve">
+    <value>It's awful.</value>
+  </data>
+  <data name="Thats_good_Liking_what_you_do_is_important" xml:space="preserve">
+    <value>That's good. Liking what you do is important.</value>
+  </data>
+  <data name="Im_sorry_to_hear_that" xml:space="preserve">
+    <value>I'm sorry to hear that.</value>
+  </data>
+  <data name="So_were_you_upset_about_having_to_change_offices_to_be_with_your_son" xml:space="preserve">
+    <value>So were you upset about having to change offices to be with your son?</value>
+  </data>
+  <data name="Yes_I_dont_handle_change_well" xml:space="preserve">
+    <value>Yes. I don't handle change well.</value>
+  </data>
+  <data name="Yes_I_had_it_good_where_I_was" xml:space="preserve">
+    <value>Yes. I had it good where I was.</value>
+  </data>
+  <data name="No_It_doesnt_matter_to_me_if_Im_with_my_family" xml:space="preserve">
+    <value>No. It doesn't matter to me if I'm with my family.</value>
+  </data>
+  <data name="I_see_Perhaps_this_time_however_it_was_for_the_best" xml:space="preserve">
+    <value>I see. Perhaps this time, however, it was for the best?</value>
+  </data>
+  <data name="Thats_unfortunate_But_I_wonder_if_you_cant_make_something_better_for_yourself_where_you_are_now" xml:space="preserve">
+    <value>That's unfortunate. But I wonder if you can't make something better for yourself where you are now?</value>
+  </data>
+  <data name="Good_to_hear_Your_family_is_your_support_system" xml:space="preserve">
+    <value>Good to hear. Your family is your support system.</value>
+  </data>
+  <data name="Anyways_work_isnt_the_only_thing_that_makes_up_a_man_What_would_you_say_you_do_for_fun" xml:space="preserve">
+    <value>Anyways, work isn't the only thing that makes up a man. What would you say you do for fun?</value>
+  </data>
+  <data name="Oh_I_dont_know_I_play_the_guitar" xml:space="preserve">
+    <value>Oh, I don't know... I play the guitar?</value>
+  </data>
+  <data name="And_do_you_find_that_playing_helps_you_when_you_are_agitated" xml:space="preserve">
+    <value>And do you find that playing helps you when you are... agitated?</value>
+  </data>
+  <data name="Do_you_have_to_call_it_that" xml:space="preserve">
+    <value>Do you have to call it that?</value>
+  </data>
+  <data name="Im_sorry_is_there_something_else_you_would_prefer_I_call_your_episodes" xml:space="preserve">
+    <value>I'm sorry, is there something else you would prefer I call your episodes?</value>
+  </data>
+  <data name="Well_I_I_dont_know_It_doesnt_matter_Besides_I_havent_had_a_problem_like_that_in_a_long_time" xml:space="preserve">
+    <value>Well, I... I don't know. It doesn't matter. Besides, I haven't had a problem like that in a long time.</value>
+  </data>
+  <data name="Is_that_true_Youre_taking_your_medications_regularly" xml:space="preserve">
+    <value>Is that true? You're taking your medications regularly?</value>
+  </data>
+  <data name="Dont_you_believe_me" xml:space="preserve">
+    <value>...Don't you believe me?</value>
+  </data>
+</root>
