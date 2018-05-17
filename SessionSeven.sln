@@ -15,36 +15,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionSeven.Functional.Tes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Debug|x86.ActiveCfg = Debug|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Debug|x86.Build.0 = Debug|x86
-		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Release|Any CPU.ActiveCfg = Release|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Release|x86.ActiveCfg = Release|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Release|x86.Build.0 = Release|x86
-		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Debug|x86.ActiveCfg = Debug|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Debug|x86.Build.0 = Debug|x86
-		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Release|Any CPU.ActiveCfg = Release|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Release|x86.ActiveCfg = Release|x86
 		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Release|x86.Build.0 = Release|x86
-		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Debug|x86.ActiveCfg = Debug|x86
 		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Debug|x86.Build.0 = Debug|x86
-		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Release|Any CPU.ActiveCfg = Release|x86
 		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Release|x86.ActiveCfg = Release|x86
 		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Release|x86.Build.0 = Release|x86
-		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|x86.Build.0 = Debug|Any CPU
-		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|x86.ActiveCfg = Release|Any CPU
 		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
