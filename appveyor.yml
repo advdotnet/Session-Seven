@@ -1,0 +1,9 @@
+version: 1.0.{build}
+build:
+  project: src/SessionSeven.sln
+  verbosity: minimal
+test:
+  categories:
+    except:
+    - GPU
+    - FileSystem
