@@ -5,7 +5,7 @@ build:
 test:
   assemblies:
     only:
-      
+      -
   categories:
     except:
     - GPU
