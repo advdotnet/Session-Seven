@@ -4,7 +4,7 @@ using SessionSeven.GUI.Dialog;
 using SessionSeven.GUI.Interaction;
 using STACK;
 using STACK.Components;
-using STACK.Functional.Test;
+using STACK.TestBase;
 using System;
 
 namespace SessionSeven.Functional.Test

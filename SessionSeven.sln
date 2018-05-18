@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17C1FC09-18F9-4052-9728-BFAFCCF92DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Game\Application\Application.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2D51C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Logic", "src\Game\GameLogic\Game Logic.csproj", "{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playthrough", "src\Game\Playthrough\Playthrough.csproj", "{8E225CAA-9674-46A3-B0F4-972FC4E154C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionSeven.Functional.Test", "src\Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj", "{70539779-EF22-4CA3-8F1A-125DFF443092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{B3DD4159-436D-4863-8A37-06611C49A936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STACK", "lib\STACK\src\STACK\STACK.csproj", "{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FNA", "lib\STACK\src\Dependencies\Neoforce\FNA\FNA.csproj", "{35253CE1-C864-4CD3-8249-4D1319748E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomShane.Neoforce.Controls", "lib\STACK\src\Dependencies\Neoforce\Neoforce\TomShane.Neoforce.Controls.csproj", "{AC5F1CD8-AA8E-4DB5-814F-86C214175841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarFinder", "lib\STACK\src\Dependencies\StarFinder\StarFinder.csproj", "{3785DF4D-65EF-40E4-9177-2A8B396AFB0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STACK.TestBase", "lib\STACK\src\Tests\STACK.TestBase\STACK.TestBase.csproj", "{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentAnalyzer", "lib\STACK\src\Tools\ContentAnalyzer\ContentAnalyzer.csproj", "{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Debug|x86.ActiveCfg = Debug|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Debug|x86.Build.0 = Debug|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Release|x86.ActiveCfg = Release|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2D51C}.Release|x86.Build.0 = Release|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Debug|x86.ActiveCfg = Debug|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Debug|x86.Build.0 = Debug|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Release|x86.ActiveCfg = Release|x86
+		{FB8B3552-22FB-413F-9E00-032ABFE2DA1C}.Release|x86.Build.0 = Release|x86
+		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Debug|x86.ActiveCfg = Debug|x86
+		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Debug|x86.Build.0 = Debug|x86
+		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Release|x86.ActiveCfg = Release|x86
+		{8E225CAA-9674-46A3-B0F4-972FC4E154C9}.Release|x86.Build.0 = Release|x86
+		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70539779-EF22-4CA3-8F1A-125DFF443092}.Debug|x86.Build.0 = Debug|Any CPU
+		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|x86.ActiveCfg = Release|Any CPU
+		{70539779-EF22-4CA3-8F1A-125DFF443092}.Release|x86.Build.0 = Release|Any CPU
+		{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB}.Release|x86.Build.0 = Release|Any CPU
+		{35253CE1-C864-4CD3-8249-4D1319748E8F}.Debug|x86.ActiveCfg = Debug|x86
+		{35253CE1-C864-4CD3-8249-4D1319748E8F}.Debug|x86.Build.0 = Debug|x86
+		{35253CE1-C864-4CD3-8249-4D1319748E8F}.Release|x86.ActiveCfg = Release|x86
+		{35253CE1-C864-4CD3-8249-4D1319748E8F}.Release|x86.Build.0 = Release|x86
+		{AC5F1CD8-AA8E-4DB5-814F-86C214175841}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC5F1CD8-AA8E-4DB5-814F-86C214175841}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC5F1CD8-AA8E-4DB5-814F-86C214175841}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC5F1CD8-AA8E-4DB5-814F-86C214175841}.Release|x86.Build.0 = Release|Any CPU
+		{3785DF4D-65EF-40E4-9177-2A8B396AFB0C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3785DF4D-65EF-40E4-9177-2A8B396AFB0C}.Debug|x86.Build.0 = Debug|Any CPU
+		{3785DF4D-65EF-40E4-9177-2A8B396AFB0C}.Release|x86.ActiveCfg = Release|Any CPU
+		{3785DF4D-65EF-40E4-9177-2A8B396AFB0C}.Release|x86.Build.0 = Release|Any CPU
+		{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}.Release|x86.Build.0 = Release|Any CPU
+		{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}.Debug|x86.Build.0 = Debug|Any CPU
+		{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}.Release|x86.ActiveCfg = Release|Any CPU
+		{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70539779-EF22-4CA3-8F1A-125DFF443092} = {17C1FC09-18F9-4052-9728-BFAFCCF92DE8}
+		{BDD5E5DF-A2F6-44FC-A44B-33488BA054BB} = {B3DD4159-436D-4863-8A37-06611C49A936}
+		{35253CE1-C864-4CD3-8249-4D1319748E8F} = {B3DD4159-436D-4863-8A37-06611C49A936}
+		{AC5F1CD8-AA8E-4DB5-814F-86C214175841} = {B3DD4159-436D-4863-8A37-06611C49A936}
+		{3785DF4D-65EF-40E4-9177-2A8B396AFB0C} = {B3DD4159-436D-4863-8A37-06611C49A936}
+		{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7} = {B3DD4159-436D-4863-8A37-06611C49A936}
+		{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6} = {B3DD4159-436D-4863-8A37-06611C49A936}
+	EndGlobalSection
+EndGlobal
