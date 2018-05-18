@@ -53,13 +53,14 @@ namespace SessionSeven
 
             Button No = new Button(gui);
             No.Parent = Bevel;
-            No.Text = GlblRes.No;
+            No.Text = GlblRes.Menu_AddExitConfirmationWindow_No;
             No.Width = 100;
             No.Left = 165;
             No.Top = 5;
             No.Click += (se, ev) =>
             {
                 ExitConfirmationWindow.Close();
+                ShowLogo(true);
             };
 
             gui.Add(ExitConfirmationWindow);
