@@ -12,3 +12,8 @@ test:
     except:
     - GPU
     - FileSystem
+skip_commits:
+  files:
+    - **/*.png
+    - **/*.gif
+    - **/*.md    
