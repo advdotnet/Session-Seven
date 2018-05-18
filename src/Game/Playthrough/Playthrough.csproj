@@ -69,30 +69,30 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FNA, Version=18.5.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\FNA.dll</HintPath>
-    </Reference>
-    <Reference Include="STACK, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\STACK.dll</HintPath>
-    </Reference>
-    <Reference Include="StarFinder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\StarFinder.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="TomShane.Neoforce.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\TomShane.Neoforce.Controls.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj">
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\Neoforce\FNA\FNA.csproj">
+      <Project>{35253ce1-c864-4cd3-8249-4d1319748e8f}</Project>
+      <Name>FNA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\Neoforce\Neoforce\TomShane.Neoforce.Controls.csproj">
+      <Project>{ac5f1cd8-aa8e-4db5-814f-86c214175841}</Project>
+      <Name>TomShane.Neoforce.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\StarFinder\StarFinder.csproj">
+      <Project>{3785df4d-65ef-40e4-9177-2a8b396afb0c}</Project>
+      <Name>StarFinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\STACK\STACK.csproj">
+      <Project>{bdd5e5df-a2f6-44fc-a44b-33488ba054bb}</Project>
+      <Name>STACK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj">
       <Project>{70539779-ef22-4ca3-8f1a-125dff443092}</Project>
       <Name>SessionSeven.Functional.Test</Name>
     </ProjectReference>

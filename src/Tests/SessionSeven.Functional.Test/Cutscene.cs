@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SessionSeven.Entities;
 using STACK;
-using STACK.Test;
+using STACK.TestBase;
 using System;
 
 namespace SessionSeven.Functional.Test

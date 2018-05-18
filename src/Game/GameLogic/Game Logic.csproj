@@ -279,23 +279,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ContentAnalyzer">
-      <HintPath>..\..\lib\ContentAnalyzer.dll</HintPath>
-    </Reference>
-    <Reference Include="FNA">
-      <HintPath>..\..\lib\FNA.dll</HintPath>
-    </Reference>
-    <Reference Include="STACK">
-      <HintPath>..\..\lib\STACK.dll</HintPath>
-    </Reference>
-    <Reference Include="StarFinder">
-      <HintPath>..\..\lib\StarFinder.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
-    <Reference Include="TomShane.Neoforce.Controls">
-      <HintPath>..\..\lib\TomShane.Neoforce.Controls.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\tree.tt">
@@ -318,7 +303,28 @@
       <LastGenOutput>Tree.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\Neoforce\FNA\FNA.csproj">
+      <Project>{35253ce1-c864-4cd3-8249-4d1319748e8f}</Project>
+      <Name>FNA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\Neoforce\Neoforce\TomShane.Neoforce.Controls.csproj">
+      <Project>{ac5f1cd8-aa8e-4db5-814f-86c214175841}</Project>
+      <Name>TomShane.Neoforce.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Dependencies\StarFinder\StarFinder.csproj">
+      <Project>{3785df4d-65ef-40e4-9177-2a8b396afb0c}</Project>
+      <Name>StarFinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\STACK\STACK.csproj">
+      <Project>{bdd5e5df-a2f6-44fc-a44b-33488ba054bb}</Project>
+      <Name>STACK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Tools\ContentAnalyzer\ContentAnalyzer.csproj">
+      <Project>{a72ae2e9-8318-4ddc-ae53-d868c1b77be6}</Project>
+      <Name>ContentAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
