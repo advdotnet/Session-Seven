@@ -25,7 +25,12 @@ namespace SessionSeven
         IEnumerable<Item> GetMenuItems()
         {
             Item Item = new Item(GlblRes.Quit);
-            Item.OnClick = ExitConfirmationWindow.ShowModal;
+            Item.OnClick = () =>
+            {
+                ExitConfirmationWindow.ShowModal();
+                ShowLogo(false);
+                ExitConfirmationWindow.Focused = true;
+            };
 
             yield return Item;
 

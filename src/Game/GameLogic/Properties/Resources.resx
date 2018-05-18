@@ -292,4 +292,7 @@
   <data name="Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version" xml:space="preserve">
     <value>Could not load save game. Maybe it was created in an earlier game version.</value>
   </data>
+  <data name="Menu_AddExitConfirmationWindow_No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

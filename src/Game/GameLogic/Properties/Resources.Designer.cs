@@ -340,6 +340,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string Menu_AddExitConfirmationWindow_No {
+            get {
+                return ResourceManager.GetString("Menu_AddExitConfirmationWindow_No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Music Volume.
         /// </summary>
         internal static string Music_Volume {
