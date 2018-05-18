@@ -63,6 +63,7 @@
   <PropertyGroup />
   <PropertyGroup />
   <ItemGroup>
+    <Compile Include="actors\RyanBlooddrop.cs" />
     <Compile Include="actors\Mouse.cs" />
     <Compile Include="actors\RyanVoice.cs" />
     <Compile Include="actors\Scene.cs" />
@@ -82,11 +83,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tree.tt</DependentUpon>
     </Compile>
+    <Compile Include="gui\dialog\DialogMenuState.cs" />
+    <Compile Include="gui\dialog\options\IDialogOptions.cs" />
+    <Compile Include="gui\dialog\options\BaseOption.cs" />
+    <Compile Include="gui\dialog\options\base\BaseOptions.cs" />
+    <Compile Include="gui\dialog\options\ScoreOptions.cs" />
+    <Compile Include="gui\dialog\options\ScoreOption.cs" />
+    <Compile Include="gui\interaction\verbs\base\VerbButton.cs" />
+    <Compile Include="gui\interaction\verbs\LockedVerb.cs" />
+    <Compile Include="gui\interaction\verbs\GetRandomTextDelegate.cs" />
+    <Compile Include="gui\interaction\InteractionBar.cs" />
+    <Compile Include="gui\interaction\ScrollUpButton.cs" />
+    <Compile Include="gui\interaction\ScrollDownButton.cs" />
+    <Compile Include="gui\interaction\verbs\VerbsHighlight.cs" />
     <Compile Include="gui\ScreenText.cs" />
     <Compile Include="items\RFIDBook.cs" />
     <Compile Include="items\BatteryB.cs" />
     <Compile Include="items\BatteryA.cs" />
     <Compile Include="items\SawKit.cs" />
+    <Compile Include="menu\ExitConfirmation.cs" />
+    <Compile Include="menu\MenuItems.cs" />
+    <Compile Include="menu\SaveLoadGame.cs" />
+    <Compile Include="menu\SettingsWindow.cs" />
     <Compile Include="Properties\Basement.Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -188,12 +206,12 @@
     <Compile Include="sessions\SessionThree.cs" />
     <Compile Include="sessions\SessionTwo.cs" />
     <Compile Include="sessions\SessionOne.cs" />
-    <Compile Include="gui\dialog\Options.cs" />
+    <Compile Include="gui\dialog\options\Options.cs" />
     <Compile Include="gui\Fader.cs" />
     <Compile Include="gui\dialog\Menu.cs" />
     <Compile Include="gui\dialog\Scene.cs" />
     <Compile Include="gui\interaction\RandomTexts.cs" />
-    <Compile Include="gui\interaction\Verbs.cs" />
+    <Compile Include="gui\interaction\verbs\Verbs.cs" />
     <Compile Include="gui\Mouse.cs" />
     <Compile Include="gui\positionselection\IPositionable.cs" />
     <Compile Include="gui\positionselection\Scene.cs" />
@@ -392,6 +410,7 @@
       <LastGenOutput>Resources_Session_2.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

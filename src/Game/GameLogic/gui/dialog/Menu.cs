@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using SessionSeven.Entities;
 using STACK;
 using STACK.Components;
 using STACK.Graphics;
@@ -9,12 +8,6 @@ using System.Linq;
 
 namespace SessionSeven.GUI.Dialog
 {
-    [Serializable]
-    public enum DialogMenuState
-    {
-        Open, Closed, Opening, Closing
-    }
-
     [Serializable]
     public class Menu : Entity
     {
@@ -255,7 +248,6 @@ namespace SessionSeven.GUI.Dialog
 
                 if (SelectedOptionIndex == -1)
                 {
-                    Tree.GUI.Mouse.ShowNormal();
                     LastSelectedOption = BaseOption.None;
                 }
                 else
