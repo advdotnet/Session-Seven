@@ -6,7 +6,7 @@ using System;
 namespace SessionSeven.Components
 {
     /// <summary>
-    /// 
+    /// Component that calculates a displacement for the drone over time.
     /// </summary>
     [Serializable]
     public class DroneDisplacement : Component, IUpdate

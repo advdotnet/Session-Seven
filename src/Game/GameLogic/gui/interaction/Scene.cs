@@ -158,7 +158,7 @@ namespace SessionSeven.GUI.Interaction
             return false;
         }
 
-        public readonly Rectangle ClickableRegion = new Rectangle(0, 0, Game.VIRTUAL_WIDTH, 288);
+        public readonly Rectangle ClickableRegion = new Rectangle(0, 0, Game.VIRTUAL_WIDTH, InteractionBar.HEIGHT);
 
         private bool IsNullOrInteractionbar(Entity entity)
         {

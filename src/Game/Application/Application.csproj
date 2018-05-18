@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="..\..\lib\**\*.*">
+    <Content Include="..\..\..\lib\STACK\lib\**\*.*">
       <Link>%(FileName)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -28,16 +28,6 @@ namespace SessionSeven.GUI
                 .Create(this);
         }
 
-        public void ShowNormal()
-        {
-            Get<Sprite>().CurrentFrame = 1;
-        }
-
-        public void ShowInvert()
-        {
-            Get<Sprite>().CurrentFrame = 2;
-        }
-
         public void Enable()
         {
             Enabled = true;

@@ -4,7 +4,6 @@ using STACK;
 using STACK.Components;
 using System;
 
-
 namespace SessionSeven.GUI.Dialog
 {
     [Serializable]
