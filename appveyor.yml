@@ -7,7 +7,7 @@ build:
 test:
   assemblies:
     only:
-      -
+      - SessionSeven.Functional.Test
   categories:
     except:
     - GPU
