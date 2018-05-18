@@ -14,6 +14,6 @@ test:
     - FileSystem
 skip_commits:
   files:
-    - **/*.png
-    - **/*.gif
-    - **/*.md    
+    - '**/*.png'
+    - '**/*.gif'
+    - '**/*.md'
