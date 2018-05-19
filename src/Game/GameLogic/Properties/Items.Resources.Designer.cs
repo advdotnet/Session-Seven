@@ -969,7 +969,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mr. Psychiatrist: » When you first realized you were trapped, what did you do? «.
+        ///   Looks up a localized string similar to Mr. Anderson: » When you first realized you were trapped, what did you do? «.
         /// </summary>
         internal static string Mr_Psychiatrist__When_you_first_realized_you_were_trapped_what_did_you_do_ {
             get {

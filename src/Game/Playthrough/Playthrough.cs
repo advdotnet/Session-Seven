@@ -91,8 +91,8 @@ namespace SessionSeven
         {
             SaveGame.EnsureStorageFolderExists(Game.SAVEGAMEFOLDER);
             var Directory = SaveGame.UserStorageFolder(Game.SAVEGAMEFOLDER);
-            var FileName = System.IO.Path.Combine(Directory, filename);
-            using (var w = File.AppendText(filename))
+            var Path = System.IO.Path.Combine(Directory, filename);
+            using (var w = File.AppendText(Path))
             {
                 w.WriteLine(text);
             }

@@ -337,7 +337,7 @@ namespace SessionSeven.Functional.Test
             runner.Interact(Tree.InventoryItems.SawKit, Tree.Basement.DrillingMachine, Verbs.Use);
             runner.Interact(Tree.Basement.DrillingMachine, Tree.Basement.Door, Verbs.Use);
             runner.Interact(Tree.Basement.Door, Verbs.Open);
-            runner.SaveState("BeforeSessionSeven");
+            runner.SaveState("[Playthrough] BeforeSessionSeven");
             runner.Interact(Tree.Basement.Door, Verbs.Walk);
         }
 

@@ -22,14 +22,29 @@ namespace SessionSeven
             }
         }
 
+        private bool GameRunning
+        {
+            get
+            {
+                return null != Engine.Game.World;
+            }
+        }
+
         IEnumerable<Item> GetMenuItems()
         {
             Item Item = new Item(GlblRes.Quit);
             Item.OnClick = () =>
             {
-                ExitConfirmationWindow.ShowModal();
-                ShowLogo(false);
-                ExitConfirmationWindow.Focused = true;
+                if (GameRunning)
+                {
+                    ExitConfirmationWindow.ShowModal();
+                    ShowLogo(false);
+                    ExitConfirmationWindow.Focused = true;
+                }
+                else
+                {
+                    Engine.Exit();
+                }
             };
 
             yield return Item;
@@ -59,7 +74,7 @@ namespace SessionSeven
             yield return Item;
 
             Item = new Item(GlblRes.Save);
-            Item.IsVisible = () => { return Engine.Game.World != null; };
+            Item.IsVisible = () => { return GameRunning; };
             Item.OnClick = () =>
             {
                 ShowLogo(false);
@@ -75,7 +90,7 @@ namespace SessionSeven
                 Engine.Resume();
                 Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
             };
-            Item.IsVisible = () => { return Engine.Game.World != null; };
+            Item.IsVisible = () => { return GameRunning; };
             yield return Item;
 
             Item = new Item(GlblRes.New_Game);
