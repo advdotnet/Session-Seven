@@ -132,6 +132,14 @@ namespace SessionSeven
             MainMenu = new Menu(Engine);
         }
 
+        public override void OnExit()
+        {
+            if (null != MainMenu)
+            {
+                MainMenu.Dispose();
+            }
+        }
+
         protected override void OnWorldInitialized(bool restore)
         {
             if (restore)
