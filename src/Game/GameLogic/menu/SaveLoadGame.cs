@@ -19,7 +19,7 @@ namespace SessionSeven
 
         void AddLoadGameWindow(Manager gui)
         {
-            var LoadButton = new Button(gui);
+            var LoadButton = new MenuButton(gui, ClickSound, FocusSound);
 
             LoadGameWindow = new Window(gui);
             LoadGameWindow.Width = 300;
@@ -50,6 +50,7 @@ namespace SessionSeven
             LoadGameListbox.Height = LoadGameWindow.ClientHeight - 35;
             LoadGameListbox.ItemIndexChanged += (s, e) =>
             {
+                ClickSound.Play();
                 MainMenuLabel.Text = string.Empty;
                 if (LoadGameListbox.ItemIndex > -1)
                 {
@@ -111,7 +112,7 @@ namespace SessionSeven
             LoadButton.Left = 5;
             LoadButton.Top = 5;
 
-            var CancelButton = new Button(gui);
+            var CancelButton = new MenuButton(gui, ClickSound, FocusSound);
             CancelButton.Init();
             CancelButton.Parent = Bevel;
             CancelButton.Text = GlblRes.Cancel;
@@ -129,7 +130,7 @@ namespace SessionSeven
 
         void AddSaveGameWindow(Manager gui)
         {
-            var SaveButton = new Button(gui);
+            var SaveButton = new MenuButton(gui, ClickSound, FocusSound);
             var NameTextBox = new TextBox(gui);
 
             SaveGameWindow = new Window(gui);
@@ -153,6 +154,7 @@ namespace SessionSeven
             SaveGameListbox.Height = SaveGameWindow.ClientHeight - 35 - 30;
             SaveGameListbox.ItemIndexChanged += (s, e) =>
             {
+                ClickSound.Play();
                 if (SaveGameListbox.ItemIndex > -1)
                 {
                     NameTextBox.Text = SaveGames[SaveGames.Keys.ElementAt(SaveGameListbox.ItemIndex)].Name;
@@ -166,7 +168,6 @@ namespace SessionSeven
             Bevel.Style = BevelStyle.Raised;
             Bevel.Top = SaveGameWindow.ClientHeight - Bevel.Height;
             Bevel.Width = SaveGameWindow.ClientWidth;
-
 
             SaveButton.Init();
             SaveButton.Parent = Bevel;
@@ -183,7 +184,7 @@ namespace SessionSeven
             SaveButton.Left = 5;
             SaveButton.Top = 5;
 
-            var CancelButton = new Button(gui);
+            var CancelButton = new MenuButton(gui, ClickSound, FocusSound);
             CancelButton.Init();
             CancelButton.Parent = Bevel;
             CancelButton.Text = GlblRes.Cancel;

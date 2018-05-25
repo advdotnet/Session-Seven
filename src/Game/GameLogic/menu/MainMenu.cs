@@ -1,15 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using STACK;
+using System;
 using TomShane.Neoforce.Controls;
 
 namespace SessionSeven
 {
-    public partial class Menu
+    public partial class Menu : IDisposable
     {
         private StackEngine Engine;
         private ImageBox MainMenuBackground;
         private Label MainMenuLabel;
+        private SoundEffect FocusSound, ClickSound;
 
         public void Show()
         {
@@ -56,8 +59,23 @@ namespace SessionSeven
             }
         }
 
+        public void Dispose()
+        {
+            if (null != FocusSound)
+            {
+                FocusSound.Dispose();
+            }
+            if (null != ClickSound)
+            {
+                FocusSound.Dispose();
+            }
+        }
+
         public Menu(StackEngine engine)
         {
+            FocusSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_click);
+            ClickSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_focus);
+
             Engine = engine;
             GameSettings = engine.GameSettings;
 
@@ -90,6 +108,7 @@ namespace SessionSeven
             AddLoadGameWindow(GUI);
             AddSaveGameWindow(GUI);
             AddSettingsWindow(GUI);
+            AddCreditsWindow(GUI);
             RefreshSaveGames();
             InitMenuButtons(GUI);
 

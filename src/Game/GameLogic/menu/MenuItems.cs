@@ -32,7 +32,8 @@ namespace SessionSeven
 
         IEnumerable<Item> GetMenuItems()
         {
-            Item Item = new Item(GlblRes.Quit);
+            // Quit
+            var Item = new Item(GlblRes.Quit);
             Item.OnClick = () =>
             {
                 if (GameRunning)
@@ -49,10 +50,18 @@ namespace SessionSeven
 
             yield return Item;
 
-            //Item = new Item("Credits");
+            // Credits
+            Item = new Item("Credits");
+            Item.OnClick = () =>
+            {
+                CreditsWindow.Show();
+                ShowLogo(false);
+                CreditsWindow.Focused = true;
+            };
 
-            //yield return Item;
+            yield return Item;
 
+            // Settings
             Item = new Item(GlblRes.Settings);
             Item.OnClick = () =>
             {
@@ -63,6 +72,7 @@ namespace SessionSeven
 
             yield return Item;
 
+            // Load
             Item = new Item(GlblRes.Load);
             Item.IsVisible = () => { return SaveGames.Count > 0; };
             Item.OnClick = () =>
@@ -73,6 +83,7 @@ namespace SessionSeven
             };
             yield return Item;
 
+            // Save
             Item = new Item(GlblRes.Save);
             Item.IsVisible = () => { return GameRunning; };
             Item.OnClick = () =>
@@ -83,6 +94,7 @@ namespace SessionSeven
 
             yield return Item;
 
+            // Continue
             Item = new Item(GlblRes.Continue);
             Item.OnClick = () =>
             {
@@ -93,6 +105,7 @@ namespace SessionSeven
             Item.IsVisible = () => { return GameRunning; };
             yield return Item;
 
+            // New Game
             Item = new Item(GlblRes.New_Game);
             Item.OnClick = () =>
             {
@@ -122,13 +135,16 @@ namespace SessionSeven
 
             foreach (var Item in GetMenuItems().Where(it => it.IsVisible()))
             {
-                var MenuButton = new Button(gui);
+                var MenuButton = new MenuButton(gui, ClickSound, FocusSound);
 
                 MenuButton.Init();
                 MenuButton.Text = Item.Text;
                 if (Item.OnClick != null)
                 {
-                    MenuButton.Click += (s, e) => Item.OnClick();
+                    MenuButton.Click += (s, e) =>
+                    {
+                        Item.OnClick();
+                    };
                 }
                 MenuButton.Width = 120;
                 MenuButton.Height = 24;
@@ -142,5 +158,6 @@ namespace SessionSeven
                 i++;
             }
         }
+
     }
 }

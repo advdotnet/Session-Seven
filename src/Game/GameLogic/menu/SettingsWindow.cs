@@ -147,7 +147,7 @@ namespace SessionSeven
             Bevel.Top = SettingsWindow.ClientHeight - Bevel.Height;
             Bevel.Width = SettingsWindow.ClientWidth;
 
-            var OKButton = new Button(gui);
+            var OKButton = new MenuButton(gui, ClickSound, FocusSound);
             OKButton.Init();
             OKButton.Parent = Bevel;
             OKButton.Text = GlblRes.OK;

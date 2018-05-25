@@ -240,3 +240,11 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# Content files
+*.png
+*.exe
+*.wav
+*.ogg
+*.psd
+*.stp

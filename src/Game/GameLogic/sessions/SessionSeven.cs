@@ -329,7 +329,7 @@ namespace SessionSeven.Cutscenes
             yield return RyanVoice.TransitionTo(RyanState.Neutral);
         }
 
-        IEnumerable<string> GetCreditTexts()
+        public static IEnumerable<string> GetCreditTexts()
         {
             var NL = System.Environment.NewLine;
             var NLNL = NL + NL;

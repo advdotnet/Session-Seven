@@ -23,7 +23,7 @@ namespace SessionSeven
             ExitConfirmationWindow.Visible = false;
             ExitConfirmationWindow.CloseButtonVisible = false;
 
-            Bevel Bevel = new Bevel(gui);
+            var Bevel = new Bevel(gui);
             Bevel.Parent = ExitConfirmationWindow;
             Bevel.Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right;
             Bevel.Height = 35;
@@ -32,7 +32,7 @@ namespace SessionSeven
             Bevel.Width = ExitConfirmationWindow.ClientWidth;
 
 
-            Label Text = new Label(gui);
+            var Text = new Label(gui);
             Text.Text = GlblRes.Do_you_really_want_to_quit_the_game;
             Text.Parent = ExitConfirmationWindow;
             Text.Top = 10;
@@ -40,7 +40,7 @@ namespace SessionSeven
             Text.Width = ExitConfirmationWindow.ClientWidth - 20;
             Text.Height = 20;
 
-            Button Yes = new Button(gui);
+            var Yes = new MenuButton(gui, ClickSound, FocusSound);
             Yes.Parent = Bevel;
             Yes.Width = 100;
             Yes.Text = GlblRes.Yes;
@@ -51,7 +51,8 @@ namespace SessionSeven
                 Engine.Exit();
             };
 
-            Button No = new Button(gui);
+
+            var No = new MenuButton(gui, ClickSound, FocusSound);
             No.Parent = Bevel;
             No.Text = GlblRes.Menu_AddExitConfirmationWindow_No;
             No.Width = 100;

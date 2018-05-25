@@ -101,9 +101,11 @@
     <Compile Include="items\BatteryB.cs" />
     <Compile Include="items\BatteryA.cs" />
     <Compile Include="items\SawKit.cs" />
+    <Compile Include="menu\MenuButton.cs" />
     <Compile Include="menu\ExitConfirmation.cs" />
     <Compile Include="menu\MenuItems.cs" />
     <Compile Include="menu\SaveLoadGame.cs" />
+    <Compile Include="menu\CreditsWindow.cs" />
     <Compile Include="menu\SettingsWindow.cs" />
     <Compile Include="Properties\Basement.Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -196,6 +198,7 @@
     <Compile Include="rooms\basement\RFIDAntennaCabinet.cs" />
     <Compile Include="rooms\jailcell\Foreground.cs" />
     <Compile Include="rooms\jailcell\Scene.cs" />
+    <Compile Include="rooms\office\RyanState.cs" />
     <Compile Include="rooms\office\RyanEyes.cs" />
     <Compile Include="rooms\paddedcell\Scene.cs" />
     <Compile Include="rooms\sunset\Scene.cs" />
@@ -410,7 +413,22 @@
       <LastGenOutput>Resources_Session_2.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="content\audio\" />
+    <Folder Include="content\characters\mouse\" />
+    <Folder Include="content\characters\ryan\" />
+    <Folder Include="content\fonts\" />
+    <Folder Include="content\inventory\" />
+    <Folder Include="content\rooms\basement\" />
+    <Folder Include="content\rooms\jailcell\" />
+    <Folder Include="content\rooms\letter\" />
+    <Folder Include="content\rooms\office\anim\day\" />
+    <Folder Include="content\rooms\office\anim\night\" />
+    <Folder Include="content\rooms\paddedcell\" />
+    <Folder Include="content\rooms\sunset\" />
+    <Folder Include="content\rooms\title\" />
+    <Folder Include="content\ui\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

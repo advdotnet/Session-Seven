@@ -8,15 +8,6 @@ using System.Linq;
 namespace SessionSeven.Office
 {
     [Serializable]
-    public enum RyanState
-    {
-        ArmsCrossed,
-        ArmsRaised,
-        HandsIntertwined,
-        Neutral
-    }
-
-    [Serializable]
     public class Ryan : Entity
     {
         const int ANIMATIONDELAY = 7;
