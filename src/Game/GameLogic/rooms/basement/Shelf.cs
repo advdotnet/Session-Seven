@@ -42,18 +42,24 @@ namespace SessionSeven.Basement
                     .Add(Verbs.Pick, PickScript());
         }
 
+        bool FirstLook = true;
+
         IEnumerator LookScript()
         {
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
                 yield return Game.Ego.Say(Basement_Res.This_bookcase_is_mostly_made_up_of_my_and_Cynthias_old_college_textbooks);
-                Tree.Basement.ShelfBox.Enabled = true;
-                Tree.Basement.ShelfEngineeringBooks.Enabled = true;
-                Tree.Basement.ShelfRFIDBook.Enabled = true;
-                Tree.Basement.ShelfBlanketFlashlight.Enabled = true;
-                Tree.Basement.RFIDAntennaShelf.Enabled = true;
-                Tree.Basement.ShelfComicBox.Enabled = true;
+                if (FirstLook)
+                {
+                    Tree.Basement.ShelfBox.Enabled = true;
+                    Tree.Basement.ShelfEngineeringBooks.Enabled = true;
+                    Tree.Basement.ShelfRFIDBook.Enabled = true;
+                    Tree.Basement.ShelfBlanketFlashlight.Enabled = true;
+                    Tree.Basement.RFIDAntennaShelf.Enabled = true;
+                    Tree.Basement.ShelfComicBox.Enabled = true;
+                    FirstLook = false;
+                }
             }
         }
 

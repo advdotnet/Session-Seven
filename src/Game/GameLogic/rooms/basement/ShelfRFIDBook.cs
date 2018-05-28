@@ -75,6 +75,7 @@ namespace SessionSeven.Basement
             using (Game.CutsceneBlock())
             {
                 yield return Game.Ego.StartUse();
+                Enabled = false;
                 Get<Sprite>().SetVisible(true);
                 Game.Ego.Inventory.AddItem<RFIDBook>();
                 yield return Game.Ego.StopUse();
