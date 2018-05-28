@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using SessionSeven.Components;
 using SessionSeven.Entities;
 using SessionSeven.InventoryItems;
@@ -22,7 +23,8 @@ namespace SessionSeven.GUI.Interaction
 
             InputDispatcher
                 .Create(this)
-                .SetOnMouseUpFn(OnMouseUp);
+                .SetOnMouseUpFn(OnMouseUp)
+                .SetOnKeyUpFn(OnKeyUp);
 
             Reset();
         }
@@ -80,6 +82,8 @@ namespace SessionSeven.GUI.Interaction
 
             bool Combinable = (null != Primary.Get<Combinable>());
             bool Givable = (null != Primary.Get<Givable>());
+
+            Tree.GUI.Interaction.ActionTextLabel.Color = Color.Gray;
 
             if (!Verb.Ditransitive || Secondary != null || (!Combinable && Verb.Equals(Verbs.Use)) || (!Givable && Verb.Equals(Verbs.Give)))
             {
@@ -166,6 +170,16 @@ namespace SessionSeven.GUI.Interaction
                 Tree.GUI.Interaction.InteractionBar == entity);
         }
 
+        private void OnKeyUp(Keys obj)
+        {
+            var Verb = KeyMapping.GetByKey(obj);
+            if (null != Verb)
+            {
+                Game.Ego.Stop();
+                SelectVerb(Verb);
+            }
+        }
+
         public void OnMouseUp(Vector2 position, MouseButton button)
         {
             var OUM = World.Get<STACK.Components.Mouse>().ObjectUnderMouse;
@@ -235,15 +249,7 @@ namespace SessionSeven.GUI.Interaction
             {
                 // Action being executed
                 Label.Color = Color.Gray;
-
-                if (Verb.Ditransitive)
-                {
-                    Label.ActionText = Verb.CreateActionString(Primary);
-                }
-                else
-                {
-                    Label.ActionText = Verb.CreateActionString(Primary, true);
-                }
+                Label.ActionText = Verb.CreateActionString(Primary, !Verb.Ditransitive);
             }
             else if (Primary != null && Secondary != null)
             {

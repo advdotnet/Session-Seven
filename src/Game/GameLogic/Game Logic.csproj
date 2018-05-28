@@ -90,6 +90,7 @@
     <Compile Include="gui\dialog\options\ScoreOptions.cs" />
     <Compile Include="gui\dialog\options\ScoreOption.cs" />
     <Compile Include="gui\interaction\verbs\base\VerbButton.cs" />
+    <Compile Include="gui\interaction\verbs\KeyMapping.cs" />
     <Compile Include="gui\interaction\verbs\LockedVerb.cs" />
     <Compile Include="gui\interaction\verbs\GetRandomTextDelegate.cs" />
     <Compile Include="gui\interaction\InteractionBar.cs" />
