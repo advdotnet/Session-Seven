@@ -104,7 +104,7 @@
     <value>A cloth bandage roll. This is exactly what I need right now.</value>
   <comment>Look at cloth bandage roll</comment></data>
   <data name="I_should_better_cut_some_part_off" xml:space="preserve">
-    <value>I should better cut some part off.</value>
+    <value>I better cut some part off.</value>
   <comment>Use cloth bandage roll</comment></data>
   <data name="Cant_use_the_whole_thing" xml:space="preserve">
     <value>Can't use the whole thing.</value>
@@ -119,7 +119,7 @@
     <value>A cloth strip bandage.</value>
   <comment>Look at cloth bandage roll (cut)</comment></data>
   <data name="I_should_better_use_the_cut_off_part" xml:space="preserve">
-    <value>I should better use the cut off part.</value>
+    <value>I should use the cut off part.</value>
   <comment>Use cloth bandage roll (cut)</comment></data>
   <data name="I_dressed_my_wound_already" xml:space="preserve">
     <value>I dressed my wound already.</value>
@@ -185,7 +185,7 @@
     <value>battery</value>
   </data>
   <data name="Our_old_picnic_blanket_wow_I_didnt_know_we_kept_it" xml:space="preserve">
-    <value>Our old picnic blanket... wow I didn't know we kept it.</value>
+    <value>Our old picnic blanket... Wow, I didn't know we kept it.</value>
   </data>
   <data name="Cynthia_and_me_spent_much_time_on_that_together_especially_before_Landon_was_born" xml:space="preserve">
     <value>Cynthia and me spent much time on that together, especially before Landon was born.</value>
@@ -194,7 +194,7 @@
     <value>No picnic for now.</value>
   </data>
   <data name="No_There_are_many_good_memories_attached_to_it" xml:space="preserve">
-    <value>No. There are many good memories attached to it.</value>
+    <value>No. There are too many good memories attached to it.</value>
   </data>
   <data name="Id_love_to_but_I_have_more_important_things_to_tend_to" xml:space="preserve">
     <value>I'd love to, but I have more important things to tend to.</value>
@@ -203,13 +203,13 @@
     <value>picnic blanket</value>
   </data>
   <data name="Holding_that_in_my_hands_I_cant_apply_force_on_that" xml:space="preserve">
-    <value>Holding that in my hands I can't apply force on that.</value>
+    <value>I can't put force on that while it's in my hands. </value>
   </data>
   <data name="It_broke_in_two_parts" xml:space="preserve">
     <value>It broke in two parts.</value>
   </data>
   <data name="I_cant_believe_what_just_happened" xml:space="preserve">
-    <value>I can't believe what just happened.</value>
+    <value>I can't believe what just happened…</value>
   </data>
   <data name="Reliable_and_robust" xml:space="preserve">
     <value>Reliable and robust.</value>
@@ -347,7 +347,7 @@
     <value>I'm not taking this kind of medicine.</value>
   </data>
   <data name="Landons_antidepressants_They_have_not_yet_been_opened" xml:space="preserve">
-    <value>Landon's antidepressants. They have not yet been opened.</value>
+    <value>Landon's antidepressants. Wait, these haven't even been opened!</value>
   </data>
   <data name="I_thought_he_was_taking_them_regularly" xml:space="preserve">
     <value>I thought he was taking them regularly.</value>
@@ -356,7 +356,7 @@
     <value>antidepressants</value>
   </data>
   <data name="It_is_a_portrait_of_my_son_Landon_when_he_was_six_years_old" xml:space="preserve">
-    <value>It is a portrait of my son Landon when he was six years old.</value>
+    <value>It is a portrait of my son Landon from when he was six years old.</value>
   </data>
   <data name="He_looks_happy" xml:space="preserve">
     <value>He looks happy.</value>
@@ -380,7 +380,7 @@
     <value>Got it.</value>
   </data>
   <data name="It_crashed" xml:space="preserve">
-    <value>It crashed.</value>
+    <value>Welp, it crashed.</value>
   </data>
   <data name="Forward" xml:space="preserve">
     <value>Forward.</value>
@@ -437,13 +437,13 @@
     <value>Another long-range RFID antenna.</value>
   </data>
   <data name="A_cardboard_without_any_inscription" xml:space="preserve">
-    <value>A cardboard without any inscription.</value>
+    <value>A cardboard box without any inscription.</value>
   </data>
   <data name="Looks_extactly_like_the_other_cardboard_I_got" xml:space="preserve">
-    <value>Looks extactly like the other cardboard I got.</value>
+    <value>Looks exactly like the other box I got.</value>
   </data>
   <data name="Looks_extactly_like_the_other_cardboard_which_contained_the_RFID_antenna" xml:space="preserve">
-    <value>Looks extactly like the other cardboard which contained the RFID antenna.</value>
+    <value>Looks extactly like the other box that had the RFID antenna.</value>
   </data>
   <data name="Must_be_Cynthias_or_Landons" xml:space="preserve">
     <value>Must be Cynthia's or Landon's.</value>
@@ -512,7 +512,7 @@
     <value>It reads:</value>
   </data>
   <data name="Mr_Psychiatrist__When_you_first_realized_you_were_trapped_what_did_you_do_" xml:space="preserve">
-    <value>Mr. Anderson: » When you first realized you were trapped, what did you do? «</value>
+    <value>Dr. Johnson: » When you first realized you were trapped, what did you do? «</value>
   </data>
   <data name="Mr_Schmidt__I_just_lost_it_I_was_terrified_" xml:space="preserve">
     <value>Mr. Schmidt: » I just lost it. I was terrified. «</value>
@@ -542,7 +542,7 @@
     <value>Mr. Schmidt: » Especially not if my family was in danger somewhere else. «</value>
   </data>
   <data name="It_stops_here_The_other_page_seems_to_be_missing" xml:space="preserve">
-    <value>It stops here. The other page seems to be missing.</value>
+    <value>It stops here. The other page seems to be missing. Not like I don't remember it, anyways.</value>
   </data>
   <data name="TherapyLog_TherapyLog_TherapyLog" xml:space="preserve">
     <value>therapy log</value>
@@ -554,7 +554,7 @@
     <value>Let's see what's in there...</value>
   </data>
   <data name="A_rotten_animal_skeleton" xml:space="preserve">
-    <value>A rotten animal skeleton!</value>
+    <value>Oh god, it's some kind of animal skeleton. It's all rotten!</value>
   </data>
   <data name="Those_are_Landons_antidepressants_They_have_not_yet_been_opened" xml:space="preserve">
     <value>Those are Landon's antidepressants. They have not yet been opened.</value>
