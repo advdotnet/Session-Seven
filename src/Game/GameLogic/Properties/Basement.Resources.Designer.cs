@@ -106,7 +106,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A cardboard without any inscription..
+        ///   Looks up a localized string similar to A cardboard box without any inscription..
         /// </summary>
         internal static string A_cardboard_without_any_inscription {
             get {
@@ -124,7 +124,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A guitar string package that dropped out when I opened the guitar case..
+        ///   Looks up a localized string similar to A guitar string package. It dropped out when I opened the guitar case..
         /// </summary>
         internal static string A_guitar_string_package_that_dropped_out_when_I_opened_the_guitar_case {
             get {
@@ -169,7 +169,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A screwdriver is put in the gap seperating the panels..
+        ///   Looks up a localized string similar to A screwdriver is in the gap seperating the panels..
         /// </summary>
         internal static string A_screwdriver_is_put_in_the_gap_seperating_the_panels {
             get {
@@ -178,7 +178,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A small wooden box was hidden underneath a panel..
+        ///   Looks up a localized string similar to Weird, there was a little wooden box under this panel..
         /// </summary>
         internal static string A_small_wooden_box_was_hidden_underneath_a_panel {
             get {
@@ -196,7 +196,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A tool in my collection is missing. I wonder which it might be..
+        ///   Looks up a localized string similar to Huh, a tool in my collection is missing. I don&apos;t know which one it would be..
         /// </summary>
         internal static string A_tool_in_my_collection_is_missing_I_wonder_which_it_might_be {
             get {
@@ -214,7 +214,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to After all the effort I won&apos;t put them back..
+        ///   Looks up a localized string similar to After all the effort, I&apos;m not about to put them back..
         /// </summary>
         internal static string After_all_the_effort_I_wont_put_them_back {
             get {
@@ -232,7 +232,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Also there is a single paper clip in there..
+        ///   Looks up a localized string similar to I think there&apos;s a paperclip in there….
         /// </summary>
         internal static string Also_there_is_a_single_paper_clip_in_there {
             get {
@@ -313,7 +313,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Below the blanket was a flashlight..
+        ///   Looks up a localized string similar to Hey, there&apos;s a flashlight under this blanket..
         /// </summary>
         internal static string Below_the_blanket_was_a_flashlight {
             get {
@@ -493,7 +493,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can&apos;t move it as long as it is locked..
+        ///   Looks up a localized string similar to Can&apos;t move it as long as it&apos;s locked..
         /// </summary>
         internal static string Cant_move_it_as_long_as_it_is_locked {
             get {
@@ -511,7 +511,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can&apos;t open the door as long as it is locked..
+        ///   Looks up a localized string similar to I can&apos;t open the door as long as it is locked..
         /// </summary>
         internal static string Cant_open_the_door_as_long_as_it_is_locked {
             get {
@@ -862,7 +862,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Here I find myself in the basement trying to talk to nonexistent objects..
+        ///   Looks up a localized string similar to Here I find myself in the basement, trying to talk to nonexistent objects..
         /// </summary>
         internal static string Here_I_find_myself_in_the_basement_trying_to_talk_to_nonexistent_objects {
             get {
@@ -898,7 +898,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I am not a pet killer..
+        ///   Looks up a localized string similar to I am not a killer of innocent critters..
         /// </summary>
         internal static string I_am_not_a_pet_killer {
             get {
@@ -907,7 +907,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I attached already one of them..
+        ///   Looks up a localized string similar to I already attached one of them..
         /// </summary>
         internal static string I_attached_already_one_of_them {
             get {
@@ -934,7 +934,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I can&apos;t drill on that while holding it in my hands..
+        ///   Looks up a localized string similar to I can&apos;t drill that while I&apos;m holding it in my hands..
         /// </summary>
         internal static string I_cant_drill_on_that_while_holding_it_in_my_hands {
             get {
@@ -943,7 +943,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I could reach the item in the back, but I couldn&apos;t pull it out..
+        ///   Looks up a localized string similar to Ugh. I could reach the item in the back, but I couldn&apos;t pull it out..
         /// </summary>
         internal static string I_could_reach_the_item_in_the_back_but_I_couldnt_pull_it_out {
             get {
@@ -1006,7 +1006,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I don&apos;t see the point in that. There is nothing underneath..
+        ///   Looks up a localized string similar to I don&apos;t see the point in that. There&apos;s nothing underneath..
         /// </summary>
         internal static string I_dont_see_the_point_in_that_There_is_nothing_underneath {
             get {
@@ -1069,7 +1069,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I have no idea on what to work at the moment..
+        ///   Looks up a localized string similar to I have no idea on what to work on at the moment..
         /// </summary>
         internal static string I_have_no_idea_on_what_to_work_at_the_moment {
             get {
@@ -1132,7 +1132,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I need a key or appropriate tooling..
+        ///   Looks up a localized string similar to I need a key. Or maybe a tool of some kind?.
         /// </summary>
         internal static string I_need_a_key_or_appropriate_tooling {
             get {
@@ -1150,7 +1150,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I need a second paper clip however..
+        ///   Looks up a localized string similar to I would need a second paper clip, though..
         /// </summary>
         internal static string I_need_a_second_paper_clip_however {
             get {
@@ -1222,7 +1222,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I should take it out of the cabinet, first..
+        ///   Looks up a localized string similar to I should take it out of the cabinet first..
         /// </summary>
         internal static string I_should_take_it_out_of_the_cabinet_first {
             get {
@@ -1314,7 +1314,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It does not seem to be interested..
+        ///   Looks up a localized string similar to Well, fine then. It doesn&apos;t seem to be interested..
         /// </summary>
         internal static string It_does_not_seem_to_be_interested {
             get {
@@ -1341,7 +1341,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It is open already..
+        ///   Looks up a localized string similar to It&apos;s open already..
         /// </summary>
         internal static string It_is_open_already {
             get {
@@ -1422,7 +1422,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s sitting on the floor, ready to ascend..
+        ///   Looks up a localized string similar to It&apos;s sitting on the floor, ready for take off!.
         /// </summary>
         internal static string Its_sitting_on_the_floor_ready_to_ascend {
             get {
@@ -1549,7 +1549,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Man, moving makes a mess..
+        ///   Looks up a localized string similar to Man, moving makes such a mess..
         /// </summary>
         internal static string Man_moving_makes_a_mess {
             get {
@@ -1630,7 +1630,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My drilling machine..
+        ///   Looks up a localized string similar to My trusty drilling machine..
         /// </summary>
         internal static string My_drilling_machine {
             get {
@@ -1657,7 +1657,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My hand is losing blood..
+        ///   Looks up a localized string similar to Shit, my hand is losing blood..
         /// </summary>
         internal static string My_hand_is_losing_blood {
             get {
@@ -1675,7 +1675,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My hand is wounded..
+        ///   Looks up a localized string similar to Agh, what happened to my hand?.
         /// </summary>
         internal static string My_hand_is_wounded {
             get {
@@ -1702,7 +1702,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No. I spent so much time trying to escape from here..
+        ///   Looks up a localized string similar to No. I spent so much time trying to get out of here..
         /// </summary>
         internal static string No_I_spent_so_much_time_trying_to_escape_from_here {
             get {
@@ -1756,7 +1756,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Not as long as the rat is in there..
+        ///   Looks up a localized string similar to No way, not as long as the rat&apos;s in there..
         /// </summary>
         internal static string Not_as_long_as_the_rat_is_in_there {
             get {
@@ -1928,7 +1928,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The baton is too short to reach the item in the back..
+        ///   Looks up a localized string similar to Nah, this baton is too short to reach the item in the back..
         /// </summary>
         internal static string The_baton_is_too_short_to_reach_the_item_in_the_back {
             get {
@@ -1937,7 +1937,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The cable is not long enough..
+        ///   Looks up a localized string similar to Darn… the cable can&apos;t reach..
         /// </summary>
         internal static string The_cable_is_not_long_enough {
             get {
@@ -1973,7 +1973,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The drone is operated by using its remote control..
+        ///   Looks up a localized string similar to I think the drone&apos;s operated with a remote control..
         /// </summary>
         internal static string The_drone_is_operated_by_using_its_remote_control {
             get {
@@ -2018,7 +2018,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The key works. The drawer is unlocked now..
+        ///   Looks up a localized string similar to Hey, this key works! The drawer is unlocked now..
         /// </summary>
         internal static string The_key_works_The_drawer_is_unlocked_now {
             get {
@@ -2045,7 +2045,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The picture frames&apos; glass is shattered already..
+        ///   Looks up a localized string similar to The frame&apos;s glass is shattered already..
         /// </summary>
         internal static string The_picture_frames_glass_is_shattered_already {
             get {
@@ -2117,7 +2117,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are some bite marks by a rat or something..
+        ///   Looks up a localized string similar to There are some bite marks. Do we have a rat problem?.
         /// </summary>
         internal static string There_are_some_bite_marks_by_a_rat_or_something {
             get {
@@ -2153,7 +2153,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is nothing behind..
+        ///   Looks up a localized string similar to There is nothing behind it..
         /// </summary>
         internal static string There_is_nothing_behind {
             get {
@@ -2180,7 +2180,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These sockets are working actually..
+        ///   Looks up a localized string similar to Huh, these sockets are actually working..
         /// </summary>
         internal static string These_sockets_are_working_actually {
             get {
@@ -2198,7 +2198,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to They are empty. We just kept them if we need to move again..
+        ///   Looks up a localized string similar to They are empty. We just kept them in case we need to move again..
         /// </summary>
         internal static string They_are_empty_We_just_kept_them_if_we_need_to_move_again {
             get {
@@ -2234,7 +2234,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This box is for stuff I am not sure about whether I still need it or not..
+        ///   Looks up a localized string similar to This box is for stuff I&apos;m not sure about throwing out yet..
         /// </summary>
         internal static string This_box_is_for_stuff_I_am_not_sure_about_whether_I_still_need_it_or_not {
             get {
@@ -2262,7 +2262,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This could work actually..
+        ///   Looks up a localized string similar to Actually, this could work!.
         /// </summary>
         internal static string This_could_work_actually {
             get {
@@ -2271,7 +2271,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This didn&apos;t do anything besides heating the drill up. It almost glowed..
+        ///   Looks up a localized string similar to That  didn&apos;t do anything besides heating the drill up. I don&apos;t want it to explode!.
         /// </summary>
         internal static string This_didnt_do_anything_besides_heating_the_drill_up_It_almost_glowed {
             get {
@@ -2298,7 +2298,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is a huuge rat in there..
+        ///   Looks up a localized string similar to There is a huuge rat in there..
         /// </summary>
         internal static string This_is_a_huuge_rat_in_there {
             get {
@@ -2325,7 +2325,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is to big to carry around..
+        ///   Looks up a localized string similar to This is too big to carry around..
         /// </summary>
         internal static string This_is_to_big_to_carry_around {
             get {
@@ -2334,7 +2334,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This key does not fit..
+        ///   Looks up a localized string similar to Nope, this key doesn&apos;t fit..
         /// </summary>
         internal static string This_key_does_not_fit {
             get {
@@ -2343,7 +2343,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Those burglar bars are way to strong..
+        ///   Looks up a localized string similar to Those burglar bars are way too strong..
         /// </summary>
         internal static string Those_burglar_bars_are_way_to_strong {
             get {
@@ -2415,7 +2415,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We have has problems with rats since we moved in here four years ago..
+        ///   Looks up a localized string similar to We had a rat problem when we moved in four years ago, too..
         /// </summary>
         internal static string We_have_has_problems_with_rats_since_we_moved_in_here_four_years_ago {
             get {
@@ -2424,7 +2424,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We learned how these locks function and how to pick them in university..
+        ///   Looks up a localized string similar to We learned about these locks at university… I bet I could pick it somehow..
         /// </summary>
         internal static string We_learned_how_these_locks_function_and_how_to_pick_them_in_university {
             get {
@@ -2433,7 +2433,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We learned how these locks work and how to pick them in university..
+        ///   Looks up a localized string similar to We learned about these locks at university… I bet I could pick it somehow..
         /// </summary>
         internal static string We_learned_how_these_locks_work_and_how_to_pick_them_in_university {
             get {
@@ -2496,7 +2496,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Where does this horrible smell come from?.
+        ///   Looks up a localized string similar to Where is that horrible smell coming from?.
         /// </summary>
         internal static string Where_does_this_horrible_smell_come_from {
             get {
@@ -2505,7 +2505,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Who knows how long I&apos;m locked in here?.
+        ///   Looks up a localized string similar to Who knows how long I&apos;ll be locked in here?.
         /// </summary>
         internal static string Who_knows_how_long_Im_locked_in_here {
             get {
@@ -2586,7 +2586,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You will never know when this will come in handy..
+        ///   Looks up a localized string similar to You never know when this will come in handy..
         /// </summary>
         internal static string You_will_never_know_when_this_will_come_in_handy {
             get {
