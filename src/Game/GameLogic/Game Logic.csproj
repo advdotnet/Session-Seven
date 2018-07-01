@@ -153,6 +153,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources_Session_2.resx</DependentUpon>
     </Compile>
+    <Compile Include="rooms\basement\VentilationShaft.cs" />
+    <Compile Include="rooms\basement\CabinetToolbox.cs" />
+    <Compile Include="rooms\basement\CarpetWall.cs" />
+    <Compile Include="rooms\basement\CabinetScrapbooks.cs" />
+    <Compile Include="rooms\basement\CabinetSupplies.cs" />
+    <Compile Include="rooms\basement\Boiler.cs" />
+    <Compile Include="rooms\basement\Folders.cs" />
     <Compile Include="rooms\basement\HazelnutsOnFloor.cs" />
     <Compile Include="rooms\basement\DrillingMachineUsed.cs" />
     <Compile Include="rooms\basement\DrillingMachineCable.cs" />
@@ -268,7 +275,6 @@
     <Compile Include="actors\BlooddropEmitter.cs" />
     <Compile Include="rooms\basement\Desk.cs" />
     <Compile Include="rooms\basement\ModemLight.cs" />
-    <Compile Include="rooms\basement\Modem.cs" />
     <Compile Include="rooms\basement\Drone.cs" />
     <Compile Include="rooms\basement\CabinetRightDoor.cs" />
     <Compile Include="rooms\basement\RyanLying.cs" />

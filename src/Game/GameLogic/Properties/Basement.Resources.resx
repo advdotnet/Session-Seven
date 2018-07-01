@@ -146,7 +146,7 @@
     <value>Lots of gnawed off paper and plastic...</value>
   </data>
   <data name="Also_there_is_a_single_paper_clip_in_there" xml:space="preserve">
-    <value>I think there's a paperclip in there…</value>
+    <value>I think there's a paperclip in there...</value>
   </data>
   <data name="box_with_writing_materials" xml:space="preserve">
     <value>box with writing materials</value>
@@ -218,7 +218,7 @@
     <value>lock</value>
   </data>
   <data name="The_cable_is_not_long_enough" xml:space="preserve">
-    <value>Darn… the cable can't reach.</value>
+    <value>Darn... the cable can't reach.</value>
   </data>
   <data name="No_power" xml:space="preserve">
     <value>No power.</value>
@@ -227,13 +227,13 @@
     <value>Actually, this could work!</value>
   </data>
   <data name="We_learned_how_these_locks_function_and_how_to_pick_them_in_university" xml:space="preserve">
-    <value>We learned about these locks at university… I bet I could pick it somehow.</value>
+    <value>We learned about these locks at university... I bet I could pick it somehow.</value>
   </data>
   <data name="Got_it" xml:space="preserve">
     <value>Got it.</value>
   </data>
   <data name="We_learned_how_these_locks_work_and_how_to_pick_them_in_university" xml:space="preserve">
-    <value>We learned about these locks at university… I bet I could pick it somehow.</value>
+    <value>We learned about these locks at university... I bet I could pick it somehow.</value>
   </data>
   <data name="I_need_a_second_paper_clip_however" xml:space="preserve">
     <value>I would need a second paper clip, though.</value>

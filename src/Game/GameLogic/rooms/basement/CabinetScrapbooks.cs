@@ -3,25 +3,28 @@ using STACK;
 using STACK.Components;
 using System;
 using System.Collections;
-using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
     [Serializable]
-    public class Modem : Entity
+    public class CabinetScrapbooks : Entity
     {
-        public Modem()
+        public CabinetScrapbooks()
         {
-            HotspotRectangle
-                .Create(this)
-                .SetCaption(Basement_Res.modem)
-                .AddRectangle(234, 208, 13, 9);
-
             Interaction
                 .Create(this)
-                .SetPosition(234, 246)
+                .SetPosition(703, 247)
                 .SetDirection(Directions8.Up)
                 .SetGetInteractionsFn(GetInteractions);
+
+            Transform
+                .Create(this)
+                .SetZ(3);
+
+            HotspotRectangle
+                .Create(this)
+                .SetCaption("scrapbooks")
+                .AddRectangle(703, 80, 43, 26);
 
             Enabled = false;
         }
@@ -38,18 +41,20 @@ namespace SessionSeven.Basement
         IEnumerator LookScript()
         {
             yield return Game.Ego.GoTo(this);
-
             using (Game.CutsceneBlock())
             {
+                yield return Game.Ego.Say("Cynthia used to be really into making scrapbooks for every year when Landon was growing up.");
+                yield return Game.Ego.Say("I guess I hadn't really noticed she wasn't doing it any more.");
+                yield return Game.Ego.Say("I can't quite bring myself to look through them right now.");
             }
         }
 
         IEnumerator PickScript()
         {
             yield return Game.Ego.GoTo(this);
-
             using (Game.CutsceneBlock())
             {
+                yield return Game.Ego.Say("I can't quite bring myself to look through them right now.");
             }
         }
     }

@@ -186,6 +186,10 @@ namespace SessionSeven.Cutscenes
             Tree.Basement.DrillingMachine.Enabled = true;
             Tree.Basement.DrillingMachineCable.Enabled = true;
             Tree.Basement.HazelnutsOnFloor.Enabled = true;
+            Tree.Basement.VentilationShaft.Enabled = true;
+            Tree.Basement.CarpetWall.Enabled = true;
+            Tree.Basement.Folders.Enabled = true;
+            Tree.Basement.Boiler.Enabled = true;
 
             Tree.GUI.Interaction.Scene.Interactive = true;
             Tree.GUI.Interaction.Scene.Visible = true;

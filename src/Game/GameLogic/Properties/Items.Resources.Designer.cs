@@ -562,7 +562,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I can&apos;t believe what just happened….
+        ///   Looks up a localized string similar to I can&apos;t believe what just happened....
         /// </summary>
         internal static string I_cant_believe_what_just_happened {
             get {

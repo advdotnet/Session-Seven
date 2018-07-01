@@ -232,7 +232,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I think there&apos;s a paperclip in there….
+        ///   Looks up a localized string similar to I think there&apos;s a paperclip in there....
         /// </summary>
         internal static string Also_there_is_a_single_paper_clip_in_there {
             get {
@@ -1937,7 +1937,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Darn… the cable can&apos;t reach..
+        ///   Looks up a localized string similar to Darn... the cable can&apos;t reach..
         /// </summary>
         internal static string The_cable_is_not_long_enough {
             get {
@@ -2424,7 +2424,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We learned about these locks at university… I bet I could pick it somehow..
+        ///   Looks up a localized string similar to We learned about these locks at university... I bet I could pick it somehow..
         /// </summary>
         internal static string We_learned_how_these_locks_function_and_how_to_pick_them_in_university {
             get {
@@ -2433,7 +2433,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We learned about these locks at university… I bet I could pick it somehow..
+        ///   Looks up a localized string similar to We learned about these locks at university... I bet I could pick it somehow..
         /// </summary>
         internal static string We_learned_how_these_locks_work_and_how_to_pick_them_in_university {
             get {
