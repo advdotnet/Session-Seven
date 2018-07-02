@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Resources.cs" />
     <Compile Include="Cutscene.cs" />
     <Compile Include="Playthrough.cs" />
     <Compile Include="ScriptsExtension.cs" />
