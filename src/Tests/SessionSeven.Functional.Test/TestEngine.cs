@@ -15,8 +15,8 @@ namespace SessionSeven.Functional.Test
     public class SessionSevenTestEngine : TestEngine
     {
 
-        public SessionSevenTestEngine(StackGame game, IServiceProvider services, TestInputProvider input)
-            : base(game, services, input) { }
+        public SessionSevenTestEngine(StackGame game, IServiceProvider services, TestInputProvider input, GameSettings settings = null)
+            : base(game, services, input, settings) { }
 
         /// <summary>
         /// Creates a new SessionSevenTestEngine and executes an action with it.
