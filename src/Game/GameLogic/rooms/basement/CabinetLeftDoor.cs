@@ -159,6 +159,7 @@ namespace SessionSeven.Basement
                         Tree.Basement.CabinetSawKit.Visible = !Game.Ego.Inventory.HasItem<SawKit>();
                         Tree.Basement.CabinetSawKit.Enabled = !Game.Ego.Inventory.HasItem<SawKit>();
                         Tree.Basement.CabinetToolbox.Enabled = true;
+                        Tree.Basement.CabinetScrapbooksLeft.Enabled = true;
 
                         if (!FirstOpen)
                         {
@@ -229,6 +230,7 @@ namespace SessionSeven.Basement
                     Tree.Basement.CabinetSawKit.Visible = false;
                     Tree.Basement.CabinetSawKit.Enabled = false;
                     Tree.Basement.CabinetToolbox.Enabled = false;
+                    Tree.Basement.CabinetScrapbooksLeft.Enabled = false;
 
                     yield return Game.Ego.StopUse();
                 }

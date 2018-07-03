@@ -115,6 +115,16 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A cardboard without any inscription is sitting on a box on the top of the cabinet..
+        /// </summary>
+        internal static string A_cardboard_without_any_inscription_is_sitting_on_a_box_on_the_top_of_the_cabinet {
+            get {
+                return ResourceManager.GetString("A_cardboard_without_any_inscription_is_sitting_on_a_box_on_the_top_of_the_cabinet" +
+                        "", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A guitar string package dropped out..
         /// </summary>
         internal static string A_guitar_string_package_dropped_out {
@@ -169,6 +179,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A quality screwdriver that does not break on the first screw..
+        /// </summary>
+        internal static string A_quality_screwdriver_that_does_not_break_on_the_first_screw {
+            get {
+                return ResourceManager.GetString("A_quality_screwdriver_that_does_not_break_on_the_first_screw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A screwdriver is in the gap seperating the panels..
         /// </summary>
         internal static string A_screwdriver_is_put_in_the_gap_seperating_the_panels {
@@ -201,6 +220,15 @@ namespace SessionSeven.Properties {
         internal static string A_tool_in_my_collection_is_missing_I_wonder_which_it_might_be {
             get {
                 return ResourceManager.GetString("A_tool_in_my_collection_is_missing_I_wonder_which_it_might_be", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A ventilation shaft. At least I have AC down here..
+        /// </summary>
+        internal static string A_ventilation_shaft_At_least_I_have_AC_down_here {
+            get {
+                return ResourceManager.GetString("A_ventilation_shaft_At_least_I_have_AC_down_here", resourceCulture);
             }
         }
         
@@ -313,6 +341,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to arts and crafts supplies.
+        /// </summary>
+        internal static string arts_and_crafts_supplies {
+            get {
+                return ResourceManager.GetString("arts_and_crafts_supplies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hey, there&apos;s a flashlight under this blanket..
         /// </summary>
         internal static string Below_the_blanket_was_a_flashlight {
@@ -363,6 +400,15 @@ namespace SessionSeven.Properties {
         internal static string bloodstains {
             get {
                 return ResourceManager.GetString("bloodstains", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to boiler.
+        /// </summary>
+        internal static string boiler {
+            get {
+                return ResourceManager.GetString("boiler", resourceCulture);
             }
         }
         
@@ -520,6 +566,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Can&apos;t reach it with bare hands..
+        /// </summary>
+        internal static string Cant_reach_it_with_bare_hands {
+            get {
+                return ResourceManager.GetString("Cant_reach_it_with_bare_hands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to cardboard.
         /// </summary>
         internal static string cardboard {
@@ -579,6 +634,26 @@ namespace SessionSeven.Properties {
         internal static string Cynthia_stores_some_writing_materials_in_this_box {
             get {
                 return ResourceManager.GetString("Cynthia_stores_some_writing_materials_in_this_box", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cynthia took control of this cabinet compartment for her arts and crafts supplies a while ago..
+        /// </summary>
+        internal static string Cynthia_took_control_of_this_cabinet_compartment_for_her_arts_and_crafts_supplies_a_while_ago {
+            get {
+                return ResourceManager.GetString("Cynthia_took_control_of_this_cabinet_compartment_for_her_arts_and_crafts_supplies" +
+                        "_a_while_ago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cynthia used to be really into making scrapbooks for every year when Landon was growing up..
+        /// </summary>
+        internal static string Cynthia_used_to_be_really_into_making_scrapbooks_for_every_year_when_Landon_was_growing_up {
+            get {
+                return ResourceManager.GetString("Cynthia_used_to_be_really_into_making_scrapbooks_for_every_year_when_Landon_was_g" +
+                        "rowing_up", resourceCulture);
             }
         }
         
@@ -723,6 +798,15 @@ namespace SessionSeven.Properties {
         internal static string flashlight {
             get {
                 return ResourceManager.GetString("flashlight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to folders.
+        /// </summary>
+        internal static string folders {
+            get {
+                return ResourceManager.GetString("folders", resourceCulture);
             }
         }
         
@@ -943,6 +1027,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to I can&apos;t quite bring myself to look through them right now..
+        /// </summary>
+        internal static string I_cant_quite_bring_myself_to_look_through_them_right_now {
+            get {
+                return ResourceManager.GetString("I_cant_quite_bring_myself_to_look_through_them_right_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ugh. I could reach the item in the back, but I couldn&apos;t pull it out..
         /// </summary>
         internal static string I_could_reach_the_item_in_the_back_but_I_couldnt_pull_it_out {
@@ -957,6 +1050,16 @@ namespace SessionSeven.Properties {
         internal static string I_didnt_know_it_was_down_here_now {
             get {
                 return ResourceManager.GetString("I_didnt_know_it_was_down_here_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I didn&apos;t realize how much Cynthia was handling on her own while I was away at work....
+        /// </summary>
+        internal static string I_didnt_realize_how_much_Cynthia_was_handling_on_her_own_while_I_was_away_at_work {
+            get {
+                return ResourceManager.GetString("I_didnt_realize_how_much_Cynthia_was_handling_on_her_own_while_I_was_away_at_work" +
+                        "", resourceCulture);
             }
         }
         
@@ -1038,6 +1141,15 @@ namespace SessionSeven.Properties {
         internal static string I_feel_like_something_is_watching_me {
             get {
                 return ResourceManager.GetString("I_feel_like_something_is_watching_me", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I guess I hadn&apos;t really noticed she wasn&apos;t doing it any more..
+        /// </summary>
+        internal static string I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more {
+            get {
+                return ResourceManager.GetString("I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more", resourceCulture);
             }
         }
         
@@ -1204,6 +1316,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to I should be able to reach it now..
+        /// </summary>
+        internal static string I_should_be_able_to_reach_it_now {
+            get {
+                return ResourceManager.GetString("I_should_be_able_to_reach_it_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to I should have a look at the medical cabinet over there to dress my wound..
         /// </summary>
         internal static string I_should_have_a_look_at_the_medical_cabinet_over_there_to_dress_my_wound {
@@ -1323,6 +1444,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to It doesn&apos;t look like she&apos;s touched any of it in a while, though..
+        /// </summary>
+        internal static string It_doesnt_look_like_shes_touched_any_of_it_in_a_while_though {
+            get {
+                return ResourceManager.GetString("It_doesnt_look_like_shes_touched_any_of_it_in_a_while_though", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to It is a light switch..
         /// </summary>
         internal static string It_is_a_light_switch {
@@ -1346,6 +1476,16 @@ namespace SessionSeven.Properties {
         internal static string It_is_open_already {
             get {
                 return ResourceManager.GetString("It_is_open_already", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It took Cynthia almost a year to finally be happy with the design scheme of the house..
+        /// </summary>
+        internal static string It_took_Cynthia_almost_a_year_to_finally_be_happy_with_the_design_scheme_of_the_house {
+            get {
+                return ResourceManager.GetString("It_took_Cynthia_almost_a_year_to_finally_be_happy_with_the_design_scheme_of_the_h" +
+                        "ouse", resourceCulture);
             }
         }
         
@@ -1377,11 +1517,29 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to It&apos;s fine where it is..
+        /// </summary>
+        internal static string Its_fine_where_it_is {
+            get {
+                return ResourceManager.GetString("Its_fine_where_it_is", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to It&apos;s fixed to the wall..
         /// </summary>
         internal static string Its_fixed_to_the_wall {
             get {
                 return ResourceManager.GetString("Its_fixed_to_the_wall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s full of all sorts of glitter glues, paint, and what not..
+        /// </summary>
+        internal static string Its_full_of_all_sorts_of_glitter_glues_paint_and_what_not {
+            get {
+                return ResourceManager.GetString("Its_full_of_all_sorts_of_glitter_glues_paint_and_what_not", resourceCulture);
             }
         }
         
@@ -1409,6 +1567,15 @@ namespace SessionSeven.Properties {
         internal static string Its_my_workbench {
             get {
                 return ResourceManager.GetString("Its_my_workbench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s nice, although I haven&apos;t found a reason to saw anything yet..
+        /// </summary>
+        internal static string Its_nice_although_I_havent_found_a_reason_to_saw_anything_yet {
+            get {
+                return ResourceManager.GetString("Its_nice_although_I_havent_found_a_reason_to_saw_anything_yet", resourceCulture);
             }
         }
         
@@ -1513,6 +1680,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Looks exactly like the one I got from the shelf..
+        /// </summary>
+        internal static string Looks_exactly_like_the_one_I_got_from_the_shelf {
+            get {
+                return ResourceManager.GetString("Looks_exactly_like_the_one_I_got_from_the_shelf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Looks like an animal was chewing on it..
         /// </summary>
         internal static string Looks_like_an_animal_was_chewing_on_it {
@@ -1549,6 +1725,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Man, I could use a hot shower right about now..
+        /// </summary>
+        internal static string Man_I_could_use_a_hot_shower_right_about_now {
+            get {
+                return ResourceManager.GetString("Man_I_could_use_a_hot_shower_right_about_now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Man, moving makes such a mess..
         /// </summary>
         internal static string Man_moving_makes_a_mess {
@@ -1563,6 +1748,15 @@ namespace SessionSeven.Properties {
         internal static string Maybe_he_put_it_up_there {
             get {
                 return ResourceManager.GetString("Maybe_he_put_it_up_there", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maybe I can make the drone bump into the cardboard..
+        /// </summary>
+        internal static string Maybe_I_can_make_the_drone_bump_into_the_cardboard {
+            get {
+                return ResourceManager.GetString("Maybe_I_can_make_the_drone_bump_into_the_cardboard", resourceCulture);
             }
         }
         
@@ -1720,6 +1914,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No need to fiddle around with the drone..
+        /// </summary>
+        internal static string No_need_to_fiddle_around_with_the_drone {
+            get {
+                return ResourceManager.GetString("No_need_to_fiddle_around_with_the_drone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No power..
         /// </summary>
         internal static string No_power {
@@ -1792,6 +1995,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Now I can only just reach it..
+        /// </summary>
+        internal static string Now_I_can_only_just_reach_it {
+            get {
+                return ResourceManager.GetString("Now_I_can_only_just_reach_it", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to nut.
         /// </summary>
         internal static string nut {
@@ -1855,6 +2067,24 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to rugs.
+        /// </summary>
+        internal static string rugs {
+            get {
+                return ResourceManager.GetString("rugs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to scrapbooks.
+        /// </summary>
+        internal static string scrapbooks {
+            get {
+                return ResourceManager.GetString("scrapbooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to screwdriver.
         /// </summary>
         internal static string screwdriver {
@@ -1887,6 +2117,15 @@ namespace SessionSeven.Properties {
         internal static string sockets {
             get {
                 return ResourceManager.GetString("sockets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some of our failed statement rugs..
+        /// </summary>
+        internal static string Some_of_our_failed_statement_rugs {
+            get {
+                return ResourceManager.GetString("Some_of_our_failed_statement_rugs", resourceCulture);
             }
         }
         
@@ -1933,6 +2172,15 @@ namespace SessionSeven.Properties {
         internal static string The_baton_is_too_short_to_reach_the_item_in_the_back {
             get {
                 return ResourceManager.GetString("The_baton_is_too_short_to_reach_the_item_in_the_back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The boiler that keeps our hot water running..
+        /// </summary>
+        internal static string The_boiler_that_keeps_our_hot_water_running {
+            get {
+                return ResourceManager.GetString("The_boiler_that_keeps_our_hot_water_running", resourceCulture);
             }
         }
         
@@ -2068,6 +2316,25 @@ namespace SessionSeven.Properties {
         internal static string The_tool_is_missing {
             get {
                 return ResourceManager.GetString("The_tool_is_missing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The toolbox Landon got me for father&apos;s day this year..
+        /// </summary>
+        internal static string The_toolbox_Landon_got_me_for_fathers_day_this_year {
+            get {
+                return ResourceManager.GetString("The_toolbox_Landon_got_me_for_fathers_day_this_year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are all sorts of different colored folders, full of documents for the new house, old tax files, and various papers for Landon..
+        /// </summary>
+        internal static string There_are_all_sorts_of_different_colored_folders_full_of_documents_for_the_new_house_old_tax_files_and_various_papers_for_Landon {
+            get {
+                return ResourceManager.GetString("There_are_all_sorts_of_different_colored_folders_full_of_documents_for_the_new_ho" +
+                        "use_old_tax_files_and_various_papers_for_Landon", resourceCulture);
             }
         }
         
@@ -2379,6 +2646,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to toolbox.
+        /// </summary>
+        internal static string toolbox {
+            get {
+                return ResourceManager.GetString("toolbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to tools.
         /// </summary>
         internal static string tools {
@@ -2393,6 +2669,15 @@ namespace SessionSeven.Properties {
         internal static string Two_bench_vises_Check {
             get {
                 return ResourceManager.GetString("Two_bench_vises_Check", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ventilation shaft.
+        /// </summary>
+        internal static string ventilation_shaft {
+            get {
+                return ResourceManager.GetString("ventilation_shaft", resourceCulture);
             }
         }
         

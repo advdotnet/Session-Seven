@@ -3,6 +3,7 @@ using STACK;
 using STACK.Components;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
@@ -17,7 +18,7 @@ namespace SessionSeven.Basement
 
             HotspotSprite
                 .Create(this)
-                .SetCaption("screwdriver")
+                .SetCaption(Basement_Res.screwdriver)
                 .SetPixelPerfect(false);
 
             Transform
@@ -48,7 +49,7 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("A quality screwdriver that does not break on the first screw.");
+                yield return Game.Ego.Say(Basement_Res.A_quality_screwdriver_that_does_not_break_on_the_first_screw);
             }
         }
 

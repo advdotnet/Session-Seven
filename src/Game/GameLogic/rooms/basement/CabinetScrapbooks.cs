@@ -1,19 +1,52 @@
-﻿using SessionSeven.GUI.Interaction;
+﻿using Microsoft.Xna.Framework;
+using SessionSeven.GUI.Interaction;
 using STACK;
 using STACK.Components;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
     [Serializable]
-    public class CabinetScrapbooks : Entity
+    public class CabinetScrapbooksLeft : CabinetScrapbooksBase
     {
-        public CabinetScrapbooks()
+        protected override Rectangle Hotspot
+        {
+            get { return new Rectangle(649, 79, 49, 26); }
+        }
+
+        protected override Vector2 InteractionPosition
+        {
+            get { return new Vector2(703, 247); }
+        }
+    }
+
+    [Serializable]
+    public class CabinetScrapbooksRight : CabinetScrapbooksBase
+    {
+        protected override Rectangle Hotspot
+        {
+            get { return new Rectangle(703, 80, 43, 26); }
+        }
+
+        protected override Vector2 InteractionPosition
+        {
+            get { return new Vector2(703, 247); }
+        }
+    }
+
+    [Serializable]
+    public abstract class CabinetScrapbooksBase : Entity
+    {
+        protected abstract Vector2 InteractionPosition { get; }
+        protected abstract Rectangle Hotspot { get; }
+
+        public CabinetScrapbooksBase()
         {
             Interaction
                 .Create(this)
-                .SetPosition(703, 247)
+                .SetPosition(InteractionPosition)
                 .SetDirection(Directions8.Up)
                 .SetGetInteractionsFn(GetInteractions);
 
@@ -23,8 +56,8 @@ namespace SessionSeven.Basement
 
             HotspotRectangle
                 .Create(this)
-                .SetCaption("scrapbooks")
-                .AddRectangle(703, 80, 43, 26);
+                .SetCaption(Basement_Res.scrapbooks)
+                .AddRectangle(Hotspot);
 
             Enabled = false;
         }
@@ -35,6 +68,7 @@ namespace SessionSeven.Basement
                 .Create()
                 .For(Game.Ego)
                     .Add(Verbs.Look, LookScript())
+                    .Add(Verbs.Use, LookScript())
                     .Add(Verbs.Pick, PickScript());
         }
 
@@ -43,9 +77,9 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("Cynthia used to be really into making scrapbooks for every year when Landon was growing up.");
-                yield return Game.Ego.Say("I guess I hadn't really noticed she wasn't doing it any more.");
-                yield return Game.Ego.Say("I can't quite bring myself to look through them right now.");
+                yield return Game.Ego.Say(Basement_Res.Cynthia_used_to_be_really_into_making_scrapbooks_for_every_year_when_Landon_was_growing_up);
+                yield return Game.Ego.Say(Basement_Res.I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more);
+                yield return Game.Ego.Say(Basement_Res.I_cant_quite_bring_myself_to_look_through_them_right_now);
             }
         }
 
@@ -54,7 +88,7 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("I can't quite bring myself to look through them right now.");
+                yield return Game.Ego.Say(Basement_Res.I_cant_quite_bring_myself_to_look_through_them_right_now);
             }
         }
     }

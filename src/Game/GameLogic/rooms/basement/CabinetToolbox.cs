@@ -24,7 +24,7 @@ namespace SessionSeven.Basement
 
             HotspotRectangle
                 .Create(this)
-                .SetCaption("toolbox")
+                .SetCaption(Basement_Res.toolbox)
                 .AddRectangle(653, 149, 42, 29);
 
             Enabled = false;
@@ -44,8 +44,8 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("The toolbox Landon got me for father's day this year.");
-                yield return Game.Ego.Say("It's nice, although I haven't found a reason to saw anything yet.");
+                yield return Game.Ego.Say(Basement_Res.The_toolbox_Landon_got_me_for_fathers_day_this_year);
+                yield return Game.Ego.Say(Basement_Res.Its_nice_although_I_havent_found_a_reason_to_saw_anything_yet);
             }
         }
 

@@ -14,7 +14,7 @@ namespace SessionSeven.GUI.Interaction
         {
             HotspotRectangle
                 .Create(this)
-                .SetCaption("")
+                .SetCaption(string.Empty)
                 .SetRectangle(0, HEIGHT, Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT - HEIGHT);
 
             Transform

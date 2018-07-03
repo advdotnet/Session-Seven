@@ -5,6 +5,7 @@ using STACK;
 using STACK.Components;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
@@ -21,7 +22,7 @@ namespace SessionSeven.Basement
 
             HotspotSprite
                 .Create(this)
-                .SetCaption("cardboard")
+                .SetCaption(Basement_Res.cardboard)
                 .SetPixelPerfect(true);
 
             Transform
@@ -85,7 +86,7 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("I should take it, first.");
+                yield return Game.Ego.Say(Basement_Res.I_should_take_it_first);
             }
         }
 
@@ -96,14 +97,14 @@ namespace SessionSeven.Basement
             {
                 if (FellDown)
                 {
-                    yield return Game.Ego.Say("I should be able to reach it now.");
-                    yield return Game.Ego.Say("No need fiddling around with the drone.");
+                    yield return Game.Ego.Say(Basement_Res.I_should_be_able_to_reach_it_now);
+                    yield return Game.Ego.Say(Basement_Res.No_need_to_fiddle_around_with_the_drone);
                     yield break;
 
                 }
                 if (!UsedDrone)
                 {
-                    yield return Game.Ego.Say("Maybe I can make the drone bump into the cardboard.");
+                    yield return Game.Ego.Say(Basement_Res.Maybe_I_can_make_the_drone_bump_into_the_cardboard);
                     yield return Delay.Seconds(0.5f);
                     UsedDrone = true;
                 }
@@ -121,12 +122,12 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("A cardboard without any inscription is sitting on a box on the top of the cabinet.");
+                yield return Game.Ego.Say(Basement_Res.A_cardboard_without_any_inscription_is_sitting_on_a_box_on_the_top_of_the_cabinet);
 
                 if (Game.Ego.Inventory.HasItem<InventoryItems.RFIDAntennaBoxShelf>() ||
                     Game.Ego.Inventory.HasItem<InventoryItems.RFIDAntennaShelf>())
                 {
-                    yield return Game.Ego.Say("Looks exactly like the one I got from the shelf.");
+                    yield return Game.Ego.Say(Basement_Res.Looks_exactly_like_the_one_I_got_from_the_shelf);
                 }
             }
         }
@@ -139,11 +140,11 @@ namespace SessionSeven.Basement
             {
                 if (!FellDown)
                 {
-                    yield return Game.Ego.Say("Can't reach it with bare hands.");
+                    yield return Game.Ego.Say(Basement_Res.Cant_reach_it_with_bare_hands);
                 }
                 else
                 {
-                    yield return Game.Ego.Say("Now I can only just reach it.");
+                    yield return Game.Ego.Say(Basement_Res.Now_I_can_only_just_reach_it);
                     yield return Game.Ego.StartUse();
                     Enabled = false;
                     Game.Ego.Inventory.AddItem<InventoryItems.RFIDAntennaBoxCabinet>();

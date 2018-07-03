@@ -3,6 +3,7 @@ using STACK;
 using STACK.Components;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
@@ -19,7 +20,7 @@ namespace SessionSeven.Basement
 
             HotspotRectangle
                 .Create(this)
-                .SetCaption("boiler")
+                .SetCaption(Basement_Res.boiler)
                 .AddRectangle(961, 32, 62, 131);
 
             Enabled = false;
@@ -39,9 +40,9 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("The boiler that keeps our hot water running.");
+                yield return Game.Ego.Say(Basement_Res.The_boiler_that_keeps_our_hot_water_running);
                 yield return Delay.Seconds(0.5f);
-                yield return Game.Ego.Say("Man, I could use a hot shower right about now.");
+                yield return Game.Ego.Say(Basement_Res.Man_I_could_use_a_hot_shower_right_about_now);
             }
         }
     }

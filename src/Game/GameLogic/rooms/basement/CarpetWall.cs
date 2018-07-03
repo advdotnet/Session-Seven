@@ -4,6 +4,7 @@ using STACK.Components;
 using StarFinder;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
@@ -20,7 +21,7 @@ namespace SessionSeven.Basement
 
             HotspotMesh
                 .Create(this)
-                .SetCaption("rugs")
+                .SetCaption(Basement_Res.rugs)
                 .SetMesh(CreateMesh());
 
             Enabled = false;
@@ -66,8 +67,8 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("Some of our failed statement rugs.");
-                yield return Game.Ego.Say("It took Cynthia almost a year to finally be happy with the design scheme of the house.");
+                yield return Game.Ego.Say(Basement_Res.Some_of_our_failed_statement_rugs);
+                yield return Game.Ego.Say(Basement_Res.It_took_Cynthia_almost_a_year_to_finally_be_happy_with_the_design_scheme_of_the_house);
             }
         }
     }

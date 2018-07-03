@@ -15,7 +15,7 @@ namespace SessionSeven.GUI.Interaction
         {
             HotspotRectangle
                 .Create(this)
-                .SetCaption("scroll up")
+                .SetCaption(string.Empty)
                 .AddRectangle(ScreenRectangle);
 
             Transform
