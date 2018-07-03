@@ -24,7 +24,8 @@ namespace SessionSeven.GUI.Interaction
             InputDispatcher
                 .Create(this)
                 .SetOnMouseUpFn(OnMouseUp)
-                .SetOnKeyUpFn(OnKeyUp);
+                .SetOnKeyUpFn(OnKeyUp)
+                .SetOnMouseScrollFn(OnMouseScroll);
 
             Reset();
         }
@@ -214,6 +215,18 @@ namespace SessionSeven.GUI.Interaction
             else
             {
                 OnEntityClick(OUM, position);
+            }
+        }
+
+        private void OnMouseScroll(Vector2 position, int diff)
+        {
+            if (diff < 0)
+            {
+                Game.Ego.Inventory.ScrollBy(+1);
+            }
+            else
+            {
+                Game.Ego.Inventory.ScrollBy(-1);
             }
         }
 
