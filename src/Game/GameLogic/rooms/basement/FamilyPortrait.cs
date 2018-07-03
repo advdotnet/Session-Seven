@@ -66,7 +66,7 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("It's fine where it is.");
+                yield return Game.Ego.Say(Basement_Res.Its_fine_where_it_is);
             }
         }
 

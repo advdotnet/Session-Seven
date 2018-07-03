@@ -125,7 +125,7 @@ namespace SessionSeven.Basement
                         Tree.Basement.DronePackage.Enabled = true;
                     }
                     Tree.Basement.CabinetSupplies.Enabled = true;
-                    Tree.Basement.CabinetScrapbooks.Enabled = true;
+                    Tree.Basement.CabinetScrapbooksRight.Enabled = true;
                     Open = true;
                     yield return Game.Ego.StopUse();
                 }
@@ -152,7 +152,7 @@ namespace SessionSeven.Basement
                     Get<HotspotRectangle>().SetRectangle(CLOSEDHOTSPOT);
                     Tree.Basement.DronePackage.Enabled = false;
                     Tree.Basement.CabinetSupplies.Enabled = false;
-                    Tree.Basement.CabinetScrapbooks.Enabled = false;
+                    Tree.Basement.CabinetScrapbooksRight.Enabled = false;
                     yield return Game.Ego.StopUse();
                 }
             }

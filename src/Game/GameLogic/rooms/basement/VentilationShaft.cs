@@ -4,6 +4,7 @@ using STACK.Components;
 using StarFinder;
 using System;
 using System.Collections;
+using Basement_Res = global::SessionSeven.Properties.Basement_Resources;
 
 namespace SessionSeven.Basement
 {
@@ -20,7 +21,7 @@ namespace SessionSeven.Basement
 
             HotspotMesh
                 .Create(this)
-                .SetCaption("ventilation shaft")
+                .SetCaption(Basement_Res.ventilation_shaft)
                 .SetMesh(CreateMesh());
 
             Enabled = false;
@@ -69,7 +70,7 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("A ventilation shaft. At least I have AC down here.");
+                yield return Game.Ego.Say(Basement_Res.A_ventilation_shaft_At_least_I_have_AC_down_here);
             }
         }
     }

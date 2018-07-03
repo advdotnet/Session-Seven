@@ -24,7 +24,7 @@ namespace SessionSeven.Basement
 
             HotspotRectangle
                 .Create(this)
-                .SetCaption("arts and crafts supplies")
+                .SetCaption(Basement_Res.arts_and_crafts_supplies)
                 .AddRectangle(703, 149, 44, 28);
 
             Enabled = false;
@@ -44,9 +44,9 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say("Cynthia took control of this cabinet compartment for her arts and crafts supplies a while ago.");
-                yield return Game.Ego.Say("It's full of all sorts of glitter glues, paint, and what not.");
-                yield return Game.Ego.Say("It doesn't look like she's touched any of it in a while, though.");
+                yield return Game.Ego.Say(Basement_Res.Cynthia_took_control_of_this_cabinet_compartment_for_her_arts_and_crafts_supplies_a_while_ago);
+                yield return Game.Ego.Say(Basement_Res.Its_full_of_all_sorts_of_glitter_glues_paint_and_what_not);
+                yield return Game.Ego.Say(Basement_Res.It_doesnt_look_like_shes_touched_any_of_it_in_a_while_though);
             }
         }
 
