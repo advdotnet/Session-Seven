@@ -31,11 +31,11 @@ namespace SessionSeven
 
                 STACK.Logging.Log.AddLogger(new STACK.Logging.SystemConsoleLogHandler());
 
-                if (null != args && "click" == args[0])
+                if (null != args && 0 < args.Count() && "click" == args[0])
                 {
                     ExecuteClicks();
                 }
-                else if (null != args && "interact" == args[0])
+                else if (null != args && 0 < args.Count() && "interact" == args[0])
                 {
                     ExecuteInteractions();
                 }
