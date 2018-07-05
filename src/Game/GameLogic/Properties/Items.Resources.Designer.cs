@@ -598,6 +598,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to I don&apos;t see the point in making the drone fly to that..
+        /// </summary>
+        internal static string I_dont_see_the_point_in_making_the_drone_fly_to_that {
+            get {
+                return ResourceManager.GetString("I_dont_see_the_point_in_making_the_drone_fly_to_that", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to I don&apos;t want to cut that..
         /// </summary>
         internal static string I_dont_want_to_cut_that {

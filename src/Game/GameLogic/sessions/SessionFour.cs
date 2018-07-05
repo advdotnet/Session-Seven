@@ -15,6 +15,7 @@ namespace SessionSeven.Cutscenes
     {
         IEnumerator SessionFourScript()
         {
+            Game.StopSong();
             Game.PlaySoundEffect(content.audio.transition_4);
             Tree.Office.Scene.SetupEarly();
             Fader.Visible = false;
@@ -35,6 +36,9 @@ namespace SessionSeven.Cutscenes
             yield return Delay.Seconds(1);
 
             yield return Psychiatrist.Say(GlblRes.I_think_we_could_both_benefit_from_learning_a_little_bit_more_about_yourself);
+
+            Game.PlaySong(content.audio.session4);
+            World.Get<AudioManager>().RepeatSong = true;
 
             yield return Delay.Seconds(1);
 
@@ -180,6 +184,8 @@ namespace SessionSeven.Cutscenes
             Tree.Actors.Scene.Enabled = true;
 
             Tree.GUI.Interaction.Scene.Interactive = true;
+
+            World.Get<AudioManager>().RepeatSong = false;
 
             World.Interactive = true;
             Game.StopSkipping();

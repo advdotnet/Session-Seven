@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using STACK;
 using System;
 using TomShane.Neoforce.Controls;
@@ -13,6 +14,8 @@ namespace SessionSeven
         private ImageBox MainMenuBackground;
         private Label MainMenuLabel;
         private SoundEffect FocusSound, ClickSound;
+
+        public Song MenuSong { get; private set; }
 
         public void Show()
         {
@@ -69,17 +72,28 @@ namespace SessionSeven
             {
                 FocusSound.Dispose();
             }
+
+            if (null != MenuSong)
+            {
+                //MenuSong.Dispose();
+            }
         }
 
         public Menu(StackEngine engine)
         {
             FocusSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_click);
             ClickSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_focus);
+            MenuSong = engine.EngineContent.Load<Song>(content.audio.session6);
+
+            MediaPlayer.Play(MenuSong);
+            MediaPlayer.IsRepeating = true;
 
             Engine = engine;
             GameSettings = engine.GameSettings;
 
             var GUI = engine.Renderer.GUIManager;
+
+            GUI.Input.KeyDown += new KeyEventHandler(OnKeyDown);
             var Cursor = CreateCursor();
 
             GUI.ShowSoftwareCursor = true;
@@ -115,6 +129,14 @@ namespace SessionSeven
             GUI.Add(MainMenuBackground);
 
             ShowLogo(true);
+        }
+
+        private void OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Microsoft.Xna.Framework.Input.Keys.Escape && GameRunning)
+            {
+                ContinueGame();
+            }
         }
     }
 }

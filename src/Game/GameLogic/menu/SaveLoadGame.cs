@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using STACK;
 using System.Collections.Generic;
 using System.IO;
@@ -105,6 +106,7 @@ namespace SessionSeven
 
                 LoadGameWindow.Close();
                 MainMenuBackground.Hide();
+                MediaPlayer.Stop();
                 Engine.Resume();
                 Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
             };

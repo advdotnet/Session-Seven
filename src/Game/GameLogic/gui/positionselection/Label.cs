@@ -19,7 +19,7 @@ namespace SessionSeven.GUI.PositionSelection
                 .SetFont(content.fonts.pixeloperator_outline_BMF)
                 .SetAlign(Alignment.Top)
                 .SetWidth(Game.VIRTUAL_WIDTH)
-                .SetWordWrap(false);
+                .SetWordWrap(true);
 
             Transform
                 .Create(this)
@@ -31,7 +31,7 @@ namespace SessionSeven.GUI.PositionSelection
         {
             if (renderer.Stage == RenderStage.PostBloom)
             {
-                renderer.SpriteBatch.Draw(renderer.WhitePixelTexture, new Rectangle(0, 0, Game.VIRTUAL_WIDTH, 20), new Color(0, 0, 0, 0.5f));
+                renderer.SpriteBatch.Draw(renderer.WhitePixelTexture, new Rectangle(0, 0, Game.VIRTUAL_WIDTH, 18 * Get<Text>().Lines.Count), new Color(0, 0, 0, 0.5f));
             }
 
             base.OnBeginDraw(renderer);

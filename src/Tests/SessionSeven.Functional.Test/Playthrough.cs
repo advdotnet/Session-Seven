@@ -286,6 +286,7 @@ namespace SessionSeven.Functional.Test
             runner.Interact(Tree.InventoryItems.RFIDAntennaBoxCabinet, Verbs.Open);
             runner.Interact(Tree.Basement.CabinetRightDoor, Verbs.Close);
             runner.Interact(Tree.InventoryItems.RFIDAntennaCabinet, Verbs.Use);
+            runner.SaveState("[Playthrough] PlacingAntenna");
 
             SetupRFIDAntenna(runner);
 

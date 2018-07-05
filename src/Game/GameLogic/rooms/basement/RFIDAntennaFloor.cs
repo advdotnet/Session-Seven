@@ -161,6 +161,7 @@ namespace SessionSeven.Basement
                 Tree.GUI.PositionSelection.Label.LabelText = Basement_Res.Left_click_to_place_the_antenna_Right_click_to_abort;
                 Get<SpriteData>().Color = new Color(0, 0, 1f, 0.3f);
                 Get<TracerLine>().SetVisible(false);
+                WasPlacedTooClose = false;
             }
 
             Visible = true;

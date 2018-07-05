@@ -60,6 +60,8 @@ namespace SessionSeven.GUI.PositionSelection
         /// <returns></returns>
         private IEnumerator WaitForSelection(IPositionable entityToPosition, bool setInteractive = true, bool abortable = true, int mode = 0)
         {
+            Game.StopSkipping();
+
             Aborted = false;
             Enabled = true;
             Visible = true;

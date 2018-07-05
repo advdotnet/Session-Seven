@@ -108,6 +108,8 @@ namespace SessionSeven.Cutscenes
             Tree.Cutscenes.Scene.Visible = true;
             Tree.Cutscenes.Scene.Enabled = true;
 
+            Log.WriteLine("Starting Session " + session.ToString());
+
             return Get<Scripts>().Start(GetSessionScript(session));
         }
 
