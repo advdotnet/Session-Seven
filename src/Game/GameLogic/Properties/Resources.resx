@@ -295,4 +295,7 @@
   <data name="Menu_AddExitConfirmationWindow_No" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Credits</value>
+  </data>
 </root>

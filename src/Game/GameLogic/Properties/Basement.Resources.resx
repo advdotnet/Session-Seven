@@ -692,7 +692,7 @@
     <value>Might as well keep it with me. Maybe it's good luck.</value>
   </data>
   <data name="Move_the_mouse_to_rotate_Left_click_to_confirm_Right_click_to_abort" xml:space="preserve">
-    <value>Move the mouse to rotate. Left click to confirm. Right click to abort.</value>
+    <value>Move the mouse to rotate until the line color is green. Left click to confirm. Right click to abort.</value>
   </data>
   <data name="Left_click_to_place_the_antenna_Right_click_to_abort" xml:space="preserve">
     <value>Left click to place the antenna. Right click to abort.</value>

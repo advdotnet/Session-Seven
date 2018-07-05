@@ -96,7 +96,7 @@ namespace SessionSeven.InventoryItems
                 // place
                 yield return Game.Ego.StartScript(PlaceScript(AntennaFloor, RFIDAntennaFloor.POSITIONMODE_POSITION));
 
-                if (AntennaFloor.WasPlacedTooClose)
+                if (AntennaFloor.WasPlacedTooClose && !SelectionAborted)
                 {
                     yield return Game.Ego.Say(Items_Res.I_need_to_place_the_other_antenna_with_more_distance_for_the_triangulation_to_work);
                 }
@@ -109,6 +109,7 @@ namespace SessionSeven.InventoryItems
                         yield return Game.Ego.StartScript(PlaceScript(AntennaFloor, RFIDAntennaFloor.POSITIONMODE_ROTATION));
                     }
 
+                    // this needs to be evaluated here again
                     if (!SelectionAborted)
                     {
                         if (HitCollider)
@@ -143,13 +144,18 @@ namespace SessionSeven.InventoryItems
                         }
                     }
                 }
-
-                yield return Game.Ego.GoTo(AntennaFloor);
-                yield return Game.Ego.StartUse();
+                if (!SelectionAborted)
+                {
+                    yield return Game.Ego.GoTo(AntennaFloor);
+                    yield return Game.Ego.StartUse();
+                }
                 Placed = false;
                 AntennaFloor.Visible = false;
                 AntennaFloor.Enabled = false;
-                yield return Game.Ego.StopUse();
+                if (!SelectionAborted)
+                {
+                    yield return Game.Ego.StopUse();
+                }
             }
         }
 

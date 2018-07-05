@@ -1141,7 +1141,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No. No it&apos;s not. I asked her, &quot;who? who did this ?&quot; and she kept crying and telling me to keep my voice down, and that&apos;s....
+        ///   Looks up a localized string similar to No. No it&apos;s not. I asked her, &quot;who? who did this?&quot; and she kept crying and telling me to keep my voice down, and that&apos;s....
         /// </summary>
         internal static string No_No_its_not_I_asked_her_who_who_did_this__and_she_kept_crying_and_telling_me_to_keep_my_voice_down_and_thats {
             get {

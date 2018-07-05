@@ -18,8 +18,18 @@ namespace SessionSeven.InventoryItems
         {
             return Interactions
                 .Create()
+                .For(Any.Object)
+                    .Add(Verbs.Use, UseScript(), Game.Ego)
                 .For(Game.Ego)
                     .Add(Verbs.Look, LookScript());
+        }
+
+        IEnumerator UseScript()
+        {
+            using (Game.CutsceneBlock())
+            {
+                yield return Game.Ego.Say(Items_Res.I_dont_see_the_point_in_making_the_drone_fly_to_that);
+            }
         }
 
         IEnumerator LookScript()

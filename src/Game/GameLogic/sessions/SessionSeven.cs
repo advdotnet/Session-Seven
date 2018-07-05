@@ -19,6 +19,7 @@ namespace SessionSeven.Cutscenes
         /// <returns></returns>
         IEnumerator SessionSevenScript()
         {
+            Game.StopSong();
             Game.PlaySoundEffect(content.audio.transition_4);
             Tree.Office.Scene.SetupEarly();
             Fader.Visible = false;

@@ -90,6 +90,8 @@ namespace SessionSeven.GUI.Dialog
         /// </summary>
         private IEnumerator WaitForSelection(bool setInteractive = true)
         {
+            Game.StopSkipping();
+
             while (State != DialogMenuState.Open && State != DialogMenuState.Closed)
             {
                 yield return 0;

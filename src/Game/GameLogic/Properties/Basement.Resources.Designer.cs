@@ -1815,7 +1815,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Move the mouse to rotate. Left click to confirm. Right click to abort..
+        ///   Looks up a localized string similar to Move the mouse to rotate until the line color is green. Left click to confirm. Right click to abort..
         /// </summary>
         internal static string Move_the_mouse_to_rotate_Left_click_to_confirm_Right_click_to_abort {
             get {

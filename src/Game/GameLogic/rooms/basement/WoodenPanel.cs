@@ -16,7 +16,7 @@ namespace SessionSeven.Basement
         /// <summary>
         /// Colliding circle, z equals radius
         /// </summary>
-        public static readonly Vector3 Collider = new Vector3(621, 275, 5);
+        public static readonly Vector3 Collider = new Vector3(621, 275, 8);
 
         public bool Uncovered { get; private set; }
 

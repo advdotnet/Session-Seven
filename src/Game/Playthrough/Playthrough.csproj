@@ -92,6 +92,10 @@
       <Project>{bdd5e5df-a2f6-44fc-a44b-33488ba054bb}</Project>
       <Name>STACK</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\STACK\src\Tests\STACK.TestBase\STACK.TestBase.csproj">
+      <Project>{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}</Project>
+      <Name>STACK.TestBase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Tests\SessionSeven.Functional.Test\SessionSeven.Functional.Test.csproj">
       <Project>{70539779-ef22-4ca3-8f1a-125dff443092}</Project>
       <Name>SessionSeven.Functional.Test</Name>

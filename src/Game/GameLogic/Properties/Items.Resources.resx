@@ -586,4 +586,7 @@
   <data name="Two_batteries_are_installed" xml:space="preserve">
     <value>Two batteries are installed.</value>
   </data>
+  <data name="I_dont_see_the_point_in_making_the_drone_fly_to_that" xml:space="preserve">
+    <value>I don't see the point in making the drone fly to that.</value>
+  </data>
 </root>

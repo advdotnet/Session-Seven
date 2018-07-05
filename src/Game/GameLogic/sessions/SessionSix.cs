@@ -28,6 +28,7 @@ namespace SessionSeven.Cutscenes
 
         IEnumerator SessionSixScript()
         {
+            Game.StopSong();
             Game.PlaySoundEffect(content.audio.transition_4);
             Tree.Office.Scene.SetupLate();
             Fader.Visible = false;
@@ -53,6 +54,9 @@ namespace SessionSeven.Cutscenes
             RyanEyesClosed.Blinking = true;
 
             yield return Psychiatrist.Say(GlblRes.Are_you_ready_to_tell_me_what_happened_that_night);
+
+            Game.PlaySong(content.audio.session6);
+            World.Get<AudioManager>().RepeatSong = true;
 
             yield return Delay.Seconds(0.5f);
             yield return RyanVoice.TransitionTo(RyanState.ArmsCrossed);
@@ -514,6 +518,8 @@ namespace SessionSeven.Cutscenes
             Tree.Basement.Scene.Interactive = true;
 
             Tree.GUI.Interaction.Scene.Interactive = true;
+
+            World.Get<AudioManager>().RepeatSong = false;
 
             World.Interactive = true;
             Game.StopSkipping();

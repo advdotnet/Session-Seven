@@ -13,6 +13,7 @@ namespace SessionSeven.Cutscenes
     {
         IEnumerator SessionFiveScript()
         {
+            Game.StopSong();
             Game.PlaySoundEffect(content.audio.transition_4);
             Tree.Office.Scene.SetupEarly();
             Fader.Visible = false;
@@ -95,6 +96,9 @@ namespace SessionSeven.Cutscenes
 
             var Selection = Menu.LastSelectedOption;
             ProcessScore(Selection);
+
+            Game.PlaySong(content.audio.session5);
+            World.Get<AudioManager>().RepeatSong = true;
 
             yield return RyanVoice.Say(Selection.Text);
 
@@ -307,6 +311,8 @@ namespace SessionSeven.Cutscenes
             Tree.Actors.Scene.Enabled = true;
 
             Tree.GUI.Interaction.Scene.Interactive = true;
+
+            World.Get<AudioManager>().RepeatSong = false;
 
             World.Interactive = true;
             Game.StopSkipping();

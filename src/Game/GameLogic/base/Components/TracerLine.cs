@@ -36,6 +36,10 @@ namespace SessionSeven.Components
         }
 
         private Vector3 _Collider;
+        /// <summary>
+        /// (x,y) center position
+        /// z radius
+        /// </summary>
         public Vector3 Collider
         {
             get

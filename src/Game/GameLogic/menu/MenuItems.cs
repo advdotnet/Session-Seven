@@ -30,6 +30,13 @@ namespace SessionSeven
             }
         }
 
+        private void ContinueGame()
+        {
+            MainMenuBackground.Hide();
+            Engine.Resume();
+            Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
+        }
+
         IEnumerable<Item> GetMenuItems()
         {
             // Quit
@@ -51,7 +58,7 @@ namespace SessionSeven
             yield return Item;
 
             // Credits
-            Item = new Item("Credits");
+            Item = new Item(GlblRes.Credits);
             Item.OnClick = () =>
             {
                 CreditsWindow.Show();
@@ -98,9 +105,7 @@ namespace SessionSeven
             Item = new Item(GlblRes.Continue);
             Item.OnClick = () =>
             {
-                MainMenuBackground.Hide();
-                Engine.Resume();
-                Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
+                ContinueGame();
             };
             Item.IsVisible = () => { return GameRunning; };
             yield return Item;

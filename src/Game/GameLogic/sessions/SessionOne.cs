@@ -16,6 +16,9 @@ namespace SessionSeven.Cutscenes
 
         IEnumerator SessionOneScript()
         {
+            Game.StopSong();
+            World.Get<AudioManager>().RepeatSong = false;
+
             var BloomSettings = new BloomSettings("SessionSeven", 0.75f, 1.5f, 0.8f, 1, 1, 1);
 
             World.Get<RenderSettings>().BloomSettings = BloomSettings;

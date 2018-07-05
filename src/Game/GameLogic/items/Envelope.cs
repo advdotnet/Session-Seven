@@ -61,6 +61,8 @@ namespace SessionSeven.InventoryItems
             Tree.Letter.Scene.Visible = true;
             Tree.GUI.Interaction.Scene.Interactive = false;
 
+            Game.StopSkipping();
+
             while (Tree.Letter.Scene.Enabled)
             {
                 yield return 1;
