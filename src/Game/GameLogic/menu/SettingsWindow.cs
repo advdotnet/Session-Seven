@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Media;
 using STACK;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,7 @@ namespace SessionSeven
             {
                 GameSettings.MusicVolume = (float)MusicVolumeBar.Value / 100f;
                 Engine.ApplyGameSettingsVolume();
+                MediaPlayer.Volume = MathHelper.Clamp(GameSettings.MusicVolume, 0.0f, 1.0f);
                 MainMenuLabel.Text = string.Empty;
             };
             MusicVolumeBar.Top = 5;
@@ -147,7 +149,7 @@ namespace SessionSeven
             Bevel.Top = SettingsWindow.ClientHeight - Bevel.Height;
             Bevel.Width = SettingsWindow.ClientWidth;
 
-            var OKButton = new MenuButton(gui, ClickSound, FocusSound);
+            var OKButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
             OKButton.Init();
             OKButton.Parent = Bevel;
             OKButton.Text = GlblRes.OK;

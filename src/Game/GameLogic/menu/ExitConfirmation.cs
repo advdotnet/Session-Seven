@@ -40,7 +40,7 @@ namespace SessionSeven
             Text.Width = ExitConfirmationWindow.ClientWidth - 20;
             Text.Height = 20;
 
-            var Yes = new MenuButton(gui, ClickSound, FocusSound);
+            var Yes = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
             Yes.Parent = Bevel;
             Yes.Width = 100;
             Yes.Text = GlblRes.Yes;
@@ -52,7 +52,7 @@ namespace SessionSeven
             };
 
 
-            var No = new MenuButton(gui, ClickSound, FocusSound);
+            var No = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
             No.Parent = Bevel;
             No.Text = GlblRes.Menu_AddExitConfirmationWindow_No;
             No.Width = 100;

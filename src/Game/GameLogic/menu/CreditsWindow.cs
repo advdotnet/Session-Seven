@@ -64,7 +64,7 @@ namespace SessionSeven
                 i++;
             }
 
-            var OKButton = new MenuButton(gui, ClickSound, FocusSound);
+            var OKButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
             OKButton.Init();
             OKButton.Parent = CreditsWindow;
             OKButton.Text = GlblRes.OK;

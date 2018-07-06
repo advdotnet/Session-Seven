@@ -70,7 +70,7 @@ namespace SessionSeven
             }
             if (null != ClickSound)
             {
-                FocusSound.Dispose();
+                ClickSound.Dispose();
             }
 
             if (null != MenuSong)
@@ -85,11 +85,12 @@ namespace SessionSeven
             ClickSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_focus);
             MenuSong = engine.EngineContent.Load<Song>(content.audio.session6);
 
-            MediaPlayer.Play(MenuSong);
-            MediaPlayer.IsRepeating = true;
-
             Engine = engine;
             GameSettings = engine.GameSettings;
+
+            MediaPlayer.Volume = MathHelper.Clamp(GameSettings.MusicVolume, 0.0f, 1.0f);
+            MediaPlayer.Play(MenuSong);
+            MediaPlayer.IsRepeating = true;
 
             var GUI = engine.Renderer.GUIManager;
             var Cursor = CreateCursor();
