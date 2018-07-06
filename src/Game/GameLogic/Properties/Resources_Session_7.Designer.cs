@@ -162,7 +162,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coding.
+        ///   Looks up a localized string similar to Project Management, Coding.
         /// </summary>
         internal static string Coding {
             get {
