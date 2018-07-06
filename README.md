@@ -16,8 +16,12 @@ Your life is not the only one on the line. Your wife and son may be in danger to
 Reading through the sources might spoil the gameplay experience.
 
 ## Screenshot
-
 ![sample game](https://raw.githubusercontent.com/advdotnet/Session-Seven/master/screenshot.png)
+
+## Built With
+
+* [STACK Engine](https://github.com/advdotnet/STACK-Engine) - graphic adventure game engine based on .NET 
+* [FNA](https://github.com/FNA-XNA/FNA/) - Accuracy-focused XNA4 reimplementation for open platforms
 
 
 
