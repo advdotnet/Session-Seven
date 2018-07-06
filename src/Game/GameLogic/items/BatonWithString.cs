@@ -21,7 +21,9 @@ namespace SessionSeven.InventoryItems
             return Interactions
                 .Create()
                 .For(Game.Ego)
+                    .Add(Verbs.Close, PushScript())
                     .Add(Verbs.Push, PushScript())
+                    .Add(Verbs.Open, PullScript())
                     .Add(Verbs.Pull, PullScript())
                     .Add(Verbs.Look, LookScript());
         }

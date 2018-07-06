@@ -28,7 +28,7 @@ namespace SessionSeven.Basement
             HotspotRectangle
                 .Create(this)
                 .SetCaption(Basement_Res.workbench)
-                .AddRectangle(407, 153, 225, 94);
+                .AddRectangle(416, 153, 225, 94);
 
             Interaction
                 .Create(this)
