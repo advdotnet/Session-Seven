@@ -8,7 +8,7 @@ using System;
 namespace SessionSeven.Components
 {
     /// <summary>
-    /// Component that draws a line from the Transform's position to a target vector.
+    /// Component that draws a line from the Transform's position to a target position.
     /// It also does a line segment circle collision check and changes the line color accordingly.
     /// </summary>
     [Serializable]
@@ -130,7 +130,8 @@ namespace SessionSeven.Components
 
         private static bool InBetween(float val, float a, float b)
         {
-            return Math.Min(a, b) <= val && val <= Math.Max(a, b);
+            return Math.Min(a, b) <= val &&
+                val <= Math.Max(a, b);
         }
 
         public static TracerLine Create(Entity entity)

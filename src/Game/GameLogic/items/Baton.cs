@@ -44,7 +44,9 @@ namespace SessionSeven.InventoryItems
                 .For(Tree.InventoryItems.GuitarStrings)
                     .Add(Verbs.Use, UseStringsScript(), Game.Ego)
                 .For(Game.Ego)
+                    .Add(Verbs.Close, PushScript())
                     .Add(Verbs.Push, PushScript())
+                    .Add(Verbs.Open, PullScript())
                     .Add(Verbs.Pull, PullScript())
                     .Add(Verbs.Look, LookScript());
         }

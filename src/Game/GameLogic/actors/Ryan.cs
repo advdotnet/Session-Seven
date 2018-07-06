@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using SessionSeven.Components;
+using SessionSeven.Entities;
 using STACK;
 using STACK.Components;
 using STACK.Logging;
@@ -160,8 +161,35 @@ namespace SessionSeven.Actors
 
         private void PlayStepSound()
         {
-            //  
+            if (Tree.Basement.Scene == DrawScene)
+            {
+                var CarpetMesh = Tree.Basement.Carpet.Get<HotspotMesh>().Mesh;
+                var PlayerPosition = Get<Transform>().Position;
+
+                if (CarpetMesh.Contains(PlayerPosition))
+                {
+                    PlayStepCarpet();
+                    return;
+                }
+            }
+
+            if (Tree.PaddedCell.Scene == DrawScene)
+            {
+                PlayStepCarpet();
+                return;
+            }
+
+            PlayStepWood();
+        }
+
+        private void PlayStepWood()
+        {
             Game.PlaySoundEffect(content.audio._path_ + "step_" + World.Get<Randomizer>().CreateInt(1, 17));
+        }
+
+        private void PlayStepCarpet()
+        {
+            Game.PlaySoundEffect(content.audio._path_ + "step_soft_" + World.Get<Randomizer>().CreateInt(1, 8));
         }
 
         public void SetWalkingPace(int scale)

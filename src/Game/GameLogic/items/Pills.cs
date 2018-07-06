@@ -20,6 +20,8 @@ namespace SessionSeven.InventoryItems
             return Interactions
                 .Create()
                 .For(Game.Ego)
+                    .Add(Verbs.Pick, UseScript())
+                    .Add(Verbs.Open, UseScript())
                     .Add(Verbs.Use, UseScript())
                     .Add(Verbs.Look, LookScript());
         }
