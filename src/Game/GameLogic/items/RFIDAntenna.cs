@@ -144,7 +144,10 @@ namespace SessionSeven.InventoryItems
                         }
                     }
                 }
-                if (!SelectionAborted)
+
+                bool WasPlaced = Placed;
+
+                if (!SelectionAborted || WasPlaced)
                 {
                     yield return Game.Ego.GoTo(AntennaFloor);
                     yield return Game.Ego.StartUse();
@@ -152,7 +155,7 @@ namespace SessionSeven.InventoryItems
                 Placed = false;
                 AntennaFloor.Visible = false;
                 AntennaFloor.Enabled = false;
-                if (!SelectionAborted)
+                if (!SelectionAborted || WasPlaced)
                 {
                     yield return Game.Ego.StopUse();
                 }

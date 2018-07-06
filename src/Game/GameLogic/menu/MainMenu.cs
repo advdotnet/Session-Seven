@@ -92,8 +92,6 @@ namespace SessionSeven
             GameSettings = engine.GameSettings;
 
             var GUI = engine.Renderer.GUIManager;
-
-            GUI.Input.KeyDown += new KeyEventHandler(OnKeyDown);
             var Cursor = CreateCursor();
 
             GUI.ShowSoftwareCursor = true;
@@ -129,14 +127,6 @@ namespace SessionSeven
             GUI.Add(MainMenuBackground);
 
             ShowLogo(true);
-        }
-
-        private void OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Microsoft.Xna.Framework.Input.Keys.Escape && GameRunning)
-            {
-                ContinueGame();
-            }
         }
     }
 }
