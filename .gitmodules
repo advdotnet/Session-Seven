@@ -1,3 +1,4 @@
 [submodule "lib/STACK"]
 	path = lib/STACK
 	url = https://github.com/advdotnet/STACK-Engine
+	branch = master
