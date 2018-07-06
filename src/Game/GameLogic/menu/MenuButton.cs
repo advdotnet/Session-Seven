@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework.Audio;
+using STACK;
 using TomShane.Neoforce.Controls;
 
 namespace SessionSeven
@@ -8,17 +9,17 @@ namespace SessionSeven
     /// </summary>
     public class MenuButton : Button
     {
-        public MenuButton(Manager manager, SoundEffect clickSound, SoundEffect focusSound) : base(manager)
+        public MenuButton(Manager manager, SoundEffect clickSound, SoundEffect focusSound, GameSettings gameSettings) : base(manager)
         {
-            Click += (a, e) => PlaySoundIfAvaiable(clickSound);
-            MouseOver += (a, e) => PlaySoundIfAvaiable(focusSound);
+            Click += (a, e) => PlaySoundIfAvaiable(clickSound, gameSettings);
+            MouseOver += (a, e) => PlaySoundIfAvaiable(focusSound, gameSettings);
         }
 
-        private void PlaySoundIfAvaiable(SoundEffect sound)
+        private void PlaySoundIfAvaiable(SoundEffect sound, GameSettings gameSettings)
         {
             if (null != sound && !sound.IsDisposed)
             {
-                sound.Play();
+                sound.Play(gameSettings.SoundEffectVolume, 0f, 0f);
             }
         }
     }

@@ -140,7 +140,7 @@ namespace SessionSeven
 
             foreach (var Item in GetMenuItems().Where(it => it.IsVisible()))
             {
-                var MenuButton = new MenuButton(gui, ClickSound, FocusSound);
+                var MenuButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
 
                 MenuButton.Init();
                 MenuButton.Text = Item.Text;

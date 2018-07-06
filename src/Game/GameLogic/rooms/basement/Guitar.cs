@@ -63,7 +63,9 @@ namespace SessionSeven.Basement
             using (Game.CutsceneBlock())
             {
                 yield return Game.Ego.StartUse();
+                World.Get<AudioManager>().MusicVolume = 0.1f;
                 yield return Game.WaitForSoundEffect(content.audio._path_ + "guitar_play" + TrackNumber);
+                World.Get<AudioManager>().MusicVolume = 1f;
                 yield return Game.Ego.StopUse();
 
                 TrackNumber++;
