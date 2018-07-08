@@ -35,12 +35,12 @@ namespace SessionSeven.Components
             }
         }
 
-        private Vector3 _Collider;
+        private Circle _Collider;
         /// <summary>
         /// (x,y) center position
         /// z radius
         /// </summary>
-        public Vector3 Collider
+        public Circle Collider
         {
             get
             {
@@ -48,7 +48,7 @@ namespace SessionSeven.Components
             }
             set
             {
-                if (value != _Collider)
+                if (!value.Equals(_Collider))
                 {
                     _Collider = value;
                     EvaluateCollision();
@@ -64,7 +64,7 @@ namespace SessionSeven.Components
 
         private void EvaluateCollision()
         {
-            HitCollider = Intersect(Collider, From, ExtrapolateTarget());
+            HitCollider = _Collider.Intersects(From, ExtrapolateTarget());
         }
 
         private Vector2 From
@@ -113,27 +113,6 @@ namespace SessionSeven.Components
             renderer.SpriteBatch.Draw(renderer.WhitePixelTexture, Rectangle, null, DrawColor, Angle, new Vector2(0, 0), SpriteEffects.None, 0);
         }
 
-        private bool Intersect(Vector3 circle, Vector2 a, Vector2 b)
-        {
-            var P1 = new Vector2(a.X - circle.X, a.Y - circle.Y);
-            var P2 = new Vector2(b.X - circle.X, b.Y - circle.Y);
-
-            var dx = P2.X - P1.X;
-            var dy = P2.Y - P1.Y;
-            var drSq = (float)((double)(dx * dx) + (double)(dy * dy));
-            var D = P1.X * P2.Y - P2.X * P1.Y;
-
-            var di = (circle.Z * circle.Z) * (drSq) - (D * D);
-
-            return (di >= 0) && InBetween(circle.X, a.X, b.X) && InBetween(circle.Y, a.Y, b.Y);
-        }
-
-        private static bool InBetween(float val, float a, float b)
-        {
-            return Math.Min(a, b) <= val &&
-                val <= Math.Max(a, b);
-        }
-
         public static TracerLine Create(Entity entity)
         {
             return entity.Add<TracerLine>();
@@ -142,7 +121,7 @@ namespace SessionSeven.Components
         public TracerLine SetColor(Color value) { Color = value; return this; }
         public TracerLine SetHitColor(Color value) { HitColor = value; return this; }
         public TracerLine SetTarget(Vector2 value) { Target = value; return this; }
-        public TracerLine SetCollider(Vector3 value) { Collider = value; return this; }
+        public TracerLine SetCollider(Circle value) { Collider = value; return this; }
         public TracerLine SetVisible(bool value) { Visible = value; return this; }
     }
 }

@@ -2366,7 +2366,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are numerous guarantee cards in there..
+        ///   Looks up a localized string similar to There are numerous guarantee cards in the upper part..
         /// </summary>
         internal static string There_are_numerous_guarantee_cards_in_there {
             get {

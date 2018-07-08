@@ -372,7 +372,7 @@ namespace SessionSeven.Functional.Test
             runner.MouseClick(ClickPos);
             runner.AdvanceToInteractive();
 
-            ClickPos = Tree.Basement.Scene.Get<Camera>().Transform(Basement.WoodenPanel.Collider.XYToVector2());
+            ClickPos = Tree.Basement.Scene.Get<Camera>().Transform(Basement.WoodenPanel.Collider.Center);
 
             runner.MouseClick(ClickPos);
             runner.AdvanceToInteractive();
@@ -382,7 +382,7 @@ namespace SessionSeven.Functional.Test
             runner.MouseClick(ClickPos);
             runner.AdvanceToInteractive();
 
-            ClickPos = Tree.Basement.Scene.Get<Camera>().Transform(Basement.WoodenPanel.Collider.XYToVector2());
+            ClickPos = Tree.Basement.Scene.Get<Camera>().Transform(Basement.WoodenPanel.Collider.Center);
 
             runner.MouseClick(ClickPos);
             runner.AdvanceToInteractive();
