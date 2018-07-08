@@ -68,6 +68,7 @@
     <Compile Include="actors\RyanVoice.cs" />
     <Compile Include="actors\Scene.cs" />
     <Compile Include="actors\Ryan.cs" />
+    <Compile Include="base\Components\Circle.cs" />
     <Compile Include="base\Components\BatteryCompartment.cs" />
     <Compile Include="base\Components\RandomCountdown.cs" />
     <Compile Include="base\Components\Score.cs" />
@@ -199,6 +200,7 @@
     <Compile Include="rooms\basement\WoodenBox.cs" />
     <Compile Include="rooms\basement\Screwdriver.cs" />
     <Compile Include="rooms\basement\Hammer.cs" />
+    <Compile Include="rooms\basement\WoodenPanelSoundTrigger.cs" />
     <Compile Include="rooms\basement\WoodenPanel.cs" />
     <Compile Include="rooms\basement\Crumbs.cs" />
     <Compile Include="rooms\basement\GuitarStrings.cs" />

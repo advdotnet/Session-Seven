@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using SessionSeven.Components;
 using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
@@ -16,7 +17,7 @@ namespace SessionSeven.Basement
         /// <summary>
         /// Colliding circle, z equals radius
         /// </summary>
-        public static readonly Vector3 Collider = new Vector3(621, 275, 8);
+        public static readonly Circle Collider = new Circle(new Vector2(621, 275), 8);
 
         public bool Uncovered { get; private set; }
 
