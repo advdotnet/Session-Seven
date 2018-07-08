@@ -1,4 +1,5 @@
-﻿using STACK;
+﻿using Microsoft.Xna.Framework;
+using STACK;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -55,7 +56,13 @@ namespace SessionSeven
 
         static void HandleException(Exception e)
         {
+            FNALoggerEXT.LogInfo("Exception: " + e.ToString());
             AppendToFile("error.log", e.ToString());
+
+            if (null != e.InnerException)
+            {
+                HandleException(e.InnerException);
+            }
         }
 
         static void AppendToFile(string filename, string text)
