@@ -15,16 +15,16 @@ namespace SessionSeven.GUI.Interaction
     {
         public const int OFFSET = InteractionBar.HEIGHT;
 
-        public static LockedVerb Walk = LockedVerb.Create(RandomTexts.Default, Rectangle.Empty, OFFSET, GlblRes.Walk_to);
-        public static LockedVerb Give = LockedVerb.Create(RandomTexts.Give, new Rectangle(0, 17, 92, 30), OFFSET, GlblRes.Give, GlblRes.to, true);
-        public static LockedVerb Open = LockedVerb.Create(RandomTexts.Open, new Rectangle(0, 17 + 30, 92, 32), OFFSET, GlblRes.Open);
-        public static LockedVerb Close = LockedVerb.Create(RandomTexts.Close, new Rectangle(0, 17 + 62, 92, 33), OFFSET, GlblRes.Close);
-        public static LockedVerb Pick = LockedVerb.Create(RandomTexts.Pick, new Rectangle(92, 17, 110, 30), OFFSET, GlblRes.Pick_up, "", false, PickRandomTextFn);
-        public static LockedVerb Look = LockedVerb.Create(RandomTexts.Look, new Rectangle(92, 17 + 30, 110, 32), OFFSET, GlblRes.Look_at);
-        public static LockedVerb Talk = LockedVerb.Create(RandomTexts.Talk, new Rectangle(92, 17 + 62, 110, 33), OFFSET, GlblRes.Talk_to);
-        public static LockedVerb Use = LockedVerb.Create(RandomTexts.Use, new Rectangle(202, 17, 88, 30), OFFSET, GlblRes.Use, GlblRes.with, true);
-        public static LockedVerb Push = LockedVerb.Create(RandomTexts.Move, new Rectangle(202, 17 + 30, 88, 32), OFFSET, GlblRes.Push);
-        public static LockedVerb Pull = LockedVerb.Create(RandomTexts.Move, new Rectangle(202, 17 + 62, 88, 33), OFFSET, GlblRes.Pull);
+        public static LockedVerb Walk = LockedVerb.Create("walk", RandomTexts.Default, Rectangle.Empty, OFFSET, GlblRes.Walk_to);
+        public static LockedVerb Give = LockedVerb.Create("give", RandomTexts.Give, new Rectangle(0, 17, 92, 30), OFFSET, GlblRes.Give, GlblRes.to, true);
+        public static LockedVerb Open = LockedVerb.Create("open", RandomTexts.Open, new Rectangle(0, 17 + 30, 92, 32), OFFSET, GlblRes.Open);
+        public static LockedVerb Close = LockedVerb.Create("close", RandomTexts.Close, new Rectangle(0, 17 + 62, 92, 33), OFFSET, GlblRes.Close);
+        public static LockedVerb Pick = LockedVerb.Create("pick", RandomTexts.Pick, new Rectangle(92, 17, 110, 30), OFFSET, GlblRes.Pick_up, "", false, PickRandomTextFn);
+        public static LockedVerb Look = LockedVerb.Create("look", RandomTexts.Look, new Rectangle(92, 17 + 30, 110, 32), OFFSET, GlblRes.Look_at);
+        public static LockedVerb Talk = LockedVerb.Create("talk", RandomTexts.Talk, new Rectangle(92, 17 + 62, 110, 33), OFFSET, GlblRes.Talk_to);
+        public static LockedVerb Use = LockedVerb.Create("use", RandomTexts.Use, new Rectangle(202, 17, 88, 30), OFFSET, GlblRes.Use, GlblRes.with, true);
+        public static LockedVerb Push = LockedVerb.Create("push", RandomTexts.Move, new Rectangle(202, 17 + 30, 88, 32), OFFSET, GlblRes.Push);
+        public static LockedVerb Pull = LockedVerb.Create("pull", RandomTexts.Move, new Rectangle(202, 17 + 62, 88, 33), OFFSET, GlblRes.Pull);
 
         public static List<LockedVerb> All = new List<LockedVerb>() { Give, Open, Close, Pick, Look, Talk, Use, Push, Pull };
 
@@ -56,20 +56,26 @@ namespace SessionSeven.GUI.Interaction
         public override void OnDraw(Renderer renderer)
         {
             base.OnDraw(renderer);
+
             if (null != HighlightedVerb)
             {
                 var Texture = Tree.GUI.Interaction.VerbsHighlight.Get<Sprite>().Texture;
                 renderer.SpriteBatch.Draw(Texture, HighlightedVerb.ScreenRectangle, HighlightedVerb.TextureRectangle, Color.White);
             }
 
+            if (!World.Interactive)
+            {
+                return;
+            }
+
             var Pick = World.Get<STACK.Components.Mouse>().ObjectUnderMouse;
 
-            if (Pick == Tree.GUI.Interaction.ScrollUpButton && Game.Ego.Inventory.CanScrollUp && World.Interactive)
+            if (Pick == Tree.GUI.Interaction.ScrollUpButton && Game.Ego.Inventory.CanScrollUp)
             {
                 var Texture = Tree.GUI.Interaction.VerbsHighlight.Get<Sprite>().Texture;
                 renderer.SpriteBatch.Draw(Texture, ScrollUpButton.ScreenRectangle, ScrollUpButton.TextureRectangle, Color.White);
             }
-            else if (Pick == Tree.GUI.Interaction.ScrollDownButton && Game.Ego.Inventory.CanScrollDown && World.Interactive)
+            else if (Pick == Tree.GUI.Interaction.ScrollDownButton && Game.Ego.Inventory.CanScrollDown)
             {
                 var Texture = Tree.GUI.Interaction.VerbsHighlight.Get<Sprite>().Texture;
                 renderer.SpriteBatch.Draw(Texture, ScrollDownButton.ScreenRectangle, ScrollDownButton.TextureRectangle, Color.White);

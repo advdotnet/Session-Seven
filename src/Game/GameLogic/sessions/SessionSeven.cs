@@ -50,6 +50,9 @@ namespace SessionSeven.Cutscenes
             {
                 case ScoreType.Jail:
 
+                    Game.PlaySong(content.audio.session7a);
+                    World.Get<AudioManager>().RepeatSong = true;
+
                     yield return Psychiatrist.Say(GlblRes.Weve_gotten_a_lot_of_good_work_done_today_Ryan);
                     yield return Delay.Seconds(0.25f);
                     yield return Psychiatrist.Say(GlblRes.I_appreciate_you_opening_up_to_me_as_much_as_you_have_I_understand_this_hasnt_been_easy_for_you);
@@ -108,6 +111,9 @@ namespace SessionSeven.Cutscenes
                     break;
 
                 case ScoreType.Insanity:
+
+                    Game.PlaySong(content.audio.session7b);
+                    World.Get<AudioManager>().RepeatSong = true;
 
                     yield return Psychiatrist.Say(GlblRes.Alright_Ryan_I_think_we_got_a_lot_of_important_work_done_today);
                     yield return Delay.Seconds(0.25f);
@@ -171,6 +177,9 @@ namespace SessionSeven.Cutscenes
                     break;
 
                 case ScoreType.Freedom:
+
+                    Game.PlaySong(content.audio.session7c);
+                    World.Get<AudioManager>().RepeatSong = true;
 
                     yield return RyanVoice.TransitionTo(RyanState.ArmsRaised);
 
@@ -279,15 +288,13 @@ namespace SessionSeven.Cutscenes
 
             Game.StopSkipping();
 
-            Game.PlaySong(content.audio.spectres);
-
             yield return Delay.Seconds(4);
 
             yield return FadeOutScript();
 
             Game.EnableTextSkipping(false);
 
-            foreach (var CreditText in GetCreditTexts())
+            foreach (var CreditText in GetCreditTexts(true))
             {
                 yield return Tree.GUI.ScreenText.ShowText(CreditText, 5f);
                 yield return Delay.Seconds(0.5f);
@@ -330,7 +337,7 @@ namespace SessionSeven.Cutscenes
             yield return RyanVoice.TransitionTo(RyanState.Neutral);
         }
 
-        public static IEnumerable<string> GetCreditTexts()
+        public static IEnumerable<string> GetCreditTexts(bool ending)
         {
             var NL = System.Environment.NewLine;
             var NLNL = NL + NL;
@@ -339,6 +346,14 @@ namespace SessionSeven.Cutscenes
             yield return GlblRes.Music + NLNL + GlblRes.Damian_Potenzoni;
             yield return GlblRes.Coding + NLNL + GlblRes.Jonas_Jelli;
             yield return GlblRes.Graphics + NLNL + GlblRes.Jeremy_Carver__Jonas_Jelli;
+            if (ending)
+            {
+                yield return "Beta Testing" + NLNL + "";
+                yield return "Special Thanks" + NLNL + "Jennifer:";
+                yield return "Special Thanks" + NLNL + "Damian: I would like to thank my family and friends for the continuous support. Thanks to everyone involved in Session Seven for making me a part of the experience, you guys rock. Big thanks to my wife, without her, I couldn't make this possible. Love, D.";
+                yield return "Special Thanks" + NLNL + "Jonas: My wife, family and friends.";
+                yield return "Special Thanks" + NLNL + "Jeremy: Amanda & Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss";
+            }
             yield return GlblRes.Thank_you_for_playing;
             yield return GlblRes.Devoted_to_all_point__click_adventure_fans;
             yield return GlblRes.wwwsessionsevencom;

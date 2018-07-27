@@ -17,7 +17,7 @@ namespace SessionSeven.GUI
                 .SetFont(content.fonts.pixeloperator_outline_BMF)
                 .SetFadeDuration(3f)
                 .SetHeight(Game.VIRTUAL_HEIGHT)
-                .SetWidth(Game.VIRTUAL_WIDTH);
+                .SetWidth(Game.VIRTUAL_WIDTH - 50);
 
             Transform
                 .Create(this)
