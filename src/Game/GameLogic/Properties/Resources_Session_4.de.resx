@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Dont_you_believe_me" xml:space="preserve">
+    <value>...Glauben Sie mir etwa nicht?</value>
+  </data>
+  <data name="Is_that_true_Youre_taking_your_medications_regularly" xml:space="preserve">
+    <value>Ist das wahr? Nehmen Sie regelmäßig Ihre Medizin?</value>
+  </data>
+  <data name="Well_I_I_dont_know_It_doesnt_matter_Besides_I_havent_had_a_problem_like_that_in_a_long_time" xml:space="preserve">
+    <value>Nun, ich... ich weiß es nicht. Es spielt keine Rolle. Außerdem hatte ich schon lange kein Problem mehr dieser Art.</value>
+  </data>
+  <data name="Im_sorry_is_there_something_else_you_would_prefer_I_call_your_episodes" xml:space="preserve">
+    <value>Es tut mir leid, wie würden Sie Ihre Phasen lieber nennen?</value>
+  </data>
+  <data name="Do_you_have_to_call_it_that" xml:space="preserve">
+    <value>Müssen Sie dieses Wort in den Mund nehmen?</value>
+  </data>
+  <data name="Oh_I_dont_know_I_play_the_guitar" xml:space="preserve">
+    <value>Ach, keine Ahnung... Ich spiele Gitarre?</value>
+  </data>
+  <data name="And_do_you_find_that_playing_helps_you_when_you_are_agitated" xml:space="preserve">
+    <value>Und denken Sie dass Ihnen Gitarre spielen hilft wenn Sie... unruhig sind?</value>
+  </data>
+  <data name="Anyways_work_isnt_the_only_thing_that_makes_up_a_man_What_would_you_say_you_do_for_fun" xml:space="preserve">
+    <value>Jedenfalls ist die Arbeit nicht das einzige, was einen Menschen ausmacht. Was machen Sie in Ihrer Freizeit?</value>
+  </data>
+  <data name="Good_to_hear_Your_family_is_your_support_system" xml:space="preserve">
+    <value>Das ist gut zu hören. Ihre Familie gibt Ihnen Kraft und Halt.</value>
+  </data>
+  <data name="Thats_unfortunate_But_I_wonder_if_you_cant_make_something_better_for_yourself_where_you_are_now" xml:space="preserve">
+    <value>Das ist bedauerlich. Aber vielleicht können Sie sich mit Ihrer neuen Situation anfreunden.</value>
+  </data>
+  <data name="I_think_we_could_both_benefit_from_learning_a_little_bit_more_about_yourself" xml:space="preserve">
+    <value>Ich glaube wir könnten beide davon profitieren, etwas mehr über Sie zu erfahren.</value>
+  </data>
+  <data name="Like_what" xml:space="preserve">
+    <value>Und was genau?</value>
+  </data>
+  <data name="Well_what_do_you_do_for_work" xml:space="preserve">
+    <value>Nun, was machen Sie beruflich?</value>
+  </data>
+  <data name="Im_a_mechanical_engineer" xml:space="preserve">
+    <value>Ich bin Maschinenbauingenieur.</value>
+  </data>
+  <data name="And_you_like_your_work" xml:space="preserve">
+    <value>Und mögen Sie Ihre Arbeit?</value>
+  </data>
+  <data name="Cant_complain" xml:space="preserve">
+    <value>Ich kann mich nicht beschweren.</value>
+  </data>
+  <data name="Its_awful" xml:space="preserve">
+    <value>Es ist schrecklich.</value>
+  </data>
+  <data name="Thats_good_Liking_what_you_do_is_important" xml:space="preserve">
+    <value>Das ist gut. Es ist wichtig, dass man in seiner Arbeit Erfüllung findet.</value>
+  </data>
+  <data name="Im_sorry_to_hear_that" xml:space="preserve">
+    <value>Es tut mir leid, das zu hören.</value>
+  </data>
+  <data name="So_were_you_upset_about_having_to_change_offices_to_be_with_your_son" xml:space="preserve">
+    <value>Waren Sie darüber verärgert, den Job zu wechseln, um bei Ihrem Sohn sein zu können?</value>
+  </data>
+  <data name="Yes_I_dont_handle_change_well" xml:space="preserve">
+    <value>Ja. Ich komme mit Veränderungen nicht gut klar.</value>
+  </data>
+  <data name="Yes_I_had_it_good_where_I_was" xml:space="preserve">
+    <value>Ja. Mir ging es gut, wo ich war.</value>
+  </data>
+  <data name="No_It_doesnt_matter_to_me_if_Im_with_my_family" xml:space="preserve">
+    <value>Nein. Es spielt für mich keine Rolle, solange ich bei meiner Familie bin.</value>
+  </data>
+  <data name="I_see_Perhaps_this_time_however_it_was_for_the_best" xml:space="preserve">
+    <value>Ich verstehe. Vielleicht war es trotzdem das Beste für Sie?</value>
+  </data>
+</root>
