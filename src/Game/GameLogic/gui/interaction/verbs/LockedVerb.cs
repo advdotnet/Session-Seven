@@ -14,20 +14,21 @@ namespace SessionSeven.GUI.Interaction
         public List<string> RandomText { get; private set; }
         private GetRandomTextFn RandomTextFn = null;
 
-        public LockedVerb(List<string> defaultTexts, Rectangle textureRectangle, Rectangle screenRectangle, string text, string preposition, bool ditransitive, GetRandomTextFn randomTextFn) : base(text, preposition, ditransitive)
+        public LockedVerb(string id, List<string> defaultTexts, Rectangle textureRectangle, Rectangle screenRectangle, string text, string preposition, bool ditransitive, GetRandomTextFn randomTextFn) : base(text, preposition, ditransitive)
         {
+            Id = id;
             TextureRectangle = textureRectangle;
             ScreenRectangle = screenRectangle;
             RandomText = defaultTexts;
             RandomTextFn = randomTextFn;
         }
 
-        public static LockedVerb Create(List<string> defaultTexts, Rectangle rectangle, int offset, string text, string preposition = "", bool ditransitive = false, GetRandomTextFn randomTextFn = null)
+        public static LockedVerb Create(string id, List<string> defaultTexts, Rectangle rectangle, int offset, string text, string preposition = "", bool ditransitive = false, GetRandomTextFn randomTextFn = null)
         {
             var ScreenRect = new Rectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height);
             ScreenRect.Offset(0, offset);
 
-            return new LockedVerb(defaultTexts, rectangle, ScreenRect, text, preposition, ditransitive, randomTextFn);
+            return new LockedVerb(id, defaultTexts, rectangle, ScreenRect, text, preposition, ditransitive, randomTextFn);
         }
 
         public string GetRandomText(Randomizer randomizer, InteractionContext interactionContext)

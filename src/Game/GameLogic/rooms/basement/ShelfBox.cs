@@ -43,6 +43,7 @@ namespace SessionSeven.Basement
         }
 
         private int OpenedCount = 0;
+        private bool LookedAt = false;
 
         IEnumerator OpenScript()
         {
@@ -95,11 +96,17 @@ namespace SessionSeven.Basement
 
         IEnumerator LookScript()
         {
-            yield return Game.Ego.GoTo(this);
-            using (Game.CutsceneBlock())
+            if (!LookedAt)
             {
-                yield return Game.Ego.Say(Basement_Res.This_box_is_for_stuff_I_am_not_sure_about_whether_I_still_need_it_or_not);
+                yield return Game.Ego.GoTo(this);
+                using (Game.CutsceneBlock(false, false))
+                {
+                    yield return Game.Ego.Say(Basement_Res.This_box_is_for_stuff_I_am_not_sure_about_whether_I_still_need_it_or_not);
+                }
+                LookedAt = true;
             }
+
+            yield return Game.Ego.StartScript(OpenScript());
         }
 
         IEnumerator PickScript()

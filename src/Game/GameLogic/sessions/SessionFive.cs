@@ -35,6 +35,9 @@ namespace SessionSeven.Cutscenes
 
             yield return Psychiatrist.Say(GlblRes.Now_Ryan_I_know_weve_been_avoiding_this_subject_for_a_while_but);
 
+            Game.PlaySong(content.audio.choice);
+            World.Get<AudioManager>().RepeatSong = true;
+
             RyanEyesClosed.Blinking = false;
             RyanEyesClosed.Visible = true;
 
@@ -98,7 +101,6 @@ namespace SessionSeven.Cutscenes
             ProcessScore(Selection);
 
             Game.PlaySong(content.audio.session5);
-            World.Get<AudioManager>().RepeatSong = true;
 
             yield return RyanVoice.Say(Selection.Text);
 

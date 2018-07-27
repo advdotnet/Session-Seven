@@ -126,7 +126,9 @@ namespace SessionSeven.Basement
             {
                 if (!Unlocked)
                 {
-                    yield return Game.Ego.Use();
+                    yield return Game.Ego.StartUse();
+                    yield return Game.WaitForSoundEffect(content.audio.drawer_locked);
+                    yield return Game.Ego.StopUse();
                     yield return Game.Ego.Say(Basement_Res.Locked);
                 }
                 else

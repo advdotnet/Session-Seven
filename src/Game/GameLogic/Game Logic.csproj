@@ -376,10 +376,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Basement.Resources.de.resx" />
     <EmbeddedResource Include="Properties\Basement.Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Basement.Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Items.Resources.de.resx" />
     <EmbeddedResource Include="Properties\Items.Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Items.Resources.Designer.cs</LastGenOutput>
@@ -396,6 +398,9 @@
       <LastGenOutput>Resources_Session_1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources_Session_1.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_2.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_3.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_4.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_6.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_7.resx">
       <Generator>ResXFileCodeGenerator</Generator>

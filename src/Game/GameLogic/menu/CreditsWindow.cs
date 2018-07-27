@@ -23,7 +23,7 @@ namespace SessionSeven
 
             int i = 0;
 
-            foreach (var CreditsText in Cutscenes.Director.GetCreditTexts())
+            foreach (var CreditsText in Cutscenes.Director.GetCreditTexts(false))
             {
                 var Top = 110 + i * 23 + (i > 3 ? 23 : 0);
                 var Text = CreditsText.Split(new string[] { System.Environment.NewLine + System.Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);

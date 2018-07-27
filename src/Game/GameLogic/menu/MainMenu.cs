@@ -83,7 +83,7 @@ namespace SessionSeven
         {
             FocusSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_click);
             ClickSound = engine.EngineContent.Load<SoundEffect>(content.audio.menu_focus);
-            MenuSong = engine.EngineContent.Load<Song>(content.audio.session6);
+            MenuSong = engine.EngineContent.Load<Song>(content.audio.menu);
 
             Engine = engine;
             GameSettings = engine.GameSettings;

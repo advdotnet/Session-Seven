@@ -192,4 +192,130 @@
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
   </data>
+  <data name="Cant_do_that" xml:space="preserve">
+    <value>Das kann ich nicht tun.</value>
+  </data>
+  <data name="There_is_no_need_to_carry_that_around" xml:space="preserve">
+    <value>Das muss ich nicht herum tragen.</value>
+  </data>
+  <data name="I_dont_need_that" xml:space="preserve">
+    <value>Das brauche ich nicht.</value>
+  </data>
+  <data name="I_dont_see_the_point_in_taking_that" xml:space="preserve">
+    <value>Ich sehe keinen Sinn darin, das zu nehmen.</value>
+  </data>
+  <data name="I_have_got_this_already" xml:space="preserve">
+    <value>Das habe ich bereits.</value>
+  </data>
+  <data name="I_have_it_already" xml:space="preserve">
+    <value>Das habe ich doch schon.</value>
+  </data>
+  <data name="Im_carrying_that" xml:space="preserve">
+    <value>Das trage ich bereits mit mir.</value>
+  </data>
+  <data name="I_dont_want_to_move_that" xml:space="preserve">
+    <value>Das will ich nicht bewegen.</value>
+  </data>
+  <data name="There_is_no_need_to_move_that" xml:space="preserve">
+    <value>Es gibt keinen Grund, das zu bewegen.</value>
+  </data>
+  <data name="Cant_use_that" xml:space="preserve">
+    <value>Das kann ich nicht benutzen.</value>
+  </data>
+  <data name="I_cant_do_that" xml:space="preserve">
+    <value>Das kann ich nicht machen.</value>
+  </data>
+  <data name="That_does_not_work" xml:space="preserve">
+    <value>Das funktioniert so nicht.</value>
+  </data>
+  <data name="I_dont_see_anything_special" xml:space="preserve">
+    <value>Ich sehe nichts besonderes.</value>
+  </data>
+  <data name="Nothing_to_see_here" xml:space="preserve">
+    <value>Hier gibt es nichts zu sehen.</value>
+  </data>
+  <data name="I_guess_there_wont_be_an_answer" xml:space="preserve">
+    <value>Ich schätze, ich werde keine Antwort erhalten.</value>
+  </data>
+  <data name="I_cant_talk_to_that" xml:space="preserve">
+    <value>Damit kann ich nicht reden.</value>
+  </data>
+  <data name="I_cant_close_that" xml:space="preserve">
+    <value>Ich kann das nicht schließen.</value>
+  </data>
+  <data name="This_cant_be_closed" xml:space="preserve">
+    <value>Das kann nicht geschlossen werden.</value>
+  </data>
+  <data name="That_does_not_need_to_be_closed" xml:space="preserve">
+    <value>Das muss nicht geschlossen werden.</value>
+  </data>
+  <data name="I_cant_open_that" xml:space="preserve">
+    <value>Ich kann das nicht öffnen.</value>
+  </data>
+  <data name="This_cant_be_opened" xml:space="preserve">
+    <value>Das kann nicht geöffnet werden.</value>
+  </data>
+  <data name="That_does_not_need_to_be_opened" xml:space="preserve">
+    <value>Das muss nicht geöffnet werden.</value>
+  </data>
+  <data name="I_cant_give_that_to_somebody" xml:space="preserve">
+    <value>Das kann ich nicht weggeben.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein.</value>
+  </data>
+  <data name="How" xml:space="preserve">
+    <value>Wie?</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Music_Volume" xml:space="preserve">
+    <value>Musiklautstärke</value>
+  </data>
+  <data name="Sound_Volume" xml:space="preserve">
+    <value>Tonlautstärke</value>
+  </data>
+  <data name="Bloom" xml:space="preserve">
+    <value>Bloom</value>
+  </data>
+  <data name="Restart_the_game_for_this_setting_to_take_effect" xml:space="preserve">
+    <value>Das Spiel muss neu gestartet werden, damit diese Einstellung wirksam wird.</value>
+  </data>
+  <data name="VSync" xml:space="preserve">
+    <value>VSync</value>
+  </data>
+  <data name="Display_Mode" xml:space="preserve">
+    <value>Anzeigemodus</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Borderless" xml:space="preserve">
+    <value>Desktopauflösung</value>
+  </data>
+  <data name="Borderless_Fit" xml:space="preserve">
+    <value>Desktopauflösung eingepasst</value>
+  </data>
+  <data name="Borderless_Scale" xml:space="preserve">
+    <value>Desktopauflösung skaliert</value>
+  </data>
+  <data name="Fullscreen" xml:space="preserve">
+    <value>Vollbild</value>
+  </data>
+  <data name="Window" xml:space="preserve">
+    <value>Fenster</value>
+  </data>
+  <data name="Window_Fit" xml:space="preserve">
+    <value>Fenster eingepasst</value>
+  </data>
+  <data name="Menu_AddExitConfirmationWindow_No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version" xml:space="preserve">
+    <value>Konnte den Spielstand nicht laden. Vielleicht wurde er mit einer älteren Spiel-Version erstellt.</value>
+  </data>
 </root>
