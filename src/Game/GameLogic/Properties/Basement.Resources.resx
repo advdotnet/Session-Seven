@@ -131,7 +131,7 @@
     <value>box</value>
   </data>
   <data name="There_are_just_some_screws_and_nail_in_there" xml:space="preserve">
-    <value>There are just some screws and nail in there.</value>
+    <value>There are just some screws and nails in there.</value>
   </data>
   <data name="I_dont_need_them" xml:space="preserve">
     <value>I don't need them.</value>
@@ -1032,5 +1032,11 @@
   </data>
   <data name="Now_I_can_only_just_reach_it" xml:space="preserve">
     <value>Now I can only just reach it.</value>
+  </data>
+  <data name="Its_already_plugged_in" xml:space="preserve">
+    <value>It's already plugged in.</value>
+  </data>
+  <data name="Cant_reach_the_item_in_the_back_with_this" xml:space="preserve">
+    <value>Can't reach the item in the back with this.</value>
   </data>
 </root>

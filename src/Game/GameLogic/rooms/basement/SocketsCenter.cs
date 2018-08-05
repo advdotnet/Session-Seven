@@ -37,6 +37,8 @@ namespace SessionSeven.Basement
                 .Create()
                 .For(Game.Ego)
                     .Add(Verbs.Look, LookScript())
+                .For(Tree.Basement.DrillingMachine)
+                    .Add(Verbs.Use, LookScript(), Game.Ego)
                 .For(Tree.Basement.DrillingMachineCable)
                     .Add(Verbs.Use, LookScript(), Game.Ego);
         }

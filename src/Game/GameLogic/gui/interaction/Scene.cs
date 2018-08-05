@@ -81,8 +81,10 @@ namespace SessionSeven.GUI.Interaction
                 Secondary = entity;
             }
 
-            bool Combinable = (null != Primary.Get<Combinable>());
-            bool Givable = (null != Primary.Get<Givable>());
+            var CombinableComponent = Primary.Get<Combinable>();
+            var GivableComponent = Primary.Get<Givable>();
+            bool Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
+            bool Givable = (null != GivableComponent && GivableComponent.IsGivable);
 
             Tree.GUI.Interaction.ActionTextLabel.Color = Color.Gray;
 
@@ -245,8 +247,11 @@ namespace SessionSeven.GUI.Interaction
             var Label = Tree.GUI.Interaction.ActionTextLabel;
             Label.Color = Color.White;
 
-            bool Combinable = (null != Primary?.Get<Combinable>());
-            bool Givable = (null != Primary?.Get<Givable>());
+            var CombinableComponent = Primary?.Get<Combinable>();
+            var GivableComponent = Primary?.Get<Givable>();
+            bool Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
+            bool Givable = (null != GivableComponent && GivableComponent.IsGivable);
+
             bool PickedScrollButton = (Pick == Tree.GUI.Interaction.ScrollDownButton || Pick == Tree.GUI.Interaction.ScrollUpButton);
 
             if (Pick is VerbButton)

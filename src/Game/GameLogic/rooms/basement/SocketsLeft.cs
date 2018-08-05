@@ -33,6 +33,8 @@ namespace SessionSeven.Basement
                 .Create()
                 .For(Game.Ego)
                     .Add(Verbs.Look, LookScript())
+                .For(Tree.Basement.DrillingMachine)
+                    .Add(Verbs.Use, UseDrillingMachineCableScript(), Game.Ego)
                 .For(Tree.Basement.DrillingMachineCable)
                     .Add(Verbs.Use, UseDrillingMachineCableScript(), Game.Ego);
         }
@@ -42,11 +44,18 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(Tree.Basement.DrillingMachineCable);
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Use();
-                yield return Game.Ego.GoTo(this);
-                yield return Game.Ego.StartUse();
-                Tree.Basement.DrillingMachineCable.PluggedIn = true;
-                yield return Game.Ego.StopUse();
+                if (!Tree.Basement.DrillingMachineCable.PluggedIn)
+                {
+                    yield return Game.Ego.Use();
+                    yield return Game.Ego.GoTo(this);
+                    yield return Game.Ego.StartUse();
+                    Tree.Basement.DrillingMachineCable.PluggedIn = true;
+                    yield return Game.Ego.StopUse();
+                }
+                else
+                {
+                    yield return Game.Ego.Say(Basement_Res.Its_already_plugged_in);
+                }
             }
         }
 

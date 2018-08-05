@@ -575,6 +575,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Can&apos;t reach the item in the back with this..
+        /// </summary>
+        internal static string Cant_reach_the_item_in_the_back_with_this {
+            get {
+                return ResourceManager.GetString("Cant_reach_the_item_in_the_back_with_this", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to cardboard.
         /// </summary>
         internal static string cardboard {
@@ -1490,6 +1499,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to It&apos;s already plugged in..
+        /// </summary>
+        internal static string Its_already_plugged_in {
+            get {
+                return ResourceManager.GetString("Its_already_plugged_in", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to It&apos;s an old photograph of Cynthia, Landon and me..
         /// </summary>
         internal static string Its_an_old_photograph_of_Cynthia_Landon_and_me {
@@ -2339,7 +2357,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are just some screws and nail in there..
+        ///   Looks up a localized string similar to There are just some screws and nails in there..
         /// </summary>
         internal static string There_are_just_some_screws_and_nail_in_there {
             get {

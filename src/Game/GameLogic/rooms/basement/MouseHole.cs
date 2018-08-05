@@ -15,7 +15,7 @@ namespace SessionSeven.Basement
         [NonSerialized]
         Path _WatchArea;
         public bool FedMouse { get; private set; }
-        public bool SawMouse { get; private set; }
+        public bool SawMouse { get; set; }
 
         public Path WatchArea
         {
@@ -345,18 +345,44 @@ namespace SessionSeven.Basement
             Game.Ego.Turn(this);
             using (Game.CutsceneBlock())
             {
-                if (SawMouse)
+                if (Tree.Actors.Mouse.Visible)
                 {
-                    yield return Game.Ego.Say(Basement_Res.I_am_not_a_pet_killer);
-                    if (!PetKiller)
+                    if (SawItem)
                     {
-                        Game.Ego.Get<Score>().Add(ScoreType.Jail, 1);
-                        PetKiller = true;
+                        yield return Game.Ego.StartUse();
+                        if (Tree.Actors.Mouse.Visible)
+                        {
+                            yield return Delay.Seconds(1);
+                            if (Tree.Actors.Mouse.Visible)
+                            {
+                                yield return Game.Ego.Say(Basement_Res.Cant_reach_the_item_in_the_back_with_this);
+
+                                yield break;
+                            }
+                        }
+                        yield return Game.Ego.StopUse();
+                        yield return Game.Ego.Say(Basement_Res.JESUS);
+                    }
+                    else
+                    {
+                        yield return Game.Ego.Say(Basement_Res.Why_would_I_do_that);
                     }
                 }
                 else
                 {
-                    yield return Game.Ego.Say(Basement_Res.Why);
+                    if (SawMouse)
+                    {
+                        yield return Game.Ego.Say(Basement_Res.I_am_not_a_pet_killer);
+                        if (!PetKiller)
+                        {
+                            Game.Ego.Get<Score>().Add(ScoreType.Jail, 1);
+                            PetKiller = true;
+                        }
+                    }
+                    else
+                    {
+                        yield return Game.Ego.Say(Basement_Res.Why);
+                    }
                 }
             }
         }
@@ -414,6 +440,7 @@ namespace SessionSeven.Basement
                 }
 
                 Tree.Basement.MouseHole.Enabled = true;
+                Tree.InventoryItems.Hazelnuts.Get<Combinable>().IsCombinable = false;
 
                 FedMouse = true;
             }
