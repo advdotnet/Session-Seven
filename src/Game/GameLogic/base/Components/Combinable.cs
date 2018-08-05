@@ -9,9 +9,22 @@ namespace SessionSeven.Components
     [Serializable]
     public class Combinable : Component
     {
+        private bool _IsCombinable;
+
+        public bool IsCombinable
+        {
+            get { return _IsCombinable; }
+            set { _IsCombinable = value; }
+        }
+
+        public Combinable()
+        {
+            _IsCombinable = true;
+        }
+
         public static Combinable Create(Entity entity)
         {
             return entity.Add<Combinable>();
         }
-    }    
+    }
 }

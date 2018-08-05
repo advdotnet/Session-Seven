@@ -11,7 +11,7 @@ namespace SessionSeven.InventoryItems
     [Serializable]
     public class Hazelnuts : ItemBase
     {
-        public Hazelnuts() : base(content.inventory.hazelnuts, Items_Res.Hazelnuts_Hazelnuts_Hazelnuts, true, false)
+        public Hazelnuts() : base(content.inventory.hazelnuts, Items_Res.Hazelnuts_Hazelnuts_Hazelnuts, true, true)
         {
         }
 
@@ -67,6 +67,8 @@ namespace SessionSeven.InventoryItems
                             SawMouseCollectNuts = true;
                             SawFirstTime = true;
                         }
+
+                        Tree.Basement.MouseHole.SawMouse = true;
 
                         Game.Ego.Inventory.Show();
                     }
