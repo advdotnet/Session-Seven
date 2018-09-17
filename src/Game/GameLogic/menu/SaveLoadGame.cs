@@ -240,7 +240,11 @@ namespace SessionSeven
                 ListBox.Items.Clear();
             }
 
-            foreach (var Game in Engine.GetSaveGames())
+            var AllSaveGames = Engine.GetSaveGames();
+            var CurrentCulture = GameSettings.GetCurrentCultureName();
+            var CurrentLocaleSavegames = AllSaveGames.Where(s => s.Value.Culture == CurrentCulture);
+
+            foreach (var Game in CurrentLocaleSavegames)
             {
                 SaveGames.Add(Game.Key, Game.Value);
 
