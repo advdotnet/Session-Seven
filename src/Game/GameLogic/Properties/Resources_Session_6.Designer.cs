@@ -224,7 +224,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to At first she wasn&apos;t making any sense. She kept saying things like &quot;I&apos;m alright, I&apos;m alright, it wasn&apos;t his fault,&quot; and I was asking her &quot;who is he?&quot;..
+        ///   Looks up a localized string similar to At first she wasn&apos;t making any sense. She kept saying things like &quot;I&apos;m alright, I&apos;m alright, it wasn&apos;t his fault&quot;, and I was asking her &quot;who is he?&quot;..
         /// </summary>
         internal static string At_first_she_wasnt_making_any_sense_She_kept_saying_things_like_Im_alright_Im_alright_it_wasnt_his_fault_and_I_was_asking_her_who_is_he {
             get {
@@ -875,7 +875,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I tried to tell her that didn&apos;t make any sense, but she just wouldn&apos;t listen. She was sobbing..
+        ///   Looks up a localized string similar to I tried to tell her that didn&apos;t make any sense, but she just wouldn&apos;t listen. She was sobbing. Inconsolable..
         /// </summary>
         internal static string I_tried_to_tell_her_that_didnt_make_any_sense_but_she_just_wouldnt_listen_She_was_sobbing {
             get {
@@ -962,7 +962,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Inconsolable. I was trying to get her to stop, telling her she needed to leave, that Landon would hear her... but....
+        ///   Looks up a localized string similar to I was trying to get her to stop, telling her she needed to leave, that Landon would hear her... but....
         /// </summary>
         internal static string Inconsolable_I_was_trying_to_get_her_to_stop_telling_her_she_needed_to_leave_that_Landon_would_hear_her_but {
             get {
@@ -1141,7 +1141,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No. No it&apos;s not. I asked her, &quot;who? who did this?&quot; and she kept crying and telling me to keep my voice down, and that&apos;s....
+        ///   Looks up a localized string similar to No. No it&apos;s not. I asked her &quot;who? who did this?&quot;, and she kept crying and telling me to keep my voice down, and that&apos;s....
         /// </summary>
         internal static string No_No_its_not_I_asked_her_who_who_did_this__and_she_kept_crying_and_telling_me_to_keep_my_voice_down_and_thats {
             get {

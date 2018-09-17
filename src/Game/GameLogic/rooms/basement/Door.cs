@@ -252,6 +252,9 @@ namespace SessionSeven.Basement
                     }
                     else
                     {
+                        Game.PlaySong(content.audio.basementend);
+                        World.Get<AudioManager>().RepeatSong = false;
+
                         yield return Game.Ego.StartUse();
                         Game.PlaySoundEffect(content.audio.door_open);
                         yield return Delay.Seconds(0.5f);

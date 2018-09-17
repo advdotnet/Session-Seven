@@ -89,6 +89,7 @@ namespace SessionSeven.Basement
                     Enabled = false;
                     Tree.Basement.WoodenBox.Enabled = true;
                     yield return Game.Ego.StopUse();
+                    Game.PlaySoundEffect(content.audio.puzzle);
                     yield return Delay.Seconds(1);
                     yield return Game.Ego.Say(Basement_Res.Where_does_this_horrible_smell_come_from);
                 }

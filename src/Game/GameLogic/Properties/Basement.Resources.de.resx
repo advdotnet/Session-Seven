@@ -1053,4 +1053,10 @@
   <data name="Now_I_can_only_just_reach_it" xml:space="preserve">
     <value>Jetzt komme ich gerade so ran.</value>
   </data>
+  <data name="Its_already_plugged_in" xml:space="preserve">
+    <value>Es ist schon eingesteckt.</value>
+  </data>
+  <data name="Cant_reach_the_item_in_the_back_with_this" xml:space="preserve">
+    <value>Damit komme ich nicht ran.</value>
+  </data>
 </root>

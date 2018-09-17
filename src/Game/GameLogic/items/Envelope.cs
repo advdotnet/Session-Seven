@@ -1,6 +1,7 @@
 ﻿using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
+using STACK.Components;
 using System;
 using System.Collections;
 using Items_Res = global::SessionSeven.Properties.Items_Resources;
@@ -68,8 +69,20 @@ namespace SessionSeven.InventoryItems
                 yield return 1;
             }
 
+            var StartSession = Game.Ego.Inventory.HasItem<Blanket>() && Tree.InventoryItems.Blanket.LookedAt;
+
             using (Game.CutsceneBlock())
             {
+                if (StartSession)
+                {
+                    Game.PlaySong(content.audio.basementend);
+                    World.Get<AudioManager>().RepeatSong = false;
+                }
+                else
+                {
+                    Game.PlaySoundEffect(content.audio.puzzle);
+                }
+
                 if (!ReadLetter)
                 {
                     yield return Delay.Seconds(1.5f);
@@ -82,7 +95,7 @@ namespace SessionSeven.InventoryItems
                 Tree.GUI.Interaction.Scene.Interactive = true;
             }
 
-            if (Game.Ego.Inventory.HasItem<Blanket>() && Tree.InventoryItems.Blanket.LookedAt)
+            if (StartSession)
             {
                 yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Three);
             }
