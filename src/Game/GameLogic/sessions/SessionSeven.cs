@@ -288,6 +288,9 @@ namespace SessionSeven.Cutscenes
 
             Game.StopSkipping();
 
+            Game.PlaySong(content.audio.credits);
+            World.Get<AudioManager>().RepeatSong = false;
+
             yield return Delay.Seconds(4);
 
             yield return FadeOutScript();
@@ -351,7 +354,7 @@ namespace SessionSeven.Cutscenes
                 yield return "Beta Testing" + NLNL + "";
                 yield return "Special Thanks" + NLNL + "Jennifer:";
                 yield return "Special Thanks" + NLNL + "Damian: I would like to thank my family and friends for the continuous support. Thanks to everyone involved in Session Seven for making me a part of the experience, you guys rock. Big thanks to my wife, without her, I couldn't make this possible. Love, D.";
-                yield return "Special Thanks" + NLNL + "Jonas: My wife, family and friends.";
+                yield return "Special Thanks" + NLNL + "Jonas: My wife, family and friends and everybody contributing to making this game!";
                 yield return "Special Thanks" + NLNL + "Jeremy: Amanda & Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss";
             }
             yield return GlblRes.Thank_you_for_playing;

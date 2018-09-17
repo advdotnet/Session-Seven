@@ -2,6 +2,7 @@
 using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
+using STACK.Components;
 using System;
 using System.Collections;
 using Items_Res = global::SessionSeven.Properties.Items_Resources;
@@ -38,12 +39,24 @@ namespace SessionSeven.InventoryItems
         {
             using (Game.CutsceneBlock())
             {
+                var StartSession = Game.Ego.Inventory.HasItem<Envelope>() && Tree.InventoryItems.Envelope.ReadLetter;
+
+                if (StartSession)
+                {
+                    Game.PlaySong(content.audio.basementend);
+                    World.Get<AudioManager>().RepeatSong = false;
+                }
+                else
+                {
+                    Game.PlaySoundEffect(content.audio.puzzle);
+                }
+
                 yield return Game.Ego.Say(Items_Res.Our_old_picnic_blanket_wow_I_didnt_know_we_kept_it);
                 yield return Game.Ego.Say(Items_Res.Cynthia_and_me_spent_much_time_on_that_together_especially_before_Landon_was_born);
 
                 LookedAt = true;
 
-                if (Game.Ego.Inventory.HasItem<Envelope>() && Tree.InventoryItems.Envelope.ReadLetter)
+                if (StartSession)
                 {
                     yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Three);
                 }

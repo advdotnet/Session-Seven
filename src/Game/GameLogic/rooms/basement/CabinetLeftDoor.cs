@@ -181,6 +181,10 @@ namespace SessionSeven.Basement
         private IEnumerator ReceiptScript()
         {
             Game.Ego.Inventory.Hide();
+
+            Game.PlaySong(content.audio.basementend);
+            World.Get<AudioManager>().RepeatSong = false;
+
             yield return Game.Ego.StartScript(Tree.Basement.Receipt.FallDownScript(), "receipt_fall_down");
 
             yield return Delay.Seconds(1.5f);

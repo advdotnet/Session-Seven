@@ -110,6 +110,8 @@ namespace SessionSeven.InventoryItems
                 {
                     if (Tree.Basement.RFIDAntennaCabinet.FellDown)
                     {
+                        Game.PlaySoundEffect(content.audio.puzzle);
+
                         yield return Game.Ego.Say(Items_Res.Got_it);
                     }
                     else

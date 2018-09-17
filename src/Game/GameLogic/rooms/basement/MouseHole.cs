@@ -202,6 +202,8 @@ namespace SessionSeven.Basement
                             yield return Delay.Seconds(1);
                             if (Tree.Actors.Mouse.Visible)
                             {
+                                Game.PlaySoundEffect(content.audio.puzzle);
+
                                 Game.Ego.Inventory.AddItem<InventoryItems.Paperclips>();
                                 yield return Game.Ego.StopUse();
 

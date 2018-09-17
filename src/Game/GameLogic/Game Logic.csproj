@@ -401,7 +401,9 @@
     <EmbeddedResource Include="Properties\Resources_Session_2.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_3.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_4.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_5.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_6.de.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_7.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_7.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources_Session_7.Designer.cs</LastGenOutput>

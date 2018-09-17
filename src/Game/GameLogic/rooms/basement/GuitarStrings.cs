@@ -50,13 +50,25 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
+                var StartSession = Game.Ego.Inventory.HasItem<DrugPrescriptionRyan>() && Tree.InventoryItems.DrugPrescriptionRyan.LookedAt;
+
+                if (StartSession)
+                {
+                    Game.PlaySong(content.audio.basementend);
+                    World.Get<AudioManager>().RepeatSong = false;
+                }
+                else
+                {
+                    Game.PlaySoundEffect(content.audio.puzzle);
+                }
+
                 yield return Game.Ego.StartUse();
                 Game.Ego.Inventory.AddItem<InventoryItems.GuitarStrings>();
                 this.Visible = false;
                 this.Enabled = false;
                 yield return Game.Ego.StopUse();
 
-                if (Game.Ego.Inventory.HasItem<DrugPrescriptionRyan>() && Tree.InventoryItems.DrugPrescriptionRyan.LookedAt)
+                if (StartSession)
                 {
                     yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Four);
                 }

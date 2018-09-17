@@ -1,6 +1,7 @@
 ﻿using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
+using STACK.Components;
 using System;
 using System.Collections;
 using Items_Res = global::SessionSeven.Properties.Items_Resources;
@@ -32,6 +33,18 @@ namespace SessionSeven.InventoryItems
 
         public IEnumerator LookScript()
         {
+            var StartSession = Game.Ego.Inventory.HasItem<GuitarStrings>();
+
+            if (StartSession)
+            {
+                Game.PlaySong(content.audio.basementend);
+                World.Get<AudioManager>().RepeatSong = false;
+            }
+            else
+            {
+                Game.PlaySoundEffect(content.audio.puzzle);
+            }
+
             using (Game.CutsceneBlock())
             {
                 yield return Game.Ego.Say(Items_Res.This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago);
@@ -39,7 +52,7 @@ namespace SessionSeven.InventoryItems
                 LookedAt = true;
             }
 
-            if (Game.Ego.Inventory.HasItem<GuitarStrings>())
+            if (StartSession)
             {
                 yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Four);
             }
