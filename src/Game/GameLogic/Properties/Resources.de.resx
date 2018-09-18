@@ -318,4 +318,7 @@
   <data name="Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version" xml:space="preserve">
     <value>Konnte den Spielstand nicht laden. Vielleicht wurde er mit einer älteren Spiel-Version erstellt.</value>
   </data>
+  <data name="RoomsLetterScene" xml:space="preserve">
+    <value>rooms/letter/scene_ger</value>
+  </data>
 </root>

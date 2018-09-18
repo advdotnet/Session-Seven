@@ -475,6 +475,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to rooms/letter/scene.
+        /// </summary>
+        internal static string RoomsLetterScene {
+            get {
+                return ResourceManager.GetString("RoomsLetterScene", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         internal static string Save {

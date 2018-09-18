@@ -298,4 +298,7 @@
   <data name="Credits" xml:space="preserve">
     <value>Credits</value>
   </data>
+  <data name="RoomsLetterScene" xml:space="preserve">
+    <value>rooms/letter/scene</value>
+  </data>
 </root>
