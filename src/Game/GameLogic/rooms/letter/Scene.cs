@@ -2,6 +2,7 @@
 using STACK;
 using STACK.Components;
 using System;
+using GlblRes = global::SessionSeven.Properties.Resources;
 
 namespace SessionSeven.Letter
 {
@@ -9,9 +10,11 @@ namespace SessionSeven.Letter
     [Serializable]
     public class Scene : Location
     {
-        public Scene() : base(content.rooms.letter.scene)
+        public Scene() : base(GlblRes.RoomsLetterScene)
         {
-            Background.Get<Sprite>().SetRenderStage(RenderStage.PostBloom);
+            Background
+                .Get<Sprite>()
+                .SetRenderStage(RenderStage.PostBloom);
 
             DrawOrder = 500;
 

@@ -42,6 +42,8 @@ namespace SessionSeven.InventoryItems
             return Game.Ego.StartScript(OpenScript());
         }
 
+
+
         IEnumerator OpenScript()
         {
             using (Game.CutsceneBlock(true, false))
@@ -78,7 +80,7 @@ namespace SessionSeven.InventoryItems
                     Game.PlaySong(content.audio.basementend);
                     World.Get<AudioManager>().RepeatSong = false;
                 }
-                else
+                else if (!ReadLetter)
                 {
                     Game.PlaySoundEffect(content.audio.puzzle);
                 }
@@ -89,6 +91,7 @@ namespace SessionSeven.InventoryItems
                     yield return Game.Ego.Say(Items_Res.Whats_this_about);
                     yield return Game.Ego.Say(Items_Res.I_knew_he_was_having_problems_in_his_old_school_but_this);
                     yield return Game.Ego.Say(Items_Res.I_thought_we_changed_schools_because_he_was_getting_bullied_Why_would_Cynthia_keep_this_letter_a_secret_from_me);
+
                     ReadLetter = true;
                 }
 

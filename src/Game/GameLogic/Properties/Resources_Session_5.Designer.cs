@@ -822,7 +822,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Started staying at home in his room, like he does mosts school nights..
+        ///   Looks up a localized string similar to Started staying at home in his room, like he does most school nights..
         /// </summary>
         internal static string Started_staying_at_home_in_his_room_like_he_does_mosts_school_nights {
             get {
