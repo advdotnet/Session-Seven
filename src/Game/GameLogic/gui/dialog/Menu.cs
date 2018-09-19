@@ -267,7 +267,7 @@ namespace SessionSeven.GUI.Dialog
                         {
                             Lines.Lines[i] = Lines.Lines[i].ChangeColor(Color.White);
                         }
-                        else if (Lines.Lines[i].Color != Lines.Color)
+                        else if (!OptionIsSelected && Lines.Lines[i].Color != Lines.Color)
                         {
                             Lines.Lines[i] = Lines.Lines[i].ChangeColor(Lines.Color);
                         }
