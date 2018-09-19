@@ -22,11 +22,7 @@ namespace SessionSeven.GUI.Dialog
                 throw new ArgumentException("Option.ID must not equal -1.");
             }
 
-            OptionSet.Add(new BaseOption()
-            {
-                ID = id,
-                Text = text
-            });
+            OptionSet.Add(new BaseOption(id, text));
 
             return this;
         }

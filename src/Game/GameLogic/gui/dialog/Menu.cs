@@ -31,7 +31,7 @@ namespace SessionSeven.GUI.Dialog
                 .Create(this)
                 .SetFont(content.fonts.pixeloperator_BMF)
                 .SetWidth(Game.VIRTUAL_WIDTH - 2 * Game.SCREEN_PADDING)
-                .SetWordWrap(false)
+                .SetWordWrap(true)
                 .SetAlign(Alignment.Left | Alignment.Bottom)
                 .SetColor(new Color(150, 150, 150, 255))
                 .SetVisible(false);
