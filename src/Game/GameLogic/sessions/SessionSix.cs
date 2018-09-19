@@ -28,6 +28,8 @@ namespace SessionSeven.Cutscenes
 
         IEnumerator SessionSixScript()
         {
+            RemoveMouseRemains();
+
             Game.StopSong();
             Game.PlaySoundEffect(content.audio.transition_4);
             Tree.Office.Scene.SetupLate();
@@ -523,6 +525,11 @@ namespace SessionSeven.Cutscenes
 
             World.Interactive = true;
             Game.StopSkipping();
+        }
+
+        private void RemoveMouseRemains()
+        {
+            Tree.Basement.NutsOnFloor.RemoveAllNuts();
         }
     }
 }

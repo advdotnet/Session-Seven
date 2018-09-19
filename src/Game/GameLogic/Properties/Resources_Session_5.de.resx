@@ -133,10 +133,10 @@
     <value>Vielleicht hat ihm Cynthia etwas erzählt?</value>
   </data>
   <data name="Maybe_but_I_dont_think_so_I_dont_think_she_knew_Id_gone_out" xml:space="preserve">
-    <value>Vielleicht, aber das denke ich nicht. Ich glaube nicht, dass sie etwas davon mitbekam, dass ich das Haus verließ.</value>
+    <value>Vielleicht, aber das denke ich nicht. Ich glaube nicht, dass sie etwas davon mitbekam, als ich das Haus verließ.</value>
   </data>
   <data name="Its_like_he_knew_hed_been_followed" xml:space="preserve">
-    <value>Es war wie als ob er wusste, das er verfolgt wird.</value>
+    <value>Es war wie als ob er wusste, dass er verfolgt wird.</value>
   </data>
   <data name="I_havent_been_able_to_sleep_quite_the_same_since" xml:space="preserve">
     <value>Ich konnte seitdem nicht mehr richtig schlafen.</value>
@@ -154,13 +154,13 @@
     <value>Oh, ich weiß nicht... merkwürdig, schätze ich. Ich weiß einfach nicht, ob ich daran glauben kann.</value>
   </data>
   <data name="Aspergers_can_present_itself_in_many_different_ways_Ryan" xml:space="preserve">
-    <value>Ein Asperger-Syndrom kann sich auf vielen verschiedenen Weisen zeigen, Ryan.</value>
+    <value>Ein Asperger-Syndrom kann sich auf vielen verschiedenen Weisen äußern, Ryan.</value>
   </data>
   <data name="Sure_I_know_it_can_its_just_youve_heard_the_way_I_describe_him_Does_it_sound_like_Aspergers_to_you" xml:space="preserve">
     <value>Klar, das weiß ich, es ist nur... Sie haben ja mitgekriegt, wie ich ihn beschrieb. Klingt das nach Asperger in Ihren Ohren?</value>
   </data>
   <data name="Well_his_antisocial_behavior_certainly_could_be_a_sign_Youve_told_me_he_has_lots_of_trouble_making_friends" xml:space="preserve">
-    <value>Also sein antisoziales Verhalten kann sicherlich ein Zeichen sein. Sie erzählen mir, dass er große Probleme hat, Freunde zu finden.</value>
+    <value>Also sein antisoziales Verhalten kann sicherlich ein Zeichen sein. Sie erzählten mir, dass er große Probleme hat, Freunde zu finden.</value>
   </data>
   <data name="Yeah_he_does_At_least_I_think_he_does_He_never_brings_anybody_home_anyways_Do_you_think_hell_ever_get_any_better_about_that" xml:space="preserve">
     <value>Ja, hat er. Zumindest glaube ich das. Er bringt jedenfalls niemals jemanden nach Hause. Meinen Sie, das wird sich jemals bessern?</value>
@@ -352,7 +352,7 @@
     <value>Mein Geschrei. Die Schmerzen. Ab und zu frage ich mich, ob er das immer noch tut.</value>
   </data>
   <data name="That_psychiatrist_hes_seeing_doesnt_know_Landon_like_I_do_He_hasnt_seen_what_Ive_seen_him_doing" xml:space="preserve">
-    <value>Der Psychologe zu dem Landon geht, kennt ihn nicht so, wie ich ihn kenne. Er hat nicht gesehen, was ich gesehen habe.</value>
+    <value>Der Psychologe zu dem Landon geht, kennt ihn nicht so gut, wie ich ihn kenne. Er hat nicht gesehen, was ich gesehen habe.</value>
   </data>
   <data name="What_did_you_see" xml:space="preserve">
     <value>Was haben Sie gesehen?</value>
@@ -391,7 +391,7 @@
     <value>Ich versteckte mich hinter einer der großen Eichen, als er sich über irgendetwas beugte.</value>
   </data>
   <data name="He_wasnt_meeting_anybody_after_all_He_just_seemed_to_be_working_away_at_something_like_he_was_really_focused" xml:space="preserve">
-    <value>Er traf sich letztendlich mit niemandem. Er war mit irgendetwas beschäftigt, er wirkte richtig konzentriert.</value>
+    <value>Er traf sich letztendlich mit niemandem. Er war mit irgendetwas beschäftigt, er wirkte regelrecht konzentriert.</value>
   </data>
   <data name="I_felt_bad_watching_him_but_I_also_didnt_want_to_interrupt_So_I_just_watched" xml:space="preserve">
     <value>Ich hatte ein schlechtes Gewissen ihn zu beschatten, aber ich wollte ihn auch nicht unterbrechen. Also sah ich einfach nur zu.</value>
@@ -418,7 +418,7 @@
     <value>Das waren keine Puppen?</value>
   </data>
   <data name="No_Not_dolls_Animals_Corpses_Bloody_open_bodies_of_squirrels_and_rabbits_baking_in_the_sun_I_almost_threw_up" xml:space="preserve">
-    <value>Nein. Keine Puppen. Tiere. Kadaver. Blutige, offene Körper von Eichhörnchen und Hasen, die in der Sonne brieten... Ich habe mich fast übergeben.</value>
+    <value>Nein. Keine Puppen. Tiere. Kadaver. Blutige, offene Körper von Eichhörnchen und Hasen, die in der Sonne vergammelten... Ich habe mich fast übergeben.</value>
   </data>
   <data name="But_what_was_he_doing_with_them" xml:space="preserve">
     <value>Aber was hat er mit ihnen gemacht?</value>

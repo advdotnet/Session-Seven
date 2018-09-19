@@ -158,11 +158,16 @@ namespace SessionSeven.Actors
                 yield return GoTo(Position);
                 yield return Delay.Seconds(0.75f);
                 CollectedNuts = true;
-                Tree.Basement.NutsOnFloor.RemoveNut(NextTargetNut);
-                Game.PlaySoundEffect(content.audio.mouse_eat, false, Get<AudioEmitter>(), Game.Ego.Get<AudioListener>());
-                yield return PlayAnimation(ANIMATION_NAME_SNACK, false);
 
-                yield return Delay.Seconds(0.75f);
+                if (Tree.Basement.NutsOnFloor.Nuts.Contains(NextTargetNut))
+                {
+                    Tree.Basement.NutsOnFloor.RemoveNut(NextTargetNut);
+
+                    Game.PlaySoundEffect(content.audio.mouse_eat, false, Get<AudioEmitter>(), Game.Ego.Get<AudioListener>());
+                    yield return PlayAnimation(ANIMATION_NAME_SNACK, false);
+
+                    yield return Delay.Seconds(0.75f);
+                }
 
                 // check if there are other nuts
                 NextTargetNut = Tree.Basement.NutsOnFloor.GetClosestNut(Get<Transform>().Position);

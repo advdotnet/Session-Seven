@@ -604,7 +604,7 @@
     <value>Warum sollte ich das tun?</value>
   </data>
   <data name="Here_we_go" xml:space="preserve">
-    <value>Los geht's.</value>
+    <value>Hab es.</value>
   </data>
   <data name="A_package_of_paper_clips" xml:space="preserve">
     <value>Eine Packung Büroklammern.</value>
@@ -631,7 +631,7 @@
     <value>Da drin ist nichts außer Krümel.</value>
   </data>
   <data name="There_are_more_crumbs_in_there_as_well_as_a_small_item_some_way_in" xml:space="preserve">
-    <value>Da drin sind noch mehr Krümel und ein kleiner Gegenstand ein Stück weiter drin.</value>
+    <value>Da drin sind noch mehr Krümel und ein kleiner Gegenstand ein Stück weiter hinten.</value>
   </data>
   <data name="Anybody_home" xml:space="preserve">
     <value>Jemand zuhause?</value>
@@ -925,16 +925,16 @@
     <value>Ich habe die Holzplatte schon herausgehebelt.</value>
   </data>
   <data name="I_put_the_screwdriver_in_the_small_gap_between_the_planks" xml:space="preserve">
-    <value>Ich habe die Spitze des Schraubendrehers in die kleine Lücke zwischen den Platten gesteckt.</value>
+    <value>Ich habe die Spitze des Schraubenziehers in die kleine Lücke zwischen den Platten gesteckt.</value>
   </data>
   <data name="screwdriver" xml:space="preserve">
-    <value>Schraubendreher</value>
+    <value>Schraubenzieher</value>
   </data>
   <data name="Both_RFID_antennas_received_a_signal_from_this_wooden_panel" xml:space="preserve">
     <value>Beide RFID-Antennen haben ein Signal aus der Richtung dieser Holzplatte empfangen.</value>
   </data>
   <data name="A_screwdriver_is_put_in_the_gap_seperating_the_panels" xml:space="preserve">
-    <value>Ein Schraubendreher ist in der Lücke zwischen den Platten.</value>
+    <value>Ein Schraubenzieher steckt in der Lücke zwischen den Platten.</value>
   </data>
   <data name="I_levered_out_the_wooden_panel_A_small_wooden_box_is_underneath" xml:space="preserve">
     <value>Ich habe eine Bodenplatte heraus gehebelt. Eine kleine hölzerne Box ist darunter.</value>
