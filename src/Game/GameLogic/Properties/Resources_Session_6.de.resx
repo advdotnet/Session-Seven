@@ -151,7 +151,7 @@
     <value>Zunächst verstand ich kein Wort. Sie sagte Dinge wie "Mir geht es gut, mir geht es gut, es war nicht seine Schuld", und ich fragte sie "Wer ist er?".</value>
   </data>
   <data name="Then_I_thought_maybe_she_was_cheating_on_me_again_That_shed_brought_somebody_home_and_theyd_attacked_her" xml:space="preserve">
-    <value>Dann dachte ich, dass sie mich vielleicht wieder betrügt. Dass sie jemand mit nach Hause gebracht hat, der sie angegriffen hatte.</value>
+    <value>Dann dachte ich, dass sie mich vielleicht wieder betrügt. Dass sie jemand mit nach Hause gebracht hat, der sie verletzt hatte.</value>
   </data>
   <data name="But_thats_not_what_happened" xml:space="preserve">
     <value>Aber so lief es nicht ab.</value>
@@ -244,7 +244,7 @@
     <value>Es überraschte ihn. Er fiel nach vorn und ich nutzte die Gelegenheit nach dem zu greifen, was er in seinem Schoß hatte.</value>
   </data>
   <data name="It_was_just_a_wrench_It_wasnt_even_that_heavy" xml:space="preserve">
-    <value>Es war nur ein Schraubenschlüssel. Er war nicht mal so schwer.</value>
+    <value>Es war nur ein Schraubenschlüssel. Er war gar nicht mal so schwer.</value>
   </data>
   <data name="What_happened_after_he_fell" xml:space="preserve">
     <value>Was geschah, nach seinem Sturz?</value>
@@ -268,7 +268,7 @@
     <value>Ja.</value>
   </data>
   <data name="It_only_took_him_a_second_to_realize_what_had_happened_and_who_had_hit_him_and_then_he_was_right_back_up_and_punching_me_as_hard_as_he_could_in_the_face_without_a_word" xml:space="preserve">
-    <value>Er brauchte nur eine Sekunde um zu verstehen, was passierte, und wer ihn niedergeschlagen hatte. Dann schlug er mir ohne ein Wort zu verlieren so fest er konnte ins Gesicht.</value>
+    <value>Er brauchte nur eine Sekunde um zu verstehen, was passierte, und wer ihn niedergeschlagen hatte. Dann schlug er mir kommentarlos so fest er konnte ins Gesicht.</value>
   </data>
   <data name="He_knocked_the_air_straight_out_of_me_Put_me_flat_on_my_back" xml:space="preserve">
     <value>Ich sah nur noch schwarz und landete auf dem Rücken.</value>
@@ -301,7 +301,7 @@
     <value>Und dann sackte er zusammen.</value>
   </data>
   <data name="Yes_but_not_right_away_It_took_him_a_second_Like_he_was_thinking_about_it" xml:space="preserve">
-    <value>Ja aber nicht sofort. Er brauchte einen Moment. Wie als ob er darüber nachdachte.</value>
+    <value>Ja aber nicht sofort. Er brauchte einen Moment. Wie als ob er darüber nachdenken musste.</value>
   </data>
   <data name="He_got_all_quiet_and_I_looked_him_in_the_eyes_and_he_just_looked_surprised" xml:space="preserve">
     <value>Er wurde plötzlich still und ich schaute ihm in die Augen und er wirkte so überrascht.</value>
@@ -322,7 +322,7 @@
     <value>Es war Cynthia.</value>
   </data>
   <data name="I_was_trying_to_get_up_and_I_turned_around_and_she_was_there_holding_one_of_the_heavy_ceramic_vases_her_mother_gave_to_us" xml:space="preserve">
-    <value>Ich versuchte aufzustehen und ich drehte mich um, und sie stand da, mit einer der schweren keramischen Vasen in den Händen die uns ihre Mutter schenkte.</value>
+    <value>Ich versuchte aufzustehen und ich drehte mich um, und sie stand da, mit einer der schweren keramischen Vasen in den Händen die uns ihre Mutter geschenkt hatte.</value>
   </data>
   <data name="I_thought_she_was_going_to_faint" xml:space="preserve">
     <value>Ich dachte, sie würde ohnmächtig werden.</value>
@@ -340,7 +340,7 @@
     <value>Ich habe es selbst nicht geglaubt. Ich konnte es nicht glauben.</value>
   </data>
   <data name="It_took_me_ages_of_searching_around_in_that_basement_to_remember_even_that_far" xml:space="preserve">
-    <value>Es hat mich eine Ewigkeit in diesem Keller gekostet, um mich soweit zu erinnern.</value>
+    <value>Es hat mich eine Ewigkeit in diesem Keller gekostet, um mich zurück zu erinnern.</value>
   </data>
   <data name="When_I_woke_up_in_that_basement_I_thought_I_thought_maybe_somebody_had_come_in_or_I_had_fallen_down" xml:space="preserve">
     <value>Als ich in diesem Keller zu mir kam, dachte ich... Ich dachte jemand wäre eingebrochen, oder dass ich gestürzt wäre.</value>
@@ -382,7 +382,7 @@
     <value>Ja, das ist das wirklich gruselige daran, oder?</value>
   </data>
   <data name="He_was_our_son_He_slept_in_our_house_We_took_care_of_him_when_he_was_sick" xml:space="preserve">
-    <value>Er war unser Sohn. Er schlief in unserem Haus. Wir pflegten ihn wenn er krank war.</value>
+    <value>Er war unser Sohn. Er schlief in unserem Haus. Wir pflegten ihn, wenn er krank war.</value>
   </data>
   <data name="We_gave_up_our_lives_for_him_I_switched_jobs" xml:space="preserve">
     <value>Wir haben unser Leben für ihn aufgegeben. Ich habe meinen Job gewechselt.</value>

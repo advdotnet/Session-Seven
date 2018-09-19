@@ -321,4 +321,37 @@
   <data name="RoomsLetterScene" xml:space="preserve">
     <value>rooms/letter/scene_ger</value>
   </data>
+  <data name="Letter_Text" xml:space="preserve">
+    <value>Rektorenbüro der Thomas-Jefferson-Schule 
+Januar der 13, 2017
+
+Sehr geehrte(r) Herr und Frau Schmidt,
+
+ich schreibe Ihnen, um Sie über einen Vorfall zu informieren, der sich heute an unserer Schule zugetragen hat
+an dem Ihr Sohn beteiligt war. Einer seiner Lehrer wurde nach einer Unterrichtsstunde von einer sehr 
+verzweifelten Schülerin angesprochen, und hat Ihren Sohn daraufhin heute Morgen um 10:45 Uhr in mein 
+Büro gebracht. Die Schülerin behauptet, dass sie vor Unterrichtsbeginn von Landon auf der Frauentoilette 
+in die Ecke getrieben wurde. Er sagte mir, dass er sie lediglich fragen wollte, ob sie mit ihm auf den Schulball 
+gehen möchte, was die Schülerin auch bestätigte. Allerdings behauptet sie auch, dass Landon sie die Toilette 
+nicht verlassen ließ, bis sie die Einladung angenommen hat. Sie sagte ihm nur, dass sie mit ihm auf den Ball 
+geht, weil sie sich um ihre Sicherheit fürchtete.
+
+Daher hoffe ich auf Ihr Verständnis, dass wir Landon nach diesem Zwischenfall vom Schulball endgültig 
+ausgeschlossen haben. Ungeachtet seiner Intentionen hat sich die Schülerin von ihm bedroht gefühlt - und als 
+Vorsichtsmaßnahme wird es ihm nicht gestattet, dem Ball beizuwohnen. Ich muss Sie bei dieser Gelegenheit auch 
+darüber informieren, dass dies nicht die erste Beschwerde über Ihren Sohn dieser Art ist, die mir zugetragen worden 
+ist. Regelmäßig kommen Schüler auf mich zu und erzählen mir, dass Landon zurückgezogen und unsozial ist, und 
+andere Schüler durch sein Auftreten und merkwürdiges Verhalten belästigt. Ich bitte Sie inständig, Ihrem Sohn 
+entsprechende Hilfe zu suchen, falls Sie das noch nicht gemacht haben. Wir bieten in unserer Schule zwar 
+entsprechende Beratungstätigkeiten an, jedoch glaube ich dass Landon von einem qualifizierten Psychologen 
+angemessenere Hilfe erhalten kann. Wenn sich dieses Verhalten weiterhin verschlechtert, fürchte ich, dass wir 
+weitere Konsequenzen in Betracht ziehen müssen.
+
+Kontaktieren Sie mich gerne bei etwaigen Fragen.
+
+Mit freundlichen Grüßen,
+
+Jürgen Bauer
+Rektor</value>
+  </data>
 </root>

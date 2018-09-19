@@ -301,4 +301,35 @@
   <data name="RoomsLetterScene" xml:space="preserve">
     <value>rooms/letter/scene</value>
   </data>
+  <data name="Letter_Text" xml:space="preserve">
+    <value>Hanover School Headmaster’s Office
+January the 13th, 2017
+
+Dear Mr. and Mrs. Schmidt,
+
+I am writing to inform you of an incident in which Landon was involved today at school. 
+Around 10:45 this morning, He was brought into my office by another teacher, who was 
+approached about him after class by a very distressed female student. The student claims 
+to have been cornered by Landon in the girls’ lavatory before school this morning. He 
+told me that he was just trying to ask her to formal, which the female student corroborated, 
+but she also claims that he would not let her leave the washroom until she accepted the 
+invitation. She claims that she told him she would go with him, because she feared for her safety.
+ 
+As such, I hope you can understand that we have permanently barred Landon from attending 
+the formal entirely. Regardless of his intentions, he made the student feel unsafe, and as a 
+precaution can not be allowed to attend the dance. I must also inform you that this is not the first 
+complaint of this nature that I have received about your son. I am regularly told by other students 
+that he is reclusive, antisocial, and tends to make others uncomfortable with his presence and 
+strange behavior. I implore you, if you are not already, to seek help for your son. We offer a 
+school-affiliated counseling practice on campus, but I believe Landon may benefit more from a 
+qualified psychiatrist. If his behavior continues to worsen, I fear that we will have to consider 
+further consequences. 
+
+Please contact me if you have any concerns. 
+
+Sincerely, 
+
+Darcy Genzlinger
+Headmaster </value>
+  </data>
 </root>

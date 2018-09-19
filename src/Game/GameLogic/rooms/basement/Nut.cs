@@ -220,5 +220,14 @@ namespace SessionSeven.Basement
             DrawScene.Pop(nut);
             Nuts.Remove(nut);
         }
+
+        public void RemoveAllNuts()
+        {
+            for (var i = Nuts.Count - 1; i >= 0; i--)
+            {
+                DrawScene.Pop(Nuts[i]);
+                Nuts.RemoveAt(i);
+            }
+        }
     }
 }
