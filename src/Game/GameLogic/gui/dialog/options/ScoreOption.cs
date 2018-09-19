@@ -7,14 +7,13 @@ namespace SessionSeven.GUI.Dialog
     [Serializable]
     public class ScoreOption : BaseOption
     {
-        public Dictionary<ScoreType, int> ScoreSet;
+        public readonly Dictionary<ScoreType, int> ScoreSet;
 
-        public static new ScoreOption None
+        public ScoreOption(int id, string text, Dictionary<ScoreType, int> scoreSet) : base(id, text)
         {
-            get
-            {
-                return new ScoreOption();
-            }
+            ScoreSet = scoreSet;
         }
+
+        public static new ScoreOption None = new ScoreOption(0, string.Empty, null);
     }
 }

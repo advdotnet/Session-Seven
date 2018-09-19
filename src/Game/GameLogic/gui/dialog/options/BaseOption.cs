@@ -5,15 +5,15 @@ namespace SessionSeven.GUI.Dialog
     [Serializable]
     public class BaseOption
     {
-        public int ID { get; set; }
-        public string Text { get; set; }
+        public readonly int ID;
+        public readonly string Text;
 
-        public static BaseOption None
+        public BaseOption(int id, string text)
         {
-            get
-            {
-                return new BaseOption();
-            }
+            ID = id;
+            Text = text;
         }
+
+        public static BaseOption None = new BaseOption(0, string.Empty);
     }
 }

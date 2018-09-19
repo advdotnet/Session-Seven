@@ -34,12 +34,7 @@ namespace SessionSeven.GUI.Dialog
                 throw new ArgumentException("Option.ID must not equal -1.");
             }
 
-            OptionSet.Add(new ScoreOption()
-            {
-                ID = id,
-                Text = text,
-                ScoreSet = scores
-            });
+            OptionSet.Add(new ScoreOption(id, text, scores));
 
             return this;
         }
