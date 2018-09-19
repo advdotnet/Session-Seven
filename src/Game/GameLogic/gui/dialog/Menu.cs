@@ -4,6 +4,7 @@ using STACK.Components;
 using STACK.Graphics;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace SessionSeven.GUI.Dialog
@@ -119,6 +120,19 @@ namespace SessionSeven.GUI.Dialog
             }
         }
 
+        private List<TextInfo> CreateTextInfos(IDialogOptions options)
+        {
+            var Result = new List<TextInfo>();
+
+            for (var i = 0; i < options.Count; i++)
+            {
+                var Option = options[i];
+                Result.Add(new TextInfo(Option.Text, Option.ID.ToString()));
+            }
+
+            return Result;
+        }
+
         /// <summary>
         /// Shows the dialog menu for the given dialog options.
         /// </summary>        
@@ -141,7 +155,9 @@ namespace SessionSeven.GUI.Dialog
             Visible = true;
             Enabled = true;
 
-            Lines.Set(string.Join("\n", options.SelectTexts()), TextDuration.Persistent, new Vector2(Game.VIRTUAL_WIDTH / 2, 0));
+            var TextInfos = CreateTextInfos(options);
+
+            Lines.Set(TextInfos, TextDuration.Persistent, new Vector2(Game.VIRTUAL_WIDTH / 2, 0));
 
             var FirstOptionLine = Lines.Lines[0];
             var LastOptionLine = Lines.Lines[Lines.Lines.Count - 1];
@@ -231,30 +247,45 @@ namespace SessionSeven.GUI.Dialog
 
             if (State == DialogMenuState.Open)
             {
-                SelectedOptionIndex = -1;
-
+                var SelectedOptionId = -1;
                 var MousePosition = World.Get<STACK.Components.Mouse>().Position;
 
                 for (int i = 0; i < Lines.Lines.Count; i++)
                 {
                     if (Lines.Lines[i].Hitbox.Contains(MousePosition))
                     {
-                        SelectedOptionIndex = i;
-                        Lines.Lines[i] = Lines.Lines[i].ChangeColor(Color.White);
-                    }
-                    else
-                    {
-                        Lines.Lines[i] = Lines.Lines[i].ChangeColor(Lines.Color);
+                        SelectedOptionId = Convert.ToInt32(Lines.Lines[i].Tag);
                     }
                 }
 
-                if (SelectedOptionIndex == -1)
+                if (SelectedOptionId != -1)
                 {
-                    LastSelectedOption = BaseOption.None;
+                    for (int i = 0; i < Lines.Lines.Count; i++)
+                    {
+                        var OptionIsSelected = (Lines.Lines[i].Tag == SelectedOptionId.ToString());
+                        if (OptionIsSelected && Lines.Lines[i].Color != Color.White)
+                        {
+                            Lines.Lines[i] = Lines.Lines[i].ChangeColor(Color.White);
+                        }
+                        else if (Lines.Lines[i].Color != Lines.Color)
+                        {
+                            Lines.Lines[i] = Lines.Lines[i].ChangeColor(Lines.Color);
+                        }
+                    }
                 }
-                else
+
+                LastSelectedOption = BaseOption.None;
+                SelectedOptionIndex = -1;
+
+                for (var i = 0; i < Options.Count; i++)
                 {
-                    LastSelectedOption = Options[SelectedOptionIndex];
+                    if (SelectedOptionId == Options[i].ID)
+                    {
+                        LastSelectedOption = Options[i];
+                        SelectedOptionIndex = i;
+
+                        break;
+                    }
                 }
             }
 
