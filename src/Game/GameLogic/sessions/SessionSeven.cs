@@ -351,11 +351,11 @@ namespace SessionSeven.Cutscenes
             yield return GlblRes.Graphics + NLNL + GlblRes.Jeremy_Carver__Jonas_Jelli;
             if (ending)
             {
-                yield return "Beta Testing" + NLNL + "";
-                yield return "Special Thanks" + NLNL + "Jennifer:";
-                yield return "Special Thanks" + NLNL + "Damian: I would like to thank my family and friends for the continuous support. Thanks to everyone involved in Session Seven for making me a part of the experience, you guys rock. Big thanks to my wife, without her, I couldn't make this possible. Love, D.";
-                yield return "Special Thanks" + NLNL + "Jonas: My wife, family and friends and everybody contributing to making this game!";
-                yield return "Special Thanks" + NLNL + "Jeremy: Amanda & Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss";
+                yield return GlblRes.BetaTesting + NLNL + GlblRes.LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer;
+                yield return GlblRes.SpecialThanks + NLNL + GlblRes.JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRealityThanksPlayerTooNoneThisPossibleWithoutYou;
+                yield return GlblRes.SpecialThanks + NLNL + GlblRes.DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove;
+                yield return GlblRes.SpecialThanks + NLNL + GlblRes.JonasWifeFamilyFriendsEverybodyContributingMakingThisGame;
+                yield return GlblRes.SpecialThanks + NLNL + GlblRes.JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss;
             }
             yield return GlblRes.Thank_you_for_playing;
             yield return GlblRes.Devoted_to_all_point__click_adventure_fans;
