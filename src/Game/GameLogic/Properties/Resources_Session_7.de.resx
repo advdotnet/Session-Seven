@@ -390,4 +390,25 @@
   <data name="I_guess_so_Ill_just_be_glad_when_I_can_put_this_all_behind_me" xml:space="preserve">
     <value>Ich denke schon. Ich werde einfach froh sein, all das hinter mir zu lassen.</value>
   </data>
+  <data name="BetaTesting" xml:space="preserve">
+    <value>Beta Test</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>Besonderen Dank </value>
+  </data>
+  <data name="LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer" xml:space="preserve">
+    <value>Laura Hubbes, Simon Tschirner, Stefan Dienst, Tanja Dienst, Thorsten Kraemer</value>
+  </data>
+  <data name="JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRealityThanksPlayerTooNoneThisPossibleWithoutYou" xml:space="preserve">
+    <value>Jennifer: Danke an meine Familie und Freunde für deren endlose Unterstützung, und an das Session Seven-Team dafür, diesen Traum zu verwirklichen. Und Danke auch an den Spieler! Nichts hiervon wäre möglich ohne Dich.</value>
+  </data>
+  <data name="DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove" xml:space="preserve">
+    <value>Damian: Ich möchte meiner Familie und meinen Freunden für die andauernde Unterstützung danken. Danke an alle Beteiligten von Session Seven dafür, dass ich Teil dieses Projekts sein kann, ihr seid spitze. Vielen Dank an meine Frau ohne die ich dies nicht möglich machen hätte können. In Liebe, D.</value>
+  </data>
+  <data name="JonasWifeFamilyFriendsEverybodyContributingMakingThisGame" xml:space="preserve">
+    <value>Jonas: Meine Frau, Familie, Freunde und das gesamte Session Seven-Team!</value>
+  </data>
+  <data name="JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss" xml:space="preserve">
+    <value>Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss</value>
+  </data>
 </root>

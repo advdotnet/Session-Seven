@@ -370,4 +370,25 @@
   <data name="Devoted_to_all_point__click_adventure_fans" xml:space="preserve">
     <value>Devoted to all point &amp; click adventure fans.</value>
   </data>
+  <data name="BetaTesting" xml:space="preserve">
+    <value>Beta Testing</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>Special Thanks</value>
+  </data>
+  <data name="LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer" xml:space="preserve">
+    <value>Laura Hubbes, Simon Tschirner, Stefan Dienst, Tanja Dienst, Thorsten Kraemer</value>
+  </data>
+  <data name="JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRealityThanksPlayerTooNoneThisPossibleWithoutYou" xml:space="preserve">
+    <value>Jennifer: Thanks to my family and friends for their unending support, and to the Session Seven team for making this dream a reality. And thanks to the player, too! None of this is possible without you.</value>
+  </data>
+  <data name="DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove" xml:space="preserve">
+    <value>Damian: I would like to thank my family and friends for the continuous support. Thanks to everyone involved in Session Seven for making me a part of the experience, you guys rock. Big thanks to my wife, without her, I couldn't make this possible. Love, D.</value>
+  </data>
+  <data name="JonasWifeFamilyFriendsEverybodyContributingMakingThisGame" xml:space="preserve">
+    <value>Jonas: My wife, family and friends and everybody contributing to making this game!</value>
+  </data>
+  <data name="JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss" xml:space="preserve">
+    <value>Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss</value>
+  </data>
 </root>

@@ -143,6 +143,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Beta Testing.
+        /// </summary>
+        internal static string BetaTesting {
+            get {
+                return ResourceManager.GetString("BetaTesting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to But seeing how traumatized you were after all of this, and for me personally, knowing your very unhealthy relationships with Landon and Cynthia....
         /// </summary>
         internal static string But_seeing_how_traumatized_you_were_after_all_of_this_and_for_me_personally_knowing_your_very_unhealthy_relationships_with_Landon_and_Cynthia {
@@ -176,6 +185,16 @@ namespace SessionSeven.Properties {
         internal static string Damian_Potenzoni {
             get {
                 return ResourceManager.GetString("Damian_Potenzoni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Damian: I would like to thank my family and friends for the continuous support. Thanks to everyone involved in Session Seven for making me a part of the experience, you guys rock. Big thanks to my wife, without her, I couldn&apos;t make this possible. Love, D..
+        /// </summary>
+        internal static string DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove {
+            get {
+                return ResourceManager.GetString("DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSe" +
+                        "venMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove", resourceCulture);
             }
         }
         
@@ -478,11 +497,30 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jennifer: Thanks to my family and friends for their unending support, and to the Session Seven team for making this dream a reality. And thanks to the player, too! None of this is possible without you..
+        /// </summary>
+        internal static string JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRealityThanksPlayerTooNoneThisPossibleWithoutYou {
+            get {
+                return ResourceManager.GetString("JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRea" +
+                        "lityThanksPlayerTooNoneThisPossibleWithoutYou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jeremy Carver &amp; Jonas Jelli.
         /// </summary>
         internal static string Jeremy_Carver__Jonas_Jelli {
             get {
                 return ResourceManager.GetString("Jeremy_Carver__Jonas_Jelli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss.
+        /// </summary>
+        internal static string JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss {
+            get {
+                return ResourceManager.GetString("JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss", resourceCulture);
             }
         }
         
@@ -496,12 +534,30 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jonas: My wife, family and friends and everybody contributing to making this game!.
+        /// </summary>
+        internal static string JonasWifeFamilyFriendsEverybodyContributingMakingThisGame {
+            get {
+                return ResourceManager.GetString("JonasWifeFamilyFriendsEverybodyContributingMakingThisGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Just be as honest with the jury as you were with me just now, and everything should be fine..
         /// </summary>
         internal static string Just_be_as_honest_with_the_jury_as_you_were_with_me_just_now_and_everything_should_be_fine {
             get {
                 return ResourceManager.GetString("Just_be_as_honest_with_the_jury_as_you_were_with_me_just_now_and_everything_shoul" +
                         "d_be_fine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Laura Hubbes, Simon Tschirner, Stefan Dienst, Tanja Dienst, Thorsten Kraemer.
+        /// </summary>
+        internal static string LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer {
+            get {
+                return ResourceManager.GetString("LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer", resourceCulture);
             }
         }
         
@@ -614,6 +670,15 @@ namespace SessionSeven.Properties {
         internal static string So_for_your_sake_I_hope_they_dont {
             get {
                 return ResourceManager.GetString("So_for_your_sake_I_hope_they_dont", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Special Thanks.
+        /// </summary>
+        internal static string SpecialThanks {
+            get {
+                return ResourceManager.GetString("SpecialThanks", resourceCulture);
             }
         }
         
