@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,4 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="When_you_first_realized_you_were_trapped_what_did_you_do" xml:space="preserve">
+    <value>Cuando te diste cuenta de que estabas atrapado, ¿qué hiciste?</value>
+  </data>
+  <data name="I_just_lost_it_I_was_terrified" xml:space="preserve">
+    <value>Perdía la cabeza. Estaba aterrado.</value>
+  </data>
+  <data name="I_got_frustrated_I_tried_to_remember_what_I_was_doing_before_it_all_started" xml:space="preserve">
+    <value>Me frustré. Traté de recordar lo que estaba haciendo antes de que todo comenzara.</value>
+  </data>
+  <data name="I_stayed_calm_I_wasnt_just_going_to_give_up" xml:space="preserve">
+    <value>Me quedé tranquilo. No iba a rendirme.</value>
+  </data>
+  <data name="I_was_just_trying_everything_I_could_to_get_out_of_there" xml:space="preserve">
+    <value>Estaba intentando todo lo que podía para salir de allí.</value>
+  </data>
+  <data name="But_then_I_wasnt_even_sure_how_Id_gotten_there" xml:space="preserve">
+    <value>Pero entonces, ni siquiera estaba seguro de cómo había llegado allí.</value>
+  </data>
+  <data name="Nothing_was_making_sense_to_me_It_was_like_a_mad_blur_I_felt_like_banging_on_the_walls_most_of_the_time" xml:space="preserve">
+    <value>Nada tenía sentido para mí. Era como un borrón loco. Tenía ganas de golpear las paredes la mayor parte del tiempo.</value>
+  </data>
+  <data name="I_think_I_was_hoping_somebody_would_hear_me_but_nobody_was_there" xml:space="preserve">
+    <value>Creo que esperaba que alguien me escuchara, pero no había nadie ...</value>
+  </data>
+  <data name="Neither_my_wife_or_my_son_was_answering_me_I_thought_maybe_they_were_in_danger_too_" xml:space="preserve">
+    <value>Ni mi esposa ni mi hijo me estaban respondiendo. Pensé que tal vez ellos también estaban en peligro.</value>
+  </data>
+  <data name="Dont_you_think_itd_be_less_confusing_if_you_started_with_how_you_got_there_in_the_first_place" xml:space="preserve">
+    <value>¿No crees que sería menos confuso si empezaras con como llegaste allí en primer lugar?</value>
+  </data>
+  <data name="If_only_I_knew" xml:space="preserve">
+    <value>Si solo supiera ...</value>
+  </data>
+  <data name="Before_I_was_there_you_know_How_did_it_come_to_this_And_where_was_my_family" xml:space="preserve">
+    <value>Antes de que yo estuviera allí, ¿sabes? ¿Cómo se llegó a esto? ¿Y dónde estaba mi familia?</value>
+  </data>
+  <data name="I_was_trying_to_think_back_on_it_and_I_just_couldnt_remember" xml:space="preserve">
+    <value>Estaba tratando de recordarlo, y simplemente ... no podía recordar.</value>
+  </data>
+  <data name="It_was_like_everything_leading_up_to_that_point_was_just_a_dream_and_I_couldnt_quite_piece_together_where_it_started_or_ended" xml:space="preserve">
+    <value>Era como si todo lo llevara a ese punto fuera solo un sueño, y no podía juntar dónde comenzó o terminó.</value>
+  </data>
+  <data name="And_no_matter_how_hard_I_tried_I_just_couldnt_wake_up" xml:space="preserve">
+    <value>Y no importa cuánto lo intentara, simplemente no podía despertarme.</value>
+  </data>
+  <data name="Well_I_think_the_beginning_is_a_good_place_to_start_How_did_you_think_you_got_there" xml:space="preserve">
+    <value>Bueno, creo que el principio es un buen lugar para comenzar ... ¿Cómo pensaste que llegaste allí?</value>
+  </data>
+  <data name="Thats_just_it_I_didnt_know" xml:space="preserve">
+    <value>Eso que... no lo sabía.</value>
+  </data>
+  <data name="I_did_my_best_to_figure_out_what_was_going_on_I_wasnt_just_going_to_sit_down_and_take_it" xml:space="preserve">
+    <value>Hice mi mejor esfuerzo para averiguar lo que estaba pasando. ¡No iba a sentarme y aguantarlo!</value>
+  </data>
+  <data name="Especially_not_if_my_family_was_in_danger_somewhere_else" xml:space="preserve">
+    <value>Especialmente no si mi familia estuviera en peligro en otro lugar.</value>
+  </data>
+  <data name="I_looked_everywhere_for_clues_anything_I_could_find_that_might_help_me_fix_the_mess_Id_gotten_myself_into" xml:space="preserve">
+    <value>Busqué pistas en todas partes, cualquier cosa que pudiera encontrar que pudiera ayudarme a arreglar el desastre en el que me había metido.</value>
+  </data>
+  <data name="I_guess_that_started_with_figuring_out_how_Id_gotten_there_in_the_first_place" xml:space="preserve">
+    <value>Supongo que eso comenzó con averiguar cómo había llegado allí en primer lugar.</value>
+  </data>
+  <data name="Well_why_dont_we_start_there" xml:space="preserve">
+    <value>Bueno, ¿por qué no empezamos con eso?</value>
+  </data>
+  <data name="Well_that_implies_that_I_had_any_idea_at_all" xml:space="preserve">
+    <value>Bueno, eso implica que tenía alguna idea ...</value>
+  </data>
 </root>

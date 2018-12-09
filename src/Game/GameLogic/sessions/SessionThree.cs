@@ -375,9 +375,10 @@ namespace SessionSeven.Cutscenes
 
             Tree.GUI.Interaction.Scene.Interactive = true;
 
-            World.Get<AudioManager>().RepeatSong = false;
-
             Game.StopSkipping();
+
+            Game.PlaySong(content.audio.basement);
+            World.Get<AudioManager>().RepeatSong = false;
         }
     }
 }

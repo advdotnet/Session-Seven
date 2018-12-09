@@ -210,7 +210,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to From far away, it looked like... like maybe dolls, or something? Like he was playing with dolls, or stuffed animals?.
+        ///   Looks up a localized string similar to From far away, it looked like... like maybe dolls or something? Like he was playing with dolls or stuffed animals?.
         /// </summary>
         internal static string From_far_away_it_looked_like_like_maybe_dolls_or_something__Like_he_was_playing_with_dolls_or_stuffed_animals {
             get {

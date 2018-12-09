@@ -188,7 +188,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A screwdriver is in the gap seperating the panels..
+        ///   Looks up a localized string similar to A screwdriver is in the gap separating the panels..
         /// </summary>
         internal static string A_screwdriver_is_put_in_the_gap_seperating_the_panels {
             get {
@@ -1091,7 +1091,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I don&apos;t need them any more..
+        ///   Looks up a localized string similar to I don&apos;t need them anymore..
         /// </summary>
         internal static string I_dont_need_them_any_more {
             get {
@@ -1154,7 +1154,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I guess I hadn&apos;t really noticed she wasn&apos;t doing it any more..
+        ///   Looks up a localized string similar to I guess I hadn&apos;t really noticed she wasn&apos;t doing it anymore..
         /// </summary>
         internal static string I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more {
             get {
@@ -1380,7 +1380,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I told Landon a while ago that I would help him make a box car for class with these tools..
+        ///   Looks up a localized string similar to I told Landon a while ago that I would help him make a boxcar for class with these tools..
         /// </summary>
         internal static string I_told_Landon_a_while_ago_that_I_would_help_him_make_a_box_car_for_class_with_these_tools {
             get {
@@ -1616,7 +1616,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s too dark for me too see anything inside..
+        ///   Looks up a localized string similar to It&apos;s too dark for me to see anything inside..
         /// </summary>
         internal static string Its_too_dark_for_me_too_see_anything_inside {
             get {
@@ -2583,7 +2583,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is a huuge rat in there..
+        ///   Looks up a localized string similar to There is a huge rat in there..
         /// </summary>
         internal static string This_is_a_huuge_rat_in_there {
             get {
@@ -2646,7 +2646,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thought we got these things to keep people out, not in..
+        ///   Looks up a localized string similar to You&apos;d think we got these things to keep people out, not in..
         /// </summary>
         internal static string Thought_we_got_these_things_to_keep_people_out_not_in {
             get {

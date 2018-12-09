@@ -785,7 +785,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Well, for now she&apos;s awaiting trial..
+        ///   Looks up a localized string similar to Well, for now, she&apos;s awaiting trial..
         /// </summary>
         internal static string Well_for_now_shes_awaiting_trial {
             get {

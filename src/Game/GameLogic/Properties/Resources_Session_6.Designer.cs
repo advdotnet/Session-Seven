@@ -398,7 +398,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to He got right back up and turned around, and I realized in that moment that whoever I was looking at wasn&apos;t my son..
+        ///   Looks up a localized string similar to He got right back up and turned around, and I realized at that moment that whoever I was looking at wasn&apos;t my son..
         /// </summary>
         internal static string He_got_right_back_up_and_turned_around_and_I_realized_in_that_moment_that_whoever_I_was_looking_at_wasnt_my_son {
             get {

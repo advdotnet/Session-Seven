@@ -233,7 +233,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to That&apos;s unfortunate. But I wonder if you can&apos;t make something better for yourself where you are now?.
+        ///   Looks up a localized string similar to That&apos;s unfortunate. But I wonder if you can&apos;t make something better for yourself where you are now..
         /// </summary>
         internal static string Thats_unfortunate_But_I_wonder_if_you_cant_make_something_better_for_yourself_where_you_are_now {
             get {

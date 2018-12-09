@@ -466,7 +466,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s been awhile now since everything went down. I&apos;m trying my best..
+        ///   Looks up a localized string similar to It&apos;s been a while now since everything went down. I&apos;m trying my best..
         /// </summary>
         internal static string Its_been_awhile_now_since_everything_went_down_Im_trying_my_best {
             get {
@@ -522,7 +522,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maybe some day....
+        ///   Looks up a localized string similar to Maybe someday....
         /// </summary>
         internal static string Maybe_some_day {
             get {
@@ -720,7 +720,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We had one day, not long before Landon was born, when we were supposed to be out getting some decorations for our baby shower....
+        ///   Looks up a localized string similar to We had one day, not long before Landon was born when we were supposed to be out getting some decorations for our baby shower....
         /// </summary>
         internal static string We_had_one_day_not_long_before_Landon_was_born_when_we_were_supposed_to_be_out_getting_some_decorations_for_our_baby_shower {
             get {
