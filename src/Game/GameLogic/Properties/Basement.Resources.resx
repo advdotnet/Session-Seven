@@ -653,10 +653,10 @@
     <value>I hate these little critters.</value>
   </data>
   <data name="Its_too_dark_for_me_too_see_anything_inside" xml:space="preserve">
-    <value>It's too dark for me too see anything inside.</value>
+    <value>It's too dark for me to see anything inside.</value>
   </data>
   <data name="This_is_a_huuge_rat_in_there" xml:space="preserve">
-    <value>There is a huuge rat in there.</value>
+    <value>There is a huge rat in there.</value>
   </data>
   <data name="Are_there_eyes_staring_at_me" xml:space="preserve">
     <value>Are there eyes staring at me?</value>
@@ -788,7 +788,7 @@
     <value>engineering books</value>
   </data>
   <data name="I_dont_need_them_any_more" xml:space="preserve">
-    <value>I don't need them any more.</value>
+    <value>I don't need them anymore.</value>
   </data>
   <data name="book" xml:space="preserve">
     <value>book</value>
@@ -884,7 +884,7 @@
     <value>Can't get through the burglar bars.</value>
   </data>
   <data name="Thought_we_got_these_things_to_keep_people_out_not_in" xml:space="preserve">
-    <value>Thought we got these things to keep people out, not in.</value>
+    <value>You'd think we got these things to keep people out, not in.</value>
   </data>
   <data name="wooden_box" xml:space="preserve">
     <value>wooden box</value>
@@ -914,7 +914,7 @@
     <value>Both RFID antennas received a signal from this wooden panel.</value>
   </data>
   <data name="A_screwdriver_is_put_in_the_gap_seperating_the_panels" xml:space="preserve">
-    <value>A screwdriver is in the gap seperating the panels.</value>
+    <value>A screwdriver is in the gap separating the panels.</value>
   </data>
   <data name="I_levered_out_the_wooden_panel_A_small_wooden_box_is_underneath" xml:space="preserve">
     <value>I levered out the wooden panel. A small wooden box is underneath.</value>
@@ -935,7 +935,7 @@
     <value>It's my workbench.</value>
   </data>
   <data name="I_told_Landon_a_while_ago_that_I_would_help_him_make_a_box_car_for_class_with_these_tools" xml:space="preserve">
-    <value>I told Landon a while ago that I would help him make a box car for class with these tools.</value>
+    <value>I told Landon a while ago that I would help him make a boxcar for class with these tools.</value>
   </data>
   <data name="I_still_havent_looked_up_how_to_make_one_Come_to_think_of_it_the_assignment_is_probably_over_by_now" xml:space="preserve">
     <value>I still haven't looked up how to make one. Come to think of it, the assignment is probably over by now.</value>
@@ -947,7 +947,7 @@
     <value>Cynthia used to be really into making scrapbooks for every year when Landon was growing up.</value>
   </data>
   <data name="I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more" xml:space="preserve">
-    <value>I guess I hadn't really noticed she wasn't doing it any more.</value>
+    <value>I guess I hadn't really noticed she wasn't doing it anymore.</value>
   </data>
   <data name="I_cant_quite_bring_myself_to_look_through_them_right_now" xml:space="preserve">
     <value>I can't quite bring myself to look through them right now.</value>

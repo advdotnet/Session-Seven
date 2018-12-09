@@ -152,7 +152,7 @@
     <value>I'm knotting a string on the ring at the very top.</value>
   </data>
   <data name="I_dontt_have_anything_to_knot_the_string_to" xml:space="preserve">
-    <value>I dont't have anything to knot the string to.</value>
+    <value>I don't have anything to knot the string to.</value>
   </data>
   <data name="Cant_expand_it_any_further" xml:space="preserve">
     <value>Can't expand it any further</value>
@@ -188,7 +188,7 @@
     <value>Our old picnic blanket... Wow, I didn't know we kept it.</value>
   </data>
   <data name="Cynthia_and_me_spent_much_time_on_that_together_especially_before_Landon_was_born" xml:space="preserve">
-    <value>Cynthia and me spent much time on that together, especially before Landon was born.</value>
+    <value>Cynthia and I spent much time on that together, especially before Landon was born.</value>
   </data>
   <data name="No_picnic_for_now" xml:space="preserve">
     <value>No picnic for now.</value>
@@ -254,7 +254,7 @@
     <value>drone package</value>
   </data>
   <data name="This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago" xml:space="preserve">
-    <value>This is an old xanax prescription which was issued for me some years ago.</value>
+    <value>This is an old Xanax prescription which was issued for me some years ago.</value>
   </data>
   <data name="DrugPrescriptionRyan_DrugPrescriptionRyan_DrugPrescription" xml:space="preserve">
     <value>drug prescription</value>
@@ -284,7 +284,7 @@
     <value>A regular flashlight.</value>
   </data>
   <data name="The_battery_compartment_has_place_for_two_batteries" xml:space="preserve">
-    <value>The battery compartment has place for two batteries.</value>
+    <value>The battery compartment has room for two batteries.</value>
   </data>
   <data name="Flashlight_Flashlight_Flashlight" xml:space="preserve">
     <value>flashlight</value>
@@ -416,7 +416,7 @@
     <value>Seems like the signal is coming from this wooden panel near the workbench.</value>
   </data>
   <data name="There_must_be_a_RFID_receiver_underneath_for_some_reason" xml:space="preserve">
-    <value>There must be a RFID receiver underneath for some reason.</value>
+    <value>There must be an RFID receiver underneath for some reason.</value>
   </data>
   <data name="I_need_another_antenna_to_triangulate_the_signal_and_get_its_position" xml:space="preserve">
     <value>I need another antenna to triangulate the signal and get its position.</value>
@@ -443,7 +443,7 @@
     <value>Looks exactly like the other box I got.</value>
   </data>
   <data name="Looks_extactly_like_the_other_cardboard_which_contained_the_RFID_antenna" xml:space="preserve">
-    <value>Looks extactly like the other box that had the RFID antenna.</value>
+    <value>Looks exactly like the other box that had the RFID antenna.</value>
   </data>
   <data name="Must_be_Cynthias_or_Landons" xml:space="preserve">
     <value>Must be Cynthia's or Landon's.</value>
@@ -461,7 +461,7 @@
     <value>Here is a summary in the book describing RFID antennas.</value>
   </data>
   <data name="_Radio_Frequency_Identification_allows_to_identify_objects_using_data_transmitted_via_radio_waves_" xml:space="preserve">
-    <value>» Radio Frequency Identification allows to identify objects using data transmitted via radio waves. «</value>
+    <value>» Radio Frequency Identification allows identifying objects using data transmitted via radio waves. «</value>
   </data>
   <data name="_RFID_antennas_send_the_RF_energy_to_those_objects_called_RFID_tags_and_receive_the_tags_reply_" xml:space="preserve">
     <value>» RFID antennas send the RF energy to those objects called RFID tags and receive the tags' reply. «</value>
@@ -473,7 +473,7 @@
     <value>» Using two directional RFID antennas, the actual position of a RFID tag can be triangulated. «</value>
   </data>
   <data name="Its_a_book_about_RFID_technology_I_wrote_a_research_paper_about_it_in_university" xml:space="preserve">
-    <value>It's a book about RFID technology. I wrote a research paper about it in university.</value>
+    <value>It's a book about RFID technology. I wrote a research paper about it at the university.</value>
   </data>
   <data name="RFIDBook_RFIDBook_RFIDBook" xml:space="preserve">
     <value>RFID book</value>
@@ -506,7 +506,7 @@
     <value>screwdriver</value>
   </data>
   <data name="According_to_the_date_this_therapy_session_happened_some_months_ago" xml:space="preserve">
-    <value>According to the date this therapy session happened some months ago.</value>
+    <value>According to the date, this therapy session happened some months ago.</value>
   </data>
   <data name="It_reads" xml:space="preserve">
     <value>It reads:</value>
@@ -542,7 +542,7 @@
     <value>Mr. Schmidt: » Especially not if my family was in danger somewhere else. «</value>
   </data>
   <data name="It_stops_here_The_other_page_seems_to_be_missing" xml:space="preserve">
-    <value>It stops here. The other page seems to be missing. Not like I don't remember it, anyways.</value>
+    <value>It stops here. The other page seems to be missing. Not like I don't remember it, anyway.</value>
   </data>
   <data name="TherapyLog_TherapyLog_TherapyLog" xml:space="preserve">
     <value>therapy log</value>
@@ -560,7 +560,7 @@
     <value>Those are Landon's antidepressants. They have not yet been opened.</value>
   </data>
   <data name="And_an_expendable_baton" xml:space="preserve">
-    <value>And an expendable baton?</value>
+    <value>And an expandable baton?</value>
   </data>
   <data name="What_the_hell_would_he_do_with_a_baton" xml:space="preserve">
     <value>What the hell would he do with a baton?</value>
@@ -569,7 +569,7 @@
     <value>This small wooden box was hidden underneath a plank.</value>
   </data>
   <data name="A_RFID_tag_is_glued_to_the_bottom" xml:space="preserve">
-    <value>A RFID tag is glued to the bottom.</value>
+    <value>An RFID tag is glued to the bottom.</value>
   </data>
   <data name="WoodenBox_WoodenBox_WoodenBox" xml:space="preserve">
     <value>wooden box</value>

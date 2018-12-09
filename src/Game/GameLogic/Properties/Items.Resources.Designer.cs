@@ -71,7 +71,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to » Radio Frequency Identification allows to identify objects using data transmitted via radio waves. «.
+        ///   Looks up a localized string similar to » Radio Frequency Identification allows identifying objects using data transmitted via radio waves. «.
         /// </summary>
         internal static string _Radio_Frequency_Identification_allows_to_identify_objects_using_data_transmitted_via_radio_waves_ {
             get {
@@ -164,7 +164,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A RFID tag is glued to the bottom..
+        ///   Looks up a localized string similar to An RFID tag is glued to the bottom..
         /// </summary>
         internal static string A_RFID_tag_is_glued_to_the_bottom {
             get {
@@ -191,7 +191,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to According to the date this therapy session happened some months ago..
+        ///   Looks up a localized string similar to According to the date, this therapy session happened some months ago..
         /// </summary>
         internal static string According_to_the_date_this_therapy_session_happened_some_months_ago {
             get {
@@ -227,7 +227,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to And an expendable baton?.
+        ///   Looks up a localized string similar to And an expandable baton?.
         /// </summary>
         internal static string And_an_expendable_baton {
             get {
@@ -380,7 +380,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cynthia and me spent much time on that together, especially before Landon was born..
+        ///   Looks up a localized string similar to Cynthia and I spent much time on that together, especially before Landon was born..
         /// </summary>
         internal static string Cynthia_and_me_spent_much_time_on_that_together_especially_before_Landon_was_born {
             get {
@@ -616,7 +616,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I dont&apos;t have anything to knot the string to..
+        ///   Looks up a localized string similar to I don&apos;t have anything to knot the string to..
         /// </summary>
         internal static string I_dontt_have_anything_to_knot_the_string_to {
             get {
@@ -861,7 +861,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It stops here. The other page seems to be missing. Not like I don&apos;t remember it, anyways..
+        ///   Looks up a localized string similar to It stops here. The other page seems to be missing. Not like I don&apos;t remember it, anyway..
         /// </summary>
         internal static string It_stops_here_The_other_page_seems_to_be_missing {
             get {
@@ -879,7 +879,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s a book about RFID technology. I wrote a research paper about it in university..
+        ///   Looks up a localized string similar to It&apos;s a book about RFID technology. I wrote a research paper about it at the university..
         /// </summary>
         internal static string Its_a_book_about_RFID_technology_I_wrote_a_research_paper_about_it_in_university {
             get {
@@ -969,7 +969,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Looks extactly like the other box that had the RFID antenna..
+        ///   Looks up a localized string similar to Looks exactly like the other box that had the RFID antenna..
         /// </summary>
         internal static string Looks_extactly_like_the_other_cardboard_which_contained_the_RFID_antenna {
             get {
@@ -1323,7 +1323,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The battery compartment has place for two batteries..
+        ///   Looks up a localized string similar to The battery compartment has room for two batteries..
         /// </summary>
         internal static string The_battery_compartment_has_place_for_two_batteries {
             get {
@@ -1386,7 +1386,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There must be a RFID receiver underneath for some reason..
+        ///   Looks up a localized string similar to There must be an RFID receiver underneath for some reason..
         /// </summary>
         internal static string There_must_be_a_RFID_receiver_underneath_for_some_reason {
             get {
@@ -1431,7 +1431,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is an old xanax prescription which was issued for me some years ago..
+        ///   Looks up a localized string similar to This is an old Xanax prescription which was issued for me some years ago..
         /// </summary>
         internal static string This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago {
             get {

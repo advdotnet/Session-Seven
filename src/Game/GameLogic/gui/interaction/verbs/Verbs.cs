@@ -19,7 +19,7 @@ namespace SessionSeven.GUI.Interaction
         public static LockedVerb Give = LockedVerb.Create("give", RandomTexts.Give, new Rectangle(0, 17, 92, 30), OFFSET, GlblRes.Give, GlblRes.to, true);
         public static LockedVerb Open = LockedVerb.Create("open", RandomTexts.Open, new Rectangle(0, 17 + 30, 92, 32), OFFSET, GlblRes.Open);
         public static LockedVerb Close = LockedVerb.Create("close", RandomTexts.Close, new Rectangle(0, 17 + 62, 92, 33), OFFSET, GlblRes.Close);
-        public static LockedVerb Pick = LockedVerb.Create("pick", RandomTexts.Pick, new Rectangle(92, 17, 110, 30), OFFSET, GlblRes.Pick_up, "", false, PickRandomTextFn);
+        public static LockedVerb Pick = LockedVerb.Create("pick", RandomTexts.Pick, new Rectangle(92, 17, 110, 30), OFFSET, GlblRes.Pick_up, string.Empty, false, PickRandomTextFn);
         public static LockedVerb Look = LockedVerb.Create("look", RandomTexts.Look, new Rectangle(92, 17 + 30, 110, 32), OFFSET, GlblRes.Look_at);
         public static LockedVerb Talk = LockedVerb.Create("talk", RandomTexts.Talk, new Rectangle(92, 17 + 62, 110, 33), OFFSET, GlblRes.Talk_to);
         public static LockedVerb Use = LockedVerb.Create("use", RandomTexts.Use, new Rectangle(202, 17, 88, 30), OFFSET, GlblRes.Use, GlblRes.with, true);

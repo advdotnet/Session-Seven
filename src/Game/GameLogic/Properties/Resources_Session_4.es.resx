@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,4 +117,76 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="I_think_we_could_both_benefit_from_learning_a_little_bit_more_about_yourself" xml:space="preserve">
+    <value>Creo que ambos podríamos beneficiarnos de aprender un poco más sobre ti.</value>
+  </data>
+  <data name="Like_what" xml:space="preserve">
+    <value>¿Como que?</value>
+  </data>
+  <data name="Well_what_do_you_do_for_work" xml:space="preserve">
+    <value>Bueno, ¿de qué trabajas?</value>
+  </data>
+  <data name="Im_a_mechanical_engineer" xml:space="preserve">
+    <value>Soy ingeniero mecánico.</value>
+  </data>
+  <data name="And_you_like_your_work" xml:space="preserve">
+    <value>¿Y te gusta tu trabajo?</value>
+  </data>
+  <data name="Cant_complain" xml:space="preserve">
+    <value>No puedo quejarme.</value>
+  </data>
+  <data name="Its_awful" xml:space="preserve">
+    <value>Es horrible.</value>
+  </data>
+  <data name="Thats_good_Liking_what_you_do_is_important" xml:space="preserve">
+    <value>Eso es bueno. Que te guste lo que haces es importante.</value>
+  </data>
+  <data name="Im_sorry_to_hear_that" xml:space="preserve">
+    <value>Siento escuchar eso.</value>
+  </data>
+  <data name="So_were_you_upset_about_having_to_change_offices_to_be_with_your_son" xml:space="preserve">
+    <value>Entonces, ¿estabas molesto por tener que cambiar de oficina para estar con tu hijo?</value>
+  </data>
+  <data name="Yes_I_dont_handle_change_well" xml:space="preserve">
+    <value>Sí. No manejo bien el cambio.</value>
+  </data>
+  <data name="Yes_I_had_it_good_where_I_was" xml:space="preserve">
+    <value>Sí. Estaba bien antes.</value>
+  </data>
+  <data name="No_It_doesnt_matter_to_me_if_Im_with_my_family" xml:space="preserve">
+    <value>No. No me importa si estoy con mi familia.</value>
+  </data>
+  <data name="I_see_Perhaps_this_time_however_it_was_for_the_best" xml:space="preserve">
+    <value>Veo. ¿Quizás esta vez, sin embargo, fue lo mejor?</value>
+  </data>
+  <data name="Thats_unfortunate_But_I_wonder_if_you_cant_make_something_better_for_yourself_where_you_are_now" xml:space="preserve">
+    <value>Eso es lamentable. Pero me pregunto si no puedes hacer algo mejor para ti donde estás ahora.</value>
+  </data>
+  <data name="Good_to_hear_Your_family_is_your_support_system" xml:space="preserve">
+    <value>Es bueno escuchar eso. Tu familia es tu sistema de apoyo.</value>
+  </data>
+  <data name="Anyways_work_isnt_the_only_thing_that_makes_up_a_man_What_would_you_say_you_do_for_fun" xml:space="preserve">
+    <value>De todos modos, el trabajo no es lo único que hace a un hombre. ¿Qué dirías que haces para divertirte?</value>
+  </data>
+  <data name="Oh_I_dont_know_I_play_the_guitar" xml:space="preserve">
+    <value>Oh, no sé ... ¿Toco la guitarra?</value>
+  </data>
+  <data name="And_do_you_find_that_playing_helps_you_when_you_are_agitated" xml:space="preserve">
+    <value>¿Y descubres que jugar te ayuda cuando estás ... agitado?</value>
+  </data>
+  <data name="Do_you_have_to_call_it_that" xml:space="preserve">
+    <value>¿Tienes que llamarlo así?</value>
+  </data>
+  <data name="Im_sorry_is_there_something_else_you_would_prefer_I_call_your_episodes" xml:space="preserve">
+    <value>Lo siento, ¿hay algo más que prefieras que llame a tus episodios?</value>
+  </data>
+  <data name="Well_I_I_dont_know_It_doesnt_matter_Besides_I_havent_had_a_problem_like_that_in_a_long_time" xml:space="preserve">
+    <value>Bueno, yo ... no lo sé. No importa. Además, no he tenido un problema como ese en mucho tiempo.</value>
+  </data>
+  <data name="Is_that_true_Youre_taking_your_medications_regularly" xml:space="preserve">
+    <value>¿Es eso cierto? ¿Estás tomando tus medicamentos regularmente?</value>
+  </data>
+  <data name="Dont_you_believe_me" xml:space="preserve">
+    <value>... ¿No me crees?</value>
+  </data>
 </root>

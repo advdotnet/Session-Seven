@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,4 +117,244 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Lets_talk_about_something_less_painful_for_a_while" xml:space="preserve">
+    <value>Vamos a hablar de algo menos doloroso por un tiempo.</value>
+  </data>
+  <data name="Sounds_good_to_me" xml:space="preserve">
+    <value>Suena bien para mí.</value>
+  </data>
+  <data name="Good_to_hear_How_have_things_been_with_your_wife_since_all_of_this" xml:space="preserve">
+    <value>Bueno escuchar ¿Cómo han ido las cosas con tu esposa, después todo esto?</value>
+  </data>
+  <data name="I_thought_you_said_we_should_talk_about_something_LESS_painful" xml:space="preserve">
+    <value>Pensé que habías dicho que deberíamos hablar de algo menos doloroso.</value>
+  </data>
+  <data name="I_like_to_think_were_getting_better" xml:space="preserve">
+    <value>Me gusta pensar que estamos mejorando.</value>
+  </data>
+  <data name="Honestly_I_still_havent_forgiven_her_for_all_this" xml:space="preserve">
+    <value>Honestamente, todavía no la he perdonado por todo esto.</value>
+  </data>
+  <data name="Of_course" xml:space="preserve">
+    <value>Por supuesto.</value>
+  </data>
+  <data name="Maybe_not" xml:space="preserve">
+    <value>Tal vez no...</value>
+  </data>
+  <data name="Cynthia_and_I_havent_been_on_particularly_good_ground_since_this_all_began" xml:space="preserve">
+    <value>Cynthia y yo no hemos estado particularmente bien desde que comenzó todo esto.</value>
+  </data>
+  <data name="Its_hard_to_reestablish_trust_in_somebody_that_constantly_seems_like_theyre_holding_something_back_" xml:space="preserve">
+    <value>Es difícil restablecer la confianza en alguien que constantemente parece que está ocultando algo.</value>
+  </data>
+  <data name="And_you_do_think_that_shes_still_holding_something_back_from_you_Even_now" xml:space="preserve">
+    <value>¿Y crees que ella todavía te está ocultando algo? ¿Incluso ahora?</value>
+  </data>
+  <data name="She_has_to_be_You_dont_just_uproot_somebodys_life_like_that_with_such_little_reason" xml:space="preserve">
+    <value>Tiene que serlo. No solo arrancas la vida de alguien así con tan poca razón.</value>
+  </data>
+  <data name="Shes_still_hiding_something_from_me_even_now_I_know_she_is_She_didnt_even_want_me_coming_in_to_see_you" xml:space="preserve">
+    <value>Ella todavía está escondiendo algo de mí, incluso ahora. Sé que ella es. Ella ni siquiera quería que viniera a verte.</value>
+  </data>
+  <data name="I_I_dont_know_Honestly_I_just_think_this_is_going_to_take_time" xml:space="preserve">
+    <value>Yo ... no lo sé. Honestamente, creo que esto va a llevar tiempo.</value>
+  </data>
+  <data name="I_really_do_want_to_trust_her_again_Its_just_not_easy_" xml:space="preserve">
+    <value>Realmente quiero confiar en ella otra vez. Es solo que ... no es fácil.</value>
+  </data>
+  <data name="Its_been_awhile_now_since_everything_went_down_Im_trying_my_best" xml:space="preserve">
+    <value>Ha pasado un tiempo desde que todo sucedió. Estoy haciendo mi mejor esfuerzo.</value>
+  </data>
+  <data name="I_mean_its_hard_to_know_with_her_whether_or_not_shes_telling_the_truth_even_now_but_we_are_trying" xml:space="preserve">
+    <value>Quiero decir, es difícil saber con ella, esté o no diciendo la verdad, incluso ahora, pero lo estamos intentando.</value>
+  </data>
+  <data name="Yesterday_I_even_cooked_pasta_for_her" xml:space="preserve">
+    <value>Ayer incluso cociné pasta para ella.</value>
+  </data>
+  <data name="You_think_she_could_still_be_lying_to_you" xml:space="preserve">
+    <value>¿Crees que ella todavía podría estar mintiéndote?</value>
+  </data>
+  <data name="I_dont_know" xml:space="preserve">
+    <value>No lo sé.</value>
+  </data>
+  <data name="Im_telling_myself_shes_not_that_weve_gotten_it_all_out_there_by_now_but_its_hard_to_say_for_sure" xml:space="preserve">
+    <value>Me digo a mí mismo que no, que ya lo hemos hecho todo, pero ... es difícil decirlo con seguridad.</value>
+  </data>
+  <data name="I_know_you_keep_telling_me_I_should_just_move_on_but_its_just" xml:space="preserve">
+    <value>Sé que sigues diciéndome que debería seguir adelante, pero es solo ...</value>
+  </data>
+  <data name="I_dont_know_if_I_ever_will_be_able_to_trust_her_again_Not_completely" xml:space="preserve">
+    <value>No sé si alguna vez podré volver a confiar en ella. No completamente.</value>
+  </data>
+  <data name="You_dont_just_move_on_from_something_like_that_you_know" xml:space="preserve">
+    <value>No te olvidas de algo así, ¿sabes?</value>
+  </data>
+  <data name="But_do_you_really_think_shes_still_lying_to_you_Even_now" xml:space="preserve">
+    <value>¿Pero realmente crees que ella todavía te está mintiendo? ¿Incluso ahora?</value>
+  </data>
+  <data name="Well_alright_thats_fair_But_tell_me_this_Ryan_Do_you_still_love_her" xml:space="preserve">
+    <value>Bueno, está bien, eso es justo. Pero dime esto, Ryan. ¿Todavía la amas?</value>
+  </data>
+  <data name="Can_I_really_love_somebody_I_dont_even_fully_trust" xml:space="preserve">
+    <value>¿Realmente puedo amar a alguien en quien no confío plenamente?</value>
+  </data>
+  <data name="Shes_my_wife_of_course_I_do" xml:space="preserve">
+    <value>Ella es mi esposa, por supuesto que sí.</value>
+  </data>
+  <data name="Not_anymore_I_cant" xml:space="preserve">
+    <value>Ya no. No puedo</value>
+  </data>
+  <data name="I_want_to_love_her_of_course_I_do_but_how_can_I_when_Im_too_busy_analyzing_everything_she_does" xml:space="preserve">
+    <value>Quiero amarla, por supuesto que sí, pero ... ¿cómo puedo cuando estoy demasiado ocupada analizando todo lo que ella hace?</value>
+  </data>
+  <data name="Everything_she_says_to_me_every_time_she_leaves_the_house_for_groceries_or_whatever_I_have_to_try_and_figure_out_if_shes_being_honest_with_me_or_not" xml:space="preserve">
+    <value>Todo lo que me dice, cada vez que sale de la casa para comprar comestibles o lo que sea, tengo que tratar de averiguar si ella es honesta conmigo o no.</value>
+  </data>
+  <data name="Its_maddening" xml:space="preserve">
+    <value>Es enloquecedor</value>
+  </data>
+  <data name="Have_you_tried_talking_to_her_about_this" xml:space="preserve">
+    <value>¿Has tratado de hablar con ella sobre esto?</value>
+  </data>
+  <data name="No_of_course_not_Not_yet_But_I_swear_to_god_its_driving_me_insane" xml:space="preserve">
+    <value>No claro que no. Aún no. Pero juro por Dios que me está volviendo loco.</value>
+  </data>
+  <data name="Just_last_week_she_said_she_was_going_out_to_the_gym_Its_been_years_since_she_last_went_to_the_gym" xml:space="preserve">
+    <value>Apenas la semana pasada ella dijo que iba a ir al gimnasio. Han pasado años desde la última vez que fue al gimnasio.</value>
+  </data>
+  <data name="I_thought_I_could_let_it_go_but_I_couldnt" xml:space="preserve">
+    <value>Pensé que podría dejarlo ir, pero no pude.</value>
+  </data>
+  <data name="So_you_didnt_let_her_go" xml:space="preserve">
+    <value>¿Entonces no la dejaste ir?</value>
+  </data>
+  <data name="Oh_no_I_let_her_go_She_walked_out_of_the_house_got_into_the_car_and_drove_off_down_the_street_before" xml:space="preserve">
+    <value>Oh no, la dejé ir. Salió de la casa, se subió al auto y se fue por la calle antes de ...</value>
+  </data>
+  <data name="Before_what" xml:space="preserve">
+    <value>¿Antes de que?</value>
+  </data>
+  <data name="Well_Im_not_proud_of_it_but_I_followed_her" xml:space="preserve">
+    <value>Bueno, no estoy orgulloso de eso, pero ... la seguí.</value>
+  </data>
+  <data name="I_stayed_clear_back_so_she_wouldnt_recognize_me_and_I_followed_her_all_the_way_to_where_she_was_going" xml:space="preserve">
+    <value>Me mantuve escondido para que ella no me reconociera, y la seguí hasta donde estaba yendo.</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>¿Y?</value>
+  </data>
+  <data name="She_went_straight_to_the_gym" xml:space="preserve">
+    <value>Ella fue directamente al gimnasio.</value>
+  </data>
+  <data name="But_you_still_dont_trust_her" xml:space="preserve">
+    <value>Pero todavía no confías en ella.</value>
+  </data>
+  <data name="No_I_think_this_was_just_a_rare_instance_of_honesty_for_her" xml:space="preserve">
+    <value>No. Creo que esto fue solo un raro caso de honestidad para ella.</value>
+  </data>
+  <data name="And_who_knows_Maybe_she_even_knew_I_was_following_her_after_all" xml:space="preserve">
+    <value>¿Y quien sabe? Tal vez incluso sabía que la estaba siguiendo después de todo.</value>
+  </data>
+  <data name="And_you_dont_think_things_will_ever_be_the_same_now" xml:space="preserve">
+    <value>Y no piensas que las cosas serán lo mismo ahora.</value>
+  </data>
+  <data name="No_Never_again" xml:space="preserve">
+    <value>No. Nunca más.</value>
+  </data>
+  <data name="Maybe_some_day" xml:space="preserve">
+    <value>Tal vez algún día...</value>
+  </data>
+  <data name="Any_love_I_had_for_her_is_just_getting_slowly_destroyed_by_what_she_did" xml:space="preserve">
+    <value>Cualquier amor que tuviera por ella se está destruyendo lentamente por lo que hizo.</value>
+  </data>
+  <data name="I_just_dont_think_I_can_get_over_this" xml:space="preserve">
+    <value>Simplemente no creo que pueda superar esto.</value>
+  </data>
+  <data name="I_know_there_was_a_point_where_Cynthia_and_I_were_well_we_were_really_happy" xml:space="preserve">
+    <value>Sé que hubo un punto en el que Cynthia y yo estábamos ... bueno, estábamos realmente felices.</value>
+  </data>
+  <data name="She_was_my_best_friend_and_I_would_have_trusted_her_with_my_life_We_did_everything_together_Sometimes_I_think_back_on_that" xml:space="preserve">
+    <value>Ella era mi mejor amiga, y le habría confiado mi vida. Lo hicimos todo juntos. A veces pienso en eso.</value>
+  </data>
+  <data name="We_had_one_day_not_long_before_Landon_was_born_when_we_were_supposed_to_be_out_getting_some_decorations_for_our_baby_shower" xml:space="preserve">
+    <value>Tuvimos un día, no mucho antes de que naciera Landon, cuando se suponía que íbamos a comprar decoraciones para nuestro baby shower ...</value>
+  </data>
+  <data name="but_we_just_got_so_tired_of_all_the_family_and_the_friends_and_it_was_such_a_nice_sunny_day_outside" xml:space="preserve">
+    <value>... pero nos cansamos tanto de toda la familia y los amigos y fue un día agradable y soleado afuera.</value>
+  </data>
+  <data name="We_ended_up_just_pulling_off_the_highway_at_this_lake_just_me_and_her_and_lying_in_the_grass_for_hours_on_our_picnic_blanket_just_soaking_up_the_sun_together_until_it_went_down" xml:space="preserve">
+    <value>Terminamos simplemente saliendo de la carretera en este lago, solo yo y ella, y tumbados en la hierba durante horas en nuestra manta de picnic, simplemente tomando el sol juntos hasta el ocaso.</value>
+  </data>
+  <data name="It_was_beautiful_I_miss_that" xml:space="preserve">
+    <value>Fue hermoso. Extraño eso.</value>
+  </data>
+  <data name="And_you_think_you_could_get_that_back_one_day" xml:space="preserve">
+    <value>¿Y crees que podrías recuperar eso algún día?</value>
+  </data>
+  <data name="I_dont_know_I_really_hope_so" xml:space="preserve">
+    <value>No lo sé. Realmente eso espero.</value>
+  </data>
+  <data name="I_cant_just_stop_loving_her_Shes_been_my_best_friend_since_college" xml:space="preserve">
+    <value>No puedo dejar de amarla. Ella ha sido mi mejor amiga desde la universidad.</value>
+  </data>
+  <data name="We_have_a_son_together_He_he_needs_us_both" xml:space="preserve">
+    <value>Tenemos un hijo juntos. Él ... nos necesita a los dos.</value>
+  </data>
+  <data name="And_you_plan_to_be_there_for_him" xml:space="preserve">
+    <value>¿Y planeas estar ahí para él?</value>
+  </data>
+  <data name="The_two_arent_exactly_mutually_exclusive_I_dont_know_I_dont_really_want_to_talk_about_him_right_now" xml:space="preserve">
+    <value>Los dos no son exactamente mutuamente excluyentes. No lo sé. Realmente no quiero hablar de él ahora.</value>
+  </data>
+  <data name="Of_course_Im_sorry_Well_save_that_for_another_session" xml:space="preserve">
+    <value>Por supuesto que lo siento Lo guardaremos para otra sesión.</value>
+  </data>
+  <data name="But_you_do_think_you_will_be_staying_with_Cynthia_as_of_now" xml:space="preserve">
+    <value>¿Pero crees que te quedarás con Cynthia a partir de ahora?</value>
+  </data>
+  <data name="I_dont_think_I_have_much_of_a_choice_Besides_I_think_one_day_well_get_back_to_who_we_were" xml:space="preserve">
+    <value>No creo que tenga mucha opción. Además, creo que algún día volveremos a lo que éramos.</value>
+  </data>
+  <data name="And_who_were_you_then" xml:space="preserve">
+    <value>¿Y quién eras tú entonces?</value>
+  </data>
+  <data name="The_kind_of_people_that_would_sneak_out_of_our_own_wedding_reception_just_to_make_out_and_get_something_greasy_to_eat" xml:space="preserve">
+    <value>El tipo de gente que se escaparía de la recepción de nuestra boda solo para besarnos y comer algo grasiento.</value>
+  </data>
+  <data name="People_who_went_camping_and_rode_bikes_together_and_watched_shitty_movies_together_just_to_make_fun_of_them" xml:space="preserve">
+    <value>Personas que iban a acampar, andaban en bicicleta juntos y miraban películas de mierda solo para burlarse de ellas.</value>
+  </data>
+  <data name="I_liked_those_people" xml:space="preserve">
+    <value>Me gustaban esas personas.</value>
+  </data>
+  <data name="What_happened_to_them" xml:space="preserve">
+    <value>¿Que les pasó?</value>
+  </data>
+  <data name="Do_I_really_even_have_to_tell_you" xml:space="preserve">
+    <value>¿Realmente tengo que decírtelo?</value>
+  </data>
+  <data name="I_cant_imagine_loving_somebody_I_dont_even_trust_Especially_not_after_what_shes_done_Its_not_possible_for_me" xml:space="preserve">
+    <value>No puedo imaginar amar a alguien en quien ni siquiera confío. Especialmente no después de lo que ella ha hecho. No es posible para mí.</value>
+  </data>
+  <data name="You_dont_have_any_good_memories_with_her_Something_to_convince_you_otherwise_" xml:space="preserve">
+    <value>¿No tienes buenos recuerdos con ella? ¿Algo para convencerte de lo contrario?</value>
+  </data>
+  <data name="Of_course_I_have_good_memories_I_married_the_woman_for_gods_sakes" xml:space="preserve">
+    <value>Por supuesto que tengo buenos recuerdos. Me casé con la mujer, por el amor de Dios ...</value>
+  </data>
+  <data name="I_just_dont_think_theres_even_a_chance_well_go_back_to_the_way_things_were_Not_now" xml:space="preserve">
+    <value>Simplemente no creo que haya una posibilidad de volver a la forma en que eran las cosas. No ahora.</value>
+  </data>
+  <data name="Have_you_told_her_you_feel_this_way" xml:space="preserve">
+    <value>¿Le has dicho que te sientes así?</value>
+  </data>
+  <data name="No_Not_yet_Theres_still_too_much_at_stake_I_have_to_think_about_Landon_too_here" xml:space="preserve">
+    <value>No aún no. Todavía hay mucho en juego. También tengo que pensar en Landon.</value>
+  </data>
+  <data name="And_what_are_your_thoughts_on_Landon_as_of_now" xml:space="preserve">
+    <value>¿Y cuáles son tus pensamientos sobre Landon, a partir de ahora?</value>
+  </data>
+  <data name="I_think_Id_prefer_we_save_that_for_another_session_Doctor_" xml:space="preserve">
+    <value>Creo que preferiría que guardáramos eso para otra sesión, doctor.</value>
+  </data>
 </root>

@@ -151,10 +151,10 @@
     <value>Ziehe</value>
   </data>
   <data name="uiverbs" xml:space="preserve">
-    <value>ui\verbs_ger</value>
+    <value>ui\verbs_de</value>
   </data>
   <data name="uiverbshighlight" xml:space="preserve">
-    <value>ui\verbshighlight_ger</value>
+    <value>ui\verbshighlight_de</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Laden</value>
@@ -319,7 +319,7 @@
     <value>Konnte den Spielstand nicht laden. Vielleicht wurde er mit einer älteren Spiel-Version erstellt.</value>
   </data>
   <data name="RoomsLetterScene" xml:space="preserve">
-    <value>rooms/letter/scene_ger</value>
+    <value>rooms/letter/scene_de</value>
   </data>
   <data name="Letter_Text" xml:space="preserve">
     <value>Rektorenbüro der Thomas-Jefferson-Schule 
