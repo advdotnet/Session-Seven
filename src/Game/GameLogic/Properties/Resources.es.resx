@@ -321,4 +321,34 @@
   <data name="RoomsLetterScene" xml:space="preserve">
     <value>rooms/letter/scene_es</value>
   </data>
+  <data name="Letter_Text" xml:space="preserve">
+    <value>Oficina del Director de Hanover School
+13 de enero de 2017
+
+Estimado Sr. y Sra. Schmidt,
+
+Le escribo para informarle de un incidente en el que Landon estuvo involucrado hoy en la escuela.
+Alrededor de las 10:45 de esta mañana, fue traído a mi oficina por otro maestro, quien una estudiante muy preocupada le llamó después de clase. La estudiante reclama
+haber sido acorralada por Landon en el baño de niñas antes de la escuela esta mañana. Él
+Me dijo que solo estaba tratando de pedirle que saliera con él, lo que corroboró la estudiante.
+pero ella también afirma que él no la dejaría salir del baño hasta que ella aceptara la
+invitación. Ella dice que le dijo que iría con él, porque temía por su seguridad.
+ 
+Como tal, espero que puedan comprender que le hemos prohibido de forma permanente a Landon asistir
+la invitación en su totalidad. Independientemente de sus intenciones, hizo que la estudiante se sintiera insegura, y 
+no se le permitirá asistir al baile a modo de precaución. También debo informarles que esta no es la primera
+queja de esta naturaleza que he recibido sobre su hijo. Regularmente me dicen otros estudiantes
+que es solitario, antisocial y tiende a hacer que otros se sientan incómodos con su presencia y
+comportamiento extraño. Les ruego, si aún no hicieron, que busquen ayuda para su hijo. Ofrecemos una
+práctica de consejería en el campus afiliada a la escuela, pero creo que Landon puede beneficiarse más de una
+Psiquiatra cualificada. Si su comportamiento continúa empeorando, me temo que tendremos que considerar
+más consecuencias.
+
+Por favor, póngase en contacto conmigo si tiene alguna inquietud.
+
+Sinceramente,
+
+Darcy Genzlinger
+Directora.</value>
+  </data>
 </root>

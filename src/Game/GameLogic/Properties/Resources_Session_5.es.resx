@@ -435,4 +435,10 @@
   <data name="And_to_be_honest_with_you" xml:space="preserve">
     <value>Y, para ser honesto contigo ...</value>
   </data>
+  <data name="Its_hard_not_to_feel_guilty_you_know_Like_maybe_if_Id_done_something_differently" xml:space="preserve">
+    <value>Es difícil no sentirse culpable, ¿sabes? Como si hubiera hecho algo diferente ...</value>
+  </data>
+  <data name="Maybe_but_I_dont_think_so_I_dont_think_she_knew_Id_gone_out" xml:space="preserve">
+    <value>Tal vez, pero no lo creo. No creo que ella supiera que yo había salido.</value>
+  </data>
 </root>

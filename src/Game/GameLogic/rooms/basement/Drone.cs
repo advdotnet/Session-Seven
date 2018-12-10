@@ -317,8 +317,7 @@ namespace SessionSeven.Basement
 
         private void PlayFlyingSound()
         {
-            FlyingSoundEffect = Game.PlaySoundEffect(content.audio.drone_flying);
-            FlyingSoundEffect.IsLooped = true;
+            FlyingSoundEffect = Game.PlaySoundEffect(content.audio.drone_flying, true);
         }
 
         private void StopFlyingSound()
