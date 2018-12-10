@@ -87,6 +87,15 @@ namespace SessionSeven
             Tree.World.Get<AudioManager>().PlaySong(fileName);
         }
 
+        /// <summary>
+        /// Enqueues a song.        
+        /// </summary>
+        /// <param name="fileName"></param>
+        public static void EnqueueSong(string fileName)
+        {
+            Tree.World.Get<AudioManager>().EnqueueSong(fileName);
+        }
+
         public static void PauseSong()
         {
             Tree.World.Get<AudioManager>().PauseSong();

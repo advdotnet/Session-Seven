@@ -52,12 +52,7 @@ namespace SessionSeven.Basement
             {
                 var StartSession = Game.Ego.Inventory.HasItem<DrugPrescriptionRyan>() && Tree.InventoryItems.DrugPrescriptionRyan.LookedAt;
 
-                if (StartSession)
-                {
-                    Game.PlaySong(content.audio.basementend);
-                    World.Get<AudioManager>().RepeatSong = false;
-                }
-                else
+                if (!StartSession)
                 {
                     Game.PlaySoundEffect(content.audio.puzzle);
                 }
