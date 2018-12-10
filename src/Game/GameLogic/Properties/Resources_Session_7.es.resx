@@ -387,4 +387,28 @@
   <data name="Devoted_to_all_point__click_adventure_fans" xml:space="preserve">
     <value>Dedicado a todos los fanáticos de las aventuras point &amp; click.</value>
   </data>
+  <data name="Then_its_likely_shell_plead_that_she_was_forced_You_know_that_she_was_fearing_for_her_life_and_thats_why_she_helped_Landon_over_you" xml:space="preserve">
+    <value>Entonces, es probable que ella diga que fue forzada. Sabes, que ella temía por su vida, y por eso ayudó a Landon en vez de a tí.</value>
+  </data>
+  <data name="Do_you_think_theyll_make_me_speak_to_her_in_court" xml:space="preserve">
+    <value>¿Crees que me harán hablar con ella en la corte?</value>
+  </data>
+  <data name="BetaTesting" xml:space="preserve">
+    <value>Beta Testing</value>
+  </data>
+  <data name="SpecialThanks" xml:space="preserve">
+    <value>Gracias especiales</value>
+  </data>
+  <data name="JenniferThanksFamilyFriendsTheirUnendingSupportSessionSevenTeamMakingThisDreamRealityThanksPlayerTooNoneThisPossibleWithoutYou" xml:space="preserve">
+    <value>Jennifer: Gracias a mi familia y amigos por su apoyo incesante, y al equipo de Session Seven por hacer de este sueño una realidad. ¡Y gracias al jugador, también! Nada de esto es posible sin ti.</value>
+  </data>
+  <data name="DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove" xml:space="preserve">
+    <value>Damian: Me gustaría agradecer a mi familia y amigos por el apoyo continuo. Gracias a todos los involucrados en la Session Seven por hacerme parte de la experiencia, ustedes rockean. Muchísimas gracias a mi esposa, sin ella, no podría hacer esto posible. Amor, d.</value>
+  </data>
+  <data name="JonasWifeFamilyFriendsEverybodyContributingMakingThisGame" xml:space="preserve">
+    <value>Jonas: ¡Mi esposa, familia, amigos y todos contribuimos a hacer este juego!</value>
+  </data>
+  <data name="JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss" xml:space="preserve">
+    <value>Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss</value>
+  </data>
 </root>
