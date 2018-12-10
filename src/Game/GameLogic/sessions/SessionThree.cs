@@ -377,7 +377,7 @@ namespace SessionSeven.Cutscenes
 
             Game.StopSkipping();
 
-            Game.PlaySong(content.audio.basement);
+            Game.EnqueueSong(content.audio.basement);
             World.Get<AudioManager>().RepeatSong = false;
         }
     }
