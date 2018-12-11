@@ -154,6 +154,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources_Session_2.resx</DependentUpon>
     </Compile>
+    <Compile Include="rooms\basement\MedicalCabinetBloodStain.cs" />
     <Compile Include="rooms\basement\VentilationShaft.cs" />
     <Compile Include="rooms\basement\CabinetToolbox.cs" />
     <Compile Include="rooms\basement\CarpetWall.cs" />

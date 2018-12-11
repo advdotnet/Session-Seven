@@ -142,15 +142,12 @@ namespace SessionSeven.Cutscenes
 
             if (AlreadyFinishedSessions % 2 == 1)
             {
-                if (session == Sessions.One)
-                {
-                    Game.PlaySong(content.audio.basement);
-                }
-                else
-                {
-                    World.Get<AudioManager>().RepeatSong = false;
-                    Game.EnqueueSong(content.audio.basement);
-                }
+                Game.EnqueueSong(content.audio.basement);
+            }
+
+            if (session != Sessions.One)
+            {
+                World.Get<AudioManager>().RepeatSong = false;
             }
         }
 
