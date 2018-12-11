@@ -32,7 +32,7 @@ namespace SessionSeven.Basement
 
             Transform
                 .Create(this)
-                .SetZ(1)
+                .SetZ(2)
                 .SetPosition(771, 85);
         }
 
@@ -119,6 +119,8 @@ namespace SessionSeven.Basement
                 else
                 {
                     Opened = true;
+                    Sprite.SetImage(content.rooms.basement.medicalcabinet_blood, 2);
+                    Tree.Basement.MedicalCabinetBloodStain.Get<Sprite>().Visible = true;
                     yield return Game.Ego.Say(Basement_Res.There_are_some_bandages_and_scissors_in_it);
 
                     yield return Game.Ego.StartUse();
