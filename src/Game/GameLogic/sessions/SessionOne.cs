@@ -285,9 +285,7 @@ namespace SessionSeven.Cutscenes
             Game.Ego.Inventory.Show();
 
             Game.StopSkipping();
-
-            Game.PlaySong(content.audio.basement);
-            World.Get<AudioManager>().RepeatSong = true;
+            Game.StopSong();
 
             World.Interactive = true;
         }

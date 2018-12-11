@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Media;
 using STACK;
+using STACK.Components;
 using System;
 using TomShane.Neoforce.Controls;
 
@@ -89,7 +90,10 @@ namespace SessionSeven
             GameSettings = engine.GameSettings;
 
             MediaPlayer.Volume = MathHelper.Clamp(GameSettings.MusicVolume, 0.0f, 1.0f);
-            MediaPlayer.Play(MenuSong);
+            if (!AudioManager.SoundDisabled)
+            {
+                MediaPlayer.Play(MenuSong);
+            }
             MediaPlayer.IsRepeating = true;
 
             var GUI = engine.Renderer.GUIManager;
