@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework.Audio;
 using STACK;
+using STACK.Components;
 using TomShane.Neoforce.Controls;
 
 namespace SessionSeven
@@ -17,7 +18,7 @@ namespace SessionSeven
 
         private void PlaySoundIfAvaiable(SoundEffect sound, GameSettings gameSettings)
         {
-            if (null != sound && !sound.IsDisposed)
+            if (null != sound && !sound.IsDisposed && !AudioManager.SoundDisabled)
             {
                 sound.Play(gameSettings.SoundEffectVolume, 0f, 0f);
             }

@@ -185,8 +185,6 @@ namespace SessionSeven.Cutscenes
 
             Tree.GUI.Interaction.Scene.Interactive = true;
 
-            World.Get<AudioManager>().RepeatSong = false;
-
             World.Interactive = true;
             Game.StopSkipping();
         }

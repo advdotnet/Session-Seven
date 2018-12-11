@@ -316,9 +316,6 @@ namespace SessionSeven.Cutscenes
 
             World.Interactive = true;
             Game.StopSkipping();
-
-            Game.EnqueueSong(content.audio.basement);
-            World.Get<AudioManager>().RepeatSong = false;
         }
     }
 }

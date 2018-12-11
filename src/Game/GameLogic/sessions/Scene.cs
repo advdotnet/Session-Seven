@@ -8,6 +8,7 @@ using STACK.Logging;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SessionSeven.Cutscenes
 {
@@ -131,6 +132,26 @@ namespace SessionSeven.Cutscenes
             yield return Get<Scripts>().Start(SessionScript);
 
             FinishSession(session);
+
+            if (session == Sessions.Seven)
+            {
+                yield break; ;
+            }
+
+            var AlreadyFinishedSessions = FinishedSessionsCount;
+
+            if (AlreadyFinishedSessions % 2 == 1)
+            {
+                if (session == Sessions.One)
+                {
+                    Game.PlaySong(content.audio.basement);
+                }
+                else
+                {
+                    World.Get<AudioManager>().RepeatSong = false;
+                    Game.EnqueueSong(content.audio.basement);
+                }
+            }
         }
 
         public bool FinishedSession(Sessions session)
@@ -143,6 +164,14 @@ namespace SessionSeven.Cutscenes
             }
 
             return false;
+        }
+
+        private int FinishedSessionsCount
+        {
+            get
+            {
+                return FinishedSessions.Where(fs => fs.Value).Count();
+            }
         }
 
         private void FinishSession(Sessions session)
