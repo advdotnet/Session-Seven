@@ -439,7 +439,7 @@
     <value>Da muss aus irgendeinem Grund ein RFID-Empfänger sein.</value>
   </data>
   <data name="I_need_another_antenna_to_triangulate_the_signal_and_get_its_position" xml:space="preserve">
-    <value>Ich brauche eine weitere Antenne um das Signal zu triangulieren und die Position zu bestimmen.</value>
+    <value>Ich brauche eine weitere Antenne, um das Signal zu triangulieren und die Position zu bestimmen.</value>
   </data>
   <data name="No_signal_along_that_direction" xml:space="preserve">
     <value>Kein Signal aus dieser Richtung.</value>

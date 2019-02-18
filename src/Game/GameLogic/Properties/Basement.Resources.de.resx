@@ -535,7 +535,7 @@
     <value>Eine leere Packung Haselnüsse liegt hier am Boden.</value>
   </data>
   <data name="Looks_like_an_animal_was_chewing_on_it" xml:space="preserve">
-    <value>Sieht so aus, als ob darauf ein Tier herum gekaut hat.</value>
+    <value>Sieht so aus, als ob daran ein Tier herum gekaut hat.</value>
   </data>
   <data name="light_switch" xml:space="preserve">
     <value>Lichtschalter</value>
@@ -883,10 +883,10 @@
     <value>Moment... fehlt da nicht eins?</value>
   </data>
   <data name="Damn_Ive_told_Landon_a_thousand_times_to_bring_back_anything_he_borrows" xml:space="preserve">
-    <value>Verdammt, ich habe Landon tausend mal gesagt, dass er alles, was er sich ausleiht, wieder zurückbringen soll.</value>
+    <value>Verdammt, ich habe Landon tausendmal gesagt, dass er alles, was er sich ausleiht, wieder zurückbringen soll.</value>
   </data>
   <data name="Landon_drew_something_in_the_corner_but_its_too_faded_now_to_make_out_what_its_supposed_to_be" xml:space="preserve">
-    <value>Landon hat da etwas in die Ecke gekritzelt, aber es ist zu sehr verblasst um noch etwas erkennen zu können.</value>
+    <value>Landon hat da etwas in die Ecke gekritzelt, aber es ist zu sehr verblasst, um noch etwas erkennen zu können.</value>
   </data>
   <data name="This_bulletin_board_is_covered_in_reminders_for_meetings_with_the_realtor_the_bank_and_Landons_teachers_as_well_as_an_alphabetized_shopping_list_of_Cynthias" xml:space="preserve">
     <value>Diese Pinnwand ist voller Erinnerungen für Treffen mit dem Makler, der Bank und Landons Lehrer, sowie einer nach dem Alphabet geordneten Einkaufsliste von Cynthia.</value>
