@@ -154,7 +154,7 @@
     <value>Danke, Doktor.</value>
   </data>
   <data name="I_mean_even_after_she_cheated_you_felt_like_you_could_never_trust_her_again_right" xml:space="preserve">
-    <value>Ich meine nachdem sie Sie betrogen hatte, konnten Sie ihr nie mehr vertrauen?</value>
+    <value>Ich meine, nachdem sie Sie betrogen hatte, konnten Sie ihr nie mehr vertrauen?</value>
   </data>
   <data name="And_she_was_very_scared_this_time_around_Who_knows" xml:space="preserve">
     <value>Und sie war diesmal sehr verängstigt. Wer weiß?</value>
@@ -184,7 +184,7 @@
     <value>Ja, wir sehen uns nächsten Dienstag.</value>
   </data>
   <data name="And_you_will_But_I_think_thats_time_for_today_Ryan_Same_time_next_week" xml:space="preserve">
-    <value>Und das werden Sie. Aber das war es schon für heute, Ryan. Selbe Zeit kommende Woche?</value>
+    <value>Und das werden Sie. Aber das war es schon für heute, Ryan. Selbe Zeit, kommende Woche?</value>
   </data>
   <data name="Weve_gotten_a_lot_of_good_work_done_today_Ryan" xml:space="preserve">
     <value>Wir haben heute eine Menge guter Arbeit geleistet, Ryan.</value>
@@ -196,7 +196,7 @@
     <value>Ich schätze es sehr, dass Sie sich mir so sehr geöffnet haben. Ich verstehe, dass das nicht einfach für Sie war.</value>
   </data>
   <data name="Yeah_well_it_was_good_just_to_see_a_familiar_face_Its_easier_to_talk_to_somebody_who_already_knows_my_history" xml:space="preserve">
-    <value>Nunja, es war gut ein bekanntes Gesicht zu sehen. Es ist einfacher mit jemandem zu reden, der meine Vorgeschichte kennt.</value>
+    <value>Nun ja, es war gut, ein bekanntes Gesicht zu sehen. Es ist einfacher mit jemandem zu reden, der meine Vorgeschichte kennt.</value>
   </data>
   <data name="Of_course_Still_I_have_to_admit_I_was_surprised_to_get_this_call" xml:space="preserve">
     <value>Klar. Trotzdem war ich überrascht, dass Sie angerufen haben.</value>
@@ -220,10 +220,10 @@
     <value>Ihr Sohn ist durch Ihre Hand gestorben.</value>
   </data>
   <data name="You_may_only_have_been_trying_to_help_your_family_but_this_is_going_to_be_difficult_to_explain_away" xml:space="preserve">
-    <value>Sie wollten vielleicht nur Ihrer Familie helfen, aber es wird schwierig sich da herauszureden.</value>
+    <value>Sie wollten vielleicht nur Ihrer Familie helfen, aber es wird schwierig, sich da herauszureden.</value>
   </data>
   <data name="Still_its_important_that_you_came_clean_Ill_do_everything_I_can_to_help_you_with_my_testimony" xml:space="preserve">
-    <value>Dennoch... es ist wichtig dass Sie mit sich ins Reine gekommen sind. Ich tue alles was ich kann, um Ihnen mit Ihrer Aussage zu helfen.</value>
+    <value>Dennoch... es ist wichtig dass Sie mit sich ins Reine gekommen sind. Ich tue alles was ich kann, um Ihnen beiIhrer Aussage zu helfen.</value>
   </data>
   <data name="I_just_I_hope_it_will_be_enough" xml:space="preserve">
     <value>Ich... hoffe einfach, dass das ausreichen wird.</value>
@@ -235,7 +235,7 @@
     <value>Es ist wichtig, dass Sie mit sich ins Reine gekommen sind. Ich denke, mit dieser Zeugenaussage können wir belegen, dass das ein großes Missverständnis war.</value>
   </data>
   <data name="Just_be_as_honest_with_the_jury_as_you_were_with_me_just_now_and_everything_should_be_fine" xml:space="preserve">
-    <value>Seien Sie nur genau so ehrlich zur Jury, wie sie jetzt mit mir waren, und alles sollte gut gehen.</value>
+    <value>Seien Sie bitte genau so ehrlich zur Jury, wie sie jetzt zu mir waren, und alles sollte gut gehen.</value>
   </data>
   <data name="I_believe_this_will_be_alright_in_the_end" xml:space="preserve">
     <value>Ich glaube, am Ende wird alles gut.</value>
@@ -247,10 +247,10 @@
     <value>Es ist Landon, der die Konsequenzen davon tragen muss. Sie werden ihn jeden Moment wegsperren.</value>
   </data>
   <data name="Shes_in_just_about_the_same_boat_as_you" xml:space="preserve">
-    <value>Sie ist ungefähr im selben Boot wie Sie.</value>
+    <value>Sie ist etwa im selben Boot wie Sie.</value>
   </data>
   <data name="Theres_a_chance_shell_be_released_because_she_was_technically_a_victim_of_domestic_abuse_but_yes_shell_also_have_to_stand_trial" xml:space="preserve">
-    <value>Es gibt eine Chance dass sie frei kommt, weil sie genau genommen ein Opfer häuslicher Gewalt war, aber ja, sie muss sich auch vor Gericht verantworten.</value>
+    <value>Es gibt eine Chance, dass sie frei kommt, weil sie genau genommen ein Opfer häuslicher Gewalt war, aber ja, sie muss sich auch vor Gericht verantworten.</value>
   </data>
   <data name="I_see_Do_you_think_do_you_think_Ill_have_to_talk_to_her" xml:space="preserve">
     <value>Verstehe. Glauben Sie... glauben Sie, dass ich mit ihr reden muss?</value>
@@ -262,7 +262,7 @@
     <value>Wir sehen uns morgen.</value>
   </data>
   <data name="Youve_been_through_a_lot_I_just_hope_we_can_work_through_it_all_and_get_you_feeling_better_soon" xml:space="preserve">
-    <value>Sie haben einiges durchgemacht. Ich hoffe dass wir das alles gemeinsam verarbeiten können, und dass es Ihnen bald besser geht.</value>
+    <value>Sie haben einiges durchgemacht. Ich hoffe, dass wir das alles gemeinsam verarbeiten können, und dass es Ihnen bald besser geht.</value>
   </data>
   <data name="Alright_Ryan_I_think_we_got_a_lot_of_important_work_done_today" xml:space="preserve">
     <value>Gut, Ryan, ich denke, wir haben heute eine Menge guter Arbeit geleistet.</value>
@@ -277,7 +277,7 @@
     <value>Ja, ich habe gehört dass Dr. Raj etwas... schroff sein kann.</value>
   </data>
   <data name="He_doesnt_know_me_like_you_do_either_Its_hard_enough_to_tell_this_story_once_nevermind_a_second_time" xml:space="preserve">
-    <value>Er kennt mich auch nicht so wie Sie. Es ist schwierig genug diese Geschichte einmal zu erzählen, geschweige denn, ein zweites mal.</value>
+    <value>Er kennt mich auch nicht so gut, wie Sie. Es ist schwierig genug diese Geschichte einmal zu erzählen, geschweige denn, ein zweites mal.</value>
   </data>
   <data name="Of_course_I_think_youll_be_glad_to_hear_Im_taking_over_for_him_now" xml:space="preserve">
     <value>Natürlich. Ich denke, Sie sind dann froh zu hören, dass ich ihn ab jetzt ablöse.</value>
@@ -304,7 +304,7 @@
     <value>Ich denke, wir können hier nur das Beste hoffen.</value>
   </data>
   <data name="Oh_I_think_so_These_places_arent_meant_for_permanent_residents_except_for_some_extreme_cases" xml:space="preserve">
-    <value>Oh, ich denke schon. Diese Orte sind nicht für einen ständigen Aufenthalt vorhergesehen, außer in Extremfällen.</value>
+    <value>Oh, ich denke schon. Diese Orte sind nicht für einen dauerhaften Aufenthalt vorhergesehen, außer in Extremfällen.</value>
   </data>
   <data name="Its_not_as_if_youve_really_hurt_anyone" xml:space="preserve">
     <value>Es ist nicht so als ob Sie jemanden verletzt haben.</value>
@@ -313,7 +313,7 @@
     <value>Aber zu sehen, wie sehr traumatisiert Sie nach all dem waren, gerade für mich persönlich, weil ich Ihre ungesunde Beziehung mit Landon und Cynthia kenne...</value>
   </data>
   <data name="its_probably_for_the_best_that_you_get_this_time_to_really_heal_and_reflect_on_yourself" xml:space="preserve">
-    <value>...es ist möglicherweise am Besten wenn Sie sich diese Zeit nehmen um sich selbst zu heilen und über sich zu reflektieren.</value>
+    <value>...es ist möglicherweise am Besten, wenn Sie sich diese Zeit nehmen, um sich selbst zu heilen und über sich zu reflektieren.</value>
   </data>
   <data name="Besides_itll_be_a_while_before_you_can_reach_out_to_Landon_at_all_considering_hes_in_a_separate_hospital" xml:space="preserve">
     <value>Außerdem wird es sowieso eine Weile dauern, bis sie überhaupt mit Landon in Kontakt treten können, weil er in einer anderen Einrichtung eingewiesen worden ist.</value>
@@ -325,7 +325,7 @@
     <value>Und was denken Sie, wird mit Cynthia passieren?</value>
   </data>
   <data name="Well_for_now_shes_awaiting_trial" xml:space="preserve">
-    <value>Nun, gerade wartet Sie auf Ihren Prozess.</value>
+    <value>Nun, gerade wartet sie auf ihren Prozess.</value>
   </data>
   <data name="Then_its_likely_shell_plead_that_she_was_forced_You_know_that_she_was_fearing_for_her_life_and_thats_why_she_helped_Landon_over_you" xml:space="preserve">
     <value>Dann ist es wahrscheinlich dass sie darauf plädiert, gezwungen worden zu sein. Dass sie Angst um ihr Leben hatte, und sie deswegen Landon helfen musste.</value>
@@ -406,7 +406,7 @@
     <value>Damian: Ich möchte meiner Familie und meinen Freunden für die andauernde Unterstützung danken. Danke an alle Beteiligten von Session Seven dafür, dass ich Teil dieses Projekts sein kann, ihr seid spitze. Vielen Dank an meine Frau ohne die ich dies nicht möglich machen hätte können. In Liebe, D.</value>
   </data>
   <data name="JonasWifeFamilyFriendsEverybodyContributingMakingThisGame" xml:space="preserve">
-    <value>Jonas: Meine Frau, Familie, Freunde und das gesamte Session Seven-Team!</value>
+    <value>Jonas: Meine Frau, Familie, Freunde und das gesamte Session Seven-Team. Ihr seid hervorragend!</value>
   </data>
   <data name="JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss" xml:space="preserve">
     <value>Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss</value>

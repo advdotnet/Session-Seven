@@ -534,7 +534,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jonas: My wife, family and friends and everybody contributing to making this game!.
+        ///   Looks up a localized string similar to Jonas: My wife, family and friends and everybody contributing to making this game. You are outstanding!.
         /// </summary>
         internal static string JonasWifeFamilyFriendsEverybodyContributingMakingThisGame {
             get {

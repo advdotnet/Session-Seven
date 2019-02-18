@@ -154,7 +154,7 @@
     <value>Oh, ich weiß nicht... merkwürdig, schätze ich. Ich weiß einfach nicht, ob ich daran glauben kann.</value>
   </data>
   <data name="Aspergers_can_present_itself_in_many_different_ways_Ryan" xml:space="preserve">
-    <value>Ein Asperger-Syndrom kann sich auf vielen verschiedenen Weisen äußern, Ryan.</value>
+    <value>Ein Asperger-Syndrom kann sich auf vielen verschiedenen Arten äußern, Ryan.</value>
   </data>
   <data name="Sure_I_know_it_can_its_just_youve_heard_the_way_I_describe_him_Does_it_sound_like_Aspergers_to_you" xml:space="preserve">
     <value>Klar, das weiß ich, es ist nur... Sie haben ja mitgekriegt, wie ich ihn beschrieb. Klingt das nach Asperger in Ihren Ohren?</value>
@@ -211,7 +211,7 @@
     <value>Es ist ist schwer, sich nicht schuldig zu fühlen, verstehen Sie? Vielleicht sähe die Welt anders aus, wenn man irgendetwas anders gemacht hätte...</value>
   </data>
   <data name="Mental_illness_is_like_any_other_chronic_disease_You_cant_have_done_anything_to_prevent_it" xml:space="preserve">
-    <value>Bei einer Geisteskrankheit ist es wie anderen chronischen Krankheiten. Sie hätten nichts tun können, um das zu verhindern.</value>
+    <value>Bei einer Geisteskrankheit ist es wie bei anderen chronischen Krankheiten. Sie hätten nichts tun können, um das zu verhindern.</value>
   </data>
   <data name="Okay_but_maybe_if_Id_been_around_more_often_or_spent_more_time_with_him" xml:space="preserve">
     <value>Okay, aber vielleicht hätte ich mich mehr um ihn kümmern sollen, oder mehr mit ihm unternehmen.</value>
@@ -229,7 +229,7 @@
     <value>Was, wenn es zu spät ist? Er hängt mittlerweile so sehr an seiner Mutter. Er spricht kaum noch mit mir.</value>
   </data>
   <data name="Ive_tried_reaching_out_to_him_a_few_times_but_he_always_goes_off_and_hides_in_his_room_to_play_on_his_computer_or_whatever_it_is_he_does_up_there" xml:space="preserve">
-    <value>Ich versuchte einige Male ihm entgegenzukommen, aber er versteckt sich immer in seinem Zimmer um mit seinem Computer zu spielen, oder was auch immer er dort oben macht.</value>
+    <value>Ich versuchte einige Male ihm entgegenzukommen, aber er versteckt sich immer in seinem Zimmer, um mit seinem Computer zu spielen, oder was auch immer er dort oben macht.</value>
   </data>
   <data name="He_isnt_interested_in_bonding" xml:space="preserve">
     <value>Er ist an einer tieferen Bindung nicht interessiert.</value>
@@ -247,7 +247,7 @@
     <value>Mit diesen Schlägertypen?</value>
   </data>
   <data name="Yes_Like_to_purposefully_hurt_somebody_the_way_he_did_that_one_kid_the_kid_had_to_have_done_something_pretty_awful_to_him" xml:space="preserve">
-    <value>Ja. Jemanden absichtlich zu verletzen, wie er es mit diesem einen Kind gemacht hat... es musste ihm etwas schreckliches angetan haben.</value>
+    <value>Ja. Jemanden absichtlich zu verletzen, wie er es mit diesem einen Kind gemacht hat... es musste ihm etwas Schreckliches angetan haben.</value>
   </data>
   <data name="How_bad_were_his_injuries_exactly" xml:space="preserve">
     <value>Wie schwer waren seine Verletzungen?</value>
@@ -310,7 +310,7 @@
     <value>Cynthia war gerade draußen, um die Post zu holen, als es passierte. Ich war in der Küche und bereitete das Frühstück zu. Ich wollte Pfannkuchen machen.</value>
   </data>
   <data name="Anyways_I_opened_up_one_of_the_cabinets_higher_up_trying_to_find_a_good_frying_pan" xml:space="preserve">
-    <value>Jedenfalls öffnete ich einen der höher gelegenen Küchenschränke um eine gute Pfanne zu suchen.</value>
+    <value>Jedenfalls öffnete ich einen der höher gelegenen Küchenschränke, um eine gute Pfanne zu suchen.</value>
   </data>
   <data name="I_couldnt_quite_reach_the_pan_I_wanted_so_I_set_Landon_down_on_the_counter_for_just_a_minute_and_reached_up" xml:space="preserve">
     <value>Ich kam an die Pfanne nicht ganz heran, also setzte ich Landon kurz auf dem Tresen ab, und griff nach oben.</value>
@@ -361,7 +361,7 @@
     <value>Es ist... schwierig zu erklären. Und ich bin nicht stolz darauf, wie ich es herausfand.</value>
   </data>
   <data name="Found_what_Ryan" xml:space="preserve">
-    <value>Herausfand? Was, Ryan?</value>
+    <value>Was haben Sie herausgefunden, Ryan?</value>
   </data>
   <data name="I_You_have_to_understand_that_he_never_talks_to_me_And_after_everything_thats_happened_with_the_bullying_and_the_switching_schools_and_the_secrets" xml:space="preserve">
     <value>Ich... Sie müssen verstehen, dass er nie mit mir redet. Und nach all dem, was passiert war, mit dem Mobbing, dem Schulwechsel und den Geheimnissen...</value>
@@ -373,10 +373,10 @@
     <value>Sehen Sie, fast jedes Wochenende wenn er sich unbeobachtet fühlt, geht Landon in ein Waldstück hinter unserem Haus, und kommt einige Stunden lang nicht zurück.</value>
   </data>
   <data name="I_had_no_idea_what_he_was_doing_back_there_I_thought_maybe_he_was_meeting_a_girl_or_maybe_doing_drugs_with_some_friends_I_didnt_know_about" xml:space="preserve">
-    <value>Ich hatte keine Ahnung, was er dort trieb. Ich dachte, er trifft sich vielleicht mit einem Mädchen, oder nahm Drogen mit Freunden von denen ich nichts wusste.</value>
+    <value>Ich hatte keine Ahnung, was er dort trieb. Ich dachte, er trifft sich vielleicht mit einem Mädchen, oder nahm Drogen mit Freunden, von denen ich nichts wusste.</value>
   </data>
   <data name="I_dont_know_that_I_really_would_have_minded_if_that_was_what_he_was_doing_back_there_because_at_least_that_would_mean_hes_spending_time_with_someone" xml:space="preserve">
-    <value>Das hätte mir auch wirklich nichts ausgemacht, wenn es so gewesen wäre, weil ich dann gewusst hätte, dass er dort wenigstens Zeit in Gesellschaft verbringt.</value>
+    <value>Es hätte mir auch wirklich nichts ausgemacht wenn es so gewesen wäre, weil ich dann gewusst hätte, dass er dort wenigstens Zeit in Gesellschaft verbringt.</value>
   </data>
   <data name="But_its_the_kind_of_thing_I_think_a_father_should_know_about" xml:space="preserve">
     <value>Aber es war eines dieser Dinge worüber ein Vater Bescheid wissen sollte.</value>
@@ -400,10 +400,10 @@
     <value>Und dann?</value>
   </data>
   <data name="After_a_while_he_seemed_to_get_bored_He_got_up_and_left_After_I_was_sure_he_wasnt_going_to_come_back_I_got_up_so_I_could_get_a_closer_look_at_his_project" xml:space="preserve">
-    <value>Nach einer Weile schien er das Interesse zu verlieren. Er stand auf und ging. Nachdem ich sicher war, dass er nicht zurückkam, ging ich zu der Lichtung um mir sein Projekt genauer anzusehen.</value>
+    <value>Nach einer Weile schien er das Interesse zu verlieren. Er stand auf und ging. Nachdem ich sicher war, dass er nicht zurückkam, ging ich zu der Lichtung, um mir sein Projekt genauer anzusehen.</value>
   </data>
   <data name="From_far_away_it_looked_like_like_maybe_dolls_or_something__Like_he_was_playing_with_dolls_or_stuffed_animals" xml:space="preserve">
-    <value>Von weiter weg sah es nach... Puppen aus oder sowas in der Art? Als ob er mit Puppen spielte oder Kuscheltieren?</value>
+    <value>Von weiter weg sah es nach... Puppen aus, oder sowas in der Art? Als ob er mit Puppen spielte, oder mit Kuscheltieren?</value>
   </data>
   <data name="But_then" xml:space="preserve">
     <value>Aber dann...</value>
