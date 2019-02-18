@@ -28,6 +28,8 @@ namespace SessionSeven.Cutscenes
             Game.EnableSkipping();
             Game.EnableTextSkipping(false);
 
+            yield return Delay.Seconds(1);
+
             Game.PlaySong(content.audio.intro);
 
             Tree.GUI.Interaction.Scene.Visible = false;
