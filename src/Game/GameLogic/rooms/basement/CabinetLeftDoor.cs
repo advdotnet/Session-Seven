@@ -182,8 +182,7 @@ namespace SessionSeven.Basement
         {
             Game.Ego.Inventory.Hide();
 
-            Game.PlaySong(content.audio.basementend);
-            World.Get<AudioManager>().RepeatSong = false;
+            Game.PlayBasementEndSong();
 
             yield return Game.Ego.StartScript(Tree.Basement.Receipt.FallDownScript(), "receipt_fall_down");
 

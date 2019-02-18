@@ -167,12 +167,12 @@ namespace SessionSeven.Cutscenes
 
             yield return RyanVoice.Say(GlblRes.Dont_you_believe_me);
 
-            RyanVoice.TransitionTo(RyanState.Neutral);
-
             Tree.Basement.Scene.Visible = true;
+            Tree.Office.Scene.Visible = false;
+
+            yield return RyanVoice.TransitionTo(RyanState.Neutral, 0);
 
             Tree.Office.Scene.Enabled = false;
-            Tree.Office.Scene.Visible = false;
 
             Tree.Cutscenes.Scene.Visible = false;
             Tree.Cutscenes.Scene.Enabled = false;

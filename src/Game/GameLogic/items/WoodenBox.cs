@@ -1,7 +1,6 @@
 ﻿using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
-using STACK.Components;
 using System;
 using System.Collections;
 using Items_Res = global::SessionSeven.Properties.Items_Resources;
@@ -43,8 +42,7 @@ namespace SessionSeven.InventoryItems
                     yield break;
                 }
 
-                Game.PlaySong(content.audio.basementend);
-                World.Get<AudioManager>().RepeatSong = false;
+                Game.PlayBasementEndSong();
 
                 yield return Game.Ego.Say(Items_Res.Lets_see_whats_in_there);
 

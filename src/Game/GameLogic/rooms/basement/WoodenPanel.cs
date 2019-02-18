@@ -111,7 +111,7 @@ namespace SessionSeven.Basement
                     yield break;
                 }
 
-                yield return Game.Ego.Say(Basement_Res.I_put_the_screwdriver_in_the_small_gap_between_the_planks);
+
                 yield return Game.Ego.StartUse();
                 Game.Ego.Inventory.RemoveItem<InventoryItems.Screwdriver>();
                 Game.PlaySoundEffect(content.audio.screwdriver_wood);
@@ -119,6 +119,8 @@ namespace SessionSeven.Basement
                 Get<Sprite>().Visible = true;
                 Get<HotspotRectangle>().SetRectangle(579, 258, 15, 22);
                 yield return Game.Ego.StopUse();
+
+                yield return Game.Ego.Say(Basement_Res.I_put_the_screwdriver_in_the_small_gap_between_the_planks);
             }
         }
 

@@ -24,8 +24,9 @@ namespace SessionSeven
             ResetGUIFn = resetGUIFn;
             ResetInteractive = resetInteractive;
             WasSkippingEnabled = IsSkippingEnabled();
-
+            ((GUI.Interaction.Scene)World.GetScene(Tree.GUI.Interaction.SceneID))?.UpdateLabel();
             World.Interactive = false;
+
             if (!WasSkippingEnabled)
             {
                 Game.EnableSkipping();

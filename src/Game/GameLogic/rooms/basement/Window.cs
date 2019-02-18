@@ -138,8 +138,7 @@ namespace SessionSeven.Basement
 
             if (!TriedOpen)
             {
-                Game.PlaySong(content.audio.basementend);
-                World.Get<AudioManager>().RepeatSong = false;
+                Game.PlayBasementEndSong();
 
                 Game.EnableSkipping();
                 Game.Ego.Inventory.Hide();

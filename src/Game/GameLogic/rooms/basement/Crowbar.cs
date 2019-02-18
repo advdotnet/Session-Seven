@@ -41,7 +41,17 @@ namespace SessionSeven.Basement
                 .Create()
                 .For(Game.Ego)
                     .Add(Verbs.Look, LookScript())
+                    .Add(Verbs.Use, UseScript())
                     .Add(Verbs.Pick, PickScript());
+        }
+
+        IEnumerator UseScript()
+        {
+            yield return Game.Ego.GoTo(this);
+            using (Game.CutsceneBlock())
+            {
+                yield return Game.Ego.Say(Basement_Res.I_should_take_it_first);
+            }
         }
 
         IEnumerator LookScript()

@@ -127,16 +127,16 @@
     <value>Ich habe ihr ehrlich gesagt deswegen immer noch nicht verziehen.</value>
   </data>
   <data name="I_thought_you_said_we_should_talk_about_something_LESS_painful" xml:space="preserve">
-    <value>Ich dachte Sie hätten gesagt dass wir über etwas WENIGER schmerzhaftes reden.</value>
+    <value>Ich dachte, wir wollten über etwas WENIGER Schmerzhaftes reden.</value>
   </data>
   <data name="Good_to_hear_How_have_things_been_with_your_wife_since_all_of_this" xml:space="preserve">
-    <value>Gut zu hören. Wir lief es zwischen Ihnen und Ihrer Frau, seit der ganzen Geschichte?</value>
+    <value>Gut. Wir lief es zwischen Ihnen und Ihrer Frau, seit der ganzen Geschichte?</value>
   </data>
   <data name="Sounds_good_to_me" xml:space="preserve">
     <value>Hört sich gut an.</value>
   </data>
   <data name="Lets_talk_about_something_less_painful_for_a_while" xml:space="preserve">
-    <value>Lassen Sie uns über etwas weniger schmerzhaftes reden.</value>
+    <value>Lassen Sie uns über etwas weniger Schmerzhaftes reden.</value>
   </data>
   <data name="I_like_to_think_were_getting_better" xml:space="preserve">
     <value>Ich glaube, es geht wieder bergauf.</value>
@@ -145,7 +145,7 @@
     <value>Cynthia und ich hatten so unsere Probleme seitdem das alles begann.</value>
   </data>
   <data name="Its_hard_to_reestablish_trust_in_somebody_that_constantly_seems_like_theyre_holding_something_back_" xml:space="preserve">
-    <value>Es ist schwierig das Vertrauen in jemanden wiederzugewinnen der ständig etwas zu verschweigen scheint.</value>
+    <value>Es ist schwierig das Vertrauen in jemanden wiederzugewinnen, der ständig etwas zu verschweigen scheint.</value>
   </data>
   <data name="And_you_do_think_that_shes_still_holding_something_back_from_you_Even_now" xml:space="preserve">
     <value>Und glauben Sie, dass sie Ihnen immer noch etwas verschweigt? Selbst jetzt noch?</value>
@@ -166,7 +166,7 @@
     <value>Es ist ein Weilchen vergangen, seit dem das alles passiert war. Ich gebe mein Bestes.</value>
   </data>
   <data name="I_mean_its_hard_to_know_with_her_whether_or_not_shes_telling_the_truth_even_now_but_we_are_trying" xml:space="preserve">
-    <value>Ich meine es ist auch jetzt noch schwierig zu sagen, ob sie die Wahrheit sagt. Aber wir versuchen es miteinander.</value>
+    <value>Ich meine, es ist auch jetzt noch schwer zu sagen, ob sie die Wahrheit spricht. Aber wir versuchen es miteinander.</value>
   </data>
   <data name="Yesterday_I_even_cooked_pasta_for_her" xml:space="preserve">
     <value>Gestern habe ich sogar Nudeln für die gekocht.</value>
@@ -181,13 +181,13 @@
     <value>Ich versuche mir einzureden, dass sie nicht mehr lügt, und dass wir das alles mittlerweile überwunden hätten. Aber es ist schwer, das mit Sicherheit zu sagen.</value>
   </data>
   <data name="I_know_you_keep_telling_me_I_should_just_move_on_but_its_just" xml:space="preserve">
-    <value>Ich weiß dass Sie mir immer sagen ich sollte einfach weitermachen, aber...</value>
+    <value>Ich weiß, dass Sie mir immer sagen ich sollte einfach weitermachen, aber...</value>
   </data>
   <data name="I_dont_know_if_I_ever_will_be_able_to_trust_her_again_Not_completely" xml:space="preserve">
     <value>Ich weiß nicht, ob ich ihr jemals wieder vertrauen kann. Zumindest nicht vollständig.</value>
   </data>
   <data name="You_dont_just_move_on_from_something_like_that_you_know" xml:space="preserve">
-    <value>Man macht nach sowas nicht einfach weiter, verstehen Sie?</value>
+    <value>Man kann nach sowas nicht einfach weitermachen, verstehen Sie?</value>
   </data>
   <data name="But_do_you_really_think_shes_still_lying_to_you_Even_now" xml:space="preserve">
     <value>Aber glauben Sie wirklich, dass sie Sie immer noch anlügt? Sogar jetzt noch?</value>
@@ -223,7 +223,7 @@
     <value>Gerade letzte Woche sagte sie, sie ginge ins Fitnessstudio. Sie war schon seit Jahren nicht mehr im Fitnessstudio.</value>
   </data>
   <data name="I_thought_I_could_let_it_go_but_I_couldnt" xml:space="preserve">
-    <value>Ich dachte, ich könnte es gut sein lassen, aber das konnte ich nicht.</value>
+    <value>Ich glaubte, ich könnte es gut sein lassen, aber das konnte ich nicht.</value>
   </data>
   <data name="So_you_didnt_let_her_go" xml:space="preserve">
     <value>Also ließen Sie sie nicht gehen?</value>
@@ -250,7 +250,7 @@
     <value>Aber Sie vertrauen ihr immer noch nicht.</value>
   </data>
   <data name="No_I_think_this_was_just_a_rare_instance_of_honesty_for_her" xml:space="preserve">
-    <value>Nein. Ich denke, das war nur ein seltenes Beispiel an Ehrlichkeit.</value>
+    <value>Nein. Ich denke, das war nur ein seltenes Beispiel von Ehrlichkeit.</value>
   </data>
   <data name="And_who_knows_Maybe_she_even_knew_I_was_following_her_after_all" xml:space="preserve">
     <value>Und wer weiß? Vielleicht hatte sie doch bemerkt, dass ich ihr folgte.</value>
@@ -265,16 +265,16 @@
     <value>Vielleicht eines Tages...</value>
   </data>
   <data name="Any_love_I_had_for_her_is_just_getting_slowly_destroyed_by_what_she_did" xml:space="preserve">
-    <value>Jegliche Liebe die ich für sie empfand wird langsam von dem zerstört, was sie getan hat.</value>
+    <value>Jegliche Liebe, die ich für sie empfand, wird langsam von dem zerstört, was sie getan hat.</value>
   </data>
   <data name="I_just_dont_think_I_can_get_over_this" xml:space="preserve">
     <value>Ich glaube nicht, dass jemals darüber hinweg komme.</value>
   </data>
   <data name="I_know_there_was_a_point_where_Cynthia_and_I_were_well_we_were_really_happy" xml:space="preserve">
-    <value>Ich weiß da gab es einen Zeitpunkt an dem Cynthia und ich... nun, wirklich glücklich waren.</value>
+    <value>Ich weiß, da gab es einen Zeitpunkt an dem Cynthia und ich... nun, wirklich glücklich waren.</value>
   </data>
   <data name="She_was_my_best_friend_and_I_would_have_trusted_her_with_my_life_We_did_everything_together_Sometimes_I_think_back_on_that" xml:space="preserve">
-    <value>Sie war meine beste Freundin und ich hätte ihr mein Leben anvertraut. Wir taten alles zusammen. Ab und zu denke ich daran zurück.</value>
+    <value>Sie war meine beste Freundin und ich hätte ihr mein Leben anvertraut. Wir machten alles zusammen. Ab und zu denke ich daran zurück.</value>
   </data>
   <data name="We_had_one_day_not_long_before_Landon_was_born_when_we_were_supposed_to_be_out_getting_some_decorations_for_our_baby_shower" xml:space="preserve">
     <value>Kurz vor Landon's Geburt hatten wir einen Tag an dem wir Dekorationen für die Baby-Party organisieren sollten...</value>
@@ -304,7 +304,7 @@
     <value>Und haben Sie vor, für ihn da zu sein?</value>
   </data>
   <data name="The_two_arent_exactly_mutually_exclusive_I_dont_know_I_dont_really_want_to_talk_about_him_right_now" xml:space="preserve">
-    <value>Die beiden schließen sich nicht aus. Ich weiß es nicht. Ich möchte jetzt wirklich nicht über ihn sprechen.</value>
+    <value>Ich weiß es nicht. Ich möchte jetzt wirklich nicht über ihn sprechen.</value>
   </data>
   <data name="Of_course_Im_sorry_Well_save_that_for_another_session" xml:space="preserve">
     <value>Natürlich, das tut mir leid. Das holen wir in einer anderen Sitzung nach.</value>
@@ -319,7 +319,7 @@
     <value>Wie waren Sie denn früher?</value>
   </data>
   <data name="The_kind_of_people_that_would_sneak_out_of_our_own_wedding_reception_just_to_make_out_and_get_something_greasy_to_eat" xml:space="preserve">
-    <value>Die Art Leute, die sich während ihrer eigenen Hochzeit davonschlichen, nur um miteinander rumzumachen und sich etwas fetthaltiges zu essen zu besorgen.</value>
+    <value>Die Art Leute, die sich während ihrer eigenen Hochzeit davonschlichen, nur um miteinander rumzumachen und sich etwas Ungesundes zu essen zu besorgen.</value>
   </data>
   <data name="People_who_went_camping_and_rode_bikes_together_and_watched_shitty_movies_together_just_to_make_fun_of_them" xml:space="preserve">
     <value>Leute die campen gingen, gemeinsam Fahrrad fuhren, und sich schlechte Filme ansehen, um sich darüber lustig zu machen.</value>
@@ -340,7 +340,7 @@
     <value>Haben Sie keine guten Erinnerungen mit ihr? Etwas, das Sie vom Gegenteil überzeugen könnte?</value>
   </data>
   <data name="Of_course_I_have_good_memories_I_married_the_woman_for_gods_sakes" xml:space="preserve">
-    <value>Natürlich habe ich gute Erinnerungen. Ich heiratete diese Frau, um Himmels willen.</value>
+    <value>Natürlich habe ich gute Erinnerungen. Ich heiratete diese Frau, um Himmels Willen.</value>
   </data>
   <data name="I_just_dont_think_theres_even_a_chance_well_go_back_to_the_way_things_were_Not_now" xml:space="preserve">
     <value>Ich glaube einfach nicht, dass es auch nur die kleinste Chance gibt, dass es wieder so wird, wie früher. Nicht jetzt.</value>
@@ -355,6 +355,6 @@
     <value>Und wie denken Sie gerade über Landon?</value>
   </data>
   <data name="I_think_Id_prefer_we_save_that_for_another_session_Doctor_" xml:space="preserve">
-    <value>Ich denke wir sparen uns das für eine andere Sitzung auf, Doktor.</value>
+    <value>Ich denke, wir sparen uns das für eine andere Sitzung auf, Doktor.</value>
   </data>
 </root>

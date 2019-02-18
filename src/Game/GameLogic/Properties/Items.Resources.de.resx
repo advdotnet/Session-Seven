@@ -235,10 +235,10 @@
     <value>Ich fasse einfach nicht, was gerade passiert ist...</value>
   </data>
   <data name="It_broke_in_two_parts" xml:space="preserve">
-    <value>Sie ist in zwei Stücke auseinandergebrochen.</value>
+    <value>Sie ist in zwei Stücke gebrochen.</value>
   </data>
   <data name="The_two_broken_parts_are_utterly_useless" xml:space="preserve">
-    <value>Die auseinandergebrochenen Stücke sind ganz und gar nutzlos.</value>
+    <value>Die Überreste sind ganz und gar nutzlos.</value>
   </data>
   <data name="Unreliable_garbage" xml:space="preserve">
     <value>Unzuverlässiger Schrott.</value>
@@ -292,7 +292,7 @@
     <value>Ich wusste, dass er Probleme in seiner alten Schule hatte, aber das...</value>
   </data>
   <data name="I_thought_we_changed_schools_because_he_was_getting_bullied_Why_would_Cynthia_keep_this_letter_a_secret_from_me" xml:space="preserve">
-    <value>Ich dachte wir haben die Schulen gewechselt, weil er gemobbt wurde... Warum würde Cynthia diesen Brief vor mir versteckt halten?</value>
+    <value>Ich dachte, wir haben die Schulen gewechselt, weil er gemobbt wurde... Warum würde Cynthia diesen Brief vor mir versteckt halten?</value>
   </data>
   <data name="Envelope_Envelope_Envelope" xml:space="preserve">
     <value>Umschlag</value>
@@ -592,7 +592,7 @@
     <value>Herr Schmidt: » Aber ich war mir ja nicht mal sicher, wie ich da rein geraten war. «</value>
   </data>
   <data name="Mr_Schmidt__I_got_frustrated_I_tried_to_remember_what_I_was_doing_before_it_all_started_" xml:space="preserve">
-    <value>Herr Schmidt: » Ich war frustriert. Ich versuchte mich daran zu erinnern was war, bevor all das angefangen hatte. «</value>
+    <value>Herr Schmidt: » Ich war frustriert. Ich versuchte mich daran zu erinnern was war, bevor das alles angefangen hatte. «</value>
   </data>
   <data name="Mr_Schmidt__Before_I_was_there_you_know_How_did_it_come_to_this_And_where_was_my_family_" xml:space="preserve">
     <value>Herr Schmidt: » Bevor ich in diesem Loch war, verstehen Sie? Wie war es dazu gekommen? Und wo war meine Familie? «</value>
@@ -604,9 +604,9 @@
     <value>Herr Schmidt: » Ich blieb ruhig. So einfach gab ich nicht auf. «</value>
   </data>
   <data name="Mr_Schmidt__I_did_my_best_to_figure_out_what_was_going_on_I_wasnt_just_going_to_sit_down_and_take_it_" xml:space="preserve">
-    <value>Herr Schmidt: » Ich gab mein bestes um herauszufinden, was los war. Ich wollte es nicht einfach so hinnehmen. «</value>
+    <value>Herr Schmidt: » Ich gab mein Bestes, um herauszufinden, was los war. Ich wollte es nicht einfach so hinnehmen. «</value>
   </data>
   <data name="Mr_Schmidt__Especially_not_if_my_family_was_in_danger_somewhere_else_" xml:space="preserve">
-    <value>Herr Schmidt: » Insbesondere nicht, wenn meine Familie woanders in Gefahr war. «</value>
+    <value>Herr Schmidt: » Insbesondere nicht, wenn meine Familie in Gefahr war. «</value>
   </data>
 </root>

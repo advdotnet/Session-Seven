@@ -63,43 +63,59 @@ namespace SessionSeven.GUI.Interaction
             Visible = false;
         }
 
-        public void OnEntityClick(Entity entity, Vector2 mouse)
+        public void OnEntityClick(Entity entity, Vector2 mouse, MouseButton button)
         {
-            var EntityChanged = (Primary != entity);
+            var PrimaryEntityChanged = (Primary != entity);
 
             if (null == entity)
             {
                 return;
             }
 
-            if (null == Primary || !Verb.Ditransitive)
+            var CombinableComponent = (Primary ?? entity).Get<Combinable>();
+            var GivableComponent = (Primary ?? entity).Get<Givable>();
+            var Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
+            var Givable = (null != GivableComponent && GivableComponent.IsGivable);
+            var CanTriggerPrimaryAction = !Verb.Ditransitive || (!Combinable && Verb.Equals(Verbs.Use)) || (!Givable && Verb.Equals(Verbs.Give));
+
+            if (null == Primary || CanTriggerPrimaryAction)
             {
                 Primary = entity;
             }
             else
             {
+                if (Secondary != null && Secondary != entity)
+                {
+                    Game.Ego.Stop();
+                    Reset();
+                    return;
+                }
                 Secondary = entity;
             }
 
-            var CombinableComponent = Primary.Get<Combinable>();
-            var GivableComponent = Primary.Get<Givable>();
-            bool Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
-            bool Givable = (null != GivableComponent && GivableComponent.IsGivable);
-
             Tree.GUI.Interaction.ActionTextLabel.Color = Color.Gray;
 
-            if (!Verb.Ditransitive || Secondary != null || (!Combinable && Verb.Equals(Verbs.Use)) || (!Givable && Verb.Equals(Verbs.Give)))
+            if (button == MouseButton.Right && null == Secondary)
             {
-                var getFor = Verb.Ditransitive && ((Combinable && Verb.Equals(Verbs.Use)) || (Givable && Verb.Equals(Verbs.Give))) ? Primary : Game.Ego;
+                SelectVerb(Verbs.Look);
+                Primary = entity;
+                TriggerInteraction(entity, Verbs.Look, Game.Ego, mouse, PrimaryEntityChanged);
+
+                return;
+            }
+
+            if (Secondary != null || CanTriggerPrimaryAction)
+            {
+                var getFor = !CanTriggerPrimaryAction ? Primary : Game.Ego;
 
                 // check for specific interaction (getFor -> entity)
-                if (TriggerInteraction(entity, Verb, getFor, mouse, EntityChanged))
+                if (TriggerInteraction(entity, Verb, getFor, mouse, PrimaryEntityChanged))
                 {
                     return;
                 }
 
                 // interaction (entity -> any)
-                if (TriggerInteraction(Primary, Verb, Any.Object, mouse, EntityChanged))
+                if (TriggerInteraction(Primary, Verb, Any.Object, mouse, PrimaryEntityChanged))
                 {
                     return;
                 }
@@ -116,7 +132,7 @@ namespace SessionSeven.GUI.Interaction
         {
             Game.Ego.Get<Scripts>().Clear();
             Game.Ego.Get<Text>().Clear();
-            Game.Ego.Get<Transform>().State = Game.Ego.Get<Transform>().State.Remove(State.Talking);
+            Game.Ego.Get<Transform>().RemoveState(State.Talking);
             Game.Ego.Get<SpriteCustomAnimation>().StopAnimation();
 
             if (entity is ItemBase)
@@ -147,7 +163,19 @@ namespace SessionSeven.GUI.Interaction
 
                 if (Interactions.TryGetValue(verb, out Fn))
                 {
+                    if (entity is ItemBase)
+                    {
+                        Game.Ego.Stop();
+                    }
+                    else
+                    {
+                        Game.Ego.Get<Scripts>().Clear();
+                    }
                     Fn(new InteractionContext(Game.Ego, Primary, Secondary, verb));
+                    if (!World.Interactive)
+                    {
+                        DoUpdateLabel = true;
+                    }
                     return true;
                 }
             }
@@ -165,6 +193,7 @@ namespace SessionSeven.GUI.Interaction
             return false;
         }
 
+        bool DoUpdateLabel = false;
         public readonly Rectangle ClickableRegion = new Rectangle(0, 0, Game.VIRTUAL_WIDTH, InteractionBar.HEIGHT);
 
         private bool IsNullOrInteractionbar(Entity entity)
@@ -186,20 +215,24 @@ namespace SessionSeven.GUI.Interaction
         public void OnMouseUp(Vector2 position, MouseButton button)
         {
             var OUM = World.Get<STACK.Components.Mouse>().ObjectUnderMouse;
+            var isNullOrInteractionBar = IsNullOrInteractionbar(OUM);
 
-            if (IsNullOrInteractionbar(OUM) && button == MouseButton.Left)
+            if (isNullOrInteractionBar)
             {
-                if (!Game.Ego.Inventory.Visible || ClickableRegion.Contains(position))
+                if (MouseButton.Left == button)
                 {
-                    Game.Ego.Get<Scripts>().Remove(ActorScripts.GOTOSCRIPTID);
-                    Game.Ego.GoTo(Vector2.Transform(position, Game.Ego.DrawScene.Get<Camera>().TransformationInverse), Directions8.None, Reset);
+                    if (!Game.Ego.Inventory.Visible || ClickableRegion.Contains(position))
+                    {
+                        Game.Ego.Get<Scripts>().Clear();
+                        Game.Ego.GoTo(Vector2.Transform(position, Game.Ego.DrawScene.Get<Camera>().TransformationInverse), Directions8.None, Reset);
+                        Reset();
+                    }
+                }
+                else
+                {
+                    Game.Ego.Stop();
                     Reset();
                 }
-            }
-            else if (IsNullOrInteractionbar(OUM) && button == MouseButton.Right)
-            {
-                Game.Ego.Stop();
-                Reset();
             }
             else if (OUM is VerbButton)
             {
@@ -216,7 +249,7 @@ namespace SessionSeven.GUI.Interaction
             }
             else
             {
-                OnEntityClick(OUM, position);
+                OnEntityClick(OUM, position, button);
             }
         }
 
@@ -232,16 +265,23 @@ namespace SessionSeven.GUI.Interaction
             }
         }
 
+        public void UpdateLabel()
+        {
+            DoUpdateLabel = true;
+        }
+
         public override void OnUpdate()
         {
             Tree.GUI.Interaction.Verbs.HighlightedVerb = (Verb.Equals(Verbs.Walk) ? null : Verb);
 
-            if (Tree.GUI.Dialog.Menu.State != Dialog.DialogMenuState.Closed || !World.Interactive)
+            if (Tree.GUI.Dialog.Menu.State != Dialog.DialogMenuState.Closed || (!World.Interactive && !DoUpdateLabel))
             {
                 base.OnUpdate();
 
                 return;
             }
+
+            DoUpdateLabel = false;
 
             var Pick = World.Get<STACK.Components.Mouse>().ObjectUnderMouse;
             var Label = Tree.GUI.Interaction.ActionTextLabel;
@@ -249,12 +289,12 @@ namespace SessionSeven.GUI.Interaction
 
             var CombinableComponent = Primary?.Get<Combinable>();
             var GivableComponent = Primary?.Get<Givable>();
-            bool Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
-            bool Givable = (null != GivableComponent && GivableComponent.IsGivable);
+            var Combinable = (null != CombinableComponent && CombinableComponent.IsCombinable);
+            var Givable = (null != GivableComponent && GivableComponent.IsGivable);
 
-            bool PickedScrollButton = (Pick == Tree.GUI.Interaction.ScrollDownButton || Pick == Tree.GUI.Interaction.ScrollUpButton);
+            var PickedScrollButton = (Pick == Tree.GUI.Interaction.ScrollDownButton || Pick == Tree.GUI.Interaction.ScrollUpButton);
 
-            if (Pick is VerbButton)
+            if (Pick is VerbButton && World.Interactive)
             {
                 Label.ActionText = Pick.Get<Hotspot>().Caption;
                 Tree.GUI.Interaction.Verbs.HighlightedVerb = ((VerbButton)Pick).Verb;
