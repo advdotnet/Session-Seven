@@ -85,18 +85,20 @@ namespace SessionSeven.Actors
                 Get<SpriteData>().Color = new Color(255, 255, 255, TimeToLive / 2);
             }
 
-            if (UpdateCount < 11)
+            if (UpdateCount <= 11)
             {
                 UpdateCount++;
                 var Displacement = GetDisplacement(UpdateCount);
 
                 Get<Transform>().Position = TargetPosition + Displacement;
-                Get<Interaction>().Position = Get<Transform>().Position;
-            }
-            else if (UpdateCount == 11)
-            {
-                UpdateCount++;
-                Get<Sprite>().CurrentFrame = TargetFrame;
+                if (UpdateCount < 11)
+                {
+                    Get<Interaction>().Position = Get<Transform>().Position;
+                }
+                else
+                {
+                    Get<Sprite>().CurrentFrame = TargetFrame;
+                }
             }
 
             base.OnUpdate();
@@ -116,7 +118,9 @@ namespace SessionSeven.Actors
                 case 7: return new Vector2(0, -15);
                 case 8: return new Vector2(0, -10);
                 case 9: return new Vector2(0, -5);
-                default: return Vector2.Zero;
+                case 10: return new Vector2(0, -5);
+                default:
+                    return new Vector2(2, 0);
             }
         }
     }
