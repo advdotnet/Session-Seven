@@ -415,7 +415,7 @@
     <value>Da sind ein Briefumschlag und eine Batterie in der Schublade.</value>
   </data>
   <data name="The_key_works_The_drawer_is_unlocked_now" xml:space="preserve">
-    <value>He, der Schlüssel passt! Die Schublade ist jetzt aufgeschlossen.</value>
+    <value>Der Schlüssel passt! Die Schublade ist jetzt aufgeschlossen.</value>
   </data>
   <data name="drilling_machine" xml:space="preserve">
     <value>Bohrmaschine</value>
@@ -733,7 +733,7 @@
     <value>Regal</value>
   </data>
   <data name="This_bookcase_is_mostly_made_up_of_my_and_Cynthias_old_college_textbooks" xml:space="preserve">
-    <value>In diesem Regal sind hauptsächlich meine und Cynthias alten Bücher von der Universität.</value>
+    <value>In diesem Regal sind hauptsächlich Cynthias und meine alten Bücher von der Universität.</value>
   </data>
   <data name="This_is_to_big_to_carry_around" xml:space="preserve">
     <value>Das ist etwas zu groß, um es herumzutragen.</value>
@@ -886,7 +886,7 @@
     <value>Verdammt, ich habe Landon tausend mal gesagt, dass er alles, was er sich ausleiht, wieder zurückbringen soll.</value>
   </data>
   <data name="Landon_drew_something_in_the_corner_but_its_too_faded_now_to_make_out_what_its_supposed_to_be" xml:space="preserve">
-    <value>Landon hat da etwas in die Ecke gekritzelt, aber es ist zu verblasst um noch etwas erkennen zu können.</value>
+    <value>Landon hat da etwas in die Ecke gekritzelt, aber es ist zu sehr verblasst um noch etwas erkennen zu können.</value>
   </data>
   <data name="This_bulletin_board_is_covered_in_reminders_for_meetings_with_the_realtor_the_bank_and_Landons_teachers_as_well_as_an_alphabetized_shopping_list_of_Cynthias" xml:space="preserve">
     <value>Diese Pinnwand ist voller Erinnerungen für Treffen mit dem Makler, der Bank und Landons Lehrer, sowie einer nach dem Alphabet geordneten Einkaufsliste von Cynthia.</value>
@@ -904,7 +904,7 @@
     <value>Ich komme nicht durch die Sicherheitsgitter.</value>
   </data>
   <data name="Thought_we_got_these_things_to_keep_people_out_not_in" xml:space="preserve">
-    <value>Ich dachte die sollen Leute fernhalten, nicht einsperren.</value>
+    <value>Ich dachte, die sollen Leute fernhalten, nicht einsperren.</value>
   </data>
   <data name="wooden_box" xml:space="preserve">
     <value>hölzerne Box</value>
@@ -1024,7 +1024,7 @@
     <value>Hier sind jede Menge verschieden farbiger Ordner, voller Dokumente für das neue Haus, alte Steuerdokumente, und diverse Unterlagen für Landon.</value>
   </data>
   <data name="I_didnt_realize_how_much_Cynthia_was_handling_on_her_own_while_I_was_away_at_work" xml:space="preserve">
-    <value>Mir war nicht klar um wie viel Cynthia sich alleine gekümmert hat, als ich arbeiten war.</value>
+    <value>Mir war bisher gar nicht klar, um wie viel Cynthia sich alleine gekümmert hat, als ich arbeiten war.</value>
   </data>
   <data name="A_quality_screwdriver_that_does_not_break_on_the_first_screw" xml:space="preserve">
     <value>Ein Qualitäts-Schraubenzieher, der nicht nach der ersten Schraube kaputt geht.</value>

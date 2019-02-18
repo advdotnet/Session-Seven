@@ -135,7 +135,7 @@ namespace SessionSeven.Cutscenes
 
             if (session == Sessions.Seven)
             {
-                yield break; ;
+                yield break;
             }
 
             var AlreadyFinishedSessions = FinishedSessionsCount;

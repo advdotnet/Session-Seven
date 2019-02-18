@@ -87,6 +87,13 @@ namespace SessionSeven
             Tree.World.Get<AudioManager>().PlaySong(fileName);
         }
 
+        public static void PlayBasementEndSong()
+        {
+            StopSong();
+            PlaySong(content.audio.basementend);
+            Tree.World.Get<AudioManager>().RepeatSong = false;
+        }
+
         /// <summary>
         /// Enqueues a song.        
         /// </summary>

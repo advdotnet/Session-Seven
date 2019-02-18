@@ -2,7 +2,6 @@
 using SessionSeven.Entities;
 using SessionSeven.GUI.Interaction;
 using STACK;
-using STACK.Components;
 using System;
 using System.Collections;
 using Items_Res = global::SessionSeven.Properties.Items_Resources;
@@ -43,8 +42,7 @@ namespace SessionSeven.InventoryItems
 
                 if (StartSession)
                 {
-                    Game.PlaySong(content.audio.basementend);
-                    World.Get<AudioManager>().RepeatSong = false;
+                    Game.PlayBasementEndSong();
                 }
                 else
                 {

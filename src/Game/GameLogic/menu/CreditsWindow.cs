@@ -21,17 +21,18 @@ namespace SessionSeven
             CreditsWindow.StayOnTop = true;
             CreditsWindow.Width = MainMenuBackground.ClientWidth;
 
-            int i = 0;
+            var i = 0;
+            var NLNL = new string[] { Environment.NewLine + Environment.NewLine };
 
             foreach (var CreditsText in Cutscenes.Director.GetCreditTexts(false))
             {
                 var Top = 110 + i * 23 + (i > 3 ? 23 : 0);
-                var Text = CreditsText.Split(new string[] { System.Environment.NewLine + System.Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                var Text = CreditsText.Split(NLNL, StringSplitOptions.RemoveEmptyEntries);
                 if (Text.Length == 2)
                 {
                     var Label = new Label(gui);
                     Label.Init();
-                    Label.Width = 250;
+                    Label.Width = 300;
                     Label.Alignment = Alignment.MiddleLeft;
                     Label.TextColor = Color.Black;
                     Label.Parent = CreditsWindow;
@@ -41,7 +42,7 @@ namespace SessionSeven
 
                     Label = new Label(gui);
                     Label.Init();
-                    Label.Width = 250;
+                    Label.Width = 300;
                     Label.Alignment = Alignment.MiddleRight;
                     Label.TextColor = new Color(188, 22, 0, 255);
                     Label.Parent = CreditsWindow;

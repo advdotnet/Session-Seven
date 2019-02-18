@@ -142,7 +142,7 @@
     <value>Ich konnte seitdem nicht mehr richtig schlafen.</value>
   </data>
   <data name="Now_Ryan_I_know_weve_been_avoiding_this_subject_for_a_while_but" xml:space="preserve">
-    <value>Nun, Ryan, ich weiß dass wir dieses Thema eine Weile übergingen, aber...</value>
+    <value>Nun, Ryan, ich weiß, dass wir dieses Thema eine Weile übergingen, aber...</value>
   </data>
   <data name="I_know_I_know_We_should_talk_about_him_We_should" xml:space="preserve">
     <value>Ich weiß doch, ich weiß. Wir sollten über ihn sprechen.</value>
@@ -205,7 +205,7 @@
     <value>Es ist gut, dass Sie sein Bestes im Sinn haben.</value>
   </data>
   <data name="I_know_that_as_a_parent_with_mental_illness_it_can_be_difficult_to_handle_when_your_child_is_also_diagnosed" xml:space="preserve">
-    <value>Ich weiß dass es für ein Elternteil mit einer psychischen Erkrankung sehr schwierig sein kann, wenn das Kind auch diagnostiziert wird.</value>
+    <value>Ich weiß, dass es für ein Elternteil mit einer psychischen Erkrankung sehr schwierig sein kann, wenn das Kind auch positiv diagnostiziert wird.</value>
   </data>
   <data name="Its_hard_not_to_feel_guilty_you_know_Like_maybe_if_Id_done_something_differently" xml:space="preserve">
     <value>Es ist ist schwer, sich nicht schuldig zu fühlen, verstehen Sie? Vielleicht sähe die Welt anders aus, wenn man irgendetwas anders gemacht hätte...</value>
@@ -277,7 +277,7 @@
     <value>Ich meine es war immer schon schwierig auf ihn zuzugehen. Sogar als er noch ein Baby war.</value>
   </data>
   <data name="All_he_did_was_stare_Stare_or_cry_when_he_was_hungry_It_was_unnerving" xml:space="preserve">
-    <value>Alles was er tat war starren. Starren oder weinen wenn er Hunger hatte. Es war nervtötend.</value>
+    <value>Alles, was er tat, war zu starren. Starren oder weinen wenn er Hunger hatte. Es war nervtötend.</value>
   </data>
   <data name="You_mean_to_say_he_was_slow_to_show_emotion" xml:space="preserve">
     <value>Sie meinen er hat lange gebraucht, um Emotionen zu zeigen?</value>
@@ -319,7 +319,7 @@
     <value>Die Pfanne stürzte herunter, direkt auf Landon zu. Vor Schreck streckte ich meine Hand aus.</value>
   </data>
   <data name="I_hit_the_pan_out_of_the_way_in_time_but_not_before_it_broke_two_of_my_fingers" xml:space="preserve">
-    <value>Ich konnte die Pfanne gerade noch rechtzeitig abwenden, aber ich brach mit dabei zwei Finger.</value>
+    <value>Ich konnte die Pfanne gerade noch rechtzeitig abwenden, aber ich brach mir dabei zwei Finger.</value>
   </data>
   <data name="It_made_the_most_awful_sound" xml:space="preserve">
     <value>Es machte ein grauenhaftes Geräusch.</value>
@@ -340,10 +340,10 @@
     <value>Ich stand da und schrie vor Schmerzen, und er lachte. Er fand es zum Brüllen.</value>
   </data>
   <data name="Maybe_you_were_making_a_funny_face" xml:space="preserve">
-    <value>Vielleicht haben Sie dabei lustig ihr Gesicht verzogen?</value>
+    <value>Vielleicht haben Sie dabei ihr Gesicht verzogen, und er fand es lustig?</value>
   </data>
   <data name="Thats_what_Cynthia_thought_when_I_told_her_but_I_dont_think_thats_it_I_think_he_genuinely_liked_it" xml:space="preserve">
-    <value>Das dachte Cynthia auch als ich ihr davon erzählte, aber ich glaube nicht, dass es das war. Ich denke er hat die Situation ernsthaft genossen.</value>
+    <value>Das dachte Cynthia auch als ich ihr davon erzählte, aber ich glaube nicht, dass es das war. Ich denke, er hat die Situation ernsthaft genossen.</value>
   </data>
   <data name="The_loud_noises" xml:space="preserve">
     <value>Die lauten Geräusche?</value>
@@ -373,7 +373,7 @@
     <value>Sehen Sie, fast jedes Wochenende wenn er sich unbeobachtet fühlt, geht Landon in ein Waldstück hinter unserem Haus, und kommt einige Stunden lang nicht zurück.</value>
   </data>
   <data name="I_had_no_idea_what_he_was_doing_back_there_I_thought_maybe_he_was_meeting_a_girl_or_maybe_doing_drugs_with_some_friends_I_didnt_know_about" xml:space="preserve">
-    <value>Ich hatte keine Ahnung was er dort trieb. Ich dachte er trifft sich vielleicht mit einem Mädchen, oder nahm Drogen mit Freunden von denen ich nichts wusste.</value>
+    <value>Ich hatte keine Ahnung, was er dort trieb. Ich dachte, er trifft sich vielleicht mit einem Mädchen, oder nahm Drogen mit Freunden von denen ich nichts wusste.</value>
   </data>
   <data name="I_dont_know_that_I_really_would_have_minded_if_that_was_what_he_was_doing_back_there_because_at_least_that_would_mean_hes_spending_time_with_someone" xml:space="preserve">
     <value>Das hätte mir auch wirklich nichts ausgemacht, wenn es so gewesen wäre, weil ich dann gewusst hätte, dass er dort wenigstens Zeit in Gesellschaft verbringt.</value>
@@ -433,7 +433,7 @@
     <value>Ryan, ich kann Sie nicht anlügen. Das... das ist besorgniserregendes Verhalten. Macht er das immer noch?</value>
   </data>
   <data name="I_think_thats_the_most_disturbing_part_about_all_of_this_for_me_strangely_enough" xml:space="preserve">
-    <value>Ich denke das ist seltsamerweise der beunruhigendste Teil der ganzen Geschichte für mich.</value>
+    <value>Ich denke, das ist seltsamerweise der beunruhigendste Teil der ganzen Geschichte für mich.</value>
   </data>
   <data name="He_stopped_That_same_day_that_I_went_after_him_he_quit_going_out_on_the_weekends" xml:space="preserve">
     <value>Er hat damit aufgehört. Seit diesem Tag, an dem ich ihm nachstellte, ging er an den Wochenenden nie mehr raus in den Wald.</value>
