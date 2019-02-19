@@ -240,7 +240,7 @@ namespace SessionSeven.Cutscenes
             }
 
             RyanEyesClosed.Blinking = false;
-            yield return Delay.Seconds(2f);
+            yield return Delay.Seconds(1.5f);
             Game.StopSkipping();
             yield return FadeOutScript();
 
@@ -252,7 +252,7 @@ namespace SessionSeven.Cutscenes
                     Game.Ego.EnterScene(Tree.SunSet.Scene);
                     Game.Ego.Get<Transform>().Position = new Microsoft.Xna.Framework.Vector2(403, 344);
                     yield return Game.WaitForSoundEffect(content.audio.birds);
-                    yield return FadeOutScript();
+                    yield return FadeOutScript(false, true);
                     break;
                 case ScoreType.Insanity:
                     Game.Ego.EnterScene(Tree.PaddedCell.Scene);
@@ -262,7 +262,7 @@ namespace SessionSeven.Cutscenes
                     yield return Game.Ego.GoTo(0, 349);
                     yield return Game.Ego.GoTo(640, 349);
                     yield return Game.Ego.GoTo(0, 349);
-                    var InnerScript = Get<Scripts>().Start(FadeOutScript());
+                    var InnerScript = Get<Scripts>().Start(FadeOutScript(false, true));
                     yield return Game.Ego.GoTo(640, 349);
                     yield return Script.WaitFor(InnerScript);
                     break;
@@ -273,13 +273,16 @@ namespace SessionSeven.Cutscenes
                     Game.Ego.SetWalkingPace(7);
                     yield return Game.Ego.GoTo(0, 334);
                     yield return Game.Ego.GoTo(640, 334);
-                    var InnerScriptJail = Get<Scripts>().Start(FadeOutScript());
+                    var InnerScriptJail = Get<Scripts>().Start(FadeOutScript(false, true));
                     yield return Game.Ego.GoTo(0, 334);
                     yield return Game.Ego.GoTo(640, 334);
                     yield return Script.WaitFor(InnerScriptJail);
 
                     break;
             }
+
+            Game.StopSong();
+            World.Get<AudioManager>().MusicVolume = 1;
 
             Tree.Actors.Scene.Enabled = false;
             Tree.Title.Scene.Visible = true;

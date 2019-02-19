@@ -70,7 +70,9 @@ namespace SessionSeven.InventoryItems
                 yield return 1;
             }
 
-            var StartSession = Game.Ego.Inventory.HasItem<Blanket>() && Tree.InventoryItems.Blanket.LookedAt;
+            var StartSession = Game.Ego.Inventory.HasItem<Blanket>() &&
+                Tree.InventoryItems.Blanket.LookedAt &&
+                !Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Three);
 
             using (Game.CutsceneBlock())
             {
