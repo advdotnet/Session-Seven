@@ -49,6 +49,7 @@ namespace SessionSeven.Basement
                     yield return Game.Ego.Use();
                     yield return Game.Ego.GoTo(this);
                     yield return Game.Ego.StartUse();
+                    Game.PlaySoundEffect(content.audio.socket_plugin_in);
                     Tree.Basement.DrillingMachineCable.PluggedIn = true;
                     yield return Game.Ego.StopUse();
                 }

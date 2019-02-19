@@ -53,23 +53,27 @@ namespace SessionSeven.Cutscenes
         GUI.Fader Fader { get { return Tree.GUI.Fader; } }
         Office.RyanEyesClosed RyanEyesClosed { get { return Tree.Office.RyanEyesClosed; } }
 
-        IEnumerator FadeInScript(bool hideFader = false)
+        IEnumerator FadeInScript(bool hideFader = false, bool fadeMusic = false)
         {
-            yield return FadeScript(true, hideFader);
+            yield return FadeScript(true, hideFader, fadeMusic);
         }
 
-        IEnumerator FadeOutScript(bool hideFader = false)
+        IEnumerator FadeOutScript(bool hideFader = false, bool fadeMusic = false)
         {
-            yield return FadeScript(false, hideFader);
+            yield return FadeScript(false, hideFader, fadeMusic);
         }
 
-        IEnumerator FadeScript(bool fadein, bool hideFader = false, int loops = 255)
+        IEnumerator FadeScript(bool fadein, bool hideFader = false, bool fadeMusic = false, int loops = 255)
         {
             Fader.Visible = true;
 
             for (int j = 0; j < loops; j++)
             {
                 Fader.Color = new Color(Color.Black, fadein ? 255 - j : j);
+                if (fadeMusic)
+                {
+                    World.Get<AudioManager>().MusicVolume = fadein ? (float)j / loops : 1 - (float)j / loops;
+                }
 
                 yield return 1;
             }
@@ -77,6 +81,11 @@ namespace SessionSeven.Cutscenes
             if (hideFader)
             {
                 Fader.Visible = false;
+            }
+
+            if (fadeMusic)
+            {
+                World.Get<AudioManager>().MusicVolume = fadein ? 1 : 0;
             }
         }
 
