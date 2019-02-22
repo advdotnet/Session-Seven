@@ -17,14 +17,17 @@ namespace SessionSeven
         Action ResetGUIFn;
         bool ResetInteractive, ResetGUI, WasSkippingEnabled;
 
-        public CutsceneDisposeControl(World world, Action resetGUIFn, bool resetInteractive = true, bool resetGUI = true)
+        public CutsceneDisposeControl(World world, Action resetGUIFn, bool resetInteractive = true, bool resetGUI = true, bool updateLabel = true)
         {
             World = world;
             ResetGUI = resetGUI;
             ResetGUIFn = resetGUIFn;
             ResetInteractive = resetInteractive;
             WasSkippingEnabled = IsSkippingEnabled();
-            ((GUI.Interaction.Scene)World.GetScene(Tree.GUI.Interaction.SceneID))?.UpdateLabel();
+            if (updateLabel)
+            {
+                ((GUI.Interaction.Scene)World.GetScene(Tree.GUI.Interaction.SceneID))?.UpdateLabel();
+            }
             World.Interactive = false;
 
             if (!WasSkippingEnabled)

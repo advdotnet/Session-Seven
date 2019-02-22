@@ -174,7 +174,7 @@ namespace SessionSeven.GUI.Interaction
                     Fn(new InteractionContext(Game.Ego, Primary, Secondary, verb));
                     if (!World.Interactive)
                     {
-                        DoUpdateLabel = true;
+                        UpdateLabel();
                     }
                     return true;
                 }

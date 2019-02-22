@@ -34,9 +34,9 @@ namespace SessionSeven
         /// <param name="resetInteractive">Set the interactive flag to true in the end</param>
         /// <param name="resetGUI">Reset the GUI in the end</param>
         /// <returns></returns>
-        public static IDisposable CutsceneBlock(bool resetInteractive = true, bool resetGUI = true)
+        public static IDisposable CutsceneBlock(bool resetInteractive = true, bool resetGUI = true, bool updateLabel = true)
         {
-            return new CutsceneDisposeControl(Tree.World, Tree.GUI.Interaction.Scene.Reset, resetInteractive, resetGUI);
+            return new CutsceneDisposeControl(Tree.World, Tree.GUI.Interaction.Scene.Reset, resetInteractive, resetGUI, updateLabel);
         }
 
         /// <summary>

@@ -22,7 +22,7 @@ namespace SessionSeven.InventoryItems
                 .Create()
                 .For(Game.Ego)
                     .Add(Verbs.Use, UseScript())
-                    .Add(Verbs.Look, LookScript())
+                    .Add(Verbs.Look, LookScript(true))
                 .For(Tree.InventoryItems.Scissors)
                     .Add(Verbs.Use, UseScissorsScript(), Game.Ego);
         }
@@ -31,12 +31,12 @@ namespace SessionSeven.InventoryItems
 
         public Script LookAt()
         {
-            return Game.Ego.StartScript(LookScript());
+            return Game.Ego.StartScript(LookScript(false));
         }
 
-        IEnumerator LookScript()
+        IEnumerator LookScript(bool updateLabel)
         {
-            using (Game.CutsceneBlock())
+            using (Game.CutsceneBlock(true, true, updateLabel))
             {
                 var StartSession = Game.Ego.Inventory.HasItem<Envelope>() && Tree.InventoryItems.Envelope.ReadLetter;
 
