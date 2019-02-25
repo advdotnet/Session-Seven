@@ -14,6 +14,12 @@ namespace SessionSeven.Cutscenes
     {
         AudioManager Audio { get { return World.Get<AudioManager>(); } }
 
+        IEnumerator StartMusicScript()
+        {
+            yield return Delay.Updates(30);
+            Game.PlaySong(content.audio.intro);
+        }
+
         IEnumerator SessionOneScript()
         {
             Game.StopSong();
@@ -30,7 +36,7 @@ namespace SessionSeven.Cutscenes
 
             yield return Delay.Seconds(1);
 
-            Game.PlaySong(content.audio.intro);
+            Get<Scripts>().Start(StartMusicScript());
 
             Tree.GUI.Interaction.Scene.Visible = false;
 
