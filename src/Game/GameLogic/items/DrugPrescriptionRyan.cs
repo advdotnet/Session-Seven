@@ -32,7 +32,8 @@ namespace SessionSeven.InventoryItems
 
         public IEnumerator LookScript()
         {
-            var StartSession = Game.Ego.Inventory.HasItem<GuitarStrings>();
+            var StartSession = Game.Ego.Inventory.HasItem<GuitarStrings>() &&
+                !Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Four);
 
             if (StartSession)
             {
