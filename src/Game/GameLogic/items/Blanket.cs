@@ -38,13 +38,15 @@ namespace SessionSeven.InventoryItems
         {
             using (Game.CutsceneBlock(true, true, updateLabel))
             {
-                var StartSession = Game.Ego.Inventory.HasItem<Envelope>() && Tree.InventoryItems.Envelope.ReadLetter;
+                var StartSession = Game.Ego.Inventory.HasItem<Envelope>() &&
+                    Tree.InventoryItems.Envelope.ReadLetter &&
+                    !Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Three);
 
                 if (StartSession)
                 {
                     Game.PlayBasementEndSong();
                 }
-                else
+                else if (!LookedAt)
                 {
                     Game.PlaySoundEffect(content.audio.puzzle);
                 }

@@ -50,7 +50,8 @@ namespace SessionSeven.Basement
             yield return Game.Ego.GoTo(this);
             using (Game.CutsceneBlock())
             {
-                var StartSession = Game.Ego.Inventory.HasItem<DrugPrescriptionRyan>() && Tree.InventoryItems.DrugPrescriptionRyan.LookedAt;
+                var StartSession = Game.Ego.Inventory.HasItem<DrugPrescriptionRyan>()
+                    && Tree.InventoryItems.DrugPrescriptionRyan.LookedAt;
 
                 if (!StartSession)
                 {
