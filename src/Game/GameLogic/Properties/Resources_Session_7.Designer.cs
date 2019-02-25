@@ -553,7 +553,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Laura Hubbes, Simon Tschirner, Stefan Dienst, Tanja Dienst, Thorsten Kraemer.
+        ///   Looks up a localized string similar to Laura Hubbes, Simon Tschirner, Stefan Dienst, Tanja Dienst, Thorsten Kraemer, Elanarae.
         /// </summary>
         internal static string LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer {
             get {
