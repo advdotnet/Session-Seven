@@ -1,4 +1,5 @@
-﻿using SessionSeven.GUI.Interaction;
+﻿using SessionSeven.Entities;
+using SessionSeven.GUI.Interaction;
 using STACK;
 using STACK.Components;
 using System;
@@ -40,10 +41,21 @@ namespace SessionSeven.Basement
         {
             return Interactions
                 .Create()
+                .For(Tree.InventoryItems.GuitarStrings)
+                    .Add(Verbs.Use, UseStringsScript(), Game.Ego)
                 .For(Game.Ego)
                     .Add(Verbs.Use, UseScript())
                     .Add(Verbs.Pick, PickScript())
                     .Add(Verbs.Look, LookScript());
+        }
+
+        IEnumerator UseStringsScript()
+        {
+            yield return Game.Ego.GoTo(this);
+            using (Game.CutsceneBlock())
+            {
+                yield return Game.Ego.Say(Basement_Res.The_strings_on_the_guitar_are_still_in_pristine_condition);
+            }
         }
 
         IEnumerator PickScript()

@@ -172,7 +172,7 @@
     <value>Ich knote eine Saite an den Ring oben.</value>
   </data>
   <data name="I_dontt_have_anything_to_knot_the_string_to" xml:space="preserve">
-    <value>Da ist nichts, woran ich den Ring befestigen könnte.</value>
+    <value>Da ist nichts, woran ich die Saite befestigen könnte.</value>
   </data>
   <data name="Cant_expand_it_any_further" xml:space="preserve">
     <value>Ich kann ihn nicht weiter auseinanderziehen.</value>
