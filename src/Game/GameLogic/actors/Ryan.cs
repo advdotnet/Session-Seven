@@ -22,9 +22,6 @@ namespace SessionSeven.Actors
         {
             Inventory = inventory;
 
-            AudioListener
-                .Create(this);
-
             CameraLocked
                 .Create(this);
 

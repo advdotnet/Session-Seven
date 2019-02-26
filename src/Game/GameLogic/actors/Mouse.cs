@@ -17,9 +17,6 @@ namespace SessionSeven.Actors
 
         public Mouse()
         {
-            AudioEmitter
-                .Create(this);
-
             Transform
                 .Create(this)
                 .SetPosition(STARTPOSITION)
@@ -163,8 +160,8 @@ namespace SessionSeven.Actors
                 {
                     Tree.Basement.NutsOnFloor.RemoveNut(NextTargetNut);
 
-                    Game.PlaySoundEffect(content.audio.mouse_eat, false, Get<AudioEmitter>(), Game.Ego.Get<AudioListener>());
-                    yield return PlayAnimation(ANIMATION_NAME_SNACK, false);
+                    Game.PlaySoundEffect(content.audio.mouse_eat);
+                    yield return PlayAnimation(ANIMATION_NAME_SNACK);
 
                     yield return Delay.Seconds(0.75f);
                 }
