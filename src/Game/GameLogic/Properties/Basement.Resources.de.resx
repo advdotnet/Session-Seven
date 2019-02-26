@@ -310,10 +310,10 @@
     <value>Cynthia würde mich umbringen.</value>
   </data>
   <data name="No_time_to_play" xml:space="preserve">
-    <value>Keine Zeit, herum zu spielen.</value>
+    <value>Keine Zeit, herumzuspielen.</value>
   </data>
   <data name="Cynthia_would_kill_me_if_she_could_see_the_mess_Ive_made_on_her_carpet" xml:space="preserve">
-    <value>Cynthia würde mich umbringen wenn sie sehen könnte, was für eine Sauerei ich auf ihrem Teppich veranstaltet habe.</value>
+    <value>Cynthia würde mich umbringen, wenn sie sehen könnte, was für eine Sauerei ich auf ihrem Teppich veranstaltet habe.</value>
   </data>
   <data name="I_hope_shes_okay" xml:space="preserve">
     <value>...ich hoffe es geht ihr gut.</value>
@@ -1058,5 +1058,8 @@
   </data>
   <data name="Cant_reach_the_item_in_the_back_with_this" xml:space="preserve">
     <value>Damit komme ich nicht ran.</value>
+  </data>
+  <data name="The_strings_on_the_guitar_are_still_in_pristine_condition" xml:space="preserve">
+    <value>Die Saiten der Gitarre funktionieren noch tadellos.</value>
   </data>
 </root>

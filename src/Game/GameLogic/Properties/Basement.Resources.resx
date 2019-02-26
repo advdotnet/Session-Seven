@@ -1039,4 +1039,7 @@
   <data name="Cant_reach_the_item_in_the_back_with_this" xml:space="preserve">
     <value>Can't reach the item in the back with this.</value>
   </data>
+  <data name="The_strings_on_the_guitar_are_still_in_pristine_condition" xml:space="preserve">
+    <value>The strings on the guitar are still in pristine condition.</value>
+  </data>
 </root>

@@ -2329,6 +2329,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The strings on the guitar are still in pristine condition..
+        /// </summary>
+        internal static string The_strings_on_the_guitar_are_still_in_pristine_condition {
+            get {
+                return ResourceManager.GetString("The_strings_on_the_guitar_are_still_in_pristine_condition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The tool is missing..
         /// </summary>
         internal static string The_tool_is_missing {
