@@ -13,7 +13,7 @@ namespace SessionSeven.Basement
     [Serializable]
     public class Carpet : Entity
     {
-        public const int Z = 1;
+        public const int Z = 2;
         public Carpet()
         {
             Interaction
@@ -30,7 +30,7 @@ namespace SessionSeven.Basement
 
             Transform
                 .Create(this)
-                .SetZ(Z + 1);
+                .SetZ(Z);
 
             Enabled = false;
         }
