@@ -68,17 +68,17 @@
     <Compile Include="actors\RyanVoice.cs" />
     <Compile Include="actors\Scene.cs" />
     <Compile Include="actors\Ryan.cs" />
-    <Compile Include="base\Components\Circle.cs" />
-    <Compile Include="base\Components\BatteryCompartment.cs" />
-    <Compile Include="base\Components\RandomCountdown.cs" />
-    <Compile Include="base\Components\Score.cs" />
-    <Compile Include="base\Components\DroneDisplacement.cs" />
-    <Compile Include="base\Components\TracerLine.cs" />
-    <Compile Include="base\Components\Givable.cs" />
-    <Compile Include="base\Components\Combinable.cs" />
+    <Compile Include="base\components\Circle.cs" />
+    <Compile Include="base\components\BatteryCompartment.cs" />
+    <Compile Include="base\components\RandomCountdown.cs" />
+    <Compile Include="base\components\Score.cs" />
+    <Compile Include="base\components\DroneDisplacement.cs" />
+    <Compile Include="base\components\TracerLine.cs" />
+    <Compile Include="base\components\Givable.cs" />
+    <Compile Include="base\components\Combinable.cs" />
     <Compile Include="base\CutsceneDisposeControl.cs" />
     <Compile Include="base\Scene.cs" />
-    <Compile Include="base\Components\ShadowRectangle.cs" />
+    <Compile Include="base\components\ShadowRectangle.cs" />
     <Compile Include="content\tree.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
