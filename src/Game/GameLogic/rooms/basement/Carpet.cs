@@ -86,7 +86,12 @@ namespace SessionSeven.Basement
             using (Game.CutsceneBlock())
             {
                 yield return Game.Ego.Say(Basement_Res.Cynthia_would_kill_me_if_she_could_see_the_mess_Ive_made_on_her_carpet);
-                if (Game.Ego.Get<Score>().GetScoreTypeResult() == ScoreType.Freedom)
+
+                var currentScoreIsFreedom = ScoreType.Freedom == Game.Ego.Get<Score>().GetScoreTypeResult();
+                var forgaveCynthia = Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Three) &&
+                    Tree.Cutscenes.Director.ForgaveCynthia;
+
+                if (currentScoreIsFreedom || forgaveCynthia)
                 {
                     yield return Game.Ego.Say(Basement_Res.I_hope_shes_okay);
                 }
