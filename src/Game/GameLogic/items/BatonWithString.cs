@@ -32,7 +32,7 @@ namespace SessionSeven.InventoryItems
         {
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say(Items_Res.Cant_reduce_it_with_the_string_tied_to_it);
+                yield return Game.Ego.Say(Items_Res.Cant_expand_it_any_further);
             }
         }
 
@@ -40,7 +40,7 @@ namespace SessionSeven.InventoryItems
         {
             using (Game.CutsceneBlock())
             {
-                yield return Game.Ego.Say(Items_Res.Cant_expand_it_any_further);
+                yield return Game.Ego.Say(Items_Res.Cant_reduce_it_with_the_string_tied_to_it);
             }
         }
 

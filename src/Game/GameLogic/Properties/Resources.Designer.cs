@@ -322,7 +322,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hanover School Headmaster’s Office
+        ///   Looks up a localized string similar to Hanover School Headmaster&apos;s Office
         ///January the 13th, 2017
         ///
         ///Dear Mr. and Mrs. Schmidt,
@@ -330,7 +330,7 @@ namespace SessionSeven.Properties {
         ///I am writing to inform you of an incident in which Landon was involved today at school. 
         ///Around 10:45 this morning, He was brought into my office by another teacher, who was 
         ///approached about him after class by a very distressed female student. The student claims 
-        ///to have been cornered by Landon in the girls’ lavatory before school this morning. He 
+        ///to have been cornered by Landon in the girls&apos; lavatory before school this morning. He 
         ///told me that he was just trying to ask her to formal, which the  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Letter_Text {
