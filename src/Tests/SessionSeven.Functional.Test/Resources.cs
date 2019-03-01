@@ -42,23 +42,28 @@ namespace SessionSeven.Functional.Test
         [TestMethod]
         public void AllResourceCharactersCanBeResolvedBySpriteFont()
         {
-            var GameSettings = new GameSettings()
+            var SupportedLanguages = new[] { "en-US", "de-DE", "es-ES" };
+
+            foreach (var Language in SupportedLanguages)
             {
-                Culture = "en-US"
-            };
-
-            using (var GraphicsDevice = Mock.CreateGraphicsDevice())
-            using (var Runner = new SessionSevenTestEngine(new TestGame(), Mock.Wrap(GraphicsDevice), Mock.Input, GameSettings))
-            {
-                Runner.StartGame();
-                Runner.AdvanceToInteractive();
-
-                var Text = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_ID).Get<Text>();
-
-                foreach (var ResourceString in GetResourceStrings())
+                var GameSettings = new GameSettings()
                 {
-                    // this throws if the sprite font cannot resolve a character
-                    Text.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
+                    Culture = Language
+                };
+
+                using (var GraphicsDevice = Mock.CreateGraphicsDevice())
+                using (var Runner = new SessionSevenTestEngine(new TestGame(), Mock.Wrap(GraphicsDevice), Mock.Input, GameSettings))
+                {
+                    Runner.StartGame();
+                    Runner.AdvanceToInteractive();
+
+                    var Text = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_ID).Get<Text>();
+
+                    foreach (var ResourceString in GetResourceStrings())
+                    {
+                        // this throws if the sprite font cannot resolve a character
+                        Text.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
+                    }
                 }
             }
         }
