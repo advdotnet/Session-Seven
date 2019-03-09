@@ -55,10 +55,6 @@ namespace SessionSeven.Cutscenes
 
             yield return RyanVoice.Say(GlblRes.Oh_I_dont_know_Odd_I_guess_I_just_dont_know_if_I_believe_it);
 
-            yield return Psychiatrist.Say(GlblRes.Aspergers_can_present_itself_in_many_different_ways_Ryan);
-
-            yield return RyanVoice.Say(GlblRes.Sure_I_know_it_can_its_just_youve_heard_the_way_I_describe_him_Does_it_sound_like_Aspergers_to_you);
-
             yield return Psychiatrist.Say(GlblRes.Well_his_antisocial_behavior_certainly_could_be_a_sign_Youve_told_me_he_has_lots_of_trouble_making_friends);
 
             yield return RyanVoice.Say(GlblRes.Yeah_he_does_At_least_I_think_he_does_He_never_brings_anybody_home_anyways_Do_you_think_hell_ever_get_any_better_about_that);
