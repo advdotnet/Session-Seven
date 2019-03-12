@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/ak4dcx226s1ctt59?svg=true)](https://ci.appveyor.com/project/advdotnet/session-seven)
 
 ## About
-*Session Seven* is a free point-and-click escape room game meant for fans of the old school 2D adventures. It is currently being in development. 
+*Session Seven* is a free point-and-click escape room game meant for fans of the old school 2D adventures. It has been released as of March the 1st 2019 and can be played on [Steam](https://store.steampowered.com/app/915720/Session_Seven/) or downloaded from the [official homepage](https://www.sessionseven.com). 
 Experienced players should take about one to two hours to complete the game on the first try. The puzzles are chosen to be a good compromise between easy and hard to target both casual and expert adventure gamers.
 The game and its engine are written in C#. You might be able to build the game, but running the game and executing some tests require additional content files which are only provided in the binary distribution.
 
