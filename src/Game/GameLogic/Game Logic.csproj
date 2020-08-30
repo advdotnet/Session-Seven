@@ -379,12 +379,14 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Basement.Resources.de.resx" />
     <EmbeddedResource Include="Properties\Basement.Resources.es.resx" />
+    <EmbeddedResource Include="Properties\Basement.Resources.pl.resx" />
     <EmbeddedResource Include="Properties\Basement.Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Basement.Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Items.Resources.de.resx" />
     <EmbeddedResource Include="Properties\Items.Resources.es.resx" />
+    <EmbeddedResource Include="Properties\Items.Resources.pl.resx" />
     <EmbeddedResource Include="Properties\Items.Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Items.Resources.Designer.cs</LastGenOutput>
@@ -393,11 +395,13 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.es.resx" />
+    <EmbeddedResource Include="Properties\Resources.pl.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources_Session_1.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_1.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources_Session_1.Designer.cs</LastGenOutput>
@@ -405,16 +409,22 @@
     <EmbeddedResource Include="Properties\Resources_Session_1.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_2.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_2.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_2.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_3.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_3.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_3.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_4.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_4.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_4.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_5.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_5.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_5.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_6.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_6.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_6.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_7.de.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_7.es.resx" />
+    <EmbeddedResource Include="Properties\Resources_Session_7.pl.resx" />
     <EmbeddedResource Include="Properties\Resources_Session_7.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources_Session_7.Designer.cs</LastGenOutput>

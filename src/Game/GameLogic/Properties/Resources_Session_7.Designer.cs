@@ -19,7 +19,7 @@ namespace SessionSeven.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources_Session_7 {
@@ -562,6 +562,15 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string MaciejKubiszewski_ {
+            get {
+                return ResourceManager.GetString("MaciejKubiszewski ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maybe talking to her again, with all of the truth laid out now, wouldn&apos;t be such a bad thing..
         /// </summary>
         internal static string Maybe_talking_to_her_again_with_all_of_the_truth_laid_out_now_wouldnt_be_such_a_bad_thing {
@@ -625,6 +634,15 @@ namespace SessionSeven.Properties {
             get {
                 return ResourceManager.GetString("Oh_I_think_so_These_places_arent_meant_for_permanent_residents_except_for_some_ex" +
                         "treme_cases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Polish_Translation {
+            get {
+                return ResourceManager.GetString("Polish_Translation", resourceCulture);
             }
         }
         
@@ -707,6 +725,15 @@ namespace SessionSeven.Properties {
         internal static string Thank_you_for_playing {
             get {
                 return ResourceManager.GetString("Thank_you_for_playing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string thanks {
+            get {
+                return ResourceManager.GetString("thanks", resourceCulture);
             }
         }
         

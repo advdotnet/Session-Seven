@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Eww" xml:space="preserve">
+    <value>Fu!</value>
+  </data>
+  <data name="A_cloth_bandage_roll_This_is_exactly_what_I_need_right_now" xml:space="preserve">
+    <value>Rolka płóciennego bandażu. Dokładnie tego teraz potrzebuję.</value>
+  </data>
+  <data name="I_should_better_cut_some_part_off" xml:space="preserve">
+    <value>Odetnę kawałek, bo może się przydać.</value>
+  </data>
+  <data name="Cant_use_the_whole_thing" xml:space="preserve">
+    <value>Nie mogę użyć całości.</value>
+  </data>
+  <data name="Bandages_Bandages_ClothBandageRoll" xml:space="preserve">
+    <value>rolka płóciennego bandażu</value>
+  </data>
+  <data name="AnimalSkeleton_AnimalSkeleton_AnimalSkeleton" xml:space="preserve">
+    <value>zwierzęcy szkielet</value>
+  </data>
+  <data name="A_cloth_strip_bandage" xml:space="preserve">
+    <value>Bandaż z tkaniny.</value>
+  </data>
+  <data name="I_should_better_use_the_cut_off_part" xml:space="preserve">
+    <value>Powinienem użyć odcięty kawałek.</value>
+  </data>
+  <data name="I_dressed_my_wound_already" xml:space="preserve">
+    <value>Opatrzyłem już swoją ranę.</value>
+  </data>
+  <data name="I_cut_off_a_part_of_it_already" xml:space="preserve">
+    <value>Już odciąłem z tego kawałek.</value>
+  </data>
+  <data name="I_dont_need_to_cut_any_more_off_of_that" xml:space="preserve">
+    <value>Nie muszę już więcej z tego odcinać.</value>
+  </data>
+  <data name="A_cloth_bandage_I_should_use_this_to_dress_my_wound" xml:space="preserve">
+    <value>Płócienny bandaż. Powinienem go użyć do opatrzenia mojej rany.</value>
+  </data>
+  <data name="I_dont_need_to_cut_that_off_any_further" xml:space="preserve">
+    <value>Nie muszę już dalej tego odcinać.</value>
+  </data>
+  <data name="That_should_be_enough" xml:space="preserve">
+    <value>Tyle powinno wystarczyć.</value>
+  </data>
+  <data name="HELLO_IS_SOMEBODY_THERE" xml:space="preserve">
+    <value>HALO, CZY KTOŚ TAM JEST?!</value>
+  </data>
+  <data name="Ive_got_to_find_a_way_out_of_here" xml:space="preserve">
+    <value>Muszę się stąd wydostać.</value>
+  </data>
+  <data name="BandageStrip_BandageStrip_ClothBandage" xml:space="preserve">
+    <value>płócienny bandaż</value>
+  </data>
+  <data name="Im_knotting_a_string_on_the_ring_at_the_very_top" xml:space="preserve">
+    <value>Przywiązuje sznurek do pierścienia, na samym czubku.</value>
+  </data>
+  <data name="I_dontt_have_anything_to_knot_the_string_to" xml:space="preserve">
+    <value>Nie mam do czego przywiązać sznurka.</value>
+  </data>
+  <data name="Cant_expand_it_any_further" xml:space="preserve">
+    <value>Nie mogę już bardziej tego rozwinąć</value>
+  </data>
+  <data name="Cant_reduce_it_any_further" xml:space="preserve">
+    <value>Nie mogę już bardziej tego schować</value>
+  </data>
+  <data name="An_expanded_baton_There_is_a_small_ring_on_the_top" xml:space="preserve">
+    <value>Rozwinięta pałka teleskopowa, a na jej czubku widać mały pierścień.</value>
+  </data>
+  <data name="An_expandable_baton" xml:space="preserve">
+    <value>Pałka teleskopowa.</value>
+  </data>
+  <data name="Baton_Baton_ExpandableBaton" xml:space="preserve">
+    <value>pałka teleskopowa</value>
+  </data>
+  <data name="Cant_reduce_it_with_the_string_tied_to_it" xml:space="preserve">
+    <value>Nie da się jej schować, z przywiązanym do niej sznurkiem.</value>
+  </data>
+  <data name="Almost_like_a_net" xml:space="preserve">
+    <value>Prawie jak siatka.</value>
+  </data>
+  <data name="BatonWithString_BatonWithString_BatonWithString" xml:space="preserve">
+    <value>Pałka ze sznurkiem</value>
+  </data>
+  <data name="A_battery" xml:space="preserve">
+    <value>Bateria.</value>
+  </data>
+  <data name="BatteryA_BatteryA_Battery" xml:space="preserve">
+    <value>bateria</value>
+  </data>
+  <data name="Our_old_picnic_blanket_wow_I_didnt_know_we_kept_it" xml:space="preserve">
+    <value>Nasz stary koc piknikowy. Łał, nie wiedziałem, że ciągle go mamy.</value>
+  </data>
+  <data name="Cynthia_and_me_spent_much_time_on_that_together_especially_before_Landon_was_born" xml:space="preserve">
+    <value>Razem z Cyntią spędziliśmy na nim sporo czasu, szczególnie zanim urodził się Landon.</value>
+  </data>
+  <data name="No_picnic_for_now" xml:space="preserve">
+    <value>Teraz to zdecydowanie nie jest piknik.</value>
+  </data>
+  <data name="No_There_are_many_good_memories_attached_to_it" xml:space="preserve">
+    <value>Nie. Z tym jest związanych zbyt wiele dobrych wspomień.</value>
+  </data>
+  <data name="Id_love_to_but_I_have_more_important_things_to_tend_to" xml:space="preserve">
+    <value>Bardzo bym chciał, ale muszę się zająć ważniejszymi rzeczami.</value>
+  </data>
+  <data name="Blanket_Blanket_PicnicBlanket" xml:space="preserve">
+    <value>koc piknikowy</value>
+  </data>
+  <data name="Holding_that_in_my_hands_I_cant_apply_force_on_that" xml:space="preserve">
+    <value>I can't put force on that while it's in my hands. </value>
+  </data>
+  <data name="It_broke_in_two_parts" xml:space="preserve">
+    <value>Złamał się na pół.</value>
+  </data>
+  <data name="I_cant_believe_what_just_happened" xml:space="preserve">
+    <value>Nie wierzę, że to się stało...</value>
+  </data>
+  <data name="Reliable_and_robust" xml:space="preserve">
+    <value>Solidny i niezawodny.</value>
+  </data>
+  <data name="Crowbar_Crowbar_Crowbar" xml:space="preserve">
+    <value>łom</value>
+  </data>
+  <data name="The_two_broken_parts_are_utterly_useless" xml:space="preserve">
+    <value>Te dwie złamane części są bezużyteczne.</value>
+  </data>
+  <data name="Unreliable_garbage" xml:space="preserve">
+    <value>Co za dziadostwo.</value>
+  </data>
+  <data name="CrowbarBroken_CrowbarBroken_BrokenCrowbar" xml:space="preserve">
+    <value>złamany łom</value>
+  </data>
+  <data name="Cant_use_the_key_with_that" xml:space="preserve">
+    <value>Nie mogę użyć na tym klucza.</value>
+  </data>
+  <data name="This_small_key_was_glued_to_the_back_of_Landons_portrait" xml:space="preserve">
+    <value>Do portretu Landona, z tyłu, przyklejono ten mały klucz.</value>
+  </data>
+  <data name="DrawerKey_DrawerKey_SmallKey" xml:space="preserve">
+    <value>mały klucz</value>
+  </data>
+  <data name="Drone_Drone_Drone" xml:space="preserve">
+    <value>dron</value>
+  </data>
+  <data name="I_should_open_the_package_first" xml:space="preserve">
+    <value>Najpierw powinienem otworzyć opakowanie.</value>
+  </data>
+  <data name="Aw_man_we_hardly_ever_used_this_thing" xml:space="preserve">
+    <value>O kurcze, praktycznie tego nie używaliśmy.</value>
+  </data>
+  <data name="It_was_pretty_fun_freaking_the_neighbors_dog_out_with_it_though" xml:space="preserve">
+    <value>Pamiętam, że mieliśmy kupę śmiechu strasząc tym psa sąsiadów.</value>
+  </data>
+  <data name="Good_memories" xml:space="preserve">
+    <value>Fajne wspomnienia.</value>
+  </data>
+  <data name="DronePackage_DronePackage_DronePackage" xml:space="preserve">
+    <value>drone package</value>
+  </data>
+  <data name="This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago" xml:space="preserve">
+    <value>Stara recepta na lek psychotropowy - Xanax. Użyłem jej kilka lat temu.</value>
+  </data>
+  <data name="DrugPrescriptionRyan_DrugPrescriptionRyan_DrugPrescription" xml:space="preserve">
+    <value>recepta</value>
+  </data>
+  <data name="The_envelope_is_from_Landons_old_school" xml:space="preserve">
+    <value>Ta koperta przyszła ze starej szkoły Landona.</value>
+  </data>
+  <data name="Lets_see" xml:space="preserve">
+    <value>Zobaczmy...</value>
+  </data>
+  <data name="Whats_this_about" xml:space="preserve">
+    <value>O czym to jest?</value>
+  </data>
+  <data name="I_knew_he_was_having_problems_in_his_old_school_but_this" xml:space="preserve">
+    <value>Zdawałem sobie sprawę, że miał problemy w starej szkole, ale to...</value>
+  </data>
+  <data name="I_thought_we_changed_schools_because_he_was_getting_bullied_Why_would_Cynthia_keep_this_letter_a_secret_from_me" xml:space="preserve">
+    <value>Myślałem, że przenieśliśmy go do innej szkoły, bo mu dokuczali... Dlaczego Cyntia utrzymywała to przede mną w tajemnicy?</value>
+  </data>
+  <data name="Envelope_Envelope_Envelope" xml:space="preserve">
+    <value>koperta</value>
+  </data>
+  <data name="It_is_sufficiently_bright" xml:space="preserve">
+    <value>It is sufficiently bright.</value>
+  </data>
+  <data name="A_regular_flashlight" xml:space="preserve">
+    <value>Zwykła latarka.</value>
+  </data>
+  <data name="The_battery_compartment_has_place_for_two_batteries" xml:space="preserve">
+    <value>Wejście pomieści dwie baterie.</value>
+  </data>
+  <data name="Flashlight_Flashlight_Flashlight" xml:space="preserve">
+    <value>latarka</value>
+  </data>
+  <data name="These_are_my_replacement_guitar_strings" xml:space="preserve">
+    <value>Moje zapasowe struny do gitary.</value>
+  </data>
+  <data name="GuitarStrings_GuitarStrings_Strings" xml:space="preserve">
+    <value>struny</value>
+  </data>
+  <data name="Its_a_tool_with_a_heavy_piece_of_metal_at_the_end_of_a_handle" xml:space="preserve">
+    <value>To jest narzędzie z ciężkim kawałkiem metalu na końcu trzonka.</value>
+  </data>
+  <data name="If_all_you_have_is_a_hammer_everything_looks_like_a_nail" xml:space="preserve">
+    <value>Jeżeli jedyne co masz to młotek, wszystko zaczyna wyglądać jak gwóźdź..</value>
+  </data>
+  <data name="Hammer_Hammer_Hammer" xml:space="preserve">
+    <value>młotek</value>
+  </data>
+  <data name="Im_not_hungry" xml:space="preserve">
+    <value>Nie jestem głodny.</value>
+  </data>
+  <data name="Yet" xml:space="preserve">
+    <value>Jeszcze.</value>
+  </data>
+  <data name="Look_at_that" xml:space="preserve">
+    <value>Patrzcie na to.</value>
+  </data>
+  <data name="What_a_beast" xml:space="preserve">
+    <value>Ale bestia.</value>
+  </data>
+  <data name="It_fell_down_the_hole" xml:space="preserve">
+    <value>Wpadło do dziury.</value>
+  </data>
+  <data name="A_bag_of_hazelnuts" xml:space="preserve">
+    <value>Paczka orzeczów laskowych.</value>
+  </data>
+  <data name="Cynthia_is_always_eating_these_when_shes_up_late_crafting_or_working_on_the_house" xml:space="preserve">
+    <value>Cyntia zawsze je podjada, kiedy pracuje do późna w nocy.</value>
+  </data>
+  <data name="Hazelnuts_Hazelnuts_Hazelnuts" xml:space="preserve">
+    <value>orzechy laskowe</value>
+  </data>
+  <data name="The_plastic_wrapping_is_missing" xml:space="preserve">
+    <value>Brakuje opakowania.</value>
+  </data>
+  <data name="Paperclip_Paperclip_PaperClip" xml:space="preserve">
+    <value>spinacz</value>
+  </data>
+  <data name="A_small_box_with_paper_clips" xml:space="preserve">
+    <value>Małe pudełko ze spinaczami.</value>
+  </data>
+  <data name="The_plastic_wrapping_is_missing_on_some_of_them" xml:space="preserve">
+    <value>Na kilku z nich brakuje opakowania.</value>
+  </data>
+  <data name="Paperclips_Paperclips_PaperClips" xml:space="preserve">
+    <value>spinacze</value>
+  </data>
+  <data name="Im_not_taking_this_kind_of_medicine" xml:space="preserve">
+    <value>Nie przyjmuję tego rodzaju leków.</value>
+  </data>
+  <data name="Landons_antidepressants_They_have_not_yet_been_opened" xml:space="preserve">
+    <value>Antydepresanty Landona. Zaraz, one nawet nie zostały jeszcze otwarte!</value>
+  </data>
+  <data name="I_thought_he_was_taking_them_regularly" xml:space="preserve">
+    <value>Byłem przekonany, że zarzywa je regularnie.</value>
+  </data>
+  <data name="Pills_Pills_Antidepressants" xml:space="preserve">
+    <value>antydepresanty</value>
+  </data>
+  <data name="It_is_a_portrait_of_my_son_Landon_when_he_was_six_years_old" xml:space="preserve">
+    <value>Portret mojego syna Landona, jak miał sześć lat.</value>
+  </data>
+  <data name="He_looks_happy" xml:space="preserve">
+    <value>Wygląda na szczęśliwego.</value>
+  </data>
+  <data name="Hey_Theres_a_small_key_glued_to_the_back_of_this" xml:space="preserve">
+    <value>Hej, z tyłu przyklejony jest mały klucz!</value>
+  </data>
+  <data name="Portrait_Portrait_Portrait" xml:space="preserve">
+    <value>portret</value>
+  </data>
+  <data name="Its_a_handheld_controller_for_the_drone" xml:space="preserve">
+    <value>Pilot do drona.</value>
+  </data>
+  <data name="No_power" xml:space="preserve">
+    <value>Nie ma zasilania.</value>
+  </data>
+  <data name="I_need_to_put_the_drone_somewhere_first" xml:space="preserve">
+    <value>Najpierw muszę go gdzieś położyć.</value>
+  </data>
+  <data name="Got_it" xml:space="preserve">
+    <value>Udało się.</value>
+  </data>
+  <data name="It_crashed" xml:space="preserve">
+    <value>Rozbił się.</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Do przodu.</value>
+  </data>
+  <data name="Turn_Left" xml:space="preserve">
+    <value>Skręć w lewo.</value>
+  </data>
+  <data name="Turn_Right" xml:space="preserve">
+    <value>Skręć w prawo.</value>
+  </data>
+  <data name="Switch_off" xml:space="preserve">
+    <value>Wyłącz.</value>
+  </data>
+  <data name="Start_engine_and_ascend" xml:space="preserve">
+    <value>Odpal silnik i rozpocznij wznoszenie.</value>
+  </data>
+  <data name="RemoteControl_RemoteControl_RemoteControl" xml:space="preserve">
+    <value>pilot</value>
+  </data>
+  <data name="I_triangulated_the_signal_already" xml:space="preserve">
+    <value>Ustawiłem już triangulację.</value>
+  </data>
+  <data name="I_need_to_place_the_other_antenna_with_more_distance_for_the_triangulation_to_work" xml:space="preserve">
+    <value>Muszę umieścić drugą antenę w większej odległości, by triangulacja zadziałała.</value>
+  </data>
+  <data name="The_antenna_is_receiving_a_signal_somewhere_along_that_direction" xml:space="preserve">
+    <value>Antena odbiera sygnał gdzieś wzdłuż tej linii.</value>
+  </data>
+  <data name="Now_the_other_antenna" xml:space="preserve">
+    <value>Teraz czas na drugą antenę...</value>
+  </data>
+  <data name="Seems_like_the_signal_is_coming_from_this_wooden_panel_near_the_workbench" xml:space="preserve">
+    <value>Wygląda na to, że sygnał dochodzi z pod tego panelu podłogowego, przy moim stole warsztatowy.</value>
+  </data>
+  <data name="There_must_be_a_RFID_receiver_underneath_for_some_reason" xml:space="preserve">
+    <value>Z jakiegoś powodu, pod panelem schowano nadajnik RFID.</value>
+  </data>
+  <data name="I_need_another_antenna_to_triangulate_the_signal_and_get_its_position" xml:space="preserve">
+    <value>Potrzebuję ustawić kolejną antenę w odpowiedniej pozycji, by triangulacja mogła zadziałać.</value>
+  </data>
+  <data name="No_signal_along_that_direction" xml:space="preserve">
+    <value>Brak sygnału w tym kierunku.</value>
+  </data>
+  <data name="This_is_a_longrange_RFID_antenna" xml:space="preserve">
+    <value>To jest antena RFID dalekiego zasięgu.</value>
+  </data>
+  <data name="Must_be_Landons" xml:space="preserve">
+    <value>To musi być Landona.</value>
+  </data>
+  <data name="RFIDAntenna_RFIDAntenna_RFIDAntenna" xml:space="preserve">
+    <value>Antena RFID</value>
+  </data>
+  <data name="Another_longrange_RFID_antenna" xml:space="preserve">
+    <value>Kolejna antena RFID dalekiego zasięgu.</value>
+  </data>
+  <data name="A_cardboard_without_any_inscription" xml:space="preserve">
+    <value>Kartonowe pudełko bez opisu.</value>
+  </data>
+  <data name="Looks_extactly_like_the_other_cardboard_I_got" xml:space="preserve">
+    <value>Wygląda dokładnie jak pudełko, które już mam.</value>
+  </data>
+  <data name="Looks_extactly_like_the_other_cardboard_which_contained_the_RFID_antenna" xml:space="preserve">
+    <value>Wygląda dokładnie jak pudełko, z którego wyciągnąłem antenę RFID.</value>
+  </data>
+  <data name="Must_be_Cynthias_or_Landons" xml:space="preserve">
+    <value>To musi być Cynti lub Landona.</value>
+  </data>
+  <data name="I_wonder_what_is_inside" xml:space="preserve">
+    <value>CIekawe co jest w środku.</value>
+  </data>
+  <data name="RFIDAntennaBoxCabinet_RFIDAntennaBoxCabinet_Cardboard" xml:space="preserve">
+    <value>karton</value>
+  </data>
+  <data name="I_wonder_what_Landon_used_those_antennas_for" xml:space="preserve">
+    <value>Ciekawe do czego Landon używał tych anten...</value>
+  </data>
+  <data name="Here_is_a_summary_in_the_book_describing_RFID_antennas" xml:space="preserve">
+    <value>To jest instrukcja opisująca działanie anten RFID.</value>
+  </data>
+  <data name="_Radio_Frequency_Identification_allows_to_identify_objects_using_data_transmitted_via_radio_waves_" xml:space="preserve">
+    <value>» System Identyfikacji Radiowej pozwala na identyfikację obiektów, za pomocą danych przesyłanych przez fale radiowe. «</value>
+  </data>
+  <data name="_RFID_antennas_send_the_RF_energy_to_those_objects_called_RFID_tags_and_receive_the_tags_reply_" xml:space="preserve">
+    <value>» Anteny RFID wysyłają sygnał radiowy do obiektów zwanych czytnikami RFID, które odpowiedzialne są za odbieranie sygnału. «</value>
+  </data>
+  <data name="_No_line_of_sight_is_required_between_the_antenna_and_the_tag_Directional_antennas_allow_for_a_greater_coverage_distance_" xml:space="preserve">
+    <value>» Ścieżka pomiędzy anteną, a czytnikiem nie musi być pozbawiona żadnych przeszkód. Anteny kierunkowe zapewniają większy dystans.  «</value>
+  </data>
+  <data name="_Using_two_directional_RFID_antennas_the_actual_position_of_a_RFID_tag_can_be_triangulated_" xml:space="preserve">
+    <value>» Dzięki użyciu dwóch anten kierunkowych, możliwa jest triangulacja czytnika RFID. «</value>
+  </data>
+  <data name="Its_a_book_about_RFID_technology_I_wrote_a_research_paper_about_it_in_university" xml:space="preserve">
+    <value>Książka na temat technologii RFID. Napisałem kiedyś pracę na temat, na moim uniwersytecie.</value>
+  </data>
+  <data name="RFIDBook_RFIDBook_RFIDBook" xml:space="preserve">
+    <value>książka RFID</value>
+  </data>
+  <data name="In_there_are_different_attachments_for_drilling_machines" xml:space="preserve">
+    <value>Tam są różne wiertła do wiertarki.</value>
+  </data>
+  <data name="They_can_even_cut_through_metal" xml:space="preserve">
+    <value>Nawet są specjalne wiertła do metalu.</value>
+  </data>
+  <data name="SawKit_SawKit_BiMetalHoleSawKit" xml:space="preserve">
+    <value>Zestaw bimetalicznych pił otworowych</value>
+  </data>
+  <data name="I_dont_want_to_cut_that" xml:space="preserve">
+    <value>Nie chcę tego wiercić.</value>
+  </data>
+  <data name="One_pair_of_bandage_scissors" xml:space="preserve">
+    <value>Para nożyczek bandażowych.</value>
+  </data>
+  <data name="Scissors_Scissors_Scissors" xml:space="preserve">
+    <value>nożyczki</value>
+  </data>
+  <data name="This_does_not_need_to_be_screwed" xml:space="preserve">
+    <value>To nie musi być wkręcone.</value>
+  </data>
+  <data name="Its_a_screwdriver" xml:space="preserve">
+    <value>To jest śrubokręt.</value>
+  </data>
+  <data name="Screwdriver_Screwdriver_Screwdriver" xml:space="preserve">
+    <value>śrubokręt</value>
+  </data>
+  <data name="According_to_the_date_this_therapy_session_happened_some_months_ago" xml:space="preserve">
+    <value>Data wskazuje, że terapia odbyła się kilka miesięcy temu.</value>
+  </data>
+  <data name="It_reads" xml:space="preserve">
+    <value>Tutaj jest napisane:</value>
+  </data>
+  <data name="Mr_Psychiatrist__When_you_first_realized_you_were_trapped_what_did_you_do_" xml:space="preserve">
+    <value>Dr. Johnson: » Kiedy zdałeś sobie sprawę, że jesteś uwieziony, co zrobiłeś? «</value>
+  </data>
+  <data name="Mr_Schmidt__I_just_lost_it_I_was_terrified_" xml:space="preserve">
+    <value>P. Schmidt: » Kompletnie puściły mi emocje. Byłem przerażony «</value>
+  </data>
+  <data name="Mr_Schmidt__I_was_just_trying_everything_I_could_to_get_out_of_there_" xml:space="preserve">
+    <value>P. Schmidt: » Próbowałem wszystkiego, żeby móc się stamtąd wydostać. «</value>
+  </data>
+  <data name="Mr_Schmidt__But_then_I_wasnt_even_sure_how_Id_gotten_there_" xml:space="preserve">
+    <value>P. Schmidt: » Wtedy zdałem sobie sprawę, że nie byłem nawet pewny jak się tam znalazłem. «</value>
+  </data>
+  <data name="Mr_Schmidt__I_got_frustrated_I_tried_to_remember_what_I_was_doing_before_it_all_started_" xml:space="preserve">
+    <value>P. Schmidt: » Wkurzyłem się i próbowałem sobie przypomnieć, co robiłem zaraz przed tym jak to się stało. «</value>
+  </data>
+  <data name="Mr_Schmidt__Before_I_was_there_you_know_How_did_it_come_to_this_And_where_was_my_family_" xml:space="preserve">
+    <value>P. Schmidt: » Zanim się tam znalazłem, rozumiesz? Jak do tego doszło? Gdzie była moja rodzina? «</value>
+  </data>
+  <data name="Mr_Schmidt__I_was_trying_to_think_back_on_it_and_I_just_couldnt_remember_" xml:space="preserve">
+    <value>P. Schmidt: » Próbowałem mocno się na tym skupić, ale... nie mogłem sobie przypomnieć. «</value>
+  </data>
+  <data name="Mr_Schmidt__I_stayed_calm_I_wasnt_just_going_to_give_up_" xml:space="preserve">
+    <value>P. Schmidt: » Byłem spokojny i nie miałem zamiaru się tak po prostu poddać. «</value>
+  </data>
+  <data name="Mr_Schmidt__I_did_my_best_to_figure_out_what_was_going_on_I_wasnt_just_going_to_sit_down_and_take_it_" xml:space="preserve">
+    <value>P. Schmidt: » Robiłem wszystko, by przypomnieć sobie, jak się tam znalazłem. Nie miałem zamiaru siedzieć z założonymi rękami! «</value>
+  </data>
+  <data name="Mr_Schmidt__Especially_not_if_my_family_was_in_danger_somewhere_else_" xml:space="preserve">
+    <value>P. Schmidt: » Szczególnie, że moja rodzina też mogła być w niebezpieczeństwie. «</value>
+  </data>
+  <data name="It_stops_here_The_other_page_seems_to_be_missing" xml:space="preserve">
+    <value>Wychodzi na to, że to wszystko, bo brakuje reszty stron. Tak czy inaczej, dobrze je pamiętam.</value>
+  </data>
+  <data name="TherapyLog_TherapyLog_TherapyLog" xml:space="preserve">
+    <value>Dziennik terapii</value>
+  </data>
+  <data name="Nothing_more_in_there" xml:space="preserve">
+    <value>Nic więcej tam nie ma.</value>
+  </data>
+  <data name="Lets_see_whats_in_there" xml:space="preserve">
+    <value>Zobaczmy co tam jest...</value>
+  </data>
+  <data name="A_rotten_animal_skeleton" xml:space="preserve">
+    <value>O Boże, to resztki jakiegoś zwierzęcia, na dodatek całe zgniłe!</value>
+  </data>
+  <data name="Those_are_Landons_antidepressants_They_have_not_yet_been_opened" xml:space="preserve">
+    <value>To są antydepresanty Landona. Nawet nie zostały jeszcze otwarte.</value>
+  </data>
+  <data name="And_an_expendable_baton" xml:space="preserve">
+    <value>I teleskopowa pałka?</value>
+  </data>
+  <data name="What_the_hell_would_he_do_with_a_baton" xml:space="preserve">
+    <value>Do czego, do jasnej cholery, potrzebna mu była teleskopowa pałka?</value>
+  </data>
+  <data name="This_small_wooden_box_was_hidden_underneath_a_plank" xml:space="preserve">
+    <value>To małe, drewniane pudełko było schowane pod deską.</value>
+  </data>
+  <data name="A_RFID_tag_is_glued_to_the_bottom" xml:space="preserve">
+    <value>Czytnik RFID jest przyklejony do podłoża.</value>
+  </data>
+  <data name="WoodenBox_WoodenBox_WoodenBox" xml:space="preserve">
+    <value>drewniane pudełko</value>
+  </data>
+  <data name="The_battery_compartment_is_empty" xml:space="preserve">
+    <value>Wejście na baterie jest puste.</value>
+  </data>
+  <data name="It_is_empty" xml:space="preserve">
+    <value>Puste.</value>
+  </data>
+  <data name="One_battery_is_installed" xml:space="preserve">
+    <value>Jedna bateria wsadzona.</value>
+  </data>
+  <data name="Two_batteries_are_installed" xml:space="preserve">
+    <value>Dwie baterie wsadzone.</value>
+  </data>
+  <data name="I_dont_see_the_point_in_making_the_drone_fly_to_that" xml:space="preserve">
+    <value>Nie widzę powodu, by podlatywać do tego dronem.</value>
+  </data>
+</root>

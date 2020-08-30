@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Walk_to" xml:space="preserve">
+    <value>Podejdź</value>
+  </data>
+  <data name="Give" xml:space="preserve">
+    <value>Daj</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Otwórz</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
+  <data name="Pick_up" xml:space="preserve">
+    <value>Podnieś</value>
+  </data>
+  <data name="Look_at" xml:space="preserve">
+    <value>Popatrz</value>
+  </data>
+  <data name="Talk_to" xml:space="preserve">
+    <value>Rozmawiaj</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Użyj</value>
+  </data>
+  <data name="with" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="Push" xml:space="preserve">
+    <value>Pchnij</value>
+  </data>
+  <data name="Pull" xml:space="preserve">
+    <value>Ciągnij</value>
+  </data>
+  <data name="uiverbs" xml:space="preserve">
+    <value>ui\czasowniki</value>
+  </data>
+  <data name="uiverbshighlight" xml:space="preserve">
+    <value>ui\podświetlenie czasowników</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Wczytaj</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Wyjdź</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Kontynuuj</value>
+  </data>
+  <data name="New_Game" xml:space="preserve">
+    <value>Nowa gra</value>
+  </data>
+  <data name="Really_quit" xml:space="preserve">
+    <value>Wychodzisz?</value>
+  </data>
+  <data name="Do_you_really_want_to_quit_the_game" xml:space="preserve">
+    <value>Czy naprawdę chcesz wyjść z gry?</value>
+  </data>
+  <data name="Load_Savegame" xml:space="preserve">
+    <value>Wczytaj zapis</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Imię:</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>do</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="Cant_do_that" xml:space="preserve">
+    <value>Nie mogę tego zrobić.</value>
+  </data>
+  <data name="There_is_no_need_to_carry_that_around" xml:space="preserve">
+    <value>Nie ma powodu, by nosić to ze sobą.</value>
+  </data>
+  <data name="I_dont_need_that" xml:space="preserve">
+    <value>Nie potrzebuję tego.</value>
+  </data>
+  <data name="I_dont_see_the_point_in_taking_that" xml:space="preserve">
+    <value>Nie widzę powodu żeby to brać.</value>
+  </data>
+  <data name="I_have_got_this_already" xml:space="preserve">
+    <value>Już to mam.</value>
+  </data>
+  <data name="I_have_it_already" xml:space="preserve">
+    <value>Już to mam.</value>
+  </data>
+  <data name="Im_carrying_that" xml:space="preserve">
+    <value>Już to ze sobą noszę.</value>
+  </data>
+  <data name="I_dont_want_to_move_that" xml:space="preserve">
+    <value>Nie chcę tego ruszać.</value>
+  </data>
+  <data name="There_is_no_need_to_move_that" xml:space="preserve">
+    <value>Nie ma powodu, by to ruszać.</value>
+  </data>
+  <data name="Cant_use_that" xml:space="preserve">
+    <value>Nie mogę tego użyć.</value>
+  </data>
+  <data name="I_cant_do_that" xml:space="preserve">
+    <value>Nie mogę tego zrobić.</value>
+  </data>
+  <data name="That_does_not_work" xml:space="preserve">
+    <value>To nie działa.</value>
+  </data>
+  <data name="I_dont_see_anything_special" xml:space="preserve">
+    <value>Nie widzę nic szczególnego.</value>
+  </data>
+  <data name="Nothing_to_see_here" xml:space="preserve">
+    <value>Nie ma tutaj nic wartego uwagi.</value>
+  </data>
+  <data name="I_guess_there_wont_be_an_answer" xml:space="preserve">
+    <value>Myślę, że nie będzie tam odpowiedzi.</value>
+  </data>
+  <data name="I_cant_talk_to_that" xml:space="preserve">
+    <value>Nie mogę z tym rozmawiać.</value>
+  </data>
+  <data name="I_cant_close_that" xml:space="preserve">
+    <value>Nie mogę tego zamknąć.</value>
+  </data>
+  <data name="This_cant_be_closed" xml:space="preserve">
+    <value>To nie może być zamknięte.</value>
+  </data>
+  <data name="That_does_not_need_to_be_closed" xml:space="preserve">
+    <value>To nie musi być zamknięte.</value>
+  </data>
+  <data name="I_cant_open_that" xml:space="preserve">
+    <value>Nie mogę tego otworzyć.</value>
+  </data>
+  <data name="This_cant_be_opened" xml:space="preserve">
+    <value>Tego nie można otworzyć.</value>
+  </data>
+  <data name="That_does_not_need_to_be_opened" xml:space="preserve">
+    <value>To nie musi być otwarte.</value>
+  </data>
+  <data name="I_cant_give_that_to_somebody" xml:space="preserve">
+    <value>Nie mogę tego nikomu dać.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nie.</value>
+  </data>
+  <data name="How" xml:space="preserve">
+    <value>Jak?</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="Music_Volume" xml:space="preserve">
+    <value>Muzyka</value>
+  </data>
+  <data name="Sound_Volume" xml:space="preserve">
+    <value>Dźwięk</value>
+  </data>
+  <data name="Bloom" xml:space="preserve">
+    <value>Efekt rozmycia</value>
+  </data>
+  <data name="Restart_the_game_for_this_setting_to_take_effect" xml:space="preserve">
+    <value>Uruchom ponownie grę, by zatwierdzić wprowadzone zmiany.</value>
+  </data>
+  <data name="VSync" xml:space="preserve">
+    <value>Synchronizacja pionowa</value>
+  </data>
+  <data name="Display_Mode" xml:space="preserve">
+    <value>Tryb wyświetlania</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Borderless" xml:space="preserve">
+    <value>Bez ramki</value>
+  </data>
+  <data name="Borderless_Fit" xml:space="preserve">
+    <value>Bez ramki (dopasowany)</value>
+  </data>
+  <data name="Borderless_Scale" xml:space="preserve">
+    <value>Bez ramki (w skali)</value>
+  </data>
+  <data name="Fullscreen" xml:space="preserve">
+    <value>Pełny ekran</value>
+  </data>
+  <data name="Window" xml:space="preserve">
+    <value>Okno</value>
+  </data>
+  <data name="Window_Fit" xml:space="preserve">
+    <value>Okno (dopasowany)</value>
+  </data>
+  <data name="Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version" xml:space="preserve">
+    <value>Nie udało się wczytać zapisu gry. Może został utworzony w poprzedniej wersji gry.</value>
+  </data>
+  <data name="Menu_AddExitConfirmationWindow_No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Lista twórców</value>
+  </data>
+  <data name="RoomsLetterScene" xml:space="preserve">
+    <value>pokoje/list/scena</value>
+  </data>
+  <data name="Letter_Text" xml:space="preserve">
+    <value>Hanover School Headmaster's Office
+January the 13th, 2017
+
+Dear Mr. and Mrs. Schmidt,
+
+I am writing to inform you of an incident in which Landon was involved today at school. 
+Around 10:45 this morning, He was brought into my office by another teacher, who was 
+approached about him after class by a very distressed female student. The student claims 
+to have been cornered by Landon in the girls' lavatory before school this morning. He 
+told me that he was just trying to ask her to formal, which the female student corroborated, 
+but she also claims that he would not let her leave the washroom until she accepted the 
+invitation. She claims that she told him she would go with him, because she feared for her safety.
+ 
+As such, I hope you can understand that we have permanently barred Landon from attending 
+the formal entirely. Regardless of his intentions, he made the student feel unsafe, and as a 
+precaution can not be allowed to attend the dance. I must also inform you that this is not the first 
+complaint of this nature that I have received about your son. I am regularly told by other students 
+that he is reclusive, antisocial, and tends to make others uncomfortable with his presence and 
+strange behavior. I implore you, if you are not already, to seek help for your son. We offer a 
+school-affiliated counseling practice on campus, but I believe Landon may benefit more from a 
+qualified psychiatrist. If his behavior continues to worsen, I fear that we will have to consider 
+further consequences. 
+
+Please contact me if you have any concerns. 
+
+Sincerely, 
+
+Darcy Genzlinger
+Headmaster </value>
+  </data>
+</root>
