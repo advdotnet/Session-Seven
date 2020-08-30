@@ -13,19 +13,25 @@ namespace SessionSeven.Functional.Test
     public class TestGame : StackGame
     {
         public const string SCENE_ID = "s";
+        public const string ENTITY_OUTLINE_ID = "e";
         public const string ENTITY_ID = "e";
 
         protected override List<Scene> GetScenes()
         {
+            var OutlineEntity = new Entity(ENTITY_OUTLINE_ID);
             var Entity = new Entity(ENTITY_ID);
 
             Text
-                .Create(Entity)
+                .Create(OutlineEntity)
                 .SetFont(content.fonts.pixeloperator_outline_BMF);
+
+            Text
+                .Create(Entity)
+                .SetFont(content.fonts.pixeloperator_BMF);
 
             var Scene = new Scene(SCENE_ID);
 
-            Scene.Push(Entity);
+            Scene.Push(OutlineEntity, Entity);
 
             return new List<Scene> { Scene };
         }
@@ -42,7 +48,7 @@ namespace SessionSeven.Functional.Test
         [TestMethod]
         public void AllResourceCharactersCanBeResolvedBySpriteFont()
         {
-            var SupportedLanguages = new[] { "en-US", "de-DE", "es-ES" };
+            var SupportedLanguages = new[] { "en-US", "de-DE", "es-ES", "pl" };
 
             foreach (var Language in SupportedLanguages)
             {
@@ -57,12 +63,14 @@ namespace SessionSeven.Functional.Test
                     Runner.StartGame();
                     Runner.AdvanceToInteractive();
 
-                    var Text = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_ID).Get<Text>();
+                    var Text = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
+                    var OutlineText = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
 
                     foreach (var ResourceString in GetResourceStrings())
                     {
                         // this throws if the sprite font cannot resolve a character
                         Text.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
+                        OutlineText.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
                     }
                 }
             }

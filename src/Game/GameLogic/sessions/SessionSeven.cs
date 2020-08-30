@@ -352,6 +352,7 @@ namespace SessionSeven.Cutscenes
             yield return GlblRes.Music + NLNL + GlblRes.Damian_Potenzoni;
             yield return GlblRes.Coding + NLNL + GlblRes.Jonas_Jelli;
             yield return GlblRes.Graphics + NLNL + GlblRes.Jeremy_Carver__Jonas_Jelli;
+            yield return GlblRes.Polish_Translation + NLNL + GlblRes.MaciejKubiszewski_;
             if (ending)
             {
                 yield return GlblRes.BetaTesting + NLNL + GlblRes.LauraHubbesSimonTschirnerStefanDienstTanjaDienstThorstenKraemer;
@@ -359,6 +360,7 @@ namespace SessionSeven.Cutscenes
                 yield return GlblRes.SpecialThanks + NLNL + GlblRes.DamianWouldLikeThankFamilyFriendsContinuousSupportThanksEveryoneInvolvedSessionSevenMakingPartExperienceGuysRockThanksWifeWithoutHerCouldnTMakeThisPossibleLove;
                 yield return GlblRes.SpecialThanks + NLNL + GlblRes.JonasWifeFamilyFriendsEverybodyContributingMakingThisGame;
                 yield return GlblRes.SpecialThanks + NLNL + GlblRes.JeremyAmandaChristianCarverMariaSmithPierreBezuidenhoutDawidFrederikStrauss;
+                yield return GlblRes.SpecialThanks + NLNL + GlblRes.thanks;
             }
             yield return GlblRes.Thank_you_for_playing;
             yield return GlblRes.Devoted_to_all_point__click_adventure_fans;

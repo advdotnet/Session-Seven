@@ -562,7 +562,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Maciej Kubiszewski.
         /// </summary>
         internal static string MaciejKubiszewski_ {
             get {
@@ -638,7 +638,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Polish Translation.
         /// </summary>
         internal static string Polish_Translation {
             get {
@@ -729,7 +729,7 @@ namespace SessionSeven.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to (insert any comment / thanks).
         /// </summary>
         internal static string thanks {
             get {
