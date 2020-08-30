@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="When_you_first_realized_you_were_trapped_what_did_you_do" xml:space="preserve">
+    <value>Jak się czułeś, gdy w końcu zdałeś sobie sprawę, że jesteś uwięziony?</value>
+  </data>
+  <data name="I_just_lost_it_I_was_terrified" xml:space="preserve">
+    <value>Kompletnie puściły mi emocje. Byłem przerażony.</value>
+  </data>
+  <data name="I_got_frustrated_I_tried_to_remember_what_I_was_doing_before_it_all_started" xml:space="preserve">
+    <value>Wkurzyłem się i próbowałem sobie przypomnieć, co robiłem zaraz przed tym jak to się stało.</value>
+  </data>
+  <data name="I_stayed_calm_I_wasnt_just_going_to_give_up" xml:space="preserve">
+    <value>Byłem spokojny i nie miałem zamiaru się tak po prostu poddać.</value>
+  </data>
+  <data name="I_was_just_trying_everything_I_could_to_get_out_of_there" xml:space="preserve">
+    <value>Próbowałem wszystkiego, żeby móc się stamtąd wydostać.</value>
+  </data>
+  <data name="But_then_I_wasnt_even_sure_how_Id_gotten_there" xml:space="preserve">
+    <value>Wtedy zdałem sobie sprawę, że nie byłem nawet pewny jak się tam znalazłem.</value>
+  </data>
+  <data name="Nothing_was_making_sense_to_me_It_was_like_a_mad_blur_I_felt_like_banging_on_the_walls_most_of_the_time" xml:space="preserve">
+    <value>Wszystko było takie rozmyte i nie miało dla mnie większego sensu. Byłem zupełnie zdezorientowany.</value>
+  </data>
+  <data name="I_think_I_was_hoping_somebody_would_hear_me_but_nobody_was_there" xml:space="preserve">
+    <value>Liczyłem na to, że ktoś mnie usłyszy, ale nikogo tam nie było...</value>
+  </data>
+  <data name="Neither_my_wife_or_my_son_was_answering_me_I_thought_maybe_they_were_in_danger_too_" xml:space="preserve">
+    <value>Ani żona, ani mój syn nie odpowiadali, więc pomyślałem, że oni też mogą być w niebezpieczeństwie. </value>
+  </data>
+  <data name="Dont_you_think_itd_be_less_confusing_if_you_started_with_how_you_got_there_in_the_first_place" xml:space="preserve">
+    <value>Nie wydaje ci się, że byłoby ci łatwiej zacząć od zrozumienia, jak się tam znalazłeś?</value>
+  </data>
+  <data name="If_only_I_knew" xml:space="preserve">
+    <value>Gdybym tylko to wiedział...</value>
+  </data>
+  <data name="Before_I_was_there_you_know_How_did_it_come_to_this_And_where_was_my_family" xml:space="preserve">
+    <value>Zanim się tam znalazłem, rozumiesz? Jak do tego doszło? Gdzie była moja rodzina?</value>
+  </data>
+  <data name="I_was_trying_to_think_back_on_it_and_I_just_couldnt_remember" xml:space="preserve">
+    <value>Próbowałem mocno się na tym skupić, ale... nie mogłem sobie przypomnieć.</value>
+  </data>
+  <data name="It_was_like_everything_leading_up_to_that_point_was_just_a_dream_and_I_couldnt_quite_piece_together_where_it_started_or_ended" xml:space="preserve">
+    <value>Doszło do momentu, w którym myślałem, że to tylko sen, a ja nie mogłem ustalić gdzie się zaczynał lub kończył.</value>
+  </data>
+  <data name="And_no_matter_how_hard_I_tried_I_just_couldnt_wake_up" xml:space="preserve">
+    <value>I nie ważne jak mocno się starałem, nie mogłem się z niego wybudzić.</value>
+  </data>
+  <data name="Well_I_think_the_beginning_is_a_good_place_to_start_How_did_you_think_you_got_there" xml:space="preserve">
+    <value>Wiesz, wydaję mi się, że dobrze zacząć od początku. Czy wiedziałeś jak się tam znalazłeś?</value>
+  </data>
+  <data name="Thats_just_it_I_didnt_know" xml:space="preserve">
+    <value>Właśnie o to chodzi, że nie nie miałem pojęcia.</value>
+  </data>
+  <data name="I_did_my_best_to_figure_out_what_was_going_on_I_wasnt_just_going_to_sit_down_and_take_it" xml:space="preserve">
+    <value>Robiłem wszystko, by przypomnieć sobie, jak się tam znalazłem. Nie miałem zamiaru siedzieć z założonymi rękami!</value>
+  </data>
+  <data name="Especially_not_if_my_family_was_in_danger_somewhere_else" xml:space="preserve">
+    <value>Szczególnie, że moja rodzina też mogła być w niebezpieczeństwie.</value>
+  </data>
+  <data name="I_looked_everywhere_for_clues_anything_I_could_find_that_might_help_me_fix_the_mess_Id_gotten_myself_into" xml:space="preserve">
+    <value>Wszędzie szukałem jakichś wskazówek, które pomogłby mi wydostać się z tego syfu, w który się wplątałem.</value>
+  </data>
+  <data name="I_guess_that_started_with_figuring_out_how_Id_gotten_there_in_the_first_place" xml:space="preserve">
+    <value>Wydaję mi się, że próbowałem sobie przypomnieć jak się tam znalazłem.</value>
+  </data>
+  <data name="Well_why_dont_we_start_there" xml:space="preserve">
+    <value>Może zacznijmy więc od tego?</value>
+  </data>
+  <data name="Well_that_implies_that_I_had_any_idea_at_all" xml:space="preserve">
+    <value>Zakładając, że miałem o tym jakiekolwiek pojęcie...</value>
+  </data>
+</root>
