@@ -151,10 +151,10 @@
     <value>Ciągnij</value>
   </data>
   <data name="uiverbs" xml:space="preserve">
-    <value>ui\czasowniki</value>
+    <value>ui\verbs_pl</value>
   </data>
   <data name="uiverbshighlight" xml:space="preserve">
-    <value>ui\podświetlenie czasowników</value>
+    <value>ui\verbshighlight_pl</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Wczytaj</value>
@@ -319,7 +319,7 @@
     <value>Lista twórców</value>
   </data>
   <data name="RoomsLetterScene" xml:space="preserve">
-    <value>pokoje/list/scena</value>
+    <value>rooms/letter/scene_pl</value>
   </data>
   <data name="Letter_Text" xml:space="preserve">
     <value>Hanover School Headmaster's Office
