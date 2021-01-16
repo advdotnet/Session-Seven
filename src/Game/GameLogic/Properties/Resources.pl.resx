@@ -151,10 +151,10 @@
     <value>Ciągnij</value>
   </data>
   <data name="uiverbs" xml:space="preserve">
-    <value>ui\verbs_pl</value>
+    <value>ui\czasowniki</value>
   </data>
   <data name="uiverbshighlight" xml:space="preserve">
-    <value>ui\verbshighlight_pl</value>
+    <value>ui\podświetlenie czasowników</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Wczytaj</value>
@@ -202,7 +202,7 @@
     <value>Nie potrzebuję tego.</value>
   </data>
   <data name="I_dont_see_the_point_in_taking_that" xml:space="preserve">
-    <value>Nie widzę powodu żeby to brać.</value>
+    <value>Nie widzę powodu, by to brać.</value>
   </data>
   <data name="I_have_got_this_already" xml:space="preserve">
     <value>Już to mam.</value>
@@ -319,37 +319,25 @@
     <value>Lista twórców</value>
   </data>
   <data name="RoomsLetterScene" xml:space="preserve">
-    <value>rooms/letter/scene_pl</value>
+    <value>pokoje/list/scena</value>
   </data>
   <data name="Letter_Text" xml:space="preserve">
-    <value>Hanover School Headmaster's Office
-January the 13th, 2017
+    <value>Biuro Dyrektora - szkoła w Hanowerze
+13 Styczeń, 2017
 
-Dear Mr. and Mrs. Schmidt,
+Drodzy Państwo Schmidt, 																	
 
-I am writing to inform you of an incident in which Landon was involved today at school. 
-Around 10:45 this morning, He was brought into my office by another teacher, who was 
-approached about him after class by a very distressed female student. The student claims 
-to have been cornered by Landon in the girls' lavatory before school this morning. He 
-told me that he was just trying to ask her to formal, which the female student corroborated, 
-but she also claims that he would not let her leave the washroom until she accepted the 
-invitation. She claims that she told him she would go with him, because she feared for her safety.
+Piszę do Państwa w sprawie incydentu, w który zaangażowany był Państwa syn, Landon.  
+Dzisiaj rano około godziny 10:45, inny nauczyciel przyprowadził do mojego biura Państwa syna. Nauczyciel ten został poinformowany przez zdenerwowaną uczennicę, o pewnym zajściu między nią, a Państwa synem. Uczennica twierdzi, że przed zajęciami, została ona osaczona przez Landona w jednej z łazienek. Państwa syn natomiast, powiedział mi, że chciał tylko zaprosić ją na bal, co potwierdziła uczennica. Jednak twierdzi ona również, że Landon nie pozwolił jej opuścić łazienki, dopóki nie zaakceptowała jego zaproszenia. Uczennica zeznała, że zrobiła to tylko dlatego, że bała się Landona.
  
-As such, I hope you can understand that we have permanently barred Landon from attending 
-the formal entirely. Regardless of his intentions, he made the student feel unsafe, and as a 
-precaution can not be allowed to attend the dance. I must also inform you that this is not the first 
-complaint of this nature that I have received about your son. I am regularly told by other students 
-that he is reclusive, antisocial, and tends to make others uncomfortable with his presence and 
-strange behavior. I implore you, if you are not already, to seek help for your son. We offer a 
-school-affiliated counseling practice on campus, but I believe Landon may benefit more from a 
-qualified psychiatrist. If his behavior continues to worsen, I fear that we will have to consider 
-further consequences. 
+W związku z powyższym, mam nadzieję, że zrozumie Pan naszą decyzję, o całkowitym zakazie uczestnictwa Landona w oficjalnym balu. Bez względu na intencję, studentka poczuła się zagrożona jego zachowaniem i nie możemy mu pozwolić na uczestnictwo w balu. Muszę również Pana uprzedzić, że nie jest to pierwsza skarga dotycząca zachowania Landona. 
+Jestem regularnie informowany przez innych studentów, o jego aspołecznym i dziwnym zachowaniu, które sprawia, że inni czują się w jego obecności niekomfortowo.  Jeżeli nie szuka Pan jeszcze pomocy dla swojego syna, proszę wiedzieć, że na terenie kampusu, dostępna jest darmowa poradnia psychologiczna. Uważam jednak, że Landon powinien skorzystać z pomocy wykwalifikowanego psychiatry. Obawiam się, że jeśli jego zachowanie nie ulegnie poprawie, to będziemy musieli wyciągnąć wobec niego dalsze konsekwencje.
 
-Please contact me if you have any concerns. 
+Proszę o kontakt w razie jakichkolwiek obaw. 
 
-Sincerely, 
+Z poważaniem, 
 
 Darcy Genzlinger
-Headmaster </value>
+Dyrektor </value>
   </data>
 </root>
