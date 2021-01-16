@@ -33,21 +33,23 @@ namespace SessionSeven
                     var Label = new Label(gui);
                     Label.Init();
                     Label.Width = 300;
-                    Label.Alignment = Alignment.MiddleLeft;
+                    Label.Height = 100;
+                    Label.Alignment = Alignment.TopLeft;
                     Label.TextColor = Color.Black;
                     Label.Parent = CreditsWindow;
                     Label.Text = Text[0];
-                    Label.Top = Top;
+                    Label.Top = Top;                    
                     Label.Left = MainMenuBackground.ClientWidth / 2 - Label.Width / 2;
 
                     Label = new Label(gui);
                     Label.Init();
                     Label.Width = 300;
-                    Label.Alignment = Alignment.MiddleRight;
+                    Label.Height = 100;
+                    Label.Alignment = Alignment.TopRight;
                     Label.TextColor = new Color(188, 22, 0, 255);
                     Label.Parent = CreditsWindow;
                     Label.Text = Text[1];
-                    Label.Top = Top;
+                    Label.Top = Top;                                       
                     Label.Left = MainMenuBackground.ClientWidth / 2 - Label.Width / 2;
                 }
                 else
@@ -55,7 +57,8 @@ namespace SessionSeven
                     var Label = new Label(gui);
                     Label.Init();
                     Label.Width = 300;
-                    Label.Alignment = Alignment.MiddleCenter;
+                    Label.Height = 100;
+                    Label.Alignment = Alignment.TopCenter;
                     Label.TextColor = Color.Black;
                     Label.Parent = CreditsWindow;
                     Label.Text = Text[0];
