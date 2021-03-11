@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Are_you_ready_to_tell_me_what_happened_that_night" xml:space="preserve">
-    <value>Jesteś gotowy powiedzieć mi, co się stało tej nocy?</value>
+    <value>Jesteś gotowy powiedzieć mi, co się stało tamtej nocy?</value>
   </data>
   <data name="I_I_dont_know" xml:space="preserve">
     <value>Ja... sam nie wiem.</value>
@@ -148,25 +148,25 @@
     <value>Na początku to, co mówiła, nie miało żadnego sensu. Ciągle powtarzała: "Wszystko jest ok" i "To nie jego wina", a ja pytałem, kim jest osoba, o której mówi.</value>
   </data>
   <data name="Then_I_thought_maybe_she_was_cheating_on_me_again_That_shed_brought_somebody_home_and_theyd_attacked_her" xml:space="preserve">
-    <value>Wtedy pomyślałem, że może mnie zdradza, że przyprowadziła kogoś do domu, a oni ją zaatakowali.</value>
+    <value>Wtedy pomyślałem, że może mnie zdradza, że przyprowadziła kogoś do domu, a on ją zaatakował.</value>
   </data>
   <data name="But_thats_not_what_happened" xml:space="preserve">
     <value>Ale to nie było to, prawda?</value>
   </data>
   <data name="No_No_its_not_I_asked_her_who_who_did_this__and_she_kept_crying_and_telling_me_to_keep_my_voice_down_and_thats" xml:space="preserve">
-    <value>To nie było to. Zapytałem jej: "Kto ci to zrobił?", a ona nie przestawała płakać i ciągle powtarzała, żebym był cicho...</value>
+    <value>To nie było to. Zapytałem ją: "Kto ci to zrobił?", a ona nie przestawała płakać i ciągle powtarzała, żebym był cicho...</value>
   </data>
   <data name="Thats_when_you_realized_he_was_in_the_house_with_you" xml:space="preserve">
     <value>Wtedy zdałeś sobie sprawę, że on jest z wami w domu.</value>
   </data>
   <data name="Yes_I_heard_him_blasting_music_from_his_room_Hed_just_left_her_to_bleed_on_the_floor" xml:space="preserve">
-    <value>Tak. Słyszałem, jak puszcza bardzo głośno muzykę w swoim pokoju. Zostawił ją krwawiącą na podłodze, tak po prostu.</value>
+    <value>Tak. Słyszałem, jak puszcza bardzo głośno muzykę w swoim pokoju. Zostawił matkę krwawiącą na podłodze, tak po prostu.</value>
   </data>
   <data name="So_what_did_you_do_next" xml:space="preserve">
     <value>Co później zrobiłeś?</value>
   </data>
   <data name="I_helped_Cynthia_into_a_chair_and_got_her_some_ice_and_then_I_told_her_Id_be_right_back_She_was_scared_out_of_her_mind_I_think" xml:space="preserve">
-    <value>Posadziłem ją na krześle, przyniosłem lodu i powiedziałem, że zaraz będę. Była przerażona.</value>
+    <value>Posadziłem ją na krześle, przyniosłem lodu i powiedziałem, że zaraz wrócę. Była przerażona.</value>
   </data>
   <data name="She_didnt_want_me_to_go_up_there_She_said_he_had_some_kind_of_a_weapon" xml:space="preserve">
     <value>Nie chciała, żebym tam szedł i powiedziała mi, że miał przy sobie jakąś broń.</value>
@@ -184,13 +184,13 @@
     <value>I co robił?</value>
   </data>
   <data name="Just_sitting_On_the_edge_of_his_bed_Perfectly_still_Just_staring_at_the_wall" xml:space="preserve">
-    <value>Po prostu... siedział na łózku, zupełnie bez ruchu i patrzył się w ścianę.</value>
+    <value>Po prostu... siedział na łóżku, zupełnie bez ruchu, i patrzył się w ścianę.</value>
   </data>
   <data name="Youd_never_have_known_what_hed_just_done_To_his_own_mother" xml:space="preserve">
     <value>Nie byłbyś w stanie po nim poznać, co właśnie zrobił własnej matce.</value>
   </data>
   <data name="There_was_something_in_his_lap_but_I_couldnt_quite_see_it_I_figured_that_was_his_weapon" xml:space="preserve">
-    <value>Zauważyłem coś na jego kolanach, ale nie widzałem dokładnie , co to jest. Pomyślałem, że może to być broń, o której mówiła  żona.</value>
+    <value>Zauważyłem coś na jego kolanach, ale nie widzałem dokładnie, co to jest. Pomyślałem, że może to być broń, o której mówiła żona.</value>
   </data>
   <data name="I_had_to_do_something_right_then_and_there_He_was_putting_us_all_in_danger" xml:space="preserve">
     <value>Musiałem coś zrobić i to szybko, bo wszyscy byliśmy w niebezpieczeństwie.</value>
@@ -223,7 +223,7 @@
     <value>Przecież nie chciałem go skrzywdzić! Chciałem pozbawić go tej broni.</value>
   </data>
   <data name="I_thought_maybe_once_he_saw_that_he_wasnt_going_to_be_able_to_hurt_us_hed_sit_down_and_listen_to_reason" xml:space="preserve">
-    <value>Pomyślałem, że pozbawiając go broni zrozumie, że nie może nas skrzywdzić i łatwiej będzie przemówić mu do rozsądku.</value>
+    <value>Myślałem, że gdy pozbawię go broni, zrozumie, że nie może nas skrzywdzić i łatwiej będzie przemówić mu do rozsądku.</value>
   </data>
   <data name="Then_we_could_put_him_in_a_hospital_or_something_for_a_while_I_didnt_think_I_never_thought_that" xml:space="preserve">
     <value>Wtedy umieścilibyśmy go w szpitalu na jakiś czas. Nie wpadłem na to, że...</value>
@@ -235,10 +235,10 @@
     <value>Nie przedstawiaj tego tak, jakbym wiedział co zrobić. Naprawdę nie miałem pojęcia.</value>
   </data>
   <data name="I_just_got_so_so_angry_all_of_a_sudden_I_came_up_behind_him_and_I_hit_him_hard_across_the_back_of_the_head" xml:space="preserve">
-    <value>W momencie poczułem przypływ adrenaliny, zaszedłem go od tyłu i uderzyłem mocno w tył głowy.</value>
+    <value>W jednej chwili poczułem przypływ adrenaliny, zaszedłem go od tyłu i uderzyłem mocno w tył głowy.</value>
   </data>
   <data name="It_surprised_him_He_fell_forward_and_I_used_the_opportunity_to_grab_what_he_had_in_his_lap" xml:space="preserve">
-    <value>Zaskoczyłem go, upadł do przodu i korzystając z okazji, chwyciłem to, co trzymał na kolanach.</value>
+    <value>Zaskoczyłem go, upadł do przodu. Skorzystałem z okazji i chwyciłem to, co wcześniej trzymał na kolanach.</value>
   </data>
   <data name="It_was_just_a_wrench_It_wasnt_even_that_heavy" xml:space="preserve">
     <value>To był zwykły klucz francuski.</value>
@@ -247,7 +247,7 @@
     <value>Co się stało po tym, jak upadł?</value>
   </data>
   <data name="I_tried_to_hold_his_head_down_to_the_ground_but_he_was_stronger_than_I_thought" xml:space="preserve">
-    <value>Starałem się przycisnąć jego głowę do podłogi, ale okazał się silniejszy niż myślałem.</value>
+    <value>Starałem się przycisnąć jego głowę do podłogi, ale okazał się silniejszy, niż myślałem.</value>
   </data>
   <data name="He_got_right_back_up_and_turned_around_and_I_realized_in_that_moment_that_whoever_I_was_looking_at_wasnt_my_son" xml:space="preserve">
     <value>Podniósł się, obrócił, a ja zdałem sobie sprawę, że to, na co patrzę, to nie jest mój syn.</value>
@@ -265,7 +265,7 @@
     <value>Tak.</value>
   </data>
   <data name="It_only_took_him_a_second_to_realize_what_had_happened_and_who_had_hit_him_and_then_he_was_right_back_up_and_punching_me_as_hard_as_he_could_in_the_face_without_a_word" xml:space="preserve">
-    <value>Po kilku sekundach zorientował się, kto go uderzył i w momencie, bez ostrzeżenia, zaczął uderzać mnie z całej siły, prosto w twarz.</value>
+    <value>Po chwili zorientował się, kto go uderzył i w momencie, bez ostrzeżenia, zaczął bić mnie z całej siły, prosto w twarz.</value>
   </data>
   <data name="He_knocked_the_air_straight_out_of_me_Put_me_flat_on_my_back" xml:space="preserve">
     <value>Rozłożył mnie na łopatki.</value>
@@ -289,7 +289,7 @@
     <value>I wtedy poczułem, jak moje ciało zaczyna działać automatycznie.</value>
   </data>
   <data name="I_think_it_was_self_defense_and_I_know_I_was_crying_and_I_just_swung_the_damn_wrench_up_to_where_I_thought_his_face_might_be_above_mine_and_and" xml:space="preserve">
-    <value>Wydaję mi się, że to był odruch, samoobrona. Chwyciłem ten klucz francuski i machnąłem w miejsce, gdzie powinna być jego głowa i...</value>
+    <value>To chyba był odruch, samoobrona. Chwyciłem klucz francuski i machnąłem w miejsce, gdzie powinna być jego głowa i...</value>
   </data>
   <data name="Oh_god_the_sound_was_awful" xml:space="preserve">
     <value>O mój Boże, ten dźwięk był okropny!</value>
@@ -298,7 +298,7 @@
     <value>I wtedy upadł.</value>
   </data>
   <data name="Yes_but_not_right_away_It_took_him_a_second_Like_he_was_thinking_about_it" xml:space="preserve">
-    <value>Tak, ale nie tak odrazu. Zajęło mu to sekundę, jakby chwilę się zastanawiał.</value>
+    <value>Tak, ale nie tak od razu. Zajęło mu to chwilę, jakby chwilę się zastanawiał.</value>
   </data>
   <data name="He_got_all_quiet_and_I_looked_him_in_the_eyes_and_he_just_looked_surprised" xml:space="preserve">
     <value>Wyciszył się i wyglądał na zaskoczonego, kiedy spojrzałem mu prosto w oczy.</value>
@@ -337,7 +337,7 @@
     <value>Sam w to nie wierzyłem.</value>
   </data>
   <data name="It_took_me_ages_of_searching_around_in_that_basement_to_remember_even_that_far" xml:space="preserve">
-    <value>Zajęło mi wieki przeszukiwanie tej piwnicy, by móc sięgnąć pamięciom tak daleko.</value>
+    <value>Długo przeszukiwałem tę piwnicę, zanim sięgnąłem pamięcią tak daleko.</value>
   </data>
   <data name="When_I_woke_up_in_that_basement_I_thought_I_thought_maybe_somebody_had_come_in_or_I_had_fallen_down" xml:space="preserve">
     <value>Kiedy obudziłem się w tej piwnicy, pomyślałem.... Pomyślałem, że może ktoś się włamał albo upadłem.</value>
@@ -361,13 +361,13 @@
     <value>Moja własna żona mnie uwięziła.</value>
   </data>
   <data name="She_left_me_to_die" xml:space="preserve">
-    <value>Zostawiła mnie tutaj, żebym umarł.</value>
+    <value>Zostawiła mnie tam, żebym umarł.</value>
   </data>
   <data name="You_killed_her_only_son_Ryan_She_was_terrified" xml:space="preserve">
     <value>Zabiłeś jej jedynego syna, Ryan. Była przerażona.</value>
   </data>
   <data name="Yeah_well_well_see_what_the_jury_thinks_about_that" xml:space="preserve">
-    <value>No cóż, zobaczymy, co o tym myśli ława przysięgłych.</value>
+    <value>No cóż, zobaczymy, jakie będzie zdanie ławy przysięgłych.</value>
   </data>
   <data name="I_was_only_trying_to_protect_her_I_was_trying_to_protect_us" xml:space="preserve">
     <value>Próbowałem ją tylko chronić. Próbowałem chronić nas.</value>
@@ -376,7 +376,7 @@
     <value>Od syna, którego wychowałeś.</value>
   </data>
   <data name="Yeah_I_mean_I_guess_thats_the_truly_scary_part_about_all_this_isnt_it" xml:space="preserve">
-    <value>Tak, to znaczy, myślę, że to jest naprawdę przerażające w tym wszystkim, prawda?</value>
+    <value>Tak. To chyba najbardziej przerażające, prawda?</value>
   </data>
   <data name="He_was_our_son_He_slept_in_our_house_We_took_care_of_him_when_he_was_sick" xml:space="preserve">
     <value>Był naszym synem. Spał w naszym domu. Opiekowaliśmy się nim, gdy był chory.</value>
@@ -424,13 +424,13 @@
     <value>Wiedziałem, że ostatnio niewiele rozmawialiśmy, ale naprawdę myślałem, że będzie się przejmował tym, co ma do powiedzenia jego własny ojciec.</value>
   </data>
   <data name="I_knocked_on_the_doorframe_so_that_I_wouldnt_surprise_him_and_the_way_he_looked_around_at_me_I_almost_felt_scared" xml:space="preserve">
-    <value>Zapukałem we framugę, żeby go nie zaskoczyć, a jak na mnie spojrzał... Prawie poczułem się ... przestraszony.</value>
+    <value>Zapukałem we framugę, żeby go nie zaskoczyć, a gdy na mnie spojrzał... Prawie się... przeraziłem.</value>
   </data>
   <data name="He_didnt_look_like_he_regretted_anything_at_all_He_just_looked_empty" xml:space="preserve">
-    <value>Nie wyglądał, jakby czegokolwiek żałował. Wyglądał na osobę bez emocji.</value>
+    <value>Nie wyglądał, jakby czegokolwiek żałował. Był jakby pusty.</value>
   </data>
   <data name="Empty_and_maybe_a_little_annoyed_that_I_was_there" xml:space="preserve">
-    <value>Bez emocji, ale może lekko zirytowany moją obecnością.</value>
+    <value>Choć moja obecność chyba go trochę zirytowała.</value>
   </data>
   <data name="It_was_like_all_of_a_sudden_I_realized_that_this_person_Id_been_looking_at_all_his_life_wasnt_who_I_thought_he_was" xml:space="preserve">
     <value>Nagle zdałem sobie sprawę, że osoba, na którą patrzyłem przez całe życie, nie była tym, kim myślałem, że jest.</value>
@@ -448,10 +448,10 @@
     <value>Nie poruszył się, nic nie powiedział, więc po prostu podszedłem i usiadłem obok niego na łóżku.</value>
   </data>
   <data name="I_swear_I_could_feel_the_irritated_energy_coming_off_of_him_when_I_did_It_was_cold" xml:space="preserve">
-    <value>Przysięgam, że kiedy to zrobiłem, czułem jego wielkie poirytowanie. To było... zimne.</value>
+    <value>Przysięgam, że gdy to zrobiłem, czułem jego wielkie poirytowanie. To było... zimne.</value>
   </data>
   <data name="I_asked_him_what_happened_I_asked_him_if_he_knew_what_state_his_mother_was_in_downstairs" xml:space="preserve">
-    <value>Zapytałem go, co się stało. Zapytałem go, czy wie, w jakim stanie jest jego matka na dole.</value>
+    <value>Zapytałem go, co się stało i czy wie, w jakim stanie jest jego matka.</value>
   </data>
   <data name="Did_he_admit_to_hurting_her" xml:space="preserve">
     <value>Czy przyznał się, że ją skrzywdził?</value>
@@ -472,7 +472,7 @@
     <value>Chciałem się obudzić. Chciałem, żeby Landon się z tego otrząsnął.</value>
   </data>
   <data name="I_told_him_you_cant_really_mean_that_and_the_look_on_his_face_when_he_heard_my_voice_breaking" xml:space="preserve">
-    <value>Powiedziałem mu:M "nie możesz naprawdę tak myśleć," i ten wyraz jego twarzy, gdy usłyszał załamanie mojego głosu...</value>
+    <value>Powiedziałem mu: "Nie możesz naprawdę tak myśleć". I ten wyraz jego twarzy, gdy usłyszał, jak łamie mi się głos...</value>
   </data>
   <data name="I_knew_immediately_that_I_wasnt_safe" xml:space="preserve">
     <value>Od razu wiedziałem, że nie jestem bezpieczny.</value>
@@ -490,7 +490,7 @@
     <value>Ostatnią rzeczą, jaką pamiętam, było to, że uniósł go nad głowę i machał nim w moim kierunku.</value>
   </data>
   <data name="The_next_thing_I_knew_I_woke_up_in_the_basement" xml:space="preserve">
-    <value>Potem pamiętam, to że obudziłem się w piwnicy.</value>
+    <value>Potem obudziłem się w piwnicy.</value>
   </data>
   <data name="And_thats_all_you_remember_It_was_Landon_all_along" xml:space="preserve">
     <value>I to wszystko, co pamiętasz? To był cały czas Landon?</value>
@@ -499,7 +499,7 @@
     <value>Nie chciałem w to wierzyć.</value>
   </data>
   <data name="It_took_me_ages_of_wandering_around_in_that_basement_to_remember_it_for_myself_completely" xml:space="preserve">
-    <value>Wędrowanie po tej piwnicy zajęło mi całe wieki, aby wszystko sobie przypomnieć.</value>
+    <value>Długo przeszukiwałem tę piwnicę, zanim wszystko sobie przypomniałem.</value>
   </data>
   <data name="All_that_time_I_thought_my_family_was_in_danger" xml:space="preserve">
     <value>Przez cały czas myślałem, że moja rodzina jest w niebezpieczeństwie.</value>
@@ -508,7 +508,7 @@
     <value>Myślałem, że może ich zabrano i dlatego mi nie pomagali.</value>
   </data>
   <data name="And_all_that_time_Id_just_been_abandoned" xml:space="preserve">
-    <value>I przez cały ten czas byłem po prostu porzucony.</value>
+    <value>A tak naprawdę mnie porzucili.</value>
   </data>
   <data name="Cynthia_too" xml:space="preserve">
     <value>Cynthia też?</value>
@@ -523,7 +523,7 @@
     <value>Chciała się dla niego przeprowadzić i nie obchodziły jej moje uczucia. </value>
   </data>
   <data name="Wed_been_growing_apart_and_then_to_have_her_baby_do_something_like_that_Running_off_with_him_only_made_sense_to_her" xml:space="preserve">
-    <value>Oddalaliśmy się od siebie, a potem żeby jej dziecko zrobiło coś takiego... Tylko ucieczka z nim miała sens.</value>
+    <value>Oddalaliśmy się od siebie, a potem jej dziecko zrobiło coś takiego... Tylko ucieczka z nim miała dla Cynthii sens.</value>
   </data>
   <data name="She_probably_wanted_to_protect_him" xml:space="preserve">
     <value>Pewnie chciała go chronić.</value>
@@ -538,16 +538,16 @@
     <value>To po prostu obrzydliwe.</value>
   </data>
   <data name="How_about_we_take_a_short_break_You_can_catch_your_breath" xml:space="preserve">
-    <value>Może zrobimy sobie krótką przerwę. Pozwoli ci to złapać oddech.</value>
+    <value>Może zrobimy sobie krótką przerwę? Pozwoli ci to odetchnąć.</value>
   </data>
   <data name="It_didnt_feel_like_I_had_a_choice_I_didnt_want_anybody_to_get_hurt_any_more" xml:space="preserve">
-    <value>Nie uważałem, że mam wybór. Nie chciałem, by ktokolwiek został zraniony.</value>
+    <value>Nie myślałem, że mam wybór. Nie chciałem, by ktokolwiek ucierpiał.</value>
   </data>
   <data name="Especially_not_my_family_I_thought_we_could_just_pack_up_and_escape" xml:space="preserve">
     <value>Zwłaszcza moja rodzina. Myślałem, że możemy się po prostu spakować i uciec.</value>
   </data>
   <data name="Maybe_go_stay_in_a_hotel_for_the_night" xml:space="preserve">
-    <value>Może zostań na noc w hotelu.</value>
+    <value>Może zostań na noc w hotelu?</value>
   </data>
   <data name="I_thought_once_we_were_safely_out_of_there_we_could_call_the_police_to_confront_Landon" xml:space="preserve">
     <value>Pomyślałem, że jak będziemy już bezpieczni, możemy wezwać policję, by skonfrontowała się z Landonem.</value>
@@ -556,16 +556,16 @@
     <value>Nie sądziłeś, że sam powinieneś to zrobić?</value>
   </data>
   <data name="No_we_were_past_that_He_was_violent_I_felt_like_I_hardly_even_knew_him_anymore" xml:space="preserve">
-    <value>Nie, już było za późno. Był gwałtowny. Czułem, jakbym go już prawie nie znał.</value>
+    <value>Nie, było już za późno. Był brutalny. Czułem, jakbym go prawie nie znał.</value>
   </data>
   <data name="Son_or_not_hed_become_a_stranger_I_didnt_know_what_I_could_have_said_or_done" xml:space="preserve">
-    <value>Syn czy nie, stał się kimś obcym. Nie wiedziałem, co jeszcze mogłem powiedzieć lub zrobić.</value>
+    <value>Syn czy nie, stał się kimś obcym. Nie wiedziałem, co jeszcze mogę powiedzieć lub zrobić.</value>
   </data>
   <data name="I_just_kept_thinking_about_Cynthia_too_and_the_way_shed_looked_so_pathetic_and_hurt" xml:space="preserve">
-    <value>Po prostu wciąż myślałam o Cynthii i o tym, jak żałośnie wyglądała.</value>
+    <value>Po prostu wciąż myślałem o Cynthii i o tym, jaką zrobił jej krzywdę.</value>
   </data>
   <data name="The_way_she_kept_making_excuses_for_him_I_knew_the_only_way_to_save_her_would_be_to_get_her_far_away_from_him" xml:space="preserve">
-    <value>To, w jaki sposób ciągle szukała dla niego wymówek ... Wiedziałem, że jedynym sposobem, aby ją uratować, będzie oddalenie jej od niego.</value>
+    <value>Ciągle szukała dla niego wymówek... Wiedziałem, że jedynym sposobem, aby ją uratować, jest oddalenie jej od niego.</value>
   </data>
   <data name="So_I_went_back_to_our_room_and_started_packing_for_both_of_us" xml:space="preserve">
     <value>Wróciłem więc do naszego pokoju i zacząłem nas pakować.</value>
@@ -601,10 +601,10 @@
     <value>Nie było wiadomo, ile czasu zostało, nim Landon zorientuje się, że coś się dzieje.</value>
   </data>
   <data name="I_ended_up_trying_to_drag_her_out_with_me_but_she_wouldnt_cooperate_She_started_screaming_and_yelling_telling_me_she_couldnt_leave_her_baby" xml:space="preserve">
-    <value>Skończyło się na tym, że próbowałem ją ze sobą wyciągnąć, ale nie chciała współpracować. Zaczęła krzyczeć i wrzeszczeć, mówiąc mi, że nie może zostawić swojego dziecka.</value>
+    <value>Skończyło się na tym, że próbowałem ją ze sobą zabrać, ale nie chciała współpracować. Krzyczała, że nie może zostawić swojego dziecka.</value>
   </data>
   <data name="I_tried_to_tell_her_that_didnt_make_any_sense_but_she_just_wouldnt_listen_She_was_sobbing" xml:space="preserve">
-    <value>Próbowałem jej powiedzieć, że to nie ma sensu, ale po prostu nie chciała słuchać. Szlochała niepocieszona.</value>
+    <value>Próbowałem jej powiedzieć, że to nie ma sensu, ale po prostu nie chciała słuchać. Tylko szlochała.</value>
   </data>
   <data name="Inconsolable_I_was_trying_to_get_her_to_stop_telling_her_she_needed_to_leave_that_Landon_would_hear_her_but" xml:space="preserve">
     <value>Próbowałem ją powstrzymać, mówiąc, że musi odejść, że Landon ją usłyszy... ale...</value>
@@ -619,16 +619,16 @@
     <value>Potem pamiętam, jak Cynthia patrzyła na niego, a on stał za mną, obserwując nas oboje.</value>
   </data>
   <data name="He_was_holding_a_wrench_He_didnt_even_look_at_me_He_just_told_Cynthia_to_come_to_him" xml:space="preserve">
-    <value>Trzymał klucz francuski. Nawet na mnie nie spojrzał. Właśnie kazał Cynthii do siebie podejść.</value>
+    <value>Trzymał klucz francuski. Nawet na mnie nie spojrzał, tylko kazał Cynthii do siebie podejść.</value>
   </data>
   <data name="And_she_she_did_She_shook_herself_out_of_my_grip_and_went_to_him_after_only_about_a_minute" xml:space="preserve">
-    <value>A ona... to zrobiła. Wyrwała się z mojego uścisku i podeszła do niego już po około minucie.</value>
+    <value>A ona... to zrobiła. Prawie bez zastanowienia wyrwała się z mojego uścisku i podeszła do niego.</value>
   </data>
   <data name="She_kept_muttering_about_how_he_was_her_baby_and_she_was_sorry" xml:space="preserve">
     <value>Mamrotała coś o tym, że on jest jej dzieckiem, że jej przykro...</value>
   </data>
   <data name="The_last_thing_I_remember_is_her_screaming_while_he_swung_the_wrench_at_my_head" xml:space="preserve">
-    <value>Ostatnią rzeczą, jaką pamiętam, był jej krzyk, kiedy machnęła kluczem francuskim w kierunku mojej głowy.</value>
+    <value>Ostatnią rzeczą, jaką pamiętam, był jej krzyk, kiedy machnął kluczem francuskim w kierunku mojej głowy.</value>
   </data>
   <data name="And_thats_it_It_was_both_of_them_working_together" xml:space="preserve">
     <value>I to wszystko? Oni ze sobą współpracowali?</value>
@@ -637,6 +637,6 @@
     <value>Moja żona... Mój syn...</value>
   </data>
   <data name="My_own_family_And_all_this_time_I_thought_maybe_they_were_hurt_But_theyd_just_run_away" xml:space="preserve">
-    <value>Moja własna rodzina... I przez cały ten czas myślałem, że może stała im się krzywda... Ale oni po prostu uciekli.</value>
+    <value>Moja własna rodzina... Przez cały ten czas myślałem, że może stała im się krzywda... Ale oni po prostu uciekli.</value>
   </data>
 </root>

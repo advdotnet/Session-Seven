@@ -142,7 +142,7 @@
     <value>Zdecydowanie niewiedza.</value>
   </data>
   <data name="Not_knowing_what_was_going_to_happen_next_or_who_was_going_to_be_waiting_for_me_not_knowing_what_would_happen_to_me_or_my_family" xml:space="preserve">
-    <value>Brak pewności, co zaraz może się albo kto na mnie czekał. Nie wiedziałem, co się stanie ze mną lub moją rodziną...</value>
+    <value>Brak pewności, co zaraz może się wydarzyć lub kto na mnie czekał. Nie wiedziałem, co się stanie ze mną i moją rodziną...</value>
   </data>
   <data name="HelloExclamation" xml:space="preserve">
     <value>Halo?!?</value>
@@ -160,6 +160,6 @@
     <value>Ała. Jak to się, do cholery, stało?</value>
   </data>
   <data name="I_need_to_bandage_my_hand_I_think_we_have_a_medicine_cabinet_down_here_somewhere" xml:space="preserve">
-    <value>Muszę opatrzyć dłoń. Wydaję mi się, że gdzieś tutaj powinna być apteczka.</value>
+    <value>Muszę opatrzyć dłoń. Chyba jest tu gdzieś apteczka.</value>
   </data>
 </root>

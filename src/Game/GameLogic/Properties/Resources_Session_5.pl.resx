@@ -130,7 +130,7 @@
     <value>Cieszę się, że też tak uważasz. Zaczniemy od czegoś prostego. Jak się mają sprawy od czasu diagnozy?</value>
   </data>
   <data name="Oh_I_dont_know_Odd_I_guess_I_just_dont_know_if_I_believe_it" xml:space="preserve">
-    <value>Och, nie wiem... dziwnie. Po prostu nie wiem, czy w to wierzę.</value>
+    <value>Och, nie wiem... Dziwnie. Po prostu nie jestem pewien, czy w to wierzę.</value>
   </data>
   <data name="Aspergers_can_present_itself_in_many_different_ways_Ryan" xml:space="preserve">
     <value>Zespół Aspergera ma bardzo różne objawy, Ryan.</value>
@@ -142,7 +142,7 @@
     <value>Jego antyspołeczne zachowanie może być objawem. Powiedziałeś mi również, że ma problemy z nawiązywaniem znajomości.</value>
   </data>
   <data name="Yeah_he_does_At_least_I_think_he_does_He_never_brings_anybody_home_anyways_Do_you_think_hell_ever_get_any_better_about_that" xml:space="preserve">
-    <value>Tak, to prawda, a przynajmniej tak mi się wydaje. Nigdy nie przyprowadza żadnych znajomych. Myślisz, że kiedyś będzie w tym lepszy?</value>
+    <value>Tak, to prawda, a przynajmniej tak mi się wydaje. Nigdy nie przyprowadza znajomych. Myślisz, że kiedyś będzie inaczej?</value>
   </data>
   <data name="Its_possible_Perhaps_the_antidepressants_will_help_with_that_as_well" xml:space="preserve">
     <value>To możliwe. Może leki antydepresyjne też pomogą.</value>
@@ -187,7 +187,7 @@
     <value>Diagnoza syna może być ciężkim przeżyciem dla rodzica z chorobą psychiczną.</value>
   </data>
   <data name="Its_hard_not_to_feel_guilty_you_know_Like_maybe_if_Id_done_something_differently" xml:space="preserve">
-    <value>CIężko się za to nie obwiniać, wiesz? Może mogłem zrobić coś inaczej...</value>
+    <value>CIężko się za to nie obwiniać, wiesz? Może gdybym zrobił coś inaczej...</value>
   </data>
   <data name="Mental_illness_is_like_any_other_chronic_disease_You_cant_have_done_anything_to_prevent_it" xml:space="preserve">
     <value>Choroba psychiczna jest jak każda inna przewlekła choroba. Nie mogłeś zrobić niczego, by temu zapobiec.</value>
@@ -217,10 +217,10 @@
     <value>Z nastolatkami jest ciężko, zarówno ze zdrowymi, jak i tymi z problemami psychicznymi. Musisz spróbować dla swojej rodziny, Ryan. Wiesz, jakie to ważne.</value>
   </data>
   <data name="He_wouldnt_even_tell_me_what_those_bullies_were_doing_to_him_at_school_Or_who_they_were_He_just_said_he_needed_to_get_away_from_them" xml:space="preserve">
-    <value>Nie powiedział mi nawet, co ci dranie robią z nim w szkole. Albo kim oni byli. Powiedział tylko, że musi od nich uciec.</value>
+    <value>Nie powiedział mi nawet, co ci dranie robili z nim w szkole. Albo kim oni byli. Powiedział tylko, że musi od nich uciec.</value>
   </data>
   <data name="I_still_dont_know_why_why_he_did_what_he_did" xml:space="preserve">
-    <value>Ciągle nie wiem dlaczego... Dlaczego zrobił to, co zrobił.</value>
+    <value>Nadal nie znam powodu... Dlaczego zrobił to, co zrobił.</value>
   </data>
   <data name="To_the_bullies" xml:space="preserve">
     <value>Tym tyranom?</value>
@@ -244,10 +244,10 @@
     <value>Jeśli naprawdę chcesz się z nim dogadać, po prostu bardziej się postaraj. Może chciałby wybrać się do kina? Albo parku?</value>
   </data>
   <data name="Maybe_Who_knows_what_he_likes_anymore" xml:space="preserve">
-    <value>Może... Kto wie, co on teraz lubi.</value>
+    <value>Może... Kto wie, czym on się teraz interesuje.</value>
   </data>
   <data name="Landon_has_always_been_troubled_as_long_as_I_can_remember" xml:space="preserve">
-    <value>Landon zawsze był problematyczny, odkąd pamiętam.</value>
+    <value>Landon był problematyczny, odkąd pamiętam.</value>
   </data>
   <data name="What_do_you_mean_by_troubled" xml:space="preserve">
     <value>Co masz na myśli, mówiąc "problematyczny"?</value>
@@ -292,7 +292,7 @@
     <value>W każdym razie, otworzyłem jedną z szafek, szukając patelni do naleśników.</value>
   </data>
   <data name="I_couldnt_quite_reach_the_pan_I_wanted_so_I_set_Landon_down_on_the_counter_for_just_a_minute_and_reached_up" xml:space="preserve">
-    <value>Nie mogłem jej dosięgnąć, więc posadziłem Landona na blacie, dosłownie na minutę, i sięgnąłem po patelnię.</value>
+    <value>Nie mogłem jej dosięgnąć, więc posadziłem Landona na blacie, dosłownie na chwilę, i sięgnąłem po patelnię.</value>
   </data>
   <data name="The_pan_came_crashing_down_right_next_to_Landon_I_panicked_and_threw_my_hand_out" xml:space="preserve">
     <value>Trąciłem ją i zaczęła spadać zaraz obok Landona. Spanikowałem i wyciągnąłem ręce, żeby go ochronić.</value>
@@ -337,13 +337,13 @@
     <value>Co widziałeś?</value>
   </data>
   <data name="Its_hard_to_explain_And_Im_not_really_proud_of_how_I_found_it" xml:space="preserve">
-    <value>Ciężko to wyjaśnić i nie jestem do końca dumny z tego, jak się dowiedziałem.</value>
+    <value>Ciężko to wyjaśnić i nie jestem do końca dumny z tego, w jaki sposób się dowiedziałem.</value>
   </data>
   <data name="Found_what_Ryan" xml:space="preserve">
     <value>Dowiedziałeś się czego, Ryan?</value>
   </data>
   <data name="I_You_have_to_understand_that_he_never_talks_to_me_And_after_everything_thats_happened_with_the_bullying_and_the_switching_schools_and_the_secrets" xml:space="preserve">
-    <value>Ja... Musisz zrozumieć, że on nigdy ze mną nie rozmawia. Po wszystkim, co się wydarzyło, znęcaniu się przez rówieśników, zmianą szkół i tajemnicami...</value>
+    <value>Ja... Musisz zrozumieć, że on nigdy ze mną nie rozmawia. Po wszystkim, co się wydarzyło, znęcaniu się przez rówieśników, zmianie szkół i tajemnicami...</value>
   </data>
   <data name="I_just_wanted_to_understand" xml:space="preserve">
     <value>Po prostu chciałem zrozumieć.</value>
@@ -355,7 +355,7 @@
     <value>Nie miałem pojęcia, co tam robi. Myślałem, że może spotyka się z jakąś dziewczyną albo wkręca się w narkotyki ze swoimi znajomymi.</value>
   </data>
   <data name="I_dont_know_that_I_really_would_have_minded_if_that_was_what_he_was_doing_back_there_because_at_least_that_would_mean_hes_spending_time_with_someone" xml:space="preserve">
-    <value>Prawdę mówiąc, nie miałbym chyba nic przeciwko temu, co tam robi. Przynajmniej oznaczałoby to, że spędza czas z innymi ludźmi.</value>
+    <value>Prawdę mówiąc, nie miałbym chyba nic przeciwko temu. Przynajmniej oznaczałoby to, że spędza czas z innymi ludźmi.</value>
   </data>
   <data name="But_its_the_kind_of_thing_I_think_a_father_should_know_about" xml:space="preserve">
     <value>Ale jest to jedna z tych rzeczy, o których ojciec powinien wiedzieć.</value>
@@ -430,7 +430,7 @@
     <value>Może dowiedział się od Cynthii?</value>
   </data>
   <data name="Maybe_but_I_dont_think_so_I_dont_think_she_knew_Id_gone_out" xml:space="preserve">
-    <value>Możliwe, ale sam nie wiem. Chyba nie wiedziała, że za nim poszedłem.</value>
+    <value>Możliwe, sam nie wiem. Chyba nie wiedziała, że za nim poszedłem.</value>
   </data>
   <data name="But_he_never_said_anything_to_you_about_it" xml:space="preserve">
     <value>Ale on nigdy o tym nie wspominał?</value>

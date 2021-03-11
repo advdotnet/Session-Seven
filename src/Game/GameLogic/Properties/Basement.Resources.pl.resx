@@ -172,7 +172,7 @@
     <value>pudełko z materiałami do pisania</value>
   </data>
   <data name="Cynthia_stores_some_writing_materials_in_this_box" xml:space="preserve">
-    <value>Cyntia trzyma w tym pudełku materiały do pisania.</value>
+    <value>Cynthia trzyma w tym pudełku materiały do pisania.</value>
   </data>
   <data name="There_are_some_bite_marks_by_a_rat_or_something" xml:space="preserve">
     <value>Tam są ślady po ugryzieniach. Mamy problem ze szczurami?</value>
@@ -295,7 +295,7 @@
     <value>Gadanie z roślinami to zajęcie Cynti.</value>
   </data>
   <data name="Has_Cynthia_been_watering_this_regularly" xml:space="preserve">
-    <value>Czy Cyntia podlewała go regularnie?</value>
+    <value>Czy Cynthia podlewała go regularnie?</value>
   </data>
   <data name="Cacti_are_so_durable" xml:space="preserve">
     <value>Kaktusy są bardzo wytrzymałe.</value>
@@ -307,7 +307,7 @@
     <value>dywan</value>
   </data>
   <data name="Cynthia_would_kill_me" xml:space="preserve">
-    <value>Cyntia by mnie zabiła.</value>
+    <value>Cynthia by mnie zabiła.</value>
   </data>
   <data name="No_time_to_play" xml:space="preserve">
     <value>Nie ma czasu na zabawę.</value>
@@ -343,7 +343,7 @@
     <value>okruchy</value>
   </data>
   <data name="Since_when_has_Cynthia_allowed_crumbs_into_her_house" xml:space="preserve">
-    <value>Od kiedy Cyntia pozwalała na okruchy w jej domu?</value>
+    <value>Od kiedy Cynthia pozwalała na okruchy w swoim domu?</value>
   </data>
   <data name="Looks_like_plastic_and_paper" xml:space="preserve">
     <value>Wygląda jak plastik i papier.</value>
@@ -370,7 +370,7 @@
     <value>Rozgrzałem tylko wiertarkę. Prawie wybuchła!</value>
   </data>
   <data name="No_need_to_drill_any_more" xml:space="preserve">
-    <value>Nie trzeba więcej wiercić.</value>
+    <value>Nie trzeba już wiercić.</value>
   </data>
   <data name="There_are_no_screws_visible" xml:space="preserve">
     <value>Nie ma widocznych śrub.</value>
@@ -400,7 +400,7 @@
     <value>Ta szuflada jest już otwarta.</value>
   </data>
   <data name="The_drawer_belongs_to_my_wifes_old_desk" xml:space="preserve">
-    <value>To jest szuflada z biurka mojej żony.</value>
+    <value>Szuflada biurka mojej żony.</value>
   </data>
   <data name="Its_empty" xml:space="preserve">
     <value>Pusta.</value>
@@ -604,7 +604,7 @@
     <value>Dlaczego miałbym to zrobić?</value>
   </data>
   <data name="Here_we_go" xml:space="preserve">
-    <value>No to ruszamy.</value>
+    <value>No to zobaczmy.</value>
   </data>
   <data name="A_package_of_paper_clips" xml:space="preserve">
     <value>Pudełko spinaczy.</value>
@@ -616,10 +616,10 @@
     <value>JEZU!</value>
   </data>
   <data name="The_baton_is_too_short_to_reach_the_item_in_the_back" xml:space="preserve">
-    <value>Ta pałka jest za krótka, by sięgnąć coś z tyłu.</value>
+    <value>Ta pałka jest za krótka, by dosięgnąć do końca.</value>
   </data>
   <data name="I_could_reach_the_item_in_the_back_but_I_couldnt_pull_it_out" xml:space="preserve">
-    <value>Sięgam do tyłu, ale nie mógłbym tego wyciągnąć.</value>
+    <value>Sięgam do końca, ale nie mogę tego wyciągnąć.</value>
   </data>
   <data name="I_need_a_sling_or_something" xml:space="preserve">
     <value>Potrzebuję procy albo czegoś podobnego.</value>
@@ -679,7 +679,7 @@
     <value>Tam jest wielki szczur.</value>
   </data>
   <data name="Are_there_eyes_staring_at_me" xml:space="preserve">
-    <value>Tam patrzą się na mnie jakieś oczy?</value>
+    <value>Spoglądają na mnie stamtąd jakieś oczy?</value>
   </data>
   <data name="Is_somebody_home" xml:space="preserve">
     <value>Zastałem kogoś w domu?</value>
@@ -751,7 +751,7 @@
     <value>latarka</value>
   </data>
   <data name="There_are_numerous_guarantee_cards_in_there" xml:space="preserve">
-    <value>Na górnej części jest pełno kart gwarancyjnych.</value>
+    <value>Na górze jest pełno kart gwarancyjnych.</value>
   </data>
   <data name="Also_in_the_box_are_some_old_drug_prescriptions_for_me" xml:space="preserve">
     <value>Za to w pudełku jest pełno moich starych recept.</value>
@@ -838,7 +838,7 @@
     <value>Pierwsza strona brzmi:</value>
   </data>
   <data name="_There_was_a_time_that_the_pieces_fit_but_I_watched_them_fall_away_" xml:space="preserve">
-    <value>» Był czas, kiedy wszystkie kawałki łączyły się w całość, ale ja patrzyłem, jak spadają. «</value>
+    <value>» Był czas, kiedy wszystkie kawałki łączyły się w całość, lecz ja patrzyłem, jak się rozpadają. «</value>
   </data>
   <data name="_Mildewed_and_smoldering_strangled_by_our_coveting_" xml:space="preserve">
     <value>» Spleśniały i zbutwiały, zduszony przez nasze pragnienie «</value>
@@ -862,7 +862,7 @@
     <value>tablica korkowa</value>
   </data>
   <data name="This_bulletin_board_is_covered_in_reminders_for_meetings_with_the_realtor_the_bank_and_Landons_teachers_as_well_as_an_alphabetized_shopping_list_of_Cynthias" xml:space="preserve">
-    <value>Ta tablica jest wypełniona przypomnieniami o spotkaniach z agentem nieruchomości, bankiem i nauczycielami Landona. Jest tu też lista zakupów Cynthii, zapisana w kolejności alfabetycznej.</value>
+    <value>Tablica jest pełna przypomnień o spotkaniach z agentem nieruchomości, bankiem czy nauczycielami Landona. Jest też lista zakupów Cynthii zapisana w kolejności alfabetycznej.</value>
   </data>
   <data name="Landon_drew_something_in_the_corner_but_its_too_faded_now_to_make_out_what_its_supposed_to_be" xml:space="preserve">
     <value>W rogu widać jakiś rysunek Landona, ale jest zbyt rozmazany, by można było go rozpoznać.</value>
@@ -904,7 +904,7 @@
     <value>Nie dam rady przecisnąć się przez te pręty.</value>
   </data>
   <data name="Thought_we_got_these_things_to_keep_people_out_not_in" xml:space="preserve">
-    <value>Pomyśleć, że zamontowaliśmy te pręty, by ludzie tu nie wchodzili, a nie nie wychodzili.</value>
+    <value>Pomyśleć, że zamontowaliśmy te pręty, by ludzie tu nie wchodzili, a nie po to, by nie wychodzili.</value>
   </data>
   <data name="wooden_box" xml:space="preserve">
     <value>drewniane pudełko</value>
@@ -925,7 +925,7 @@
     <value>Podważyłem już ten panel.</value>
   </data>
   <data name="I_put_the_screwdriver_in_the_small_gap_between_the_planks" xml:space="preserve">
-    <value>Wsadziłem śrubokręt w małą szparę pomiędzy deski.</value>
+    <value>Wsadziłem śrubokręt w małą szparę pomiędzy deskami.</value>
   </data>
   <data name="screwdriver" xml:space="preserve">
     <value>śrubokręt</value>
@@ -967,7 +967,7 @@
     <value>Gdy Landon dorastał, Cynthia co roku tworzyła album do wklejania.</value>
   </data>
   <data name="I_guess_I_hadnt_really_noticed_she_wasnt_doing_it_any_more" xml:space="preserve">
-    <value>Chyba nawet nie zauważyłem, jak przestała to robić.</value>
+    <value>Chyba nawet nie zauważyłem, gdy przestała to robić.</value>
   </data>
   <data name="I_cant_quite_bring_myself_to_look_through_them_right_now" xml:space="preserve">
     <value>Nie czuję się na siłach, żeby je teraz przeglądać.</value>
@@ -1000,13 +1000,13 @@
     <value>Skrzynka na narzędzia, którą dostałem na Dzień Ojca od Landona.</value>
   </data>
   <data name="Its_nice_although_I_havent_found_a_reason_to_saw_anything_yet" xml:space="preserve">
-    <value>Fajnie, chociaż nie znalazłem jeszcze powodu, żeby cokolwiek zobaczyć.</value>
+    <value>Niezła, ale jeszcze jej nie używałem.</value>
   </data>
   <data name="rugs" xml:space="preserve">
     <value>dywaniki</value>
   </data>
   <data name="Some_of_our_failed_statement_rugs" xml:space="preserve">
-    <value>Niektóre z dywaników, które nie spełniły naszych oczekiwań.</value>
+    <value>Dywaniki, które nie spełniły naszych oczekiwań.</value>
   </data>
   <data name="It_took_Cynthia_almost_a_year_to_finally_be_happy_with_the_design_scheme_of_the_house" xml:space="preserve">
     <value>Trwało to rok, zanim Cynthia była w pełni zadowolona z wystroju domu.</value>

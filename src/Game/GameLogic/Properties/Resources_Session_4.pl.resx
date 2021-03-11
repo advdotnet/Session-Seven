@@ -124,7 +124,7 @@
     <value>Co na przykład?</value>
   </data>
   <data name="Well_what_do_you_do_for_work" xml:space="preserve">
-    <value>Powiedz mi coś o swojej pracy?</value>
+    <value>Powiedz mi coś o swojej pracy.</value>
   </data>
   <data name="Im_a_mechanical_engineer" xml:space="preserve">
     <value>Jestem inżynierem mechanikiem.</value>
@@ -139,13 +139,13 @@
     <value>Jest okropna.</value>
   </data>
   <data name="Thats_good_Liking_what_you_do_is_important" xml:space="preserve">
-    <value>To dobrze, bo lubienie tego, co się robi, jest bardzo ważne.</value>
+    <value>Dobrze. To bardzo ważne, by lubić to, co się robi.</value>
   </data>
   <data name="Im_sorry_to_hear_that" xml:space="preserve">
     <value>Przykro mi to słyszeć.</value>
   </data>
   <data name="So_were_you_upset_about_having_to_change_offices_to_be_with_your_son" xml:space="preserve">
-    <value>Więc nie byłeś zadowolony, że musiałeś zamienić swoje biuro, by być bliżej z synem?</value>
+    <value>Więc nie byłeś zadowolony, że musiałeś zamienić swoje biuro, by być bliżej syna?</value>
   </data>
   <data name="Yes_I_dont_handle_change_well" xml:space="preserve">
     <value>Tak, nie radzę sobie dobrze ze zmianami.</value>
@@ -160,7 +160,7 @@
     <value>Rozumiem. Może wyszło jednak na lepsze?</value>
   </data>
   <data name="Thats_unfortunate_But_I_wonder_if_you_cant_make_something_better_for_yourself_where_you_are_now" xml:space="preserve">
-    <value>Zastanawiam się, czy nie możesz zrobić czegoś lepszego dla siebie tam, gdzie jesteś?</value>
+    <value>Zastanawiam się, czy nie możesz zrobić dla siebie czegoś lepszego w aktualnej sytuacji.</value>
   </data>
   <data name="Good_to_hear_Your_family_is_your_support_system" xml:space="preserve">
     <value>Dobrze to słyszeć, bo rodzina jest twoim wsparciem.</value>
