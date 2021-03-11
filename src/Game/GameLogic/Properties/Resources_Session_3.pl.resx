@@ -124,10 +124,10 @@
     <value>Brzmi dobrze.</value>
   </data>
   <data name="Good_to_hear_How_have_things_been_with_your_wife_since_all_of_this" xml:space="preserve">
-    <value>Jak wyglądały relacje z twoją żoną od tamtego czasu?</value>
+    <value>Jak wyglądały twoje późniejsze relacje z żoną?</value>
   </data>
   <data name="I_thought_you_said_we_should_talk_about_something_LESS_painful" xml:space="preserve">
-    <value>Myślałem, że powinniśmy porozmawiać o czymś MNIEJ bolesnym?</value>
+    <value>Myślałem, że mieliśmy porozmawiać o czymś MNIEJ bolesnym?</value>
   </data>
   <data name="I_like_to_think_were_getting_better" xml:space="preserve">
     <value>Lubię myśleć, że między nami jest coraz lepiej.</value>
@@ -166,7 +166,7 @@
     <value>Minęło już trochę czasu, od kiedy wszystko się zawaliło. Staram się, jak mogę.</value>
   </data>
   <data name="I_mean_its_hard_to_know_with_her_whether_or_not_shes_telling_the_truth_even_now_but_we_are_trying" xml:space="preserve">
-    <value>Po prostu z nią jest bardzo trudno określić, kiedy mówi prawdę, nawet teraz, ale mimo wszystko nadal się staramy.</value>
+    <value>Po prostu bardzo trudno określić, kiedy mówi prawdę, nawet teraz. Mimo wszystko nadal się staramy.</value>
   </data>
   <data name="Yesterday_I_even_cooked_pasta_for_her" xml:space="preserve">
     <value>Wczoraj nawet przygotowałem dla niej danie z makaronu.</value>
@@ -199,7 +199,7 @@
     <value>Czy mogę kochać kogoś, komu nie do końca ufam?</value>
   </data>
   <data name="Shes_my_wife_of_course_I_do" xml:space="preserve">
-    <value>Ona jest moją żoną i oczywiście, że tak.</value>
+    <value>To moja żona. Oczywiście, że tak.</value>
   </data>
   <data name="Not_anymore_I_cant" xml:space="preserve">
     <value>Już nie. Nie jestem w stanie.</value>
@@ -214,7 +214,7 @@
     <value>Można od tego zwariować.</value>
   </data>
   <data name="Have_you_tried_talking_to_her_about_this" xml:space="preserve">
-    <value>Próbowałeś o tym z nią porozmawiać?</value>
+    <value>Próbowałeś z nią o tym porozmawiać?</value>
   </data>
   <data name="No_of_course_not_Not_yet_But_I_swear_to_god_its_driving_me_insane" xml:space="preserve">
     <value>Oczywiście, że nie, ale doprowadza mnie to już do obłędu.</value>
@@ -274,10 +274,10 @@
     <value>Wiem, że był taki moment w naszym życiu, gdy byliśmy bardzo szczęśliwi.</value>
   </data>
   <data name="She_was_my_best_friend_and_I_would_have_trusted_her_with_my_life_We_did_everything_together_Sometimes_I_think_back_on_that" xml:space="preserve">
-    <value>Ona była moim najlepszym przyjacielem i miałem do niej pełne zaufanie. Robiliśmy razem wszystko i czasami wracam do tych wspomnień.</value>
+    <value>Była moim najlepszym przyjacielem i miałem do niej pełne zaufanie. Robiliśmy razem wszystko. Czasami wracam do tych wspomnień.</value>
   </data>
   <data name="We_had_one_day_not_long_before_Landon_was_born_when_we_were_supposed_to_be_out_getting_some_decorations_for_our_baby_shower" xml:space="preserve">
-    <value>Był taki dzień przed narodzinami Landona, kiedy musieliśmy kupić dekoracje na jego baby shower...</value>
+    <value>Był taki dzień, gdy musieliśmy kupić dekoracje na przyjęcie przed narodzinami Landona...</value>
   </data>
   <data name="but_we_just_got_so_tired_of_all_the_family_and_the_friends_and_it_was_such_a_nice_sunny_day_outside" xml:space="preserve">
     <value>...ale byliśmy już tak zmęczeni rodziną i przyjaciółmi, a dzień był taki piękny, że...</value>
@@ -295,7 +295,7 @@
     <value>Nie wiem, ale mam taką nadzieję.</value>
   </data>
   <data name="I_cant_just_stop_loving_her_Shes_been_my_best_friend_since_college" xml:space="preserve">
-    <value>Nie mogę przestać jej kochać. Ona była moim najlepszym przyjacielem od studiów.</value>
+    <value>Nie mogę przestać jej kochać. Ona była moim najlepszym przyjacielem od czasu studiów.</value>
   </data>
   <data name="We_have_a_son_together_He_he_needs_us_both" xml:space="preserve">
     <value>Mamy razem syna i on... On nas potrzebuje.</value>
@@ -322,7 +322,7 @@
     <value>Byliśmy ludźmi, którzy potrafili wykraść się ze swojego wesela, tylko po to, by się całować i jeść niezdrowe, tłuste rzeczy.</value>
   </data>
   <data name="People_who_went_camping_and_rode_bikes_together_and_watched_shitty_movies_together_just_to_make_fun_of_them" xml:space="preserve">
-    <value>Ludźmi, którzy jeździli razem na kamping, rowery i oglądali tandetne filmy, tylko po to, by się z nich naśmiewać.</value>
+    <value>Ludźmi, którzy jeździli razem na kamping, rowery i oglądali tandetne filmy tylko po to, by się z nich naśmiewać.</value>
   </data>
   <data name="I_liked_those_people" xml:space="preserve">
     <value>Lubiłem tych ludzi.</value>

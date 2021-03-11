@@ -169,10 +169,10 @@
     <value>płócienny bandaż</value>
   </data>
   <data name="Im_knotting_a_string_on_the_ring_at_the_very_top" xml:space="preserve">
-    <value>Przywiązuję sznurek do pierścienia, na samym czubku.</value>
+    <value>Przywiązuję strunę do pierścienia, na samym czubku.</value>
   </data>
   <data name="I_dontt_have_anything_to_knot_the_string_to" xml:space="preserve">
-    <value>Nie mam do czego przywiązać sznurka.</value>
+    <value>Nie mam do czego przywiązać struny.</value>
   </data>
   <data name="Cant_expand_it_any_further" xml:space="preserve">
     <value>Nie mogę już bardziej tego rozwinąć</value>
@@ -214,7 +214,7 @@
     <value>Teraz to zdecydowanie nie jest piknik.</value>
   </data>
   <data name="No_There_are_many_good_memories_attached_to_it" xml:space="preserve">
-    <value>Nie. Z tym jest związanych zbyt wiele dobrych wspomień.</value>
+    <value>Nie. Wiąże się z tym zbyt wiele dobrych wspomień.</value>
   </data>
   <data name="Id_love_to_but_I_have_more_important_things_to_tend_to" xml:space="preserve">
     <value>Bardzo bym chciał, ale muszę się zająć ważniejszymi rzeczami.</value>
@@ -298,7 +298,7 @@
     <value>koperta</value>
   </data>
   <data name="It_is_sufficiently_bright" xml:space="preserve">
-    <value>Wystarczająco jasne.</value>
+    <value>Nie trzeba tu świecić.</value>
   </data>
   <data name="A_regular_flashlight" xml:space="preserve">
     <value>Zwykła latarka.</value>
@@ -340,7 +340,7 @@
     <value>Wpadło do dziury.</value>
   </data>
   <data name="A_bag_of_hazelnuts" xml:space="preserve">
-    <value>Paczka orzeczów laskowych.</value>
+    <value>Paczka orzechów laskowych.</value>
   </data>
   <data name="Cynthia_is_always_eating_these_when_shes_up_late_crafting_or_working_on_the_house" xml:space="preserve">
     <value>Cynthia zawsze je podjada, kiedy pracuje do późna w nocy.</value>
@@ -358,7 +358,7 @@
     <value>Małe pudełko ze spinaczami.</value>
   </data>
   <data name="The_plastic_wrapping_is_missing_on_some_of_them" xml:space="preserve">
-    <value>Na kilku z nich brakuje opakowania.</value>
+    <value>Kilka z nich nie ma opakowania.</value>
   </data>
   <data name="Paperclips_Paperclips_PaperClips" xml:space="preserve">
     <value>spinacze</value>
@@ -445,10 +445,10 @@
     <value>Brak sygnału w tym kierunku.</value>
   </data>
   <data name="This_is_a_longrange_RFID_antenna" xml:space="preserve">
-    <value>To jest antena RFID dalekiego zasięgu.</value>
+    <value>To antena RFID dalekiego zasięgu.</value>
   </data>
   <data name="Must_be_Landons" xml:space="preserve">
-    <value>To musi być Landona.</value>
+    <value>Musi być Landona.</value>
   </data>
   <data name="RFIDAntenna_RFIDAntenna_RFIDAntenna" xml:space="preserve">
     <value>Antena RFID</value>
@@ -487,7 +487,7 @@
     <value>» Anteny RFID wysyłają sygnał radiowy do obiektów zwanych czytnikami RFID, które odpowiedzialne są za odbieranie sygnału. «</value>
   </data>
   <data name="_No_line_of_sight_is_required_between_the_antenna_and_the_tag_Directional_antennas_allow_for_a_greater_coverage_distance_" xml:space="preserve">
-    <value>» Ścieżka pomiędzy anteną a czytnikiem nie musi być pozbawiona żadnych przeszkód. Anteny kierunkowe zapewniają większy dystans.  «</value>
+    <value>» Droga między anteną a czytnikiem nie musi być pozbawiona przeszkód. Anteny kierunkowe zapewniają większy dystans.  «</value>
   </data>
   <data name="_Using_two_directional_RFID_antennas_the_actual_position_of_a_RFID_tag_can_be_triangulated_" xml:space="preserve">
     <value>» Dzięki użyciu dwóch anten kierunkowych możliwa jest triangulacja czytnika RFID. «</value>
@@ -508,7 +508,7 @@
     <value>Zestaw bimetalicznych pił otworowych</value>
   </data>
   <data name="I_dont_want_to_cut_that" xml:space="preserve">
-    <value>Nie chcę tego wiercić.</value>
+    <value>Nie chcę tego obcinać.</value>
   </data>
   <data name="One_pair_of_bandage_scissors" xml:space="preserve">
     <value>Para nożyczek bandażowych.</value>
@@ -532,7 +532,7 @@
     <value>Tutaj jest napisane:</value>
   </data>
   <data name="Mr_Psychiatrist__When_you_first_realized_you_were_trapped_what_did_you_do_" xml:space="preserve">
-    <value>Dr. Johnson: » Kiedy zdałeś sobie sprawę, że jesteś uwieziony, co zrobiłeś? «</value>
+    <value>Dr. Johnson: » Co zrobiłeś, gdy zdałeś sobie sprawę, że jestes uwięziony? «</value>
   </data>
   <data name="Mr_Schmidt__I_just_lost_it_I_was_terrified_" xml:space="preserve">
     <value>P. Schmidt: » Kompletnie puściły mi emocje. Byłem przerażony «</value>
@@ -544,7 +544,7 @@
     <value>P. Schmidt: » Wtedy zdałem sobie sprawę, że nie byłem nawet pewny, jak się tam znalazłem. «</value>
   </data>
   <data name="Mr_Schmidt__I_got_frustrated_I_tried_to_remember_what_I_was_doing_before_it_all_started_" xml:space="preserve">
-    <value>P. Schmidt: » Wkurzyłem się i próbowałem sobie przypomnieć, co robiłem zaraz przed tą sytuacją. «</value>
+    <value>P. Schmidt: » Wkurzyłem się i próbowałem sobie przypomnieć, co robiłem wcześniej. «</value>
   </data>
   <data name="Mr_Schmidt__Before_I_was_there_you_know_How_did_it_come_to_this_And_where_was_my_family_" xml:space="preserve">
     <value>P. Schmidt: » Zanim się tam znalazłem, rozumiesz? Jak do tego doszło? Gdzie była moja rodzina? «</value>

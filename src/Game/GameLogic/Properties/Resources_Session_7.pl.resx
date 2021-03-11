@@ -193,7 +193,7 @@
     <value>To wszystko na dziś, Ryan. Twój opiekun zabierze cię z powrotem do pokoju.</value>
   </data>
   <data name="Youve_been_through_a_lot_I_just_hope_we_can_work_through_it_all_and_get_you_feeling_better_soon" xml:space="preserve">
-    <value>Wiele przeszedłeś. Mam tylko nadzieję, że uda nam się temu wszystkiemu zaradzić i sprawić, że wkrótce poczujesz się lepiej.</value>
+    <value>Wiele przeszedłeś. Mam tylko nadzieję, że uda nam się wszystko rozwiązać i sprawić, że wkrótce poczujesz się lepiej.</value>
   </data>
   <data name="Ill_see_you_tomorrow" xml:space="preserve">
     <value>Do zobaczenia jutro.</value>
@@ -211,7 +211,7 @@
     <value>Tak, słyszałem, dr Raj może być trochę ... szorstki.</value>
   </data>
   <data name="He_doesnt_know_me_like_you_do_either_Its_hard_enough_to_tell_this_story_once_nevermind_a_second_time" xml:space="preserve">
-    <value>On też mnie nie zna tak jak ty. Ciężko jest opowiedzieć tę historię raz, a co dopiero dwa.</value>
+    <value>On też nie zna mnie tak jak ty. Wystarczająco ciężko jest opowiedzieć tę historię raz, a co dopiero dwa.</value>
   </data>
   <data name="Of_course_I_think_youll_be_glad_to_hear_Im_taking_over_for_him_now" xml:space="preserve">
     <value>Oczywiście. Pewnie z radością usłyszysz, że teraz ja przejmę jego obowiązki.</value>
@@ -235,7 +235,7 @@
     <value>To będzie dla ciebie długa podróż. Mogę pomóc ci ją jak najlepiej wykorzystać, ale jeśli chodzi o twoją wolność...</value>
   </data>
   <data name="I_think_all_we_can_do_is_hope_for_the_best" xml:space="preserve">
-    <value>Możemy mieć tylko mieć nadzieję na najlepsze.</value>
+    <value>Możemy tylko mieć nadzieję na najlepsze.</value>
   </data>
   <data name="Oh_I_think_so_These_places_arent_meant_for_permanent_residents_except_for_some_extreme_cases" xml:space="preserve">
     <value>Tak myślę. Te miejsca nie są przeznaczone dla stałych pacjentów, z wyjątkiem niektórych skrajnych przypadków.</value>
@@ -244,13 +244,13 @@
     <value>To nie jest tak, że naprawdę kogoś skrzywdziłeś.</value>
   </data>
   <data name="But_seeing_how_traumatized_you_were_after_all_of_this_and_for_me_personally_knowing_your_very_unhealthy_relationships_with_Landon_and_Cynthia" xml:space="preserve">
-    <value>Ale widząc, jak zszokowany byłeś po tym wszystkim, a i dla mnie osobiście, znając twoje bardzo niezdrowe relacje z Landonem i Cynthią...</value>
+    <value>Ale po tym, jak zobaczyłem twoją traumę, tym bardziej znając ciebie i wasze niezdrowe relacje rodzinne...</value>
   </data>
   <data name="its_probably_for_the_best_that_you_get_this_time_to_really_heal_and_reflect_on_yourself" xml:space="preserve">
-    <value>to nawet lepiej, że masz ten czas, by naprawdę się wyleczyć i zastanowić nad sobą.</value>
+    <value>To nawet lepiej, że masz ten czas, by naprawdę się wyleczyć i zastanowić nad sobą.</value>
   </data>
   <data name="Besides_itll_be_a_while_before_you_can_reach_out_to_Landon_at_all_considering_hes_in_a_separate_hospital" xml:space="preserve">
-    <value>Minie też trochę czasu, nim będziesz mógł skontaktować się z Landonem, gdyż jest w oddzielnym szpitalu.</value>
+    <value>Minie też trochę czasu, nim będziesz mógł skontaktować się z Landonem, skoro przebywa w innym szpitalu.</value>
   </data>
   <data name="He_wont_be_allowed_visitors_for_quite_some_time" xml:space="preserve">
     <value>Długo nie będzie mógł przyjmować gości.</value>
@@ -292,7 +292,7 @@
     <value>Jeżeli już, to jest to koniec bardzo trudnego rozdziału twojego życia. Teraz może być już tylko lepiej.</value>
   </data>
   <data name="Well_its_almost_the_end_What_about_Cynthia" xml:space="preserve">
-    <value>Cóż, to już prawie koniec ... A co z Cynthią?</value>
+    <value>Cóż, to już prawie koniec... A co z Cynthią?</value>
   </data>
   <data name="You_mean_her_trial_Yes_theres_no_telling_how_that_will_go" xml:space="preserve">
     <value>Masz na myśli jej proces? Tak, nie wiadomo, jak to się potoczy.</value>
@@ -343,10 +343,10 @@
     <value>Dzięki, doktorze.</value>
   </data>
   <data name="I_mean_even_after_she_cheated_you_felt_like_you_could_never_trust_her_again_right" xml:space="preserve">
-    <value>To znaczy, nawet po tym, jak cię zdradziła, czułeś, że już nigdy nie możesz jej zaufać, prawda?</value>
+    <value>To znaczy, po tym, jak cię zdradziła, czułeś, że już nigdy nie możesz jej zaufać, prawda?</value>
   </data>
   <data name="So_for_your_sake_I_hope_they_dont" xml:space="preserve">
-    <value>Więc ... dla twojego dobra, mam nadzieję, że tego nie zrobią.</value>
+    <value>Więc... dla twojego dobra mam nadzieję, że tego nie zrobią.</value>
   </data>
   <data name="Well_after_her_adultery_issue_you_still_wanted_to_make_things_work_right" xml:space="preserve">
     <value>Po jej cudzołóstwie nadal chciałeś wszystko ułożyć, prawda?</value>
@@ -412,12 +412,12 @@
     <value>Jeremy: Amanda &amp; Christian Carver, Maria Smith, Pierre Bezuidenhout, Dawid Frederik Strauss</value>
   </data>
   <data name="Polish_Translation" xml:space="preserve">
-    <value>Polish Translation
-/ Proofreading</value>
+    <value>Polish Translation 
+    / Proofreading</value>
   </data>
   <data name="MaciejKubiszewski " xml:space="preserve">
-    <value>Maciej Kubiszewski
-/ Anna Gałązkiewicz </value>
+    <value>Maciej Kubiszewski 
+    / Anna Gałązkiewicz </value>
   </data>
   <data name="thanks" xml:space="preserve">
     <value>Maciej: Thanks to my wife for the support and to Jonas for letting me work on Session Seven.</value>
