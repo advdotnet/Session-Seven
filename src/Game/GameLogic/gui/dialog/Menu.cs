@@ -9,287 +9,281 @@ using System.Linq;
 
 namespace SessionSeven.GUI.Dialog
 {
-    [Serializable]
-    public class Menu : Entity
-    {
-        public const string SCRIPTID = "WAITFORDIALOGSELECTIONSCRIPTID";
-        public DialogMenuState State { get; private set; }
-        public BaseOption LastSelectedOption { get; private set; }
+	[Serializable]
+	public class Menu : Entity
+	{
+		public const string SCRIPTID = "WAITFORDIALOGSELECTIONSCRIPTID";
+		public DialogMenuState State { get; private set; }
+		public BaseOption LastSelectedOption { get; private set; }
 
-        int Height, SelectedOptionIndex;
-        int Width = Game.VIRTUAL_WIDTH;
-        float currentY = 0;
-        public IDialogOptions Options { get; private set; }
+		private int _height, _selectedOptionIndex;
+		private readonly int _width = Game.VIRTUAL_WIDTH;
+		private float _currentY = 0;
+		public IDialogOptions Options { get; private set; }
 
-        public Menu()
-        {
-            Enabled = false;
-            Visible = false;
+		public Menu()
+		{
+			Enabled = false;
+			Visible = false;
 
-            State = DialogMenuState.Closed;
+			State = DialogMenuState.Closed;
 
-            Text
-                .Create(this)
-                .SetFont(content.fonts.pixeloperator_BMF)
-                .SetWidth(Game.VIRTUAL_WIDTH - 2 * Game.SCREEN_PADDING)
-                .SetWordWrap(true)
-                .SetAlign(Alignment.Left | Alignment.Bottom)
-                .SetColor(new Color(150, 150, 150, 255))
-                .SetVisible(false);
+			Text
+				.Create(this)
+				.SetFont(content.fonts.pixeloperator_BMF)
+				.SetWidth(Game.VIRTUAL_WIDTH - (2 * Game.SCREEN_PADDING))
+				.SetWordWrap(true)
+				.SetAlign(Alignment.Left | Alignment.Bottom)
+				.SetColor(new Color(150, 150, 150, 255))
+				.SetVisible(false);
 
-            HotspotPersistent
-                .Create(this);
+			HotspotPersistent
+				.Create(this);
 
-            Sprite
-                .Create(this)
-                .SetRenderStage(RenderStage.PostBloom)
-                .SetImage(Sprite.WHITEPIXELIMAGE);
+			Sprite
+				.Create(this)
+				.SetRenderStage(RenderStage.PostBloom)
+				.SetImage(Sprite.WHITEPIXELIMAGE);
 
-            SpriteData
-                .Create(this)
-                .SetColor(Color.Black);
-        }
+			SpriteData
+				.Create(this)
+				.SetColor(Color.Black);
+		}
 
-        Text Lines
-        {
-            get
-            {
-                return Get<Text>();
-            }
-        }
+		private Text Lines => Get<Text>();
 
-        public override void OnDraw(Renderer renderer)
-        {
-            base.OnDraw(renderer);
+		public override void OnDraw(Renderer renderer)
+		{
+			base.OnDraw(renderer);
 
-            if (renderer.Stage == RenderStage.PostBloom)
-            {
-                if (State != DialogMenuState.Closed)
-                {
-                    var DrawX = 0;
-                    var DrawY = Game.VIRTUAL_HEIGHT - (int)currentY - 5;
-                    var DrawHeight = Height + 5;
-                    var BackgroundColor = new Color(19, 19, 19, (byte)(200 * 1));
+			if (renderer.Stage == RenderStage.PostBloom)
+			{
+				if (State != DialogMenuState.Closed)
+				{
+					var drawX = 0;
+					var drawY = Game.VIRTUAL_HEIGHT - (int)_currentY - 5;
+					var drawHeight = _height + 5;
+					var backgroundColor = new Color(19, 19, 19, 200 * 1);
 
-                    // border                     
-                    var Rectangle = new Rectangle(DrawX, DrawY, Width, DrawHeight);
-                    renderer.SpriteBatch.Draw(renderer.WhitePixelTexture, Rectangle, BackgroundColor);
+					// border                     
+					var rectangle = new Rectangle(drawX, drawY, _width, drawHeight);
+					renderer.SpriteBatch.Draw(renderer.WhitePixelTexture, rectangle, backgroundColor);
 
-                    Lines.Offset.Y = -(Height - currentY);
-                    Lines.Draw(renderer);
-                }
-            }
-        }
+					Lines.Offset.Y = -(_height - _currentY);
+					Lines.Draw(renderer);
+				}
+			}
+		}
 
-        public Script StartSelectionScript(Scripts scripts)
-        {
-            return scripts.Start(WaitForSelection(), SCRIPTID);
-        }
+		public Script StartSelectionScript(Scripts scripts)
+		{
+			return scripts.Start(WaitForSelection(), SCRIPTID);
+		}
 
-        /// <summary>
-        /// Opens the dialog menu and yields as long as no selection was made.
-        /// </summary>
-        private IEnumerator WaitForSelection(bool setInteractive = true)
-        {
-            Game.StopSkipping();
+		/// <summary>
+		/// Opens the dialog menu and yields as long as no selection was made.
+		/// </summary>
+		private IEnumerator WaitForSelection(bool setInteractive = true)
+		{
+			Game.StopSkipping();
 
-            while (State != DialogMenuState.Open && State != DialogMenuState.Closed)
-            {
-                yield return 0;
-            }
+			while (State != DialogMenuState.Open && State != DialogMenuState.Closed)
+			{
+				yield return 0;
+			}
 
-            if (setInteractive)
-            {
-                yield return 0;
-                World.Interactive = true;
-            }
+			if (setInteractive)
+			{
+				yield return 0;
+				World.Interactive = true;
+			}
 
-            while (State != DialogMenuState.Closing && State != DialogMenuState.Closed)
-            {
-                yield return 0;
-            }
+			while (State != DialogMenuState.Closing && State != DialogMenuState.Closed)
+			{
+				yield return 0;
+			}
 
-            if (setInteractive)
-            {
-                World.Interactive = false;
-            }
+			if (setInteractive)
+			{
+				World.Interactive = false;
+			}
 
-            while (State != DialogMenuState.Closed)
-            {
-                yield return 0;
-            }
-        }
+			while (State != DialogMenuState.Closed)
+			{
+				yield return 0;
+			}
+		}
 
-        private List<TextInfo> CreateTextInfos(IDialogOptions options)
-        {
-            var Result = new List<TextInfo>();
+		private List<TextInfo> CreateTextInfos(IDialogOptions options)
+		{
+			var result = new List<TextInfo>();
 
-            for (var i = 0; i < options.Count; i++)
-            {
-                var Option = options[i];
-                Result.Add(new TextInfo(Option.Text, Option.ID.ToString()));
-            }
+			for (var i = 0; i < options.Count; i++)
+			{
+				var option = options[i];
+				result.Add(new TextInfo(option.Text, option.ID.ToString()));
+			}
 
-            return Result;
-        }
+			return result;
+		}
 
-        /// <summary>
-        /// Shows the dialog menu for the given dialog options.
-        /// </summary>        
-        public void Open(IDialogOptions options)
-        {
-            if (options == null || options.Count == 0)
-            {
-                Close();
-                return;
-            }
+		/// <summary>
+		/// Shows the dialog menu for the given dialog options.
+		/// </summary>        
+		public void Open(IDialogOptions options)
+		{
+			if (options == null || options.Count == 0)
+			{
+				Close();
+				return;
+			}
 
-            Options = options;
+			Options = options;
 
-            SelectedOptionIndex = -1;
-            LastSelectedOption = BaseOption.None;
-            State = DialogMenuState.Opening;
+			_selectedOptionIndex = -1;
+			LastSelectedOption = BaseOption.None;
+			State = DialogMenuState.Opening;
 
-            currentY = -200;
+			_currentY = -200;
 
-            Visible = true;
-            Enabled = true;
+			Visible = true;
+			Enabled = true;
 
-            var TextInfos = CreateTextInfos(options);
+			var textInfos = CreateTextInfos(options);
 
-            Lines.Set(TextInfos, TextDuration.Persistent, new Vector2(Game.VIRTUAL_WIDTH / 2, 0));
+			Lines.Set(textInfos, TextDuration.Persistent, new Vector2(Game.VIRTUAL_WIDTH / 2, 0));
 
-            var FirstOptionLine = Lines.Lines[0];
-            var LastOptionLine = Lines.Lines[Lines.Lines.Count - 1];
+			var firstOptionLine = Lines.Lines[0];
+			var lastOptionLine = Lines.Lines[Lines.Lines.Count - 1];
 
-            Height = (int)(LastOptionLine.Position.Y - FirstOptionLine.Position.Y + LastOptionLine.Hitbox.Height + Game.SCREEN_PADDING);
+			_height = (int)(lastOptionLine.Position.Y - firstOptionLine.Position.Y + lastOptionLine.Hitbox.Height + Game.SCREEN_PADDING);
 
-            // shift the options eventually
-            Lines.SetPosition(new Vector2(Game.VIRTUAL_WIDTH / 2, Game.VIRTUAL_HEIGHT - Height + FirstOptionLine.Origin.Y));
+			// shift the options eventually
+			Lines.SetPosition(new Vector2(Game.VIRTUAL_WIDTH / 2, Game.VIRTUAL_HEIGHT - _height + firstOptionLine.Origin.Y));
 
-            for (int i = 0; i < Lines.Lines.Count; i++)
-            {
-                var CurrentHitbox = Lines.Lines[i].Hitbox;
-                Lines.Lines[i] = Lines.Lines[i].ChangeHitbox(new Rectangle(0, CurrentHitbox.Y, Width, CurrentHitbox.Height));
-            }
-        }
+			for (var i = 0; i < Lines.Lines.Count; i++)
+			{
+				var currentHitbox = Lines.Lines[i].Hitbox;
+				Lines.Lines[i] = Lines.Lines[i].ChangeHitbox(new Rectangle(0, currentHitbox.Y, _width, currentHitbox.Height));
+			}
+		}
 
-        public void Close()
-        {
-            State = DialogMenuState.Closing;
-        }
+		public void Close()
+		{
+			State = DialogMenuState.Closing;
+		}
 
-        public void Click()
-        {
-            if (State == DialogMenuState.Open)
-            {
-                if (SelectedOptionIndex > -1)
-                {
-                    Close();
-                }
-            }
-        }
+		public void Click()
+		{
+			if (State == DialogMenuState.Open)
+			{
+				if (_selectedOptionIndex > -1)
+				{
+					Close();
+				}
+			}
+		}
 
-        /// <summary>
-        /// Selects an option programatically.
-        /// </summary>
-        /// <param name="optionId"></param>
-        public void SelectOption(int optionId)
-        {
-            if (State != DialogMenuState.Open)
-            {
-                throw new InvalidOperationException("Options not open.");
-            }
+		/// <summary>
+		/// Selects an option programatically.
+		/// </summary>
+		/// <param name="optionId"></param>
+		public void SelectOption(int optionId)
+		{
+			if (State != DialogMenuState.Open)
+			{
+				throw new InvalidOperationException("Options not open.");
+			}
 
-            for (int i = 0; i < Options.Count; i++)
-            {
-                if (optionId == Options[i].ID)
-                {
-                    SelectedOptionIndex = i;
-                    LastSelectedOption = Options[i];
-                    Close();
+			for (var i = 0; i < Options.Count; i++)
+			{
+				if (optionId == Options[i].ID)
+				{
+					_selectedOptionIndex = i;
+					LastSelectedOption = Options[i];
+					Close();
 
-                    return;
-                }
-            }
+					return;
+				}
+			}
 
-            throw new InvalidOperationException("Option with given ID is not avaiable.");
-        }
+			throw new InvalidOperationException("Option with given ID is not avaiable.");
+		}
 
-        public override void OnUpdate()
-        {
-            if (State == DialogMenuState.Opening)
-            {
-                currentY += ((Height - currentY) / 10f) + 2;
+		public override void OnUpdate()
+		{
+			if (State == DialogMenuState.Opening)
+			{
+				_currentY += ((_height - _currentY) / 10f) + 2;
 
-                if (Height - currentY < 1f)
-                {
-                    currentY = Height;
-                }
+				if (_height - _currentY < 1f)
+				{
+					_currentY = _height;
+				}
 
-                if (currentY >= Height)
-                {
-                    State = DialogMenuState.Open;
-                }
-            }
+				if (_currentY >= _height)
+				{
+					State = DialogMenuState.Open;
+				}
+			}
 
-            if (State == DialogMenuState.Closing)
-            {
-                currentY -= (Height - currentY) + 2;
+			if (State == DialogMenuState.Closing)
+			{
+				_currentY -= _height - _currentY + 2;
 
-                if (currentY <= -200)
-                {
-                    State = DialogMenuState.Closed;
-                    Visible = false;
-                    Enabled = false;
-                }
-            }
+				if (_currentY <= -200)
+				{
+					State = DialogMenuState.Closed;
+					Visible = false;
+					Enabled = false;
+				}
+			}
 
-            if (State == DialogMenuState.Open)
-            {
-                var SelectedOptionId = -1;
-                var MousePosition = World.Get<STACK.Components.Mouse>().Position;
+			if (State == DialogMenuState.Open)
+			{
+				var selectedOptionId = -1;
+				var mousePosition = World.Get<STACK.Components.Mouse>().Position;
 
-                for (int i = 0; i < Lines.Lines.Count; i++)
-                {
-                    if (Lines.Lines[i].Hitbox.Contains(MousePosition))
-                    {
-                        SelectedOptionId = Convert.ToInt32(Lines.Lines[i].Tag);
-                    }
-                }
+				for (var i = 0; i < Lines.Lines.Count; i++)
+				{
+					if (Lines.Lines[i].Hitbox.Contains(mousePosition))
+					{
+						selectedOptionId = Convert.ToInt32(Lines.Lines[i].Tag);
+					}
+				}
 
-                if (SelectedOptionId != -1)
-                {
-                    for (int i = 0; i < Lines.Lines.Count; i++)
-                    {
-                        var OptionIsSelected = (Lines.Lines[i].Tag == SelectedOptionId.ToString());
-                        if (OptionIsSelected && Lines.Lines[i].Color != Color.White)
-                        {
-                            Lines.Lines[i] = Lines.Lines[i].ChangeColor(Color.White);
-                        }
-                        else if (!OptionIsSelected && Lines.Lines[i].Color != Lines.Color)
-                        {
-                            Lines.Lines[i] = Lines.Lines[i].ChangeColor(Lines.Color);
-                        }
-                    }
-                }
+				if (selectedOptionId != -1)
+				{
+					for (var i = 0; i < Lines.Lines.Count; i++)
+					{
+						var optionIsSelected = Lines.Lines[i].Tag == selectedOptionId.ToString();
+						if (optionIsSelected && Lines.Lines[i].Color != Color.White)
+						{
+							Lines.Lines[i] = Lines.Lines[i].ChangeColor(Color.White);
+						}
+						else if (!optionIsSelected && Lines.Lines[i].Color != Lines.Color)
+						{
+							Lines.Lines[i] = Lines.Lines[i].ChangeColor(Lines.Color);
+						}
+					}
+				}
 
-                LastSelectedOption = BaseOption.None;
-                SelectedOptionIndex = -1;
+				LastSelectedOption = BaseOption.None;
+				_selectedOptionIndex = -1;
 
-                for (var i = 0; i < Options.Count; i++)
-                {
-                    if (SelectedOptionId == Options[i].ID)
-                    {
-                        LastSelectedOption = Options[i];
-                        SelectedOptionIndex = i;
+				for (var i = 0; i < Options.Count; i++)
+				{
+					if (selectedOptionId == Options[i].ID)
+					{
+						LastSelectedOption = Options[i];
+						_selectedOptionIndex = i;
 
-                        break;
-                    }
-                }
-            }
+						break;
+					}
+				}
+			}
 
-            base.OnUpdate();
-        }
-    }
+			base.OnUpdate();
+		}
+	}
 }

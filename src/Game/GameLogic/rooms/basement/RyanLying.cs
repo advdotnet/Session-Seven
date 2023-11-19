@@ -6,100 +6,92 @@ using System;
 namespace SessionSeven.Basement
 {
 
-    [Serializable]
-    public enum RyanLyingState
-    {
-        EyesClosed,
-        EyesOpen,
-        SittingEyesOpen,
-        SittingEyesClosed
-    }
+	[Serializable]
+	public enum RyanLyingState
+	{
+		EyesClosed,
+		EyesOpen,
+		SittingEyesOpen,
+		SittingEyesClosed
+	}
 
-    [Serializable]
-    public class RyanLying : Entity
-    {
-        public RyanLying()
-        {
-            Sprite
-                .Create(this)
-                .SetImage(content.rooms.basement.ryanlying, 8);
+	[Serializable]
+	public class RyanLying : Entity
+	{
+		public RyanLying()
+		{
+			Sprite
+				.Create(this)
+				.SetImage(content.rooms.basement.ryanlying, 8);
 
-            Transform
-                .Create(this)
-                .SetPosition(259, 178)
-                .SetScale(1.25f)
-                .SetZ(263);
+			Transform
+				.Create(this)
+				.SetPosition(259, 178)
+				.SetScale(1.25f)
+				.SetZ(263);
 
-            Scripts
-                .Create(this);
+			Scripts
+				.Create(this);
 
-            SpriteTransformAnimation
-                .Create(this)
-                .SetSetFrameFn(SetFrame);
+			SpriteTransformAnimation
+				.Create(this)
+				.SetSetFrameFn(SetFrame);
 
-            State = RyanLyingState.EyesClosed;
-        }
+			State = RyanLyingState.EyesClosed;
+		}
 
-        public RyanLyingState State { get; set; }
+		public RyanLyingState State { get; set; }
 
-        private Sprite Sprite
-        {
-            get
-            {
-                return Get<Sprite>();
-            }
-        }
+		public SoundEffectInstance PlayWhiningSound()
+		{
+			return Game.PlaySoundEffect(content.audio.whining);
+		}
 
-        public SoundEffectInstance PlayWhiningSound()
-        {
-            return Game.PlaySoundEffect(content.audio.whining);
-        }
+		private readonly Frames _framesEyesClosed = Frames.Create(1, 2);
+		private readonly Frames _framesEyesOpen = Frames.Create(3, 4);
+		private readonly Frames _framesSittingEyesOpen = Frames.Create(5);
+		private readonly Frames _framesTalking = Frames.Create(5, 6, 7);
+		private readonly Frames _sittingEyesClosed = Frames.Create(8);
 
-        Frames FramesEyesClosed = Frames.Create(1, 2);
-        Frames FramesEyesOpen = Frames.Create(3, 4);
-        Frames FramesSittingEyesOpen = Frames.Create(5);
-        Frames FramesTalking = Frames.Create(5, 6, 7);
-        Frames SittingEyesClosed = Frames.Create(8);
+		private Frames GetAnimationFrames(RyanLyingState lyingState, State state)
+		{
+			if (state.Has(STACK.Components.State.Talking))
+			{
+				return _framesTalking;
+			}
 
-        private Frames GetAnimationFrames(RyanLyingState lyingState, State state)
-        {
-            if (state.Has(STACK.Components.State.Talking))
-            {
-                return FramesTalking;
-            }
+			switch (lyingState)
+			{
+				case RyanLyingState.EyesClosed:
+					return _framesEyesClosed;
+				case RyanLyingState.EyesOpen:
+					return _framesEyesOpen;
+				case RyanLyingState.SittingEyesOpen:
+					return _framesSittingEyesOpen;
+				case RyanLyingState.SittingEyesClosed:
+					return _sittingEyesClosed;
+			}
 
-            switch (lyingState)
-            {
-                case RyanLyingState.EyesClosed:
-                    return FramesEyesClosed;
-                case RyanLyingState.EyesOpen:
-                    return FramesEyesOpen;
-                case RyanLyingState.SittingEyesOpen:
-                    return FramesSittingEyesOpen;
-                case RyanLyingState.SittingEyesClosed:
-                    return SittingEyesClosed;
-            }
+			return _framesEyesClosed;
+		}
 
-            return FramesEyesClosed;
-        }
+		private int GetAnimationDelay(State state)
+		{
+			if (state.Has(STACK.Components.State.Talking))
+			{
+				return 8;
+			}
 
-        private int GetAnimationDelay(RyanLyingState lyingState, State state)
-        {
-            if (state.Has(STACK.Components.State.Talking))
-            {
-                return 8;
-            }
+			return 37;
+		}
 
-            return 37;
-        }
+		private int SetFrame(Transform transform, int step, int lastFrame)
+		{
+			var delay = GetAnimationDelay(transform.State);
+			var scaledStep = step / delay;
+			var frames = GetAnimationFrames(State, transform.State);
 
-        private int SetFrame(Transform transform, int step, int lastFrame)
-        {
-            var Delay = GetAnimationDelay(State, transform.State);
-            var ScaledStep = step / Delay;
-            var Frames = GetAnimationFrames(State, transform.State);
-
-            return Frames[ScaledStep % Frames.Count];
-        }
-    }
+			return frames[scaledStep % frames.Count];
+		}
+	}
 }

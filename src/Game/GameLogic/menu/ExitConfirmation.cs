@@ -5,66 +5,71 @@ using Window = TomShane.Neoforce.Controls.Window;
 
 namespace SessionSeven
 {
-    public partial class Menu
-    {
-        private Window ExitConfirmationWindow;
+	public partial class Menu
+	{
+		private Window _exitConfirmationWindow;
 
-        void AddExitConfirmationWindow(Manager gui)
-        {
-            ExitConfirmationWindow = new Window(gui);
-            ExitConfirmationWindow.Init();
-            ExitConfirmationWindow.Text = GlblRes.Really_quit;
-            ExitConfirmationWindow.Width = 290;
-            ExitConfirmationWindow.Height = 130;
-            ExitConfirmationWindow.Resizable = false;
-            ExitConfirmationWindow.IconVisible = false;
-            ExitConfirmationWindow.Movable = false;
-            ExitConfirmationWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
-            ExitConfirmationWindow.Visible = false;
-            ExitConfirmationWindow.CloseButtonVisible = false;
+		private void AddExitConfirmationWindow(Manager gui)
+		{
+			_exitConfirmationWindow = new Window(gui);
+			_exitConfirmationWindow.Init();
+			_exitConfirmationWindow.Text = GlblRes.Really_quit;
+			_exitConfirmationWindow.Width = 290;
+			_exitConfirmationWindow.Height = 130;
+			_exitConfirmationWindow.Resizable = false;
+			_exitConfirmationWindow.IconVisible = false;
+			_exitConfirmationWindow.Movable = false;
+			_exitConfirmationWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
+			_exitConfirmationWindow.Visible = false;
+			_exitConfirmationWindow.CloseButtonVisible = false;
 
-            var Bevel = new Bevel(gui);
-            Bevel.Parent = ExitConfirmationWindow;
-            Bevel.Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right;
-            Bevel.Height = 35;
-            Bevel.Style = BevelStyle.Raised;
-            Bevel.Top = ExitConfirmationWindow.ClientHeight - Bevel.Height;
-            Bevel.Width = ExitConfirmationWindow.ClientWidth;
-
-
-            var Text = new Label(gui);
-            Text.Text = GlblRes.Do_you_really_want_to_quit_the_game;
-            Text.Parent = ExitConfirmationWindow;
-            Text.Top = 10;
-            Text.Left = 10;
-            Text.Width = ExitConfirmationWindow.ClientWidth - 20;
-            Text.Height = 20;
-
-            var Yes = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            Yes.Parent = Bevel;
-            Yes.Width = 100;
-            Yes.Text = GlblRes.Yes;
-            Yes.Left = 10;
-            Yes.Top = 5;
-            Yes.Click += (se, ve) =>
-            {
-                Engine.Exit();
-            };
+			var bevel = new Bevel(gui)
+			{
+				Parent = _exitConfirmationWindow,
+				Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right,
+				Height = 35,
+				Style = BevelStyle.Raised
+			};
+			bevel.Top = _exitConfirmationWindow.ClientHeight - bevel.Height;
+			bevel.Width = _exitConfirmationWindow.ClientWidth;
 
 
-            var No = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            No.Parent = Bevel;
-            No.Text = GlblRes.Menu_AddExitConfirmationWindow_No;
-            No.Width = 100;
-            No.Left = 165;
-            No.Top = 5;
-            No.Click += (se, ev) =>
-            {
-                ExitConfirmationWindow.Close();
-                ShowLogo(true);
-            };
+			var text = new Label(gui)
+			{
+				Text = GlblRes.Do_you_really_want_to_quit_the_game,
+				Parent = _exitConfirmationWindow,
+				Top = 10,
+				Left = 10,
+				Width = _exitConfirmationWindow.ClientWidth - 20,
+				Height = 20
+			};
 
-            gui.Add(ExitConfirmationWindow);
-        }
-    }
+			var yes = new MenuButton(gui, _clickSound, _focusSound, _gameSettings)
+			{
+				Parent = bevel,
+				Width = 100,
+				Text = GlblRes.Yes,
+				Left = 10,
+				Top = 5
+			};
+			yes.Click += (se, ve) => _engine.Exit();
+
+
+			var no = new MenuButton(gui, _clickSound, _focusSound, _gameSettings)
+			{
+				Parent = bevel,
+				Text = GlblRes.Menu_AddExitConfirmationWindow_No,
+				Width = 100,
+				Left = 165,
+				Top = 5
+			};
+			no.Click += (se, ev) =>
+			{
+				_exitConfirmationWindow.Close();
+				ShowLogo(true);
+			};
+
+			gui.Add(_exitConfirmationWindow);
+		}
+	}
 }

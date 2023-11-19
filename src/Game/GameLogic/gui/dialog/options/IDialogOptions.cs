@@ -2,15 +2,15 @@
 
 namespace SessionSeven.GUI.Dialog
 {
-    public interface IDialogOptions
-    {
-        BaseOption this[int index]
-        {
-            get;
-        }
+	public interface IDialogOptions
+	{
+		BaseOption this[int index]
+		{
+			get;
+		}
 
-        int Count { get; }
+		int Count { get; }
 
-        IEnumerable<string> SelectTexts();
-    }
+		IEnumerable<string> SelectTexts();
+	}
 }

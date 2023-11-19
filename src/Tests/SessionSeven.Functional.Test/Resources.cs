@@ -10,88 +10,88 @@ using System.Resources;
 
 namespace SessionSeven.Functional.Test
 {
-    public class TestGame : StackGame
-    {
-        public const string SCENE_ID = "s";
-        public const string ENTITY_OUTLINE_ID = "e";
-        public const string ENTITY_ID = "e";
+	public class TestGame : StackGame
+	{
+		public const string SCENE_ID = "s";
+		public const string ENTITY_OUTLINE_ID = "e";
+		public const string ENTITY_ID = "e";
 
-        protected override List<Scene> GetScenes()
-        {
-            var OutlineEntity = new Entity(ENTITY_OUTLINE_ID);
-            var Entity = new Entity(ENTITY_ID);
+		protected override List<Scene> GetScenes()
+		{
+			var outlineEntity = new Entity(ENTITY_OUTLINE_ID);
+			var entity = new Entity(ENTITY_ID);
 
-            Text
-                .Create(OutlineEntity)
-                .SetFont(content.fonts.pixeloperator_outline_BMF);
+			Text
+				.Create(outlineEntity)
+				.SetFont(content.fonts.pixeloperator_outline_BMF);
 
-            Text
-                .Create(Entity)
-                .SetFont(content.fonts.pixeloperator_BMF);
+			Text
+				.Create(entity)
+				.SetFont(content.fonts.pixeloperator_BMF);
 
-            var Scene = new Scene(SCENE_ID);
+			var scene = new Scene(SCENE_ID);
 
-            Scene.Push(OutlineEntity, Entity);
+			scene.Push(outlineEntity, entity);
 
-            return new List<Scene> { Scene };
-        }
+			return new List<Scene> { scene };
+		}
 
-        protected override void OnStart()
-        {
-            StartWorld();
-        }
-    }
+		protected override void OnStart()
+		{
+			StartWorld();
+		}
+	}
 
-    [TestClass]
-    public class Resources
-    {
-        [TestMethod]
-        public void AllResourceCharactersCanBeResolvedBySpriteFont()
-        {
-            var SupportedLanguages = new[] { "en-US", "de-DE", "es-ES", "pl" };
+	[TestClass]
+	public class Resources
+	{
+		[TestMethod]
+		public void AllResourceCharactersCanBeResolvedBySpriteFont()
+		{
+			var supportedLanguages = new[] { "en-US", "de-DE", "es-ES", "pl" };
 
-            foreach (var Language in SupportedLanguages)
-            {
-                var GameSettings = new GameSettings()
-                {
-                    Culture = Language
-                };
+			foreach (var language in supportedLanguages)
+			{
+				var gameSettings = new GameSettings()
+				{
+					Culture = language
+				};
 
-                using (var GraphicsDevice = Mock.CreateGraphicsDevice())
-                using (var Runner = new SessionSevenTestEngine(new TestGame(), Mock.Wrap(GraphicsDevice), Mock.Input, GameSettings))
-                {
-                    Runner.StartGame();
-                    Runner.AdvanceToInteractive();
+				using (var graphicsDevice = Mock.CreateGraphicsDevice())
+				using (var runner = new SessionSevenTestEngine(new TestGame(), Mock.Wrap(graphicsDevice), Mock.Input, gameSettings))
+				{
+					runner.StartGame();
+					runner.AdvanceToInteractive();
 
-                    var Text = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
-                    var OutlineText = Runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
+					var text = runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
+					var outlineText = runner.Game.World.GetScene(TestGame.SCENE_ID).GetObject(TestGame.ENTITY_OUTLINE_ID).Get<Text>();
 
-                    foreach (var ResourceString in GetResourceStrings())
-                    {
-                        // this throws if the sprite font cannot resolve a character
-                        Text.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
-                        OutlineText.Set(ResourceString, TextDuration.Persistent, Vector2.Zero);
-                    }
-                }
-            }
-        }
+					foreach (var resourceString in GetResourceStrings())
+					{
+						// this throws if the sprite font cannot resolve a character
+						text.Set(resourceString, TextDuration.Persistent, Vector2.Zero);
+						outlineText.Set(resourceString, TextDuration.Persistent, Vector2.Zero);
+					}
+				}
+			}
+		}
 
-        private IEnumerable<string> GetResourceStrings()
-        {
-            var GameLogicAssembly = Assembly.GetAssembly(typeof(Properties.Basement_Resources));
-            var ManifestResourceNames = GameLogicAssembly.GetManifestResourceNames();
+		private IEnumerable<string> GetResourceStrings()
+		{
+			var gameLogicAssembly = Assembly.GetAssembly(typeof(Properties.Basement_Resources));
+			var manifestResourceNames = gameLogicAssembly.GetManifestResourceNames();
 
-            foreach (var ManifestResourceName in ManifestResourceNames)
-            {
-                var ResourceBaseName = System.IO.Path.GetFileNameWithoutExtension(ManifestResourceName);
-                var ResourceManager = new ResourceManager(ResourceBaseName, GameLogicAssembly);
-                var ResourceSet = ResourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
+			foreach (var manifestResourceName in manifestResourceNames)
+			{
+				var resourceBaseName = System.IO.Path.GetFileNameWithoutExtension(manifestResourceName);
+				var resourceManager = new ResourceManager(resourceBaseName, gameLogicAssembly);
+				var resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
 
-                foreach (DictionaryEntry Entry in ResourceSet)
-                {
-                    yield return Entry.Value.ToString();
-                }
-            }
-        }
-    }
+				foreach (DictionaryEntry entry in resourceSet)
+				{
+					yield return entry.Value.ToString();
+				}
+			}
+		}
+	}
 }

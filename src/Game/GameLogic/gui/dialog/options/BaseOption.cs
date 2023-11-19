@@ -2,18 +2,18 @@
 
 namespace SessionSeven.GUI.Dialog
 {
-    [Serializable]
-    public class BaseOption
-    {
-        public readonly int ID;
-        public readonly string Text;
+	[Serializable]
+	public class BaseOption
+	{
+		public readonly int ID;
+		public readonly string Text;
 
-        public BaseOption(int id, string text)
-        {
-            ID = id;
-            Text = text;
-        }
+		public BaseOption(int id, string text)
+		{
+			ID = id;
+			Text = text;
+		}
 
-        public static BaseOption None = new BaseOption(0, string.Empty);
-    }
+		public static readonly BaseOption None = new BaseOption(0, string.Empty);
+	}
 }

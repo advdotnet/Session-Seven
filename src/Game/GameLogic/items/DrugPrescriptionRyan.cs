@@ -7,54 +7,54 @@ using Items_Res = global::SessionSeven.Properties.Items_Resources;
 
 namespace SessionSeven.InventoryItems
 {
-    [Serializable]
-    public class DrugPrescriptionRyan : ItemBase
-    {
-        public DrugPrescriptionRyan() : base(content.inventory.drugprescriptionryan, Items_Res.DrugPrescriptionRyan_DrugPrescriptionRyan_DrugPrescription)
-        {
+	[Serializable]
+	public class DrugPrescriptionRyan : ItemBase
+	{
+		public DrugPrescriptionRyan() : base(content.inventory.drugprescriptionryan, Items_Res.DrugPrescriptionRyan_DrugPrescriptionRyan_DrugPrescription)
+		{
 
-        }
+		}
 
-        protected override Interactions GetInteractions()
-        {
-            return Interactions
-                .Create()
-                .For(Game.Ego)
-                    .Add(Verbs.Look, LookScript());
-        }
+		protected override Interactions GetInteractions()
+		{
+			return Interactions
+				.Create()
+				.For(Game.Ego)
+					.Add(Verbs.Look, LookScript());
+		}
 
-        public Script LookAt()
-        {
-            return Game.Ego.StartScript(LookScript());
-        }
+		public Script LookAt()
+		{
+			return Game.Ego.StartScript(LookScript());
+		}
 
-        public bool LookedAt { get; private set; }
+		public bool LookedAt { get; private set; }
 
-        public IEnumerator LookScript()
-        {
-            var StartSession = Game.Ego.Inventory.HasItem<GuitarStrings>() &&
-                !Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Four);
+		public IEnumerator LookScript()
+		{
+			var startSession = Game.Ego.Inventory.HasItem<GuitarStrings>() &&
+				!Tree.Cutscenes.Director.FinishedSession(Cutscenes.Sessions.Four);
 
-            if (StartSession)
-            {
-                Game.PlayBasementEndSong();
-            }
-            else if (!LookedAt)
-            {
-                Game.PlaySoundEffect(content.audio.puzzle);
-            }
+			if (startSession)
+			{
+				Game.PlayBasementEndSong();
+			}
+			else if (!LookedAt)
+			{
+				Game.PlaySoundEffect(content.audio.puzzle);
+			}
 
-            using (Game.CutsceneBlock())
-            {
-                yield return Game.Ego.Say(Items_Res.This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago);
+			using (Game.CutsceneBlock())
+			{
+				yield return Game.Ego.Say(Items_Res.This_is_an_old_xanax_prescription_which_was_issued_for_me_some_years_ago);
 
-                LookedAt = true;
-            }
+				LookedAt = true;
+			}
 
-            if (StartSession)
-            {
-                yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Four);
-            }
-        }
-    }
+			if (startSession)
+			{
+				yield return Tree.Cutscenes.Director.StartSession(Cutscenes.Sessions.Four);
+			}
+		}
+	}
 }

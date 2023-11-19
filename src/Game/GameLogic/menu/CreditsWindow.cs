@@ -5,86 +5,88 @@ using GlblRes = global::SessionSeven.Properties.Resources;
 
 namespace SessionSeven
 {
-    public partial class Menu
-    {
-        private Bevel CreditsWindow;
+	public partial class Menu
+	{
+		private Bevel _creditsWindow;
 
-        void AddCreditsWindow(Manager gui)
-        {
-            CreditsWindow = new Bevel(gui);
-            CreditsWindow.Parent = MainMenuBackground;
-            CreditsWindow.Height = MainMenuBackground.ClientHeight;
-            CreditsWindow.Color = Color.Black;
-            CreditsWindow.Style = BevelStyle.None;
-            CreditsWindow.Visible = false;
-            CreditsWindow.Top = 0;
-            CreditsWindow.StayOnTop = true;
-            CreditsWindow.Width = MainMenuBackground.ClientWidth;
+		private void AddCreditsWindow(Manager gui)
+		{
+			_creditsWindow = new Bevel(gui)
+			{
+				Parent = _mainMenuBackground,
+				Height = _mainMenuBackground.ClientHeight,
+				Color = Color.Black,
+				Style = BevelStyle.None,
+				Visible = false,
+				Top = 0,
+				StayOnTop = true,
+				Width = _mainMenuBackground.ClientWidth
+			};
 
-            var i = 0;
-            var NLNL = new string[] { Environment.NewLine + Environment.NewLine };
+			var i = 0;
+			var newLineNewLine = new string[] { Environment.NewLine + Environment.NewLine };
 
-            foreach (var CreditsText in Cutscenes.Director.GetCreditTexts(false))
-            {
-                var Top = 110 + i * 23 + (i > 4 ? 23 : 0);
-                var Text = CreditsText.Split(NLNL, StringSplitOptions.RemoveEmptyEntries);
-                if (Text.Length == 2)
-                {
-                    var Label = new Label(gui);
-                    Label.Init();
-                    Label.Width = 300;
-                    Label.Height = 100;
-                    Label.Alignment = Alignment.TopLeft;
-                    Label.TextColor = Color.Black;
-                    Label.Parent = CreditsWindow;
-                    Label.Text = Text[0];
-                    Label.Top = Top;                    
-                    Label.Left = MainMenuBackground.ClientWidth / 2 - Label.Width / 2;
+			foreach (var creditsText in Cutscenes.Director.GetCreditTexts(false))
+			{
+				var top = 110 + (i * 23) + (i > 4 ? 23 : 0);
+				var text = creditsText.Split(newLineNewLine, StringSplitOptions.RemoveEmptyEntries);
+				if (text.Length == 2)
+				{
+					var label = new Label(gui);
+					label.Init();
+					label.Width = 300;
+					label.Height = 100;
+					label.Alignment = Alignment.TopLeft;
+					label.TextColor = Color.Black;
+					label.Parent = _creditsWindow;
+					label.Text = text[0];
+					label.Top = top;
+					label.Left = (_mainMenuBackground.ClientWidth / 2) - (label.Width / 2);
 
-                    Label = new Label(gui);
-                    Label.Init();
-                    Label.Width = 300;
-                    Label.Height = 100;
-                    Label.Alignment = Alignment.TopRight;
-                    Label.TextColor = new Color(188, 22, 0, 255);
-                    Label.Parent = CreditsWindow;
-                    Label.Text = Text[1];
-                    Label.Top = Top;                                       
-                    Label.Left = MainMenuBackground.ClientWidth / 2 - Label.Width / 2;
-                }
-                else
-                {
-                    var Label = new Label(gui);
-                    Label.Init();
-                    Label.Width = 300;
-                    Label.Height = 100;
-                    Label.Alignment = Alignment.TopCenter;
-                    Label.TextColor = Color.Black;
-                    Label.Parent = CreditsWindow;
-                    Label.Text = Text[0];
-                    Label.Top = Top;
-                    Label.Left = MainMenuBackground.ClientWidth / 2 - Label.Width / 2;
-                }
-                i++;
-            }
+					label = new Label(gui);
+					label.Init();
+					label.Width = 300;
+					label.Height = 100;
+					label.Alignment = Alignment.TopRight;
+					label.TextColor = new Color(188, 22, 0, 255);
+					label.Parent = _creditsWindow;
+					label.Text = text[1];
+					label.Top = top;
+					label.Left = (_mainMenuBackground.ClientWidth / 2) - (label.Width / 2);
+				}
+				else
+				{
+					var label = new Label(gui);
+					label.Init();
+					label.Width = 300;
+					label.Height = 100;
+					label.Alignment = Alignment.TopCenter;
+					label.TextColor = Color.Black;
+					label.Parent = _creditsWindow;
+					label.Text = text[0];
+					label.Top = top;
+					label.Left = (_mainMenuBackground.ClientWidth / 2) - (label.Width / 2);
+				}
+				i++;
+			}
 
-            var OKButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            OKButton.Init();
-            OKButton.Parent = CreditsWindow;
-            OKButton.Text = GlblRes.OK;
-            OKButton.Click += (s, e) =>
-            {
-                CreditsWindow.Hide();
-                ShowLogo(true);
-            };
+			var okButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
+			okButton.Init();
+			okButton.Parent = _creditsWindow;
+			okButton.Text = GlblRes.OK;
+			okButton.Click += (s, e) =>
+			{
+				_creditsWindow.Hide();
+				ShowLogo(true);
+			};
 
-            OKButton.Width = 120;
-            OKButton.Height = 24;
-            OKButton.Left = (MainMenuBackground.ClientWidth) - (OKButton.Width) - 6;
-            OKButton.Top = MainMenuBackground.ClientHeight - OKButton.Height - 6 - (30 * 0);
-            OKButton.Anchor = Anchors.Top;
+			okButton.Width = 120;
+			okButton.Height = 24;
+			okButton.Left = _mainMenuBackground.ClientWidth - okButton.Width - 6;
+			okButton.Top = _mainMenuBackground.ClientHeight - okButton.Height - 6 - (30 * 0);
+			okButton.Anchor = Anchors.Top;
 
-            gui.Add(CreditsWindow);
-        }
-    }
+			gui.Add(_creditsWindow);
+		}
+	}
 }

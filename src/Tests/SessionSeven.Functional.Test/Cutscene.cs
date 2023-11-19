@@ -2,62 +2,61 @@
 using SessionSeven.Entities;
 using STACK;
 using STACK.TestBase;
-using System;
 
 namespace SessionSeven.Functional.Test
 {
-    [TestClass]
-    public class Cutscene
-    {
-        [TestMethod]
-        public void CutsceneDisposeControlTestResetGUIAndWorldInteractive()
-        {
-            var World = new World(new TestServiceProvider());
-            Tree.World = World;
-            var Reset = false;
-            Action ResetFn = () => Reset = true;
+	[TestClass]
+	public class Cutscene
+	{
+		[TestMethod]
+		public void CutsceneDisposeControlTestResetGUIAndWorldInteractive()
+		{
+			var world = new World(new TestServiceProvider());
+			Tree.World = world;
+			var reset = false;
+			void ResetFn() => reset = true;
 
-            using (new CutsceneDisposeControl(World, ResetFn))
-            {
-                Assert.IsFalse(World.Interactive);
-                Assert.IsFalse(Reset);
-            }
-            Assert.IsTrue(Reset);
-            Assert.IsTrue(World.Interactive);
-        }
+			using (new CutsceneDisposeControl(world, ResetFn))
+			{
+				Assert.IsFalse(world.Interactive);
+				Assert.IsFalse(reset);
+			}
+			Assert.IsTrue(reset);
+			Assert.IsTrue(world.Interactive);
+		}
 
-        [TestMethod]
-        public void CutsceneDisposeControlTestResetWorldInteractive()
-        {
-            var World = new World(new TestServiceProvider());
-            Tree.World = World;
-            var Reset = false;
-            Action ResetFn = () => Reset = true;
+		[TestMethod]
+		public void CutsceneDisposeControlTestResetWorldInteractive()
+		{
+			var world = new World(new TestServiceProvider());
+			Tree.World = world;
+			var reset = false;
+			void ResetFn() => reset = true;
 
-            using (new CutsceneDisposeControl(World, ResetFn, true, false))
-            {
-                Assert.IsFalse(World.Interactive);
-                Assert.IsFalse(Reset);
-            }
-            Assert.IsFalse(Reset);
-            Assert.IsTrue(World.Interactive);
-        }
+			using (new CutsceneDisposeControl(world, ResetFn, true, false))
+			{
+				Assert.IsFalse(world.Interactive);
+				Assert.IsFalse(reset);
+			}
+			Assert.IsFalse(reset);
+			Assert.IsTrue(world.Interactive);
+		}
 
-        [TestMethod]
-        public void CutsceneDisposeControlTestResetGUI()
-        {
-            var World = new World(new TestServiceProvider());
-            Tree.World = World;
-            var Reset = false;
-            Action ResetFn = () => Reset = true;
+		[TestMethod]
+		public void CutsceneDisposeControlTestResetGUI()
+		{
+			var world = new World(new TestServiceProvider());
+			Tree.World = world;
+			var reset = false;
+			void ResetFn() => reset = true;
 
-            using (new CutsceneDisposeControl(World, ResetFn, false, true))
-            {
-                Assert.IsFalse(World.Interactive);
-                Assert.IsFalse(Reset);
-            }
-            Assert.IsTrue(Reset);
-            Assert.IsFalse(World.Interactive);
-        }
-    }
+			using (new CutsceneDisposeControl(world, ResetFn, false, true))
+			{
+				Assert.IsFalse(world.Interactive);
+				Assert.IsFalse(reset);
+			}
+			Assert.IsTrue(reset);
+			Assert.IsFalse(world.Interactive);
+		}
+	}
 }

@@ -12,177 +12,171 @@ using System.Linq;
 
 namespace SessionSeven.Cutscenes
 {
-    [Serializable]
-    public class Scene : STACK.Scene
-    {
-        public Scene()
-        {
-            Enabled = true;
-            Visible = true;
-            DrawOrder = 10;
+	[Serializable]
+	public class Scene : STACK.Scene
+	{
+		public Scene()
+		{
+			Enabled = true;
+			Visible = true;
+			DrawOrder = 10;
 
-            Push(new Director());
-        }
-    }
+			Push(new Director());
+		}
+	}
 
-    [Serializable]
-    public enum Sessions
-    {
-        One,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven
-    }
+	[Serializable]
+	public enum Sessions
+	{
+		One,
+		Two,
+		Three,
+		Four,
+		Five,
+		Six,
+		Seven
+	}
 
-    [Serializable]
-    public partial class Director : Entity
-    {
-        Dictionary<Sessions, bool> FinishedSessions = new Dictionary<Sessions, bool>();
+	[Serializable]
+	public partial class Director : Entity
+	{
+		private readonly Dictionary<Sessions, bool> _finishedSessions = new Dictionary<Sessions, bool>();
 
-        public Director()
-        {
-            Scripts
-                .Create(this);
-        }
+		public Director()
+		{
+			Scripts
+				.Create(this);
+		}
 
-        Office.Therapist Psychiatrist { get { return Tree.Office.Therapist; } }
-        Office.Ryan RyanVoice { get { return Tree.Office.Ryan; } }
-        GUI.Fader Fader { get { return Tree.GUI.Fader; } }
-        Office.RyanEyesClosed RyanEyesClosed { get { return Tree.Office.RyanEyesClosed; } }
+		private Office.Therapist Psychiatrist => Tree.Office.Therapist;
 
-        IEnumerator FadeInScript(bool hideFader = false, bool fadeMusic = false)
-        {
-            yield return FadeScript(true, hideFader, fadeMusic);
-        }
+		private Office.Ryan RyanVoice => Tree.Office.Ryan;
 
-        IEnumerator FadeOutScript(bool hideFader = false, bool fadeMusic = false)
-        {
-            yield return FadeScript(false, hideFader, fadeMusic);
-        }
+		private GUI.Fader Fader => Tree.GUI.Fader;
 
-        IEnumerator FadeScript(bool fadein, bool hideFader = false, bool fadeMusic = false, int loops = 255)
-        {
-            Fader.Visible = true;
+		private Office.RyanEyesClosed RyanEyesClosed => Tree.Office.RyanEyesClosed;
 
-            for (int j = 0; j < loops; j++)
-            {
-                Fader.Color = new Color(Color.Black, fadein ? 255 - j : j);
-                if (fadeMusic)
-                {
-                    World.Get<AudioManager>().MusicVolume = fadein ? (float)j / loops : 1 - (float)j / loops;
-                }
+		private IEnumerator FadeInScript(bool hideFader = false, bool fadeMusic = false)
+		{
+			yield return FadeScript(true, hideFader, fadeMusic);
+		}
 
-                yield return 1;
-            }
+		private IEnumerator FadeOutScript(bool hideFader = false, bool fadeMusic = false)
+		{
+			yield return FadeScript(false, hideFader, fadeMusic);
+		}
 
-            if (hideFader)
-            {
-                Fader.Visible = false;
-            }
+		private IEnumerator FadeScript(bool fadein, bool hideFader = false, bool fadeMusic = false, int loops = 255)
+		{
+			Fader.Visible = true;
 
-            if (fadeMusic)
-            {
-                World.Get<AudioManager>().MusicVolume = fadein ? 1 : 0;
-            }
-        }
+			for (var j = 0; j < loops; j++)
+			{
+				Fader.Color = new Color(Color.Black, fadein ? 255 - j : j);
+				if (fadeMusic)
+				{
+					World.Get<AudioManager>().MusicVolume = fadein ? (float)j / loops : 1 - ((float)j / loops);
+				}
 
-        void ProcessScore(BaseOption option)
-        {
-            if (!(option is ScoreOption))
-            {
-                throw new ArgumentException("No ScoreOption");
-            }
+				yield return 1;
+			}
 
-            foreach (var Score in ((ScoreOption)option).ScoreSet)
-            {
-                Game.Ego.Get<Score>().Add(Score.Key, Score.Value);
+			if (hideFader)
+			{
+				Fader.Visible = false;
+			}
 
-                var Identifier = Score.Key.ToString();
-                var NewValue = Game.Ego.Get<Score>().GetScore(Score.Key);
+			if (fadeMusic)
+			{
+				World.Get<AudioManager>().MusicVolume = fadein ? 1 : 0;
+			}
+		}
 
-                Log.WriteLine(Identifier + "Score: " + NewValue, LogLevel.Notice);
-            }
-        }
+		private void ProcessScore(BaseOption option)
+		{
+			if (!(option is ScoreOption))
+			{
+				throw new ArgumentException("No ScoreOption");
+			}
 
-        public Script StartSession(Sessions session)
-        {
-            if (FinishedSession(session))
-            {
-                return Script.None;
-            }
+			foreach (var score in ((ScoreOption)option).ScoreSet)
+			{
+				Game.Ego.Get<Score>().Add(score.Key, score.Value);
 
-            Tree.World.Interactive = false;
-            Tree.Cutscenes.Scene.Visible = true;
-            Tree.Cutscenes.Scene.Enabled = true;
+				var identifier = score.Key.ToString();
+				var newValue = Game.Ego.Get<Score>().GetScore(score.Key);
 
-            Log.WriteLine("Starting Session " + session.ToString());
+				Log.WriteLine(identifier + "Score: " + newValue, LogLevel.Notice);
+			}
+		}
 
-            return Get<Scripts>().Start(GetSessionScript(session));
-        }
+		public Script StartSession(Sessions session)
+		{
+			if (FinishedSession(session))
+			{
+				return Script.None;
+			}
 
-        private IEnumerator GetSessionScript(Sessions session)
-        {
-            IEnumerator SessionScript = null;
+			Tree.World.Interactive = false;
+			Tree.Cutscenes.Scene.Visible = true;
+			Tree.Cutscenes.Scene.Enabled = true;
 
-            switch (session)
-            {
-                case Sessions.One: SessionScript = SessionOneScript(); break;
-                case Sessions.Two: SessionScript = SessionTwoScript(); break;
-                case Sessions.Three: SessionScript = SessionThreeScript(); break;
-                case Sessions.Four: SessionScript = SessionFourScript(); break;
-                case Sessions.Five: SessionScript = SessionFiveScript(); break;
-                case Sessions.Six: SessionScript = SessionSixScript(); break;
-                default: SessionScript = SessionSevenScript(); break;
-            }
+			Log.WriteLine("Starting Session " + session.ToString());
 
-            yield return Get<Scripts>().Start(SessionScript);
+			return Get<Scripts>().Start(GetSessionScript(session));
+		}
 
-            FinishSession(session);
+		private IEnumerator GetSessionScript(Sessions session)
+		{
+			IEnumerator sessionScript;
+			switch (session)
+			{
+				case Sessions.One: sessionScript = SessionOneScript(); break;
+				case Sessions.Two: sessionScript = SessionTwoScript(); break;
+				case Sessions.Three: sessionScript = SessionThreeScript(); break;
+				case Sessions.Four: sessionScript = SessionFourScript(); break;
+				case Sessions.Five: sessionScript = SessionFiveScript(); break;
+				case Sessions.Six: sessionScript = SessionSixScript(); break;
+				default: sessionScript = SessionSevenScript(); break;
+			}
 
-            if (session == Sessions.Seven)
-            {
-                yield break;
-            }
+			yield return Get<Scripts>().Start(sessionScript);
 
-            var AlreadyFinishedSessions = FinishedSessionsCount;
+			FinishSession(session);
 
-            if (AlreadyFinishedSessions % 2 == 1)
-            {
-                Game.EnqueueSong(content.audio.basement);
-            }
+			if (session == Sessions.Seven)
+			{
+				yield break;
+			}
 
-            if (session != Sessions.One)
-            {
-                World.Get<AudioManager>().RepeatSong = false;
-            }
-        }
+			var alreadyFinishedSessions = FinishedSessionsCount;
 
-        public bool FinishedSession(Sessions session)
-        {
-            bool Result = false;
+			if (alreadyFinishedSessions % 2 == 1)
+			{
+				Game.EnqueueSong(content.audio.basement);
+			}
 
-            if (FinishedSessions.TryGetValue(session, out Result))
-            {
-                return Result;
-            }
+			if (session != Sessions.One)
+			{
+				World.Get<AudioManager>().RepeatSong = false;
+			}
+		}
 
-            return false;
-        }
+		public bool FinishedSession(Sessions session)
+		{
+			if (_finishedSessions.TryGetValue(session, out var result))
+			{
+				return result;
+			}
 
-        private int FinishedSessionsCount
-        {
-            get
-            {
-                return FinishedSessions.Where(fs => fs.Value).Count();
-            }
-        }
+			return false;
+		}
 
-        private void FinishSession(Sessions session)
-        {
-            FinishedSessions[session] = true;
-        }
-    }
+		private int FinishedSessionsCount => _finishedSessions.Where(fs => fs.Value).Count();
+
+		private void FinishSession(Sessions session)
+		{
+			_finishedSessions[session] = true;
+		}
+	}
 }

@@ -5,34 +5,28 @@ using System;
 
 namespace SessionSeven.GUI
 {
-    [Serializable]
-    public class Fader : Entity
-    {
-        public Fader()
-        {
-            Sprite
-                .Create(this)
-                .SetRenderStage(RenderStage.PostBloom)
-                .SetImage(Sprite.WHITEPIXELIMAGE);
+	[Serializable]
+	public class Fader : Entity
+	{
+		public Fader()
+		{
+			Sprite
+				.Create(this)
+				.SetRenderStage(RenderStage.PostBloom)
+				.SetImage(Sprite.WHITEPIXELIMAGE);
 
-            SpriteData
-                .Create(this)
-                .SetColor(Color.Black)
-                .SetScale(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT);
+			SpriteData
+				.Create(this)
+				.SetColor(Color.Black)
+				.SetScale(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT);
 
-            DrawOrder = 1;
-        }
+			DrawOrder = 1;
+		}
 
-        public Color Color
-        {
-            get
-            {
-                return Get<SpriteData>().Color;
-            }
-            set
-            {
-                Get<SpriteData>().Color = value;
-            }
-        }
-    }
+		public Color Color
+		{
+			get => Get<SpriteData>().Color;
+			set => Get<SpriteData>().Color = value;
+		}
+	}
 }

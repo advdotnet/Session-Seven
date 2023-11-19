@@ -6,163 +6,165 @@ using GlblRes = global::SessionSeven.Properties.Resources;
 
 namespace SessionSeven
 {
-    public partial class Menu
-    {
-        private List<Button> MenuButtons;
+	public partial class Menu
+	{
+		private List<Button> _menuButtons;
 
-        class Item
-        {
-            public string Text;
-            public Func<bool> IsVisible = () => { return true; };
-            public Action OnClick;
+		private class Item
+		{
+			public string Text;
+			public Func<bool> IsVisible = () => true;
+			public Action OnClick;
 
-            public Item(string text)
-            {
-                Text = text;
-            }
-        }
+			public Item(string text)
+			{
+				Text = text;
+			}
+		}
 
-        private bool GameRunning
-        {
-            get
-            {
-                return null != Engine.Game.World;
-            }
-        }
+		private bool GameRunning => null != _engine.Game.World;
 
-        private void ContinueGame()
-        {
-            MainMenuBackground.Hide();
-            Engine.Resume();
-            Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
-        }
+		private void ContinueGame()
+		{
+			_mainMenuBackground.Hide();
+			_engine.Resume();
+			_engine.Renderer.GUIManager.ShowSoftwareCursor = false;
+		}
 
-        IEnumerable<Item> GetMenuItems()
-        {
-            // Quit
-            var Item = new Item(GlblRes.Quit);
-            Item.OnClick = () =>
-            {
-                if (GameRunning)
-                {
-                    ExitConfirmationWindow.ShowModal();
-                    ShowLogo(false);
-                    ExitConfirmationWindow.Focused = true;
-                }
-                else
-                {
-                    Engine.Exit();
-                }
-            };
+		private IEnumerable<Item> GetMenuItems()
+		{
+			// Quit
+			var item = new Item(GlblRes.Quit)
+			{
+				OnClick = () =>
+				{
+					if (GameRunning)
+					{
+						_exitConfirmationWindow.ShowModal();
+						ShowLogo(false);
+						_exitConfirmationWindow.Focused = true;
+					}
+					else
+					{
+						_engine.Exit();
+					}
+				}
+			};
 
-            yield return Item;
+			yield return item;
 
-            // Credits
-            Item = new Item(GlblRes.Credits);
-            Item.OnClick = () =>
-            {
-                CreditsWindow.Show();
-                ShowLogo(false);
-                CreditsWindow.Focused = true;
-            };
+			// Credits
+			item = new Item(GlblRes.Credits)
+			{
+				OnClick = () =>
+				{
+					_creditsWindow.Show();
+					ShowLogo(false);
+					_creditsWindow.Focused = true;
+				}
+			};
 
-            yield return Item;
+			yield return item;
 
-            // Settings
-            Item = new Item(GlblRes.Settings);
-            Item.OnClick = () =>
-            {
-                SettingsWindow.ShowModal();
-                ShowLogo(false);
-                SettingsWindow.Focused = true;
-            };
+			// Settings
+			item = new Item(GlblRes.Settings)
+			{
+				OnClick = () =>
+				{
+					_settingsWindow.ShowModal();
+					ShowLogo(false);
+					_settingsWindow.Focused = true;
+				}
+			};
 
-            yield return Item;
+			yield return item;
 
-            // Load
-            Item = new Item(GlblRes.Load);
-            Item.IsVisible = () => { return SaveGames.Count > 0; };
-            Item.OnClick = () =>
-            {
-                LoadGameWindow.ShowModal();
-                ShowLogo(false);
-                LoadGameListbox.Focused = true;
-            };
-            yield return Item;
+			// Load
+			item = new Item(GlblRes.Load)
+			{
+				IsVisible = () => _saveGames.Count > 0,
+				OnClick = () =>
+				{
+					_loadGameWindow.ShowModal();
+					ShowLogo(false);
+					_loadGameListbox.Focused = true;
+				}
+			};
+			yield return item;
 
-            // Save
-            Item = new Item(GlblRes.Save);
-            Item.IsVisible = () => { return GameRunning; };
-            Item.OnClick = () =>
-            {
-                ShowLogo(false);
-                SaveGameWindow.ShowModal();
-            };
+			// Save
+			item = new Item(GlblRes.Save)
+			{
+				IsVisible = () => GameRunning,
+				OnClick = () =>
+				{
+					ShowLogo(false);
+					_saveGameWindow.ShowModal();
+				}
+			};
 
-            yield return Item;
+			yield return item;
 
-            // Continue
-            Item = new Item(GlblRes.Continue);
-            Item.OnClick = () =>
-            {
-                ContinueGame();
-            };
-            Item.IsVisible = () => { return GameRunning; };
-            yield return Item;
+			// Continue
+			item = new Item(GlblRes.Continue)
+			{
+				OnClick = () => ContinueGame(),
+				IsVisible = () => GameRunning
+			};
+			yield return item;
 
-            // New Game
-            Item = new Item(GlblRes.New_Game);
-            Item.OnClick = () =>
-            {
-                MainMenuBackground.Hide();
-                Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
-                Engine.StartGame();
-            };
-            yield return Item;
-        }
+			// New Game
+			item = new Item(GlblRes.New_Game)
+			{
+				OnClick = () =>
+				{
+					_mainMenuBackground.Hide();
+					_engine.Renderer.GUIManager.ShowSoftwareCursor = false;
+					_engine.StartGame();
+				}
+			};
+			yield return item;
+		}
 
-        void InitMenuButtons(Manager gui)
-        {
-            int i = 0;
+		private void InitMenuButtons(Manager gui)
+		{
+			var i = 0;
 
-            if (MenuButtons != null && MenuButtons.Count > 0)
-            {
-                foreach (var Button in MenuButtons)
-                {
-                    MainMenuBackground.Remove(Button);
-                    gui.Remove(Button);
-                }
+			if (_menuButtons != null && _menuButtons.Count > 0)
+			{
+				foreach (var button in _menuButtons)
+				{
+					_mainMenuBackground.Remove(button);
+					gui.Remove(button);
+				}
 
-                MenuButtons.Clear();
-            }
+				_menuButtons.Clear();
+			}
 
-            MenuButtons = new List<Button>();
+			_menuButtons = new List<Button>();
 
-            foreach (var Item in GetMenuItems().Where(it => it.IsVisible()))
-            {
-                var MenuButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
+			foreach (var item in GetMenuItems().Where(it => it.IsVisible()))
+			{
+				var menuButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
 
-                MenuButton.Init();
-                MenuButton.Text = Item.Text;
-                if (Item.OnClick != null)
-                {
-                    MenuButton.Click += (s, e) =>
-                    {
-                        Item.OnClick();
-                    };
-                }
-                MenuButton.Width = 120;
-                MenuButton.Height = 24;
-                MenuButton.Left = (MainMenuBackground.ClientWidth) - (MenuButton.Width) - 6;
-                MenuButton.Top = MainMenuBackground.ClientHeight - MenuButton.Height - 6 - (30 * i);
-                MenuButton.Anchor = Anchors.Top;
+				menuButton.Init();
+				menuButton.Text = item.Text;
+				if (item.OnClick != null)
+				{
+					menuButton.Click += (s, e) => item.OnClick();
+				}
+				menuButton.Width = 120;
+				menuButton.Height = 24;
+				menuButton.Left = _mainMenuBackground.ClientWidth - menuButton.Width - 6;
+				menuButton.Top = _mainMenuBackground.ClientHeight - menuButton.Height - 6 - (30 * i);
+				menuButton.Anchor = Anchors.Top;
 
-                MainMenuBackground.Add(MenuButton);
-                MenuButtons.Add(MenuButton);
+				_mainMenuBackground.Add(menuButton);
+				_menuButtons.Add(menuButton);
 
-                i++;
-            }
-        }
+				i++;
+			}
+		}
 
-    }
+	}
 }

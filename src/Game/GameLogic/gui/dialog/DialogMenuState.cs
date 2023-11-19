@@ -2,9 +2,9 @@
 
 namespace SessionSeven.GUI.Dialog
 {
-    [Serializable]
-    public enum DialogMenuState
-    {
-        Open, Closed, Opening, Closing
-    }
+	[Serializable]
+	public enum DialogMenuState
+	{
+		Open, Closed, Opening, Closing
+	}
 }

@@ -5,70 +5,70 @@ using System;
 
 namespace SessionSeven
 {
-    /// <summary>
-    /// The liftetime of this class represents an ingame cutscene: the world's interactive 
-    /// state is disabled when constructing this class and enabled when disposing.
-    /// </summary>
-    [Serializable]
-    public class CutsceneDisposeControl : IDisposable
-    {
-        [NonSerialized]
-        World World;
-        Action ResetGUIFn;
-        bool ResetInteractive, ResetGUI, WasSkippingEnabled;
+	/// <summary>
+	/// The liftetime of this class represents an ingame cutscene: the world's interactive 
+	/// state is disabled when constructing this class and enabled when disposing.
+	/// </summary>
+	[Serializable]
+	public class CutsceneDisposeControl : IDisposable
+	{
+		[NonSerialized]
+		private World _world;
+		private readonly Action _resetGUIFn;
+		private readonly bool _resetInteractive, _resetGUI, _wasSkippingEnabled;
 
-        public CutsceneDisposeControl(World world, Action resetGUIFn, bool resetInteractive = true, bool resetGUI = true, bool updateLabel = true)
-        {
-            World = world;
-            ResetGUI = resetGUI;
-            ResetGUIFn = resetGUIFn;
-            ResetInteractive = resetInteractive;
-            WasSkippingEnabled = IsSkippingEnabled();
-            if (updateLabel)
-            {
-                ((GUI.Interaction.Scene)World.GetScene(Tree.GUI.Interaction.SceneID))?.UpdateLabel();
-            }
-            World.Interactive = false;
+		public CutsceneDisposeControl(World world, Action resetGUIFn, bool resetInteractive = true, bool resetGUI = true, bool updateLabel = true)
+		{
+			_world = world;
+			_resetGUI = resetGUI;
+			_resetGUIFn = resetGUIFn;
+			_resetInteractive = resetInteractive;
+			_wasSkippingEnabled = IsSkippingEnabled();
+			if (updateLabel)
+			{
+				((GUI.Interaction.Scene)_world.GetScene(Tree.GUI.Interaction.SceneID))?.UpdateLabel();
+			}
+			_world.Interactive = false;
 
-            if (!WasSkippingEnabled)
-            {
-                Game.EnableSkipping();
-            }
-        }
+			if (!_wasSkippingEnabled)
+			{
+				Game.EnableSkipping();
+			}
+		}
 
-        public void Dispose()
-        {
-            if (null == World)
-            {
-                World = Tree.World;
-            }
+		public void Dispose()
+		{
+			if (null == _world)
+			{
+				_world = Tree.World;
+			}
 
-            if (ResetInteractive)
-            {
-                World.Interactive = true;
-            }
+			if (_resetInteractive)
+			{
+				_world.Interactive = true;
+			}
 
-            if (ResetGUI && null != ResetGUIFn)
-            {
-                ResetGUIFn();
-            }
+			if (_resetGUI && null != _resetGUIFn)
+			{
+				_resetGUIFn();
+			}
 
-            if (!WasSkippingEnabled)
-            {
-                Game.StopSkipping();
-            }
-        }
+			if (!_wasSkippingEnabled)
+			{
+				Game.StopSkipping();
+			}
+		}
 
-        private bool IsSkippingEnabled()
-        {
-            var SkipContent = World.Get<SkipContent>();
+		private bool IsSkippingEnabled()
+		{
+			var skipContent = _world.Get<SkipContent>();
 
-            if (null != SkipContent && null != SkipContent.SkipCutscene)
-            {
-                return SkipContent.SkipCutscene.Possible;
-            }
+			if (null != skipContent && null != skipContent.SkipCutscene)
+			{
+				return skipContent.SkipCutscene.Possible;
+			}
 
-            return false;
-        }
-    }
+			return false;
+		}
+	}
 }

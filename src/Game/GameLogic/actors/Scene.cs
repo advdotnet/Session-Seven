@@ -3,17 +3,17 @@
 namespace SessionSeven.Actors
 {
 
-    [Serializable]
-    public class Scene : STACK.Scene
-    {
-        public Scene(Inventory playerInventory)
-        {
-            Enabled = false;
-            Visible = true;
+	[Serializable]
+	public class Scene : STACK.Scene
+	{
+		public Scene(Inventory playerInventory)
+		{
+			Enabled = false;
+			Visible = true;
 
-            Push(new RyanVoice(),
-                 new Ryan(playerInventory),
-                 new Mouse());
-        }
-    }
+			Push(new RyanVoice(),
+				 new Ryan(playerInventory),
+				 new Mouse());
+		}
+	}
 }

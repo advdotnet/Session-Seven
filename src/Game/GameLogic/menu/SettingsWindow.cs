@@ -9,206 +9,233 @@ using Window = TomShane.Neoforce.Controls.Window;
 
 namespace SessionSeven
 {
-    public partial class Menu
-    {
-        private GameSettings GameSettings;
-        private Window SettingsWindow;
+	public partial class Menu
+	{
+		private readonly GameSettings _gameSettings;
+		private Window _settingsWindow;
 
-        void AddSettingsWindow(Manager gui)
-        {
-            SettingsWindow = new Window(gui);
-            SettingsWindow.Width = 300;
-            SettingsWindow.Height = 200;
-            SettingsWindow.CloseButtonVisible = false;
-            SettingsWindow.Text = GlblRes.Settings;
-            SettingsWindow.Parent = MainMenuBackground;
-            SettingsWindow.Init();
-            SettingsWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
-            SettingsWindow.Visible = false;
-            SettingsWindow.Resizable = false;
-            SettingsWindow.IconVisible = false;
-            SettingsWindow.DragAlpha = 255;
-            SettingsWindow.Movable = false;
+		private void AddSettingsWindow(Manager gui)
+		{
+			_settingsWindow = new Window(gui)
+			{
+				Width = 300,
+				Height = 200,
+				CloseButtonVisible = false,
+				Text = GlblRes.Settings,
+				Parent = _mainMenuBackground
+			};
+			_settingsWindow.Init();
+			_settingsWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
+			_settingsWindow.Visible = false;
+			_settingsWindow.Resizable = false;
+			_settingsWindow.IconVisible = false;
+			_settingsWindow.DragAlpha = 255;
+			_settingsWindow.Movable = false;
 
-            var MusicVolumeLabel = new Label(gui);
-            MusicVolumeLabel.Init();
-            MusicVolumeLabel.Width = 120;
-            MusicVolumeLabel.Parent = SettingsWindow;
-            MusicVolumeLabel.Text = GlblRes.Music_Volume;
-            MusicVolumeLabel.Top = 5;
-            MusicVolumeLabel.Left = 5;
+			var musicVolumeLabel = new Label(gui);
+			musicVolumeLabel.Init();
+			musicVolumeLabel.Width = 120;
+			musicVolumeLabel.Parent = _settingsWindow;
+			musicVolumeLabel.Text = GlblRes.Music_Volume;
+			musicVolumeLabel.Top = 5;
+			musicVolumeLabel.Left = 5;
 
-            var MusicVolumeBar = new TrackBar(gui);
-            MusicVolumeBar.Init();
-            MusicVolumeBar.Width = 160;
-            MusicVolumeBar.Value = (int)(GameSettings.MusicVolume * 100);
-            MusicVolumeBar.ValueChanged += (o, e) =>
-            {
-                GameSettings.MusicVolume = (float)MusicVolumeBar.Value / 100f;
-                Engine.ApplyGameSettingsVolume();
-                MediaPlayer.Volume = MathHelper.Clamp(GameSettings.MusicVolume, 0.0f, 1.0f);
-                MainMenuLabel.Text = string.Empty;
-            };
-            MusicVolumeBar.Top = 5;
-            MusicVolumeBar.Left = 120;
-            MusicVolumeBar.Parent = SettingsWindow;
+			var musicVolumeBar = new TrackBar(gui);
+			musicVolumeBar.Init();
+			musicVolumeBar.Width = 160;
+			musicVolumeBar.Value = (int)(_gameSettings.MusicVolume * 100);
+			musicVolumeBar.ValueChanged += (o, e) =>
+			{
+				_gameSettings.MusicVolume = musicVolumeBar.Value / 100f;
+				_engine.ApplyGameSettingsVolume();
+				MediaPlayer.Volume = MathHelper.Clamp(_gameSettings.MusicVolume, 0.0f, 1.0f);
+				_mainMenuLabel.Text = string.Empty;
+			};
+			musicVolumeBar.Top = 5;
+			musicVolumeBar.Left = 120;
+			musicVolumeBar.Parent = _settingsWindow;
 
-            var SoundVolumeLabel = new Label(gui);
-            SoundVolumeLabel.Init();
-            SoundVolumeLabel.Width = 120;
-            SoundVolumeLabel.Parent = SettingsWindow;
-            SoundVolumeLabel.Text = GlblRes.Sound_Volume;
-            SoundVolumeLabel.Top = 30;
-            SoundVolumeLabel.Left = 5;
+			var soundVolumeLabel = new Label(gui);
+			soundVolumeLabel.Init();
+			soundVolumeLabel.Width = 120;
+			soundVolumeLabel.Parent = _settingsWindow;
+			soundVolumeLabel.Text = GlblRes.Sound_Volume;
+			soundVolumeLabel.Top = 30;
+			soundVolumeLabel.Left = 5;
 
-            var SoundVolumeBar = new TrackBar(gui);
-            SoundVolumeBar.Init();
-            SoundVolumeBar.Width = 160;
-            SoundVolumeBar.Value = (int)(GameSettings.SoundEffectVolume * 100);
-            SoundVolumeBar.ValueChanged += (o, e) =>
-            {
-                GameSettings.SoundEffectVolume = (float)SoundVolumeBar.Value / 100f;
-                Engine.ApplyGameSettingsVolume();
-                MainMenuLabel.Text = string.Empty;
-            };
-            SoundVolumeBar.Top = 30;
-            SoundVolumeBar.Left = 120;
-            SoundVolumeBar.Parent = SettingsWindow;
+			var soundVolumeBar = new TrackBar(gui);
+			soundVolumeBar.Init();
+			soundVolumeBar.Width = 160;
+			soundVolumeBar.Value = (int)(_gameSettings.SoundEffectVolume * 100);
+			soundVolumeBar.ValueChanged += (o, e) =>
+			{
+				_gameSettings.SoundEffectVolume = soundVolumeBar.Value / 100f;
+				_engine.ApplyGameSettingsVolume();
+				_mainMenuLabel.Text = string.Empty;
+			};
+			soundVolumeBar.Top = 30;
+			soundVolumeBar.Left = 120;
+			soundVolumeBar.Parent = _settingsWindow;
 
-            var BloomLabel = new Label(gui);
-            BloomLabel.Init();
-            BloomLabel.Width = 120;
-            BloomLabel.Parent = SettingsWindow;
-            BloomLabel.Text = GlblRes.Bloom;
-            BloomLabel.Top = 55;
-            BloomLabel.Left = 5;
+			var bloomLabel = new Label(gui);
+			bloomLabel.Init();
+			bloomLabel.Width = 120;
+			bloomLabel.Parent = _settingsWindow;
+			bloomLabel.Text = GlblRes.Bloom;
+			bloomLabel.Top = 55;
+			bloomLabel.Left = 5;
 
-            var BloomCheckBox = new CheckBox(gui);
-            BloomCheckBox.Init();
-            BloomCheckBox.Parent = SettingsWindow;
-            BloomCheckBox.Text = string.Empty;
-            BloomCheckBox.Checked = GameSettings.Bloom;
-            BloomCheckBox.CheckedChanged += (o, e) =>
-            {
-                GameSettings.Bloom = BloomCheckBox.Checked;
-                MainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
-            };
-            BloomCheckBox.Top = 55;
-            BloomCheckBox.Left = 120;
+			var bloomCheckBox = new CheckBox(gui);
+			bloomCheckBox.Init();
+			bloomCheckBox.Parent = _settingsWindow;
+			bloomCheckBox.Text = string.Empty;
+			bloomCheckBox.Checked = _gameSettings.Bloom;
+			bloomCheckBox.CheckedChanged += (o, e) =>
+			{
+				_gameSettings.Bloom = bloomCheckBox.Checked;
+				_mainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
+			};
+			bloomCheckBox.Top = 55;
+			bloomCheckBox.Left = 120;
 
-            var VSyncLabel = new Label(gui);
-            VSyncLabel.Init();
-            VSyncLabel.Width = 120;
-            VSyncLabel.Parent = SettingsWindow;
-            VSyncLabel.Text = GlblRes.VSync;
-            VSyncLabel.Top = 80;
-            VSyncLabel.Left = 5;
+			var vSyncLabel = new Label(gui);
+			vSyncLabel.Init();
+			vSyncLabel.Width = 120;
+			vSyncLabel.Parent = _settingsWindow;
+			vSyncLabel.Text = GlblRes.VSync;
+			vSyncLabel.Top = 80;
+			vSyncLabel.Left = 5;
 
-            var VSyncCheckBox = new CheckBox(gui);
-            VSyncCheckBox.Init();
-            VSyncCheckBox.Parent = SettingsWindow;
-            VSyncCheckBox.Text = string.Empty;
-            VSyncCheckBox.Checked = GameSettings.VSync;
-            VSyncCheckBox.CheckedChanged += (o, e) =>
-            {
-                GameSettings.VSync = VSyncCheckBox.Checked;
-                MainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
-            };
-            VSyncCheckBox.Top = 80;
-            VSyncCheckBox.Left = 120;
+			var vSyncCheckBox = new CheckBox(gui);
+			vSyncCheckBox.Init();
+			vSyncCheckBox.Parent = _settingsWindow;
+			vSyncCheckBox.Text = string.Empty;
+			vSyncCheckBox.Checked = _gameSettings.VSync;
+			vSyncCheckBox.CheckedChanged += (o, e) =>
+			{
+				_gameSettings.VSync = vSyncCheckBox.Checked;
+				_mainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
+			};
+			vSyncCheckBox.Top = 80;
+			vSyncCheckBox.Left = 120;
 
-            var DisplayModeLabel = new Label(gui);
-            DisplayModeLabel.Init();
-            DisplayModeLabel.Width = 120;
-            DisplayModeLabel.Parent = SettingsWindow;
-            DisplayModeLabel.Text = GlblRes.Display_Mode;
-            DisplayModeLabel.Top = 105;
-            DisplayModeLabel.Left = 5;
+			var displayModeLabel = new Label(gui);
+			displayModeLabel.Init();
+			displayModeLabel.Width = 120;
+			displayModeLabel.Parent = _settingsWindow;
+			displayModeLabel.Text = GlblRes.Display_Mode;
+			displayModeLabel.Top = 105;
+			displayModeLabel.Left = 5;
 
-            var DisplayModeCombo = new ComboBox(gui);
-            DisplayModeCombo.Init();
+			var displayModeCombo = new ComboBox(gui);
+			displayModeCombo.Init();
 
-            DisplayModeCombo.Items = GetDisplayModes();
-            DisplayModeCombo.Width = 120;
-            DisplayModeCombo.Parent = SettingsWindow;
-            DisplayModeCombo.Width = 160;
-            DisplayModeCombo.Text = DisplayModeToString(GameSettings.DisplayMode);
-            DisplayModeCombo.ItemIndexChanged += (o, e) =>
-            {
-                GameSettings.DisplayMode = StringToDisplayMode(DisplayModeCombo.Text);
-                MainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
-            };
-            DisplayModeCombo.Top = 105;
-            DisplayModeCombo.Left = 120;
+			displayModeCombo.Items = GetDisplayModes();
+			displayModeCombo.Width = 120;
+			displayModeCombo.Parent = _settingsWindow;
+			displayModeCombo.Width = 160;
+			displayModeCombo.Text = DisplayModeToString(_gameSettings.DisplayMode);
+			displayModeCombo.ItemIndexChanged += (o, e) =>
+			{
+				_gameSettings.DisplayMode = StringToDisplayMode(displayModeCombo.Text);
+				_mainMenuLabel.Text = GlblRes.Restart_the_game_for_this_setting_to_take_effect;
+			};
+			displayModeCombo.Top = 105;
+			displayModeCombo.Left = 120;
 
-            var Bevel = new Bevel(gui);
-            Bevel.Parent = SettingsWindow;
-            Bevel.Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right;
-            Bevel.Height = 35;
-            Bevel.Style = BevelStyle.Raised;
-            Bevel.Top = SettingsWindow.ClientHeight - Bevel.Height;
-            Bevel.Width = SettingsWindow.ClientWidth;
+			var bevel = new Bevel(gui)
+			{
+				Parent = _settingsWindow,
+				Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right,
+				Height = 35,
+				Style = BevelStyle.Raised
+			};
+			bevel.Top = _settingsWindow.ClientHeight - bevel.Height;
+			bevel.Width = _settingsWindow.ClientWidth;
 
-            var OKButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            OKButton.Init();
-            OKButton.Parent = Bevel;
-            OKButton.Text = GlblRes.OK;
-            OKButton.Click += (s, e) =>
-            {
-                SettingsWindow.Close();
-                ShowLogo(true);
-                GameSettings.Save(Engine.Game.SaveGameFolder);
-            };
-            OKButton.Width = 130;
-            OKButton.Left = 150;
-            OKButton.Top = 5;
+			var okButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
+			okButton.Init();
+			okButton.Parent = bevel;
+			okButton.Text = GlblRes.OK;
+			okButton.Click += (s, e) =>
+			{
+				_settingsWindow.Close();
+				ShowLogo(true);
+				_gameSettings.Save(_engine.Game.SaveGameFolder);
+			};
+			okButton.Width = 130;
+			okButton.Left = 150;
+			okButton.Top = 5;
 
-            gui.Add(SettingsWindow);
-        }
+			gui.Add(_settingsWindow);
+		}
 
-        private List<object> GetDisplayModes()
-        {
-            var Result = new List<object>();
+		private List<object> GetDisplayModes()
+		{
+			var result = new List<object>();
 
-            foreach (STACK.DisplayMode displayMode in Enum.GetValues(typeof(STACK.DisplayMode)))
-            {
-                Result.Add(DisplayModeToString(displayMode));
-            }
+			foreach (STACK.DisplayMode displayMode in Enum.GetValues(typeof(STACK.DisplayMode)))
+			{
+				result.Add(DisplayModeToString(displayMode));
+			}
 
-            return Result;
-        }
+			return result;
+		}
 
-        private string DisplayModeToString(STACK.DisplayMode displayMode)
-        {
-            switch (displayMode)
-            {
-                case STACK.DisplayMode.Borderless:
-                    return GlblRes.Borderless;
-                case STACK.DisplayMode.BorderlessMaxInteger:
-                    return GlblRes.Borderless_Fit;
-                case STACK.DisplayMode.BorderlessScale:
-                    return GlblRes.Borderless_Scale;
-                case STACK.DisplayMode.Fullscreen:
-                    return GlblRes.Fullscreen;
-                case STACK.DisplayMode.Window:
-                    return GlblRes.Window;
-                case STACK.DisplayMode.WindowMaxInteger:
-                    return GlblRes.Window_Fit;
-            }
+		private string DisplayModeToString(STACK.DisplayMode displayMode)
+		{
+			switch (displayMode)
+			{
+				case DisplayMode.Borderless:
+					return GlblRes.Borderless;
+				case DisplayMode.BorderlessMaxInteger:
+					return GlblRes.Borderless_Fit;
+				case DisplayMode.BorderlessScale:
+					return GlblRes.Borderless_Scale;
+				case DisplayMode.Fullscreen:
+					return GlblRes.Fullscreen;
+				case DisplayMode.Window:
+					return GlblRes.Window;
+				case DisplayMode.WindowMaxInteger:
+					return GlblRes.Window_Fit;
+			}
 
-            return null;
-        }
+			return null;
+		}
 
-        private STACK.DisplayMode StringToDisplayMode(string val)
-        {
-            if (val == GlblRes.Borderless) return STACK.DisplayMode.Borderless;
-            if (val == GlblRes.Borderless_Fit) return STACK.DisplayMode.BorderlessMaxInteger;
-            if (val == GlblRes.Borderless_Scale) return STACK.DisplayMode.BorderlessScale;
-            if (val == GlblRes.Fullscreen) return STACK.DisplayMode.Fullscreen;
-            if (val == GlblRes.Window) return STACK.DisplayMode.Window;
-            if (val == GlblRes.Window_Fit) return STACK.DisplayMode.WindowMaxInteger;
+		private STACK.DisplayMode StringToDisplayMode(string val)
+		{
+			if (val == GlblRes.Borderless)
+			{
+				return DisplayMode.Borderless;
+			}
 
-            return STACK.DisplayMode.WindowMaxInteger;
-        }
-    }
+			if (val == GlblRes.Borderless_Fit)
+			{
+				return DisplayMode.BorderlessMaxInteger;
+			}
+
+			if (val == GlblRes.Borderless_Scale)
+			{
+				return DisplayMode.BorderlessScale;
+			}
+
+			if (val == GlblRes.Fullscreen)
+			{
+				return DisplayMode.Fullscreen;
+			}
+
+			if (val == GlblRes.Window)
+			{
+				return DisplayMode.Window;
+			}
+
+			if (val == GlblRes.Window_Fit)
+			{
+				return DisplayMode.WindowMaxInteger;
+			}
+
+			return DisplayMode.WindowMaxInteger;
+		}
+	}
 }

@@ -10,249 +10,259 @@ using Window = TomShane.Neoforce.Controls.Window;
 
 namespace SessionSeven
 {
-    public partial class Menu
-    {
-        private Dictionary<string, SaveGame> SaveGames;
-        private Window SaveGameWindow;
-        private ListBox LoadGameListbox, SaveGameListbox;
-        private Window LoadGameWindow;
+	public partial class Menu
+	{
+		private Dictionary<string, SaveGame> _saveGames;
+		private Window _saveGameWindow;
+		private ListBox _loadGameListbox, _saveGameListbox;
+		private Window _loadGameWindow;
 
-        void AddLoadGameWindow(Manager gui)
-        {
-            var LoadButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
+		private void AddLoadGameWindow(Manager gui)
+		{
+			var loadButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
 
-            LoadGameWindow = new Window(gui);
-            LoadGameWindow.Width = 300;
-            LoadGameWindow.Height = 200;
-            LoadGameWindow.CloseButtonVisible = false;
-            LoadGameWindow.Text = GlblRes.Load_Savegame;
-            LoadGameWindow.Parent = MainMenuBackground;
-            LoadGameWindow.Init();
-            LoadGameWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
-            LoadGameWindow.Visible = false;
-            LoadGameWindow.Resizable = false;
-            LoadGameWindow.IconVisible = false;
-            LoadGameWindow.DragAlpha = 255;
-            LoadGameWindow.Movable = false;
+			_loadGameWindow = new Window(gui)
+			{
+				Width = 300,
+				Height = 200,
+				CloseButtonVisible = false,
+				Text = GlblRes.Load_Savegame,
+				Parent = _mainMenuBackground
+			};
+			_loadGameWindow.Init();
+			_loadGameWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
+			_loadGameWindow.Visible = false;
+			_loadGameWindow.Resizable = false;
+			_loadGameWindow.IconVisible = false;
+			_loadGameWindow.DragAlpha = 255;
+			_loadGameWindow.Movable = false;
 
-            var SaveGameScreenshot = new ImageBox(gui);
-            SaveGameScreenshot.Parent = MainMenuBackground;
-            SaveGameScreenshot.Width = MainMenuBackground.Width;
-            SaveGameScreenshot.Height = MainMenuBackground.Height;
-            SaveGameScreenshot.Visible = false;
-            SaveGameScreenshot.SizeMode = SizeMode.Stretched;
+			var saveGameScreenshot = new ImageBox(gui)
+			{
+				Parent = _mainMenuBackground,
+				Width = _mainMenuBackground.Width,
+				Height = _mainMenuBackground.Height,
+				Visible = false,
+				SizeMode = SizeMode.Stretched
+			};
 
-            LoadGameWindow.Closed += (s, e) => { LoadGameListbox.ItemIndex = -1; };
+			_loadGameWindow.Closed += (s, e) => _loadGameListbox.ItemIndex = -1;
 
-            LoadGameListbox = new ListBox(gui);
-            LoadGameListbox.Width = LoadGameWindow.ClientWidth;
-            LoadGameListbox.Parent = LoadGameWindow;
-            LoadGameListbox.Height = LoadGameWindow.ClientHeight - 35;
-            LoadGameListbox.ItemIndexChanged += (s, e) =>
-            {
-                ClickSound.Play(GameSettings.SoundEffectVolume, 0f, 0f);
-                MainMenuLabel.Text = string.Empty;
-                if (LoadGameListbox.ItemIndex > -1)
-                {
-                    if (SaveGameScreenshot.Image != null)
-                    {
-                        SaveGameScreenshot.Image.Dispose();
-                    }
+			_loadGameListbox = new ListBox(gui)
+			{
+				Width = _loadGameWindow.ClientWidth,
+				Parent = _loadGameWindow,
+				Height = _loadGameWindow.ClientHeight - 35
+			};
+			_loadGameListbox.ItemIndexChanged += (s, e) =>
+			{
+				_clickSound.Play(_gameSettings.SoundEffectVolume, 0f, 0f);
+				_mainMenuLabel.Text = string.Empty;
+				if (_loadGameListbox.ItemIndex > -1)
+				{
+					saveGameScreenshot.Image?.Dispose();
 
-                    var Screenshot = SaveGames[SaveGames.Keys.ElementAt(LoadGameListbox.ItemIndex)].Screenshot;
-                    if (Screenshot != null)
-                    {
-                        using (Stream ScreenshotStream = new MemoryStream(Screenshot))
-                        {
-                            SaveGameScreenshot.Image = Texture2D.FromStream(Engine.Renderer.GraphicsDevice, ScreenshotStream);
-                        }
-                    }
+					var screenshot = _saveGames[_saveGames.Keys.ElementAt(_loadGameListbox.ItemIndex)].Screenshot;
+					if (screenshot != null)
+					{
+						using (Stream screenshotStream = new MemoryStream(screenshot))
+						{
+							saveGameScreenshot.Image = Texture2D.FromStream(_engine.Renderer.GraphicsDevice, screenshotStream);
+						}
+					}
 
-                    SaveGameScreenshot.Show();
-                    LoadButton.Enabled = true;
-                }
-                else
-                {
-                    SaveGameScreenshot.Hide();
-                    LoadButton.Enabled = false;
-                }
-            };
+					saveGameScreenshot.Show();
+					loadButton.Enabled = true;
+				}
+				else
+				{
+					saveGameScreenshot.Hide();
+					loadButton.Enabled = false;
+				}
+			};
 
-            var Bevel = new Bevel(gui);
-            Bevel.Parent = LoadGameWindow;
-            Bevel.Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right;
-            Bevel.Height = 35;
-            Bevel.Style = BevelStyle.Raised;
-            Bevel.Top = LoadGameWindow.ClientHeight - Bevel.Height;
-            Bevel.Width = LoadGameWindow.ClientWidth;
+			var bevel = new Bevel(gui)
+			{
+				Parent = _loadGameWindow,
+				Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right,
+				Height = 35,
+				Style = BevelStyle.Raised
+			};
+			bevel.Top = _loadGameWindow.ClientHeight - bevel.Height;
+			bevel.Width = _loadGameWindow.ClientWidth;
 
-            LoadButton.Init();
-            LoadButton.Parent = Bevel;
-            LoadButton.Enabled = false;
-            LoadButton.Text = GlblRes.Load_Savegame;
-            LoadButton.Click += (s, e) =>
-            {
-                MainMenuLabel.Text = string.Empty;
-                try
-                {
-                    Engine.LoadState(SaveGames.Keys.ElementAt(LoadGameListbox.ItemIndex));
-                }
-                catch
-                {
-                    MainMenuLabel.Text = GlblRes.Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version;
-                    return;
-                }
+			loadButton.Init();
+			loadButton.Parent = bevel;
+			loadButton.Enabled = false;
+			loadButton.Text = GlblRes.Load_Savegame;
+			loadButton.Click += (s, e) =>
+			{
+				_mainMenuLabel.Text = string.Empty;
+				try
+				{
+					_engine.LoadState(_saveGames.Keys.ElementAt(_loadGameListbox.ItemIndex));
+				}
+				catch
+				{
+					_mainMenuLabel.Text = GlblRes.Could_not_load_save_game_Maybe_it_was_created_in_an_earlier_game_version;
+					return;
+				}
 
-                LoadGameWindow.Close();
-                MainMenuBackground.Hide();
-                Engine.Resume();
-                Engine.Renderer.GUIManager.ShowSoftwareCursor = false;
-            };
-            LoadButton.Width = 130;
-            LoadButton.Left = 5;
-            LoadButton.Top = 5;
+				_loadGameWindow.Close();
+				_mainMenuBackground.Hide();
+				_engine.Resume();
+				_engine.Renderer.GUIManager.ShowSoftwareCursor = false;
+			};
+			loadButton.Width = 130;
+			loadButton.Left = 5;
+			loadButton.Top = 5;
 
-            var CancelButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            CancelButton.Init();
-            CancelButton.Parent = Bevel;
-            CancelButton.Text = GlblRes.Cancel;
-            CancelButton.Click += (s, e) =>
-            {
-                LoadGameWindow.Close();
-                ShowLogo(true);
-            };
-            CancelButton.Width = 130;
-            CancelButton.Left = 150;
-            CancelButton.Top = 5;
+			var cancelButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
+			cancelButton.Init();
+			cancelButton.Parent = bevel;
+			cancelButton.Text = GlblRes.Cancel;
+			cancelButton.Click += (s, e) =>
+			{
+				_loadGameWindow.Close();
+				ShowLogo(true);
+			};
+			cancelButton.Width = 130;
+			cancelButton.Left = 150;
+			cancelButton.Top = 5;
 
-            gui.Add(LoadGameWindow);
-        }
+			gui.Add(_loadGameWindow);
+		}
 
-        void AddSaveGameWindow(Manager gui)
-        {
-            var SaveButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            var NameTextBox = new TextBox(gui);
+		private void AddSaveGameWindow(Manager gui)
+		{
+			var saveButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
+			var nameTextBox = new TextBox(gui);
 
-            SaveGameWindow = new Window(gui);
-            SaveGameWindow.Width = 300;
-            SaveGameWindow.Height = 240;
-            SaveGameWindow.CloseButtonVisible = false;
-            SaveGameWindow.Text = GlblRes.Save;
-            SaveGameWindow.IconVisible = false;
-            SaveGameWindow.Parent = MainMenuBackground;
-            SaveGameWindow.Init();
-            SaveGameWindow.Visible = false;
-            SaveGameWindow.Resizable = false;
-            SaveGameWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
-            SaveGameWindow.Movable = false;
+			_saveGameWindow = new Window(gui)
+			{
+				Width = 300,
+				Height = 240,
+				CloseButtonVisible = false,
+				Text = GlblRes.Save,
+				IconVisible = false,
+				Parent = _mainMenuBackground
+			};
+			_saveGameWindow.Init();
+			_saveGameWindow.Visible = false;
+			_saveGameWindow.Resizable = false;
+			_saveGameWindow.Center(new Point(Game.VIRTUAL_WIDTH, Game.VIRTUAL_HEIGHT));
+			_saveGameWindow.Movable = false;
 
-            SaveGameWindow.Closed += (s, e) => { SaveGameListbox.ItemIndex = -1; };
+			_saveGameWindow.Closed += (s, e) => _saveGameListbox.ItemIndex = -1;
 
-            SaveGameListbox = new ListBox(gui);
-            SaveGameListbox.Width = SaveGameWindow.ClientWidth;
-            SaveGameListbox.Parent = SaveGameWindow;
-            SaveGameListbox.Height = SaveGameWindow.ClientHeight - 35 - 30;
-            SaveGameListbox.ItemIndexChanged += (s, e) =>
-            {
-                ClickSound.Play(GameSettings.SoundEffectVolume, 0f, 0f);
-                if (SaveGameListbox.ItemIndex > -1)
-                {
-                    NameTextBox.Text = SaveGames[SaveGames.Keys.ElementAt(SaveGameListbox.ItemIndex)].Name;
-                }
-            };
+			_saveGameListbox = new ListBox(gui)
+			{
+				Width = _saveGameWindow.ClientWidth,
+				Parent = _saveGameWindow,
+				Height = _saveGameWindow.ClientHeight - 35 - 30
+			};
+			_saveGameListbox.ItemIndexChanged += (s, e) =>
+			{
+				_clickSound.Play(_gameSettings.SoundEffectVolume, 0f, 0f);
+				if (_saveGameListbox.ItemIndex > -1)
+				{
+					nameTextBox.Text = _saveGames[_saveGames.Keys.ElementAt(_saveGameListbox.ItemIndex)].Name;
+				}
+			};
 
-            var Bevel = new Bevel(gui);
-            Bevel.Parent = SaveGameWindow;
-            Bevel.Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right;
-            Bevel.Height = 35;
-            Bevel.Style = BevelStyle.Raised;
-            Bevel.Top = SaveGameWindow.ClientHeight - Bevel.Height;
-            Bevel.Width = SaveGameWindow.ClientWidth;
+			var bevel = new Bevel(gui)
+			{
+				Parent = _saveGameWindow,
+				Anchor = Anchors.Bottom | Anchors.Left | Anchors.Right,
+				Height = 35,
+				Style = BevelStyle.Raised
+			};
+			bevel.Top = _saveGameWindow.ClientHeight - bevel.Height;
+			bevel.Width = _saveGameWindow.ClientWidth;
 
-            SaveButton.Init();
-            SaveButton.Parent = Bevel;
-            SaveButton.Enabled = false;
-            SaveButton.Text = GlblRes.Save;
-            SaveButton.Click += (s, e) =>
-            {
-                Engine.SaveState(NameTextBox.Text);
-                ShowLogo(true);
-                SaveGameWindow.Close();
-                RefreshSaveGames();
-            };
-            SaveButton.Width = 130;
-            SaveButton.Left = 5;
-            SaveButton.Top = 5;
+			saveButton.Init();
+			saveButton.Parent = bevel;
+			saveButton.Enabled = false;
+			saveButton.Text = GlblRes.Save;
+			saveButton.Click += (s, e) =>
+			{
+				_engine.SaveState(nameTextBox.Text);
+				ShowLogo(true);
+				_saveGameWindow.Close();
+				RefreshSaveGames();
+			};
+			saveButton.Width = 130;
+			saveButton.Left = 5;
+			saveButton.Top = 5;
 
-            var CancelButton = new MenuButton(gui, ClickSound, FocusSound, GameSettings);
-            CancelButton.Init();
-            CancelButton.Parent = Bevel;
-            CancelButton.Text = GlblRes.Cancel;
-            CancelButton.Click += (s, e) =>
-            {
-                SaveGameWindow.Close();
-                ShowLogo(true);
-            };
-            CancelButton.Width = 130;
-            CancelButton.Left = Bevel.ClientWidth - 130 - 5;
-            CancelButton.Top = 5;
+			var cancelButton = new MenuButton(gui, _clickSound, _focusSound, _gameSettings);
+			cancelButton.Init();
+			cancelButton.Parent = bevel;
+			cancelButton.Text = GlblRes.Cancel;
+			cancelButton.Click += (s, e) =>
+			{
+				_saveGameWindow.Close();
+				ShowLogo(true);
+			};
+			cancelButton.Width = 130;
+			cancelButton.Left = bevel.ClientWidth - 130 - 5;
+			cancelButton.Top = 5;
 
-            gui.Add(SaveGameWindow);
+			gui.Add(_saveGameWindow);
 
-            var SaveGameNameLabel = new Label(gui);
-            SaveGameNameLabel.Parent = SaveGameWindow;
-            SaveGameNameLabel.Top = SaveGameListbox.Height + 5;
-            SaveGameNameLabel.Left = 5;
-            SaveGameNameLabel.Width = 95;
-            SaveGameNameLabel.Text = GlblRes.Name;
+			var saveGameNameLabel = new Label(gui)
+			{
+				Parent = _saveGameWindow,
+				Top = _saveGameListbox.Height + 5,
+				Left = 5,
+				Width = 95,
+				Text = GlblRes.Name
+			};
 
-            NameTextBox.Parent = SaveGameWindow;
-            NameTextBox.Init();
-            NameTextBox.Left = 60;
-            NameTextBox.Top = SaveGameListbox.Height + 5;
-            NameTextBox.Width = 220;
-            NameTextBox.Height = 20;
-            NameTextBox.TextChanged += (s, e) =>
-            {
-                SaveButton.Enabled = !string.IsNullOrWhiteSpace(NameTextBox.Text);
-            };
-            NameTextBox.KeyPress += (s, e) =>
-            {
-                if (e.Key == Microsoft.Xna.Framework.Input.Keys.Enter)
-                {
-                    Engine.SaveState(NameTextBox.Text);
-                    SaveGameWindow.Close();
-                    ShowLogo(true);
-                    RefreshSaveGames();
-                }
-            };
+			nameTextBox.Parent = _saveGameWindow;
+			nameTextBox.Init();
+			nameTextBox.Left = 60;
+			nameTextBox.Top = _saveGameListbox.Height + 5;
+			nameTextBox.Width = 220;
+			nameTextBox.Height = 20;
+			nameTextBox.TextChanged += (s, e) => saveButton.Enabled = !string.IsNullOrWhiteSpace(nameTextBox.Text);
+			nameTextBox.KeyPress += (s, e) =>
+			{
+				if (e.Key == Microsoft.Xna.Framework.Input.Keys.Enter)
+				{
+					_engine.SaveState(nameTextBox.Text);
+					_saveGameWindow.Close();
+					ShowLogo(true);
+					RefreshSaveGames();
+				}
+			};
 
-            gui.Add(SaveGameWindow);
-        }
+			gui.Add(_saveGameWindow);
+		}
 
-        void RefreshSaveGames()
-        {
-            SaveGames = new Dictionary<string, SaveGame>();
-            var ListBoxes = new[] { LoadGameListbox, SaveGameListbox };
+		private void RefreshSaveGames()
+		{
+			_saveGames = new Dictionary<string, SaveGame>();
+			var listBoxes = new[] { _loadGameListbox, _saveGameListbox };
 
-            foreach (var ListBox in ListBoxes)
-            {
-                ListBox.Items.Clear();
-            }
+			foreach (var listBox in listBoxes)
+			{
+				listBox.Items.Clear();
+			}
 
-            var AllSaveGames = Engine.GetSaveGames();
-            var CurrentCulture = GameSettings.GetCurrentCultureName();
-            var CurrentLocaleSavegames = AllSaveGames.Where(s => s.Value.Culture == CurrentCulture);
+			var allSaveGames = _engine.GetSaveGames();
+			var currentCulture = GameSettings.GetCurrentCultureName();
+			var currentLocaleSavegames = allSaveGames.Where(s => s.Value.Culture == currentCulture);
 
-            foreach (var Game in CurrentLocaleSavegames)
-            {
-                SaveGames.Add(Game.Key, Game.Value);
+			foreach (var game in currentLocaleSavegames)
+			{
+				_saveGames.Add(game.Key, game.Value);
 
-                foreach (var ListBox in ListBoxes)
-                {
-                    ListBox.Items.Add(Game.Value.Name + " (" + Game.Value.Date.ToShortDateString() + " " + Game.Value.Date.ToLongTimeString() + ")");
-                }
-            }
-        }
-    }
+				foreach (var listBox in listBoxes)
+				{
+					listBox.Items.Add($"{game.Value.Name} ({game.Value.Date.ToShortDateString()} {game.Value.Date.ToLongTimeString()})");
+				}
+			}
+		}
+	}
 }

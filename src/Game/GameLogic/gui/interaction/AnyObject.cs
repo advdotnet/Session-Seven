@@ -2,36 +2,28 @@
 
 namespace SessionSeven.GUI.Interaction
 {
-    /// <summary>
-    /// Represents any object in interactions.
-    /// </summary>
-    [Serializable]
-    public class Any
-    {
-        public static Any Object = new Any();
+	/// <summary>
+	/// Represents any object in interactions.
+	/// </summary>
+	[Serializable]
+	public class Any
+	{
+		public static readonly Any Object = new Any();
 
-        private Any() { }
+		private Any() { }
 
-        public override bool Equals(object obj)
-        {
-            var item = obj as Any;
+		public override bool Equals(object obj)
+		{
+			if (!(obj is Any))
+			{
+				return false;
+			}
 
-            if (item == null)
-            {
-                return false;
-            }
+			return true;
+		}
 
-            return true;
-        }
+		public override int GetHashCode() => 0;
 
-        public override int GetHashCode()
-        {
-            return 0;
-        }
-
-        public override string ToString()
-        {
-            return "Any Object";
-        }
-    }
+		public override string ToString() => "Any Object";
+	}
 }

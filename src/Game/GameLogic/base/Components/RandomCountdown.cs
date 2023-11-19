@@ -4,64 +4,60 @@ using System;
 
 namespace SessionSeven.Components
 {
-    /// <summary>
-    /// Component that sequentially counts down a random amount of updates.
-    /// </summary>
-    [Serializable]
-    public class RandomCountdown : Component, IUpdate
-    {
-        /// <summary>
-        /// True if the count down finished for the amount of frames given by Duration
-        /// </summary>
-        public bool Action { get; private set; }
-        public int Duration { get; set; }
-        public int MinUpdates { get; set; }
-        public int MaxUpdates { get; set; }
-        public bool Enabled { get; set; }
-        public float UpdateOrder { get; set; }
-        const int UNINITIALIZED = -1;
-        int Counter = UNINITIALIZED;
+	/// <summary>
+	/// Component that sequentially counts down a random amount of updates.
+	/// </summary>
+	[Serializable]
+	public class RandomCountdown : Component, IUpdate
+	{
+		/// <summary>
+		/// True if the count down finished for the amount of frames given by Duration
+		/// </summary>
+		public bool Action { get; private set; }
+		public int Duration { get; set; }
+		public int MinUpdates { get; set; }
+		public int MaxUpdates { get; set; }
+		public bool Enabled { get; set; }
+		public float UpdateOrder { get; set; }
 
-        public RandomCountdown()
-        {
-            Action = false;
-            Enabled = true;
-        }
+		private const int _uninitialized = -1;
+		private int _counter = _uninitialized;
 
-        public void Reset()
-        {
-            Counter = World.Get<Randomizer>().CreateInt(MinUpdates, MaxUpdates) + Duration;
-        }
+		public RandomCountdown()
+		{
+			Action = false;
+			Enabled = true;
+		}
 
-        public void Update()
-        {
-            if (UNINITIALIZED == Counter)
-            {
-                Reset();
-            }
+		public void Reset()
+		{
+			_counter = World.Get<Randomizer>().CreateInt(MinUpdates, MaxUpdates) + Duration;
+		}
 
-            Action = Counter < Duration;
+		public void Update()
+		{
+			if (_uninitialized == _counter)
+			{
+				Reset();
+			}
 
-            Counter = Math.Max(Counter - 1, UNINITIALIZED);
-        }
+			Action = _counter < Duration;
 
-        [NonSerialized]
-        World _World = null;
-        new World World
-        {
-            get
-            {
-                return _World ?? (_World = (null == Entity) ? Scene.World : Entity.World);
-            }
-        }
+			_counter = Math.Max(_counter - 1, _uninitialized);
+		}
 
-        public static RandomCountdown Create(Entity entity)
-        {
-            return entity.Add<RandomCountdown>();
-        }
+		[NonSerialized]
+		private World _world = null;
 
-        public RandomCountdown SetDuration(int value) { Duration = value; return this; }
-        public RandomCountdown SetMinUpdates(int value) { MinUpdates = value; return this; }
-        public RandomCountdown SetMaxUpdates(int value) { MaxUpdates = value; return this; }
-    }
+		private new World World => _world ?? (_world = (null == Entity) ? Scene.World : Entity.World);
+
+		public static RandomCountdown Create(Entity entity)
+		{
+			return entity.Add<RandomCountdown>();
+		}
+
+		public RandomCountdown SetDuration(int value) { Duration = value; return this; }
+		public RandomCountdown SetMinUpdates(int value) { MinUpdates = value; return this; }
+		public RandomCountdown SetMaxUpdates(int value) { MaxUpdates = value; return this; }
+	}
 }

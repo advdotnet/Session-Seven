@@ -7,155 +7,155 @@ using System.Linq;
 
 namespace SessionSeven.Office
 {
-    [Serializable]
-    public class Ryan : Entity
-    {
-        readonly Frames FramesTransitionArmsCrossed = Frames.Create(1, 2, 3);
-        readonly Frames FramesTransitionArmsRaised = Frames.Create(11, 12, 13, 14);
-        readonly Frames FramesTransitionHandsIntertwined = Frames.Create(6, 7);
-        readonly Frames FramesTransitionNeutral = Frames.Create(FRAMENEUTRAL);
-        readonly Frames FramesTalkingArmsCrossed = Frames.Create(3, 4, 5);
-        readonly Frames FramesTalkingArmsRaised = Frames.Create(14, 15, 16);
-        readonly Frames FramesTalkingHandsIntertwined = Frames.Create(7, 8, 9, 10);
-        readonly Frames FramesTalkingNeutral = Frames.Create(17, 18, 19);
-        const int ANIMATIONDELAY = 7;
-        const int FRAMENEUTRAL = 17;
-        bool WasTalking = false;
-        int LastScaledStep = -1;
+	[Serializable]
+	public class Ryan : Entity
+	{
+		private readonly Frames _framesTransitionArmsCrossed = Frames.Create(1, 2, 3);
+		private readonly Frames _framesTransitionArmsRaised = Frames.Create(11, 12, 13, 14);
+		private readonly Frames _framesTransitionHandsIntertwined = Frames.Create(6, 7);
+		private readonly Frames _framesTransitionNeutral = Frames.Create(_frameNeutral);
+		private readonly Frames _framesTalkingArmsCrossed = Frames.Create(3, 4, 5);
+		private readonly Frames _framesTalkingArmsRaised = Frames.Create(14, 15, 16);
+		private readonly Frames _framesTalkingHandsIntertwined = Frames.Create(7, 8, 9, 10);
+		private readonly Frames _framesTalkingNeutral = Frames.Create(17, 18, 19);
+		private const int _animationDelay = 7;
+		private const int _frameNeutral = 17;
+		private bool _wasTalking = false;
+		private int _lastScaledStep = -1;
 
-        public const int PRIORITY = 5;
-        public RyanState State { get; private set; }
+		public const int PRIORITY = 5;
+		public RyanState State { get; private set; }
 
-        public Ryan()
-        {
-            Transform
-                .Create(this)
-                .SetPosition(290, 170)
-                .SetAbsolute(true);
+		public Ryan()
+		{
+			Transform
+				.Create(this)
+				.SetPosition(290, 170)
+				.SetAbsolute(true);
 
-            Text
-                .Create(this)
-                .SetColor(Color.White)
-                .SetFont(content.fonts.pixeloperator_outline_BMF)
-                .SetWidth(300);
+			Text
+				.Create(this)
+				.SetColor(Color.White)
+				.SetFont(content.fonts.pixeloperator_outline_BMF)
+				.SetWidth(300);
 
-            Sprite
-                .Create(this)
-                .SetImage(content.rooms.office.ryan, 20, 1, 19)
-                .SetFrame(FRAMENEUTRAL);
+			Sprite
+				.Create(this)
+				.SetImage(content.rooms.office.ryan, 20, 1, 19)
+				.SetFrame(_frameNeutral);
 
-            SpriteTransformAnimation
-                .Create(this)
-                .SetSetFrameFn(SetFrame);
+			SpriteTransformAnimation
+				.Create(this)
+				.SetSetFrameFn(SetFrame);
 
-            SpriteData
-                .Create(this)
-                .SetOffset(-29, 50);
+			SpriteData
+				.Create(this)
+				.SetOffset(-29, 50);
 
-            Scripts
-                .Create(this);
+			Scripts
+				.Create(this);
 
-            State = RyanState.Neutral;
-            DrawOrder = PRIORITY;
-        }
+			State = RyanState.Neutral;
+			DrawOrder = PRIORITY;
+		}
 
-        public Script Say(string text, float duration = 0)
-        {
-            return Get<Scripts>().Say(text, duration);
-        }
+		public Script Say(string text, float duration = 0)
+		{
+			return Get<Scripts>().Say(text, duration);
+		}
 
-        public Script TransitionTo(RyanState state, int delay = ANIMATIONDELAY)
-        {
-            return Get<Scripts>().Start(TransitionScript(state, delay));
-        }
+		public Script TransitionTo(RyanState state, int delay = _animationDelay)
+		{
+			return Get<Scripts>().Start(TransitionScript(state, delay));
+		}
 
-        private Frames GetTransitionFrames(RyanState state)
-        {
-            switch (state)
-            {
-                case RyanState.ArmsCrossed:
-                    return FramesTransitionArmsCrossed;
-                case RyanState.ArmsRaised:
-                    return FramesTransitionArmsRaised;
-                case RyanState.HandsIntertwined:
-                    return FramesTransitionHandsIntertwined;
-            }
+		private Frames GetTransitionFrames(RyanState state)
+		{
+			switch (state)
+			{
+				case RyanState.ArmsCrossed:
+					return _framesTransitionArmsCrossed;
+				case RyanState.ArmsRaised:
+					return _framesTransitionArmsRaised;
+				case RyanState.HandsIntertwined:
+					return _framesTransitionHandsIntertwined;
+			}
 
-            return FramesTransitionNeutral;
-        }
+			return _framesTransitionNeutral;
+		}
 
-        private Frames GetTalkingFrames(RyanState state)
-        {
-            switch (State)
-            {
-                case RyanState.ArmsCrossed:
-                    return FramesTalkingArmsCrossed;
-                case RyanState.ArmsRaised:
-                    return FramesTalkingArmsRaised;
-                case RyanState.HandsIntertwined:
-                    return FramesTalkingHandsIntertwined;
-            }
+		private Frames GetTalkingFrames()
+		{
+			switch (State)
+			{
+				case RyanState.ArmsCrossed:
+					return _framesTalkingArmsCrossed;
+				case RyanState.ArmsRaised:
+					return _framesTalkingArmsRaised;
+				case RyanState.HandsIntertwined:
+					return _framesTalkingHandsIntertwined;
+			}
 
-            return FramesTalkingNeutral;
-        }
+			return _framesTalkingNeutral;
+		}
 
-        private IEnumerator TransitionScript(RyanState newState, int delay)
-        {
-            if (State == newState)
-            {
-                yield break;
-            }
+		private IEnumerator TransitionScript(RyanState newState, int delay)
+		{
+			if (State == newState)
+			{
+				yield break;
+			}
 
-            var Sprite = Get<Sprite>();
-            var TransitionFrames = GetTransitionFrames(State).Copy();
+			var sprite = Get<Sprite>();
+			var transitionFrames = GetTransitionFrames(State).Copy();
 
-            TransitionFrames.Reverse();
-            TransitionFrames.Add(FRAMENEUTRAL);
-            TransitionFrames.AddRange(GetTransitionFrames(newState));
+			transitionFrames.Reverse();
+			transitionFrames.Add(_frameNeutral);
+			transitionFrames.AddRange(GetTransitionFrames(newState));
 
-            foreach (var Frame in TransitionFrames)
-            {
-                if (delay > 0)
-                {
-                    yield return Delay.Updates(delay);
-                }
-                Sprite.CurrentFrame = Frame;
-            }
+			foreach (var frame in transitionFrames)
+			{
+				if (delay > 0)
+				{
+					yield return Delay.Updates(delay);
+				}
+				sprite.CurrentFrame = frame;
+			}
 
-            State = newState;
-            if (delay > 0)
-            {
-                yield return Delay.Updates(delay);
-            }
-        }
+			State = newState;
+			if (delay > 0)
+			{
+				yield return Delay.Updates(delay);
+			}
+		}
 
-        private int SetFrame(Transform transform, int step, int lastFrame)
-        {
-            if (!transform.State.Has(STACK.Components.State.Talking))
-            {
-                if (WasTalking)
-                {
-                    WasTalking = false;
-                    return GetTransitionFrames(State).Last();
-                }
-                else
-                {
-                    return lastFrame;
-                }
-            }
+		private int SetFrame(Transform transform, int step, int lastFrame)
+		{
+			if (!transform.State.Has(STACK.Components.State.Talking))
+			{
+				if (_wasTalking)
+				{
+					_wasTalking = false;
+					return GetTransitionFrames(State).Last();
+				}
+				else
+				{
+					return lastFrame;
+				}
+			}
 
-            WasTalking = true;
-            var scaledStep = step / 10;
+			_wasTalking = true;
+			var scaledStep = step / 10;
 
-            if (scaledStep != LastScaledStep)
-            {
-                LastScaledStep = scaledStep;
-                var TalkingFrames = GetTalkingFrames(State);
+			if (scaledStep != _lastScaledStep)
+			{
+				_lastScaledStep = scaledStep;
+				var talkingFrames = GetTalkingFrames();
 
-                return TalkingFrames.GetRandomExcluding(World.Get<Randomizer>(), lastFrame);
-            }
+				return talkingFrames.GetRandomExcluding(World.Get<Randomizer>(), lastFrame);
+			}
 
-            return lastFrame;
-        }
-    }
+			return lastFrame;
+		}
+	}
 }
