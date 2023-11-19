@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17C1FC09-18F9-4052-9728-BFAFCCF92DE8}"
 EndProject
@@ -26,6 +26,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STACK.TestBase", "lib\STACK\src\Tests\STACK.TestBase\STACK.TestBase.csproj", "{A0CCDFD1-14C8-4B91-80CE-209C2EA6C4F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentAnalyzer", "lib\STACK\src\Tools\ContentAnalyzer\ContentAnalyzer.csproj", "{A72AE2E9-8318-4DDC-AE53-D868C1B77BE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A7AFB78-32C7-4A62-9DDA-1A6C628ACCB0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
