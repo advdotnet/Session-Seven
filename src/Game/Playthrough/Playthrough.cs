@@ -12,211 +12,205 @@ using System.Linq;
 
 namespace SessionSeven
 {
-    /// <summary>
-    /// The main class.
-    /// </summary>
-    public static class Playthrough
-    {
+	/// <summary>
+	/// The main class.
+	/// </summary>
+	public static class Playthrough
+	{
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main(string[] args)
-        {
-            try
-            {
-                AppDomain.CurrentDomain.UnhandledException += (s, e)
-                    => FatalExceptionObject(e.ExceptionObject);
+		/// <summary>
+		/// The main entry point for the application.
+		/// </summary>
+		[STAThread]
+		private static void Main(string[] args)
+		{
+			try
+			{
+				AppDomain.CurrentDomain.UnhandledException += (s, e)
+					=> FatalExceptionObject(e.ExceptionObject);
 
-                STACK.Logging.Log.AddLogger(new STACK.Logging.SystemConsoleLogHandler());
+				STACK.Logging.Log.AddLogger(new STACK.Logging.SystemConsoleLogHandler());
 
-                if (null != args && 0 < args.Count() && "click" == args[0])
-                {
-                    ExecuteClicks();
-                }
-                else if (null != args && 0 < args.Count() && "interact" == args[0])
-                {
-                    ExecuteInteractions();
-                }
-                else
-                {
-                    var PlaythroughLogic = new Functional.Test.Playthrough();
+				if (null != args && 0 < args.Count() && "click" == args[0])
+				{
+					ExecuteClicks();
+				}
+				else if (null != args && 0 < args.Count() && "interact" == args[0])
+				{
+					ExecuteInteractions();
+				}
+				else
+				{
+					var playthroughLogic = new Functional.Test.Playthrough();
 
-                    PlaythroughLogic.SolveGameWithSaveGames(GetScoreType());
-                }
+					playthroughLogic.SolveGameWithSaveGames(GetScoreType());
+				}
 
-                Console.WriteLine("Done.");
-            }
-            catch (Exception e)
-            {
-                HandleException(e);
+				Console.WriteLine("Done.");
+			}
+			catch (Exception e)
+			{
+				HandleException(e);
 
-                if (Debugger.IsAttached)
-                {
-                    throw;
-                }
-            }
-        }
+				if (Debugger.IsAttached)
+				{
+					throw;
+				}
+			}
+		}
 
-        private static void ExecuteClicks()
-        {
-            SessionSevenTestEngine.Execute((runner) =>
-            {
-                Console.WriteLine("Press ESC to quit.");
-                var PlayerScripts = Game.Ego.Get<Scripts>();
+		private static void ExecuteClicks()
+		{
+			SessionSevenTestEngine.Execute((runner) =>
+			{
+				Console.WriteLine("Press ESC to quit.");
+				var playerScripts = Game.Ego.Get<Scripts>();
 
-                while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape))
-                {
-                    while (PlayerScripts.ScriptCollection.Count > 0 || !runner.Game.World.Interactive)
-                    {
-                        runner.Tick();
-                        runner.MouseClick(runner.Game.World.Get<Randomizer>().CreateInt(1110), runner.Game.World.Get<Randomizer>().CreateInt(400));
-                    }
+				while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape))
+				{
+					while (playerScripts.ScriptCollection.Count > 0 || !runner.Game.World.Interactive)
+					{
+						runner.Tick();
+						runner.MouseClick(runner.Game.World.Get<Randomizer>().CreateInt(1110), runner.Game.World.Get<Randomizer>().CreateInt(400));
+					}
 
-                    runner.MouseClick(runner.Game.World.Get<Randomizer>().CreateInt(1110), runner.Game.World.Get<Randomizer>().CreateInt(400));
-                }
-                runner.SaveState("click state");
-            });
-        }
+					runner.MouseClick(runner.Game.World.Get<Randomizer>().CreateInt(1110), runner.Game.World.Get<Randomizer>().CreateInt(400));
+				}
+				runner.SaveState("click state");
+			});
+		}
 
-        private static void ExecuteInteractions()
-        {
-            SessionSevenTestEngine.Execute((runner) =>
-            {
-                Console.WriteLine("Press ESC to quit.");
-                var PlayerScripts = Game.Ego.Get<Scripts>();
-                var Randomizer = runner.Game.World.Get<Randomizer>();
+		private static void ExecuteInteractions()
+		{
+			SessionSevenTestEngine.Execute((runner) =>
+			{
+				Console.WriteLine("Press ESC to quit.");
+				var playerScripts = Game.Ego.Get<Scripts>();
+				var randomizer = runner.Game.World.Get<Randomizer>();
 
-                while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape))
-                {
-                    while (PlayerScripts.ScriptCollection.Count > 0 || !runner.Game.World.Interactive)
-                    {
-                        runner.Tick();
-                        if (runner.Game.World.Interactive)
-                        {
-                            runner.MouseClick(Randomizer.CreateInt(1110), Randomizer.CreateInt(400));
-                        }
-                    }
+				while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape))
+				{
+					while (playerScripts.ScriptCollection.Count > 0 || !runner.Game.World.Interactive)
+					{
+						runner.Tick();
+						if (runner.Game.World.Interactive)
+						{
+							runner.MouseClick(randomizer.CreateInt(1110), randomizer.CreateInt(400));
+						}
+					}
 
-                    try
-                    {
-                        if (Randomizer.CreateInt(2) == 1)
-                        {
-                            var RandomEntity = ChooseRandomEntity(Randomizer);
-                            var RandomVerb = ChooseRandomVerb(Randomizer);
+					try
+					{
+						if (randomizer.CreateInt(2) == 1)
+						{
+							var randomEntity = ChooseRandomEntity(randomizer);
+							var randomVerb = ChooseRandomVerb(randomizer);
 
-                            runner.Interact(RandomEntity, RandomVerb, false);
-                        }
-                        else
-                        {
-                            runner.Interact(ChooseRandomEntity(Randomizer), ChooseRandomEntity(Randomizer), ChooseRandomDitransitiveVerb(Randomizer), false);
-                        }
-                    }
-                    catch (KeyNotFoundException)
-                    {
+							runner.Interact(randomEntity, randomVerb, false);
+						}
+						else
+						{
+							runner.Interact(ChooseRandomEntity(randomizer), ChooseRandomEntity(randomizer), ChooseRandomDitransitiveVerb(randomizer), false);
+						}
+					}
+					catch (KeyNotFoundException)
+					{
 
-                    }
-                }
-                runner.SaveState("interaction state");
-            });
-        }
+					}
+				}
+				runner.SaveState("interaction state");
+			});
+		}
 
-        private static Entity ChooseRandomEntity(Randomizer randomizer)
-        {
-            IEnumerable<Entity> ObjectsToChooseFrom;
+		private static Entity ChooseRandomEntity(Randomizer randomizer)
+		{
+			IEnumerable<Entity> objectsToChooseFrom;
 
-            if (randomizer.CreateInt(2) == 1)
-            {
-                ObjectsToChooseFrom = Tree.Basement.Scene.GameObjectCache.Entities.Where(e => e.Enabled && e.Visible && null != e.Get<Interaction>());
-            }
-            else
-            {
-                ObjectsToChooseFrom = Game.Ego.Inventory.Scene.GameObjectCache.Entities.Where(e => e.Enabled && e.Visible && null != e.Get<Interaction>());
-            }
+			if (randomizer.CreateInt(2) == 1)
+			{
+				objectsToChooseFrom = Tree.Basement.Scene.GameObjectCache.Entities.Where(e => e.Enabled && e.Visible && null != e.Get<Interaction>());
+			}
+			else
+			{
+				objectsToChooseFrom = Game.Ego.Inventory.Scene.GameObjectCache.Entities.Where(e => e.Enabled && e.Visible && null != e.Get<Interaction>());
+			}
 
-            var count = ObjectsToChooseFrom.Count();
-            if (0 == count)
-            {
-                return ChooseRandomEntity(randomizer);
-            }
-            var index = randomizer.CreateInt(0, count);
+			var count = objectsToChooseFrom.Count();
+			if (0 == count)
+			{
+				return ChooseRandomEntity(randomizer);
+			}
+			var index = randomizer.CreateInt(0, count);
 
-            return ObjectsToChooseFrom.ElementAt(index);
-        }
+			return objectsToChooseFrom.ElementAt(index);
+		}
 
-        private static LockedVerb ChooseRandomVerb(Randomizer randomizer)
-        {
-            var AllVerbs = Verbs.All;
-            var index = randomizer.CreateInt(0, AllVerbs.Count());
+		private static LockedVerb ChooseRandomVerb(Randomizer randomizer)
+		{
+			var allVerbs = Verbs.All;
+			var index = randomizer.CreateInt(0, allVerbs.Count());
 
-            return AllVerbs.ElementAt(index);
-        }
+			return allVerbs.ElementAt(index);
+		}
 
-        private static LockedVerb ChooseRandomDitransitiveVerb(Randomizer randomizer)
-        {
-            if (randomizer.CreateInt(2) == 1)
-            {
-                return Verbs.Use;
-            }
+		private static LockedVerb ChooseRandomDitransitiveVerb(Randomizer randomizer)
+		{
+			if (randomizer.CreateInt(2) == 1)
+			{
+				return Verbs.Use;
+			}
 
-            return Verbs.Give;
-        }
+			return Verbs.Give;
+		}
 
-        static ScoreType GetScoreType()
-        {
-            var ValidChars = new char[] { '1', '2', '3' };
-            ConsoleKeyInfo Key;
+		private static ScoreType GetScoreType()
+		{
+			var validChars = new char[] { '1', '2', '3' };
+			ConsoleKeyInfo key;
 
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("Choose a target ending ");
-                Console.WriteLine(" (1) Freedom");
-                Console.WriteLine(" (2) Insanity");
-                Console.WriteLine(" (3) Jail");
-                Console.Write(" > ");
-                Key = Console.ReadKey();
-            } while (!ValidChars.Contains(Key.KeyChar));
+			do
+			{
+				Console.Clear();
+				Console.WriteLine("Choose a target ending ");
+				Console.WriteLine(" (1) Freedom");
+				Console.WriteLine(" (2) Insanity");
+				Console.WriteLine(" (3) Jail");
+				Console.Write(" > ");
+				key = Console.ReadKey();
+			} while (!validChars.Contains(key.KeyChar));
 
-            Console.Clear();
+			Console.Clear();
 
-            switch (Key.KeyChar)
-            {
-                case '1': return ScoreType.Freedom;
-                case '2': return ScoreType.Insanity;
-                default: return ScoreType.Jail;
-            }
-        }
+			switch (key.KeyChar)
+			{
+				case '1': return ScoreType.Freedom;
+				case '2': return ScoreType.Insanity;
+				default: return ScoreType.Jail;
+			}
+		}
 
-        static void FatalExceptionObject(object exceptionObject)
-        {
-            var Exception = exceptionObject as Exception;
-            if (Exception == null)
-            {
-                Exception = new NotSupportedException(
-                  "Unhandled exception doesn't derive from System.Exception: "
-                   + exceptionObject.ToString()
-                );
-            }
-            HandleException(Exception);
-        }
+		private static void FatalExceptionObject(object exceptionObject)
+		{
+			var exception = exceptionObject as Exception ?? new NotSupportedException(
+				  $"Unhandled exception doesn't derive from System.Exception: {exceptionObject}");
+			HandleException(exception);
+		}
 
-        static void HandleException(Exception e)
-        {
-            Console.WriteLine(e.ToString());
-            AppendToFile("error.log", e.ToString());
-        }
+		private static void HandleException(Exception e)
+		{
+			Console.WriteLine(e.ToString());
+			AppendToFile("error.log", e.ToString());
+		}
 
-        static void AppendToFile(string filename, string text)
-        {
-            SaveGame.EnsureStorageFolderExists(Game.SAVEGAMEFOLDER);
-            var Directory = SaveGame.UserStorageFolder(Game.SAVEGAMEFOLDER);
-            var Path = System.IO.Path.Combine(Directory, filename);
-            using (var w = File.AppendText(Path))
-            {
-                w.WriteLine(text);
-            }
-        }
-    }
+		private static void AppendToFile(string filename, string text)
+		{
+			SaveGame.EnsureStorageFolderExists(Game.SAVEGAMEFOLDER);
+			var directory = SaveGame.UserStorageFolder(Game.SAVEGAMEFOLDER);
+			var path = System.IO.Path.Combine(directory, filename);
+			using (var w = File.AppendText(path))
+			{
+				w.WriteLine(text);
+			}
+		}
+	}
 }

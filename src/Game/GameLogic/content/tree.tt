@@ -1,7 +1,7 @@
 ﻿<#@ output extension=".cs" #>  
 <#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
-<#@ assembly name="$(ProjectDir)\bin\Debug\ContentAnalyzer.dll" #>
+<#@ assembly name="$(SolutionDir)lib\STACK\src\Tools\ContentAnalyzer\bin\Debug\ContentAnalyzer.dll" #>
 <#@ import namespace="ContentAnalyzer" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
